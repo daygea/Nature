@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Speaks</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+    
+    <h1 style="text-align: center;">Nature Speaks</h1>
+
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <h3>Enter Your Cast Details:</h3>
+            <label for="mainCast">Main Cast:</label>
+            <select id="mainCast" class="form-control"></select>
+            <br>
+
+            <label for="orientation">Orientation:</label>
+            <select id="orientation" onchange="updateSpecificOrientation()" class="form-control">
+                <option value="Positive">Ire</option>
+                <option value="Negative">Ayewo</option>
+            </select>
+            <br>
+
+            <label for="specificOrientation">Specific Orientation:</label>
+            <select id="specificOrientation" class="form-control"></select>
+            <br>
+
+            <button onclick="performUserDivination()" class="btn btn-md btn-danger">Reveal Message</button>
+
+            <h3>Message:</h3>
+            <div id="divinationResult">
+                <!-- Result will be displayed here -->
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
+
+    </div>
+    <script type="text/javascript" src="oduMessages.js"></script>
+    <script>
+        
+        // Base Odùs
+        const baseOdus = [
+            "Ejiogbe","Oyeku Meji","Iwori Meji","Idi Meji","Irosun Meji","Owonrin Meji","Obara Meji","Okanran Meji","Ogunda Meji","Osa Meji","Ika Meji","Oturupon Meji","Otura Meji","Irete Meji","Ose Meji","Ofun Meji"
+        ];
+
+        // Generate all 256 Odù combinations
+        const generateOduCombinations = () => {
+            const oduList = [...baseOdus];
+            baseOdus.forEach(firstOdu => {
+                baseOdus.forEach(secondOdu => {
+                    if (firstOdu !== secondOdu) {
+                        let firstName = firstOdu === "Ejiogbe" ? "Ogbe" : firstOdu.split(" ")[0];
+                        let secondName = secondOdu === "Ejiogbe" ? "Ogbe" : secondOdu.split(" ")[0];
+                        // let secondName = secondOdu.split(" ")[0];
+                        oduList.push(`${firstName} ${secondName}`);
+                    }
+                });
+            });
+            return oduList;
+        };
+
+        const allOdus = generateOduCombinations();
+
+        // Populate dropdowns
+        const populateDropdown = (dropdown, options) => {
+            dropdown.innerHTML = ""; // Clear existing options
+            options.forEach(option => {
+                const optElement = document.createElement("option");
+                optElement.value = option;
+                optElement.textContent = option;
+                dropdown.appendChild(optElement);
+            });
+        };
+
+        const populateDropdowns = () => {
+            const mainCastDropdown = document.getElementById("mainCast");
+            populateDropdown(mainCastDropdown, allOdus);
+            updateSpecificOrientation();
+        };
+
+        // Update Specific Orientation based on selected orientation
+        const updateSpecificOrientation = () => {
+            const orientation = document.getElementById("orientation").value;
+            const specificOrientationDropdown = document.getElementById("specificOrientation");
+            const mainCastName = document.getElementById("mainCast").value || allOdus[0];
+            const options = oduMessages[mainCastName]?.[orientation]
+                ? Object.keys(oduMessages[mainCastName][orientation])
+                : [];
+            populateDropdown(specificOrientationDropdown, options);
+        };
+
+        // Perform divination
+        const performUserDivination = () => {
+            const mainCastName = document.getElementById("mainCast").value;
+            const orientation = document.getElementById("orientation").value;
+            const specificOrientation = document.getElementById("specificOrientation").value;
+
+            if (!oduMessages[mainCastName]) {
+                alert("No messages available for the selected Odù - "+mainCastName);
+                return;
+            }
+
+            const resultMessage = oduMessages[mainCastName][orientation][specificOrientation];
+            const resultElement = document.getElementById("divinationResult");
+            // resultElement.innerHTML = `
+            //     <strong>Main Cast:</strong> ${mainCastName}<br>
+            //     <strong>Orientation:</strong> ${orientation === "Positive" ? "Ire" : "Ayewo"}<br>
+            //     <strong>Specific Orientation:</strong> ${specificOrientation}<br>
+            //     <strong>Message:</strong> ${resultMessage || "Message not found."}
+            // `;
+            resultElement.innerHTML = ` <strong>
+                ${mainCastName} - ${orientation === "Positive" ? "Ire" : "Ayewo"} (${specificOrientation}) </strong> <br> ${resultMessage || "Message not found."}
+            `;
+        };
+
+        // Initialize on page load
+        window.onload = populateDropdowns;
+    </script>
+
+    </div>
+</body>
+</html>
