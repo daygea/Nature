@@ -34,7 +34,7 @@
 
                 "Names":"Ifanla/Obanla – the exalted Ifa or exalted King. Eniolubi – He who is born by the Lord. Okemuyiwa – Oke gave us this child. Olori-Ire – The Lucky one",
 
-                "Credit":"Solagbade Popoola"
+                "Credit":"Solagbade Popoola from https://www.scribd.com/document/626832121/Eji-Ogbe-16-Stanzass-2-2-1"
             },
             // "Oyeku Meji": {
             //     "Positive": {
