@@ -6,5 +6,4 @@ Nature Speaks
 Credit: Adedeji Kadri and all listed contributors to the project.
 
 List
-1. Dunad Solutions Limited
-2. Apapo Odu Cultural Organization
+1. Apapo Odu Cultural Organization
