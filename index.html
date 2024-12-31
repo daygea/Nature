@@ -36,31 +36,48 @@
                 <!-- Result will be displayed here -->
             </div>
         </div>
-        <div class="col-sm-3"></div>
+        <div id="configurationResult" class="col-sm-3">
+            
+        </div>
 
     </div>
     <script type="text/javascript" src="oduMessages.js"></script>
     <script>
         
         // Base Odùs
-        const baseOdus = [
-            "Ejiogbe","Oyeku Meji","Iwori Meji","Idi Meji","Irosun Meji","Owonrin Meji","Obara Meji","Okanran Meji","Ogunda Meji","Osa Meji","Ika Meji","Oturupon Meji","Otura Meji","Irete Meji","Ose Meji","Ofun Meji"
-        ];
+        const baseOdus = {
+            "Ejiogbe": ["|", "|", "|", "|"],
+            "Oyeku Meji": ["||", "||", "||", "||"],
+            "Iwori Meji": ["||", "|", "|", "||"],
+            "Idi Meji": ["|", "||", "||", "|"],
+            "Irosun Meji": ["|", "|", "||", "||"],
+            "Owonrin Meji": ["||", "||", "|", "|"],
+            "Obara Meji": ["|", "||", "||", "||"],
+            "Okanran Meji": ["||", "||", "||", "|"],
+            "Ogunda Meji": ["|", "|", "|", "||"],
+            "Osa Meji": ["||", "|", "|", "|"],
+            "Ika Meji": ["||", "|", "||", "||"],
+            "Oturupon Meji": ["||", "||", "|", "||"],
+            "Otura Meji": ["|", "||", "|", "|"],
+            "Irete Meji": ["|", "|", "||", "|"],
+            "Ose Meji": ["|", "||", "|", "||"],
+            "Ofun Meji": ["||", "|", "||", "|"]
+        };
 
         // Generate all 256 Odù combinations
         const generateOduCombinations = () => {
-            const oduList = [...baseOdus];
-            baseOdus.forEach(firstOdu => {
-                baseOdus.forEach(secondOdu => {
+            const baseOduNames = Object.keys(baseOdus);
+            const allOdus = [...baseOduNames];
+            baseOduNames.forEach(firstOdu => {
+                baseOduNames.forEach(secondOdu => {
                     if (firstOdu !== secondOdu) {
                         let firstName = firstOdu === "Ejiogbe" ? "Ogbe" : firstOdu.split(" ")[0];
                         let secondName = secondOdu === "Ejiogbe" ? "Ogbe" : secondOdu.split(" ")[0];
-                        // let secondName = secondOdu.split(" ")[0];
-                        oduList.push(`${firstName} ${secondName}`);
+                        allOdus.push(`${firstName} ${secondName}`);
                     }
                 });
             });
-            return oduList;
+            return allOdus;
         };
 
         const allOdus = generateOduCombinations();
@@ -100,7 +117,7 @@
             const specificOrientation = document.getElementById("specificOrientation").value;
 
             if (!oduMessages[mainCastName]) {
-                alert("No messages available for the selected Odù - "+mainCastName);
+                alert("No messages available for the selected Odù - " + mainCastName);
                 return;
             }
 
@@ -112,15 +129,43 @@
             const names = oduMessages[mainCastName].Names;
             const credit = oduMessages[mainCastName].Credit;
 
-            // resultElement.innerHTML = `
-            //     <strong>Main Cast:</strong> ${mainCastName}<br>
-            //     <strong>Orientation:</strong> ${orientation === "Positive" ? "Ire" : "Ayewo"}<br>
-            //     <strong>Specific Orientation:</strong> ${specificOrientation}<br>
-            //     <strong>Message:</strong> ${resultMessage || "Message not found."}
-            // `;
             resultElement.innerHTML = `<h1>Message</h1><br> <strong>
                 ${mainCastName} - ${orientation === "Positive" ? "Ire" : "Ayewo"} (${specificOrientation}) </strong> <br> ${resultMessage || "Message not found."} <br> <br><strong>Orisha:</strong> ${orisha}<br> <br><strong>Taboo:</strong> ${taboo}<br> <br><strong>Profession:</strong> ${profession}<br> <br><strong>Names:</strong> ${names}<br> <br><strong>Credit:</strong> ${credit}<br>
             `;
+            displayConfiguration(mainCastName);
+        };
+
+        const displayConfiguration = (oduName) => {
+    const configurationElement = document.getElementById("configurationResult");
+    let configHTML = "";
+
+    if (baseOdus[oduName]) {
+        // For the first 16 Odùs
+        const config = baseOdus[oduName];
+        configHTML = `<h2>Odu</h2>`;
+        config.forEach(line => {
+            configHTML += `<p>&nbsp;&nbsp;${line} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${line}</p>`;
+        });
+    } else {
+        // For combinations like "Ogbe Oyeku"
+        const parts = oduName.split(" ");
+        const firstPart = parts[0] === "Ogbe" ? "Ejiogbe" : `${parts[0]} Meji`;
+        const secondPart = parts[1] === "Ogbe" ? "Ejiogbe" : `${parts[1]} Meji`;
+
+        const firstConfig = baseOdus[firstPart];
+        const secondConfig = baseOdus[secondPart];
+
+        if (firstConfig && secondConfig) {
+            configHTML = `<h2>Odu</h2>`;
+            firstConfig.forEach((line, index) => {
+                configHTML += `<p>&nbsp;&nbsp;${secondConfig[index]} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${line}</p>`;
+            });
+        } else {
+            configHTML = `<h2>Odu</h2><p>Configuration not found for ${oduName}.</p>`;
+        }
+    }
+
+            configurationElement.innerHTML = configHTML;
         };
 
         // Initialize on page load
