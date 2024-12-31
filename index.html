@@ -32,7 +32,6 @@
 
             <button onclick="performUserDivination()" class="btn btn-md btn-danger">Reveal Message</button>
 
-            <h3>Message:</h3>
             <div id="divinationResult">
                 <!-- Result will be displayed here -->
             </div>
@@ -107,14 +106,20 @@
 
             const resultMessage = oduMessages[mainCastName][orientation][specificOrientation];
             const resultElement = document.getElementById("divinationResult");
+            const orisha = oduMessages[mainCastName].Orisha;
+            const taboo = oduMessages[mainCastName].Taboo;
+            const profession = oduMessages[mainCastName].Profession;
+            const names = oduMessages[mainCastName].Names;
+            const credit = oduMessages[mainCastName].Credit;
+
             // resultElement.innerHTML = `
             //     <strong>Main Cast:</strong> ${mainCastName}<br>
             //     <strong>Orientation:</strong> ${orientation === "Positive" ? "Ire" : "Ayewo"}<br>
             //     <strong>Specific Orientation:</strong> ${specificOrientation}<br>
             //     <strong>Message:</strong> ${resultMessage || "Message not found."}
             // `;
-            resultElement.innerHTML = ` <strong>
-                ${mainCastName} - ${orientation === "Positive" ? "Ire" : "Ayewo"} (${specificOrientation}) </strong> <br> ${resultMessage || "Message not found."}
+            resultElement.innerHTML = `<h1>Message</h1><br> <strong>
+                ${mainCastName} - ${orientation === "Positive" ? "Ire" : "Ayewo"} (${specificOrientation}) </strong> <br> ${resultMessage || "Message not found."} <br> <br><strong>Orisha:</strong> ${orisha}<br> <br><strong>Taboo:</strong> ${taboo}<br> <br><strong>Profession:</strong> ${profession}<br> <br><strong>Names:</strong> ${names}<br> <br><strong>Credit:</strong> ${credit}<br>
             `;
         };
 
