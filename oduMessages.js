@@ -1895,5 +1895,4463 @@
             //     "Credit":""
             // },
 
-          // Apola Ironsun (Irosun Ogbe - Irosun Ofun)
+            // // Apola Ironsun (Irosun Ogbe - Irosun Ofun)
+
+            // "Irosun Ogbe": {
+            //     "Positive": {
+            //         "Aiku": "Irosun Ogbe - Positive Aiku placeholder.",
+            //         "Aje": "Irosun Ogbe - Positive Aje placeholder.",
+            //         "Isegun": "Irosun Ogbe - Positive Isegun placeholder.",
+            //         "Igbalese": "Irosun Ogbe - Positive Igbalese placeholder.",
+            //         "GbogboIre": "Irosun Ogbe - Positive Gbogbo Ire placeholder."
+            //     },
+            //     "Negative": {
+            //         "Iku": "Irosun Ogbe - Negative Iku placeholder.",
+            //         "Arun": "Irosun Ogbe - Negative Arun placeholder.",
+            //         "Ejo": "Irosun Ogbe - Negative Ejo placeholder.",
+            //         "Ofo": "Irosun Ogbe - Negative Ofo placeholder.",
+            //         "Okutagbunilese": "Irosun Ogbe - Negative Okutagbunilese placeholder."
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Irosun Oyeku": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irosun Iwori": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irosun Idi": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irosun Owonrin": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irosun Obara": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irosun Okanran": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irosun Ogunda": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irosun Osa": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irosun Ika": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irosun Oturupon": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irosun Otura": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irosun Irete": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irosun Ose": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irosun Ofun": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+
+            //  // Apola Owonrin (Owonrin Ogbe - Owonrin Ofun)
+
+            // "Owonrin Ogbe": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Owonrin Oyeku": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Owonrin Iwori": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Owonrin Idi": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Owonrin Irosun": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Owonrin Obara": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Owonrin Okanran": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Owonrin Ogunda": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Owonrin Osa": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Owonrin Ika": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Owonrin Oturupon": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Owonrin Otura": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Owonrin Irete": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Owonrin Ose": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Owonrin Ofun": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+
+            // // Apola Obara (Obara Ogbe - Obara Ofun)
+
+            // "Obara Ogbe": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Obara Oyeku": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Obara Iwori": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Obara Idi": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Obara Irosun": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Obara Owonrin": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Obara Okanran": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Obara Ogunda": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Obara Osa": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Obara Ika": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Obara Oturupon": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Obara Otura": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Obara Irete": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Obara Ose": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Obara Ofun": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+
+            // // Apola Okanran (Okanran Ogbe - Okanran Ofun)
+            // "Okanran Ogbe": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Okanran Oyeku": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Okanran Iwori": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Okanran Idi": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Okanran Irosun": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Okanran Owonrin": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Okanran Obara": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Okanran Ogunda": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Okanran Osa": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Okanran Ika": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Okanran Oturupon": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Okanran Otura": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Okanran Irete": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Okanran Ose": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Okanran Ofun": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+
+            // // Apola Ogunda (Ogunda Ogbe - Ogunda Ofun)
+
+            // "Ogunda Ogbe": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ogunda Oyeku": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ogunda Iwori": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ogunda Idi": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ogunda Irosun": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ogunda Owonrin": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ogunda Obara": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ogunda Okanran": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ogunda Osa": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ogunda Ika": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ogunda Oturupon": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ogunda Otura": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ogunda Irete": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ogunda Ose": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ogunda Ofun": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+
+            // // Apola Osa (Osa Ogbe - Osa Ofun)
+
+            // "Osa Ogbe": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Osa Oyeku": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Osa Iwori": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Osa Idi": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Osa Irosun": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Osa Owonrin": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Osa Obara": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Osa Okanran": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Osa Ogunda": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Osa Ika": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Osa Oturupon": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Osa Otura": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Osa Irete": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Osa Ose": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            //  "Osa Ofun": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+
+            // // Apola Ika (Ika Ogbe - Ika Ofun)
+
+            // "Ika Ogbe": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ika Oyeku": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ika Iwori": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ika Idi": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ika Irosun": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ika Owonrin": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ika Obara": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ika Okanran": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ika Ogunda": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ika Osa": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ika Oturupon": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ika Otura": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ika Irete": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ika Ose": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ika Ofun": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+
+            // // Apola Oturupon (Oturupon Ogbe - Oturupon Ofun)
+
+            // "Oturupon Ogbe": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Oturupon Oyeku": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Oturupon Iwori": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Oturupon Idi": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Oturupon Irosun": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Oturupon Owonrin": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Oturupon Obara": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Oturupon Okanran": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Oturupon Ogunda": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Oturupon Osa": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Oturupon Ika": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Oturupon Otura": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Oturupon Irete": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Oturupon Ose": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Oturupon Ofun": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+
+            // // Apola Otura (Otura Ogbe - Otura Ofun)
+
+            // "Otura Ogbe": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Otura Oyeku": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Otura Iwori": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Otura Idi": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Otura Owonrin": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Otura Obara": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Otura Okanran": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Otura Ogunda": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Otura Osa": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Otura Ika": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Otura Oturupon": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Otura Irete": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Otura Ose": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Otura Ofun": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+
+            // // Apola Irete (Irete Ogbe - Irete Ofun)
+
+            //  "Irete Ogbe": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irete Oyeku": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irete Iwori": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irete Idi": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irete Owonrin": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irete Obara": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irete Okanran": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irete Ogunda": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irete Osa": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irete Ika": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irete Oturupon": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irete Otura": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irete Ose": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Irete Ofun": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+
+            // // Apola Ose (Ose Ogbe - Ose Ofun)
+
+            // "Ose Ogbe": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ose Oyeku": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ose Iwori": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ose Idi": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ose Irosun": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ose Obara": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ose Okanran": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ose Ogunda": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ose Osa": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ose Ika": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ose Oturupon": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ose Otura": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ose Irete": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ose Ofun": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+
+            // // Apola Ofun (Ofun Ogbe - Ofun Ose)
+
+            // "Ofun Ogbe": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ofun Oyeku": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ofun Iwori": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ofun Idi": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ofun Irosun": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ofun Owonrin": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ofun Obara": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ofun Okanran": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ofun Ogunda": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ofun Osa": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ofun Ika": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ofun Oturupon": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ofun Otura": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ofun Irete": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
+            // "Ofun Ose": {
+            //     "Positive": {
+            //         "Aiku": "",
+            //         "Aje": "",
+            //         "Isegun": "",
+            //         "Igbalese": "",
+            //         "GbogboIre": ""
+            //     },
+            //     "Negative": {
+            //         "Iku": "",
+            //         "Arun": "",
+            //         "Ejo": "",
+            //         "Ofo": "",
+            //         "Okutagbunilese": ""
+            //     },
+            //      "Orisha": "",
+
+            //     "Taboo":"",
+
+            //     "Profession":"",
+
+            //     "Names":"",
+                    
+            //     "Credit":""
+            // },
         };
