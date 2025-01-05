@@ -36,31 +36,31 @@
 
                 "Credit":"Solagbade Popoola from https://www.scribd.com/document/626832121/Eji-Ogbe-16-Stanzass-2-2-1"
             },
-            // "Oyeku Meji": {
-            //     "Positive": {
-            //         "Aiku": "Oyeku Meji - Positive Aiku placeholder.",
-            //         "Aje": "Oyeku Meji - Positive Aje placeholder.",
-            //         "Isegun": "Oyeku Meji - Positive Isegun placeholder.",
-            //         "Igbalese": "Oyeku Meji - Positive Igbalese placeholder.",
-            //         "GbogboIre": "Oyeku Meji - Positive Gbogbo Ire placeholder."
-            //     },
-            //     "Negative": {
-            //         "Iku": "Oyeku Meji - Negative Iku placeholder.",
-            //         "Arun": "Oyeku Meji - Negative Arun placeholder.",
-            //         "Ejo": "Oyeku Meji - Negative Ejo placeholder.",
-            //         "Ofo": "Oyeku Meji - Negative Ofo placeholder.",
-            //         "Okutagbunilese": "Oyeku Meji - Negative Okutagbunilese placeholder."
-            //     },
-            //     "Orisha": "",
+            "Oyeku Meji": {
+                "Positive": {
+                    "Aiku": "Oyeku Meji children have a very high chance of living to their old age even though they are frequently threatened by death. No matter how much they are threatened, they usually come out victorious. As a metter of fact, it is in the best interest of their enemies to tender unreserved apology to them, desist from planning or doing evil against them and advise others never to have evil plans against them. As an adjunct to this, the older they are, the more successful they will become. By the time they grow very old, they would have been able to achieve all their hearts desires.",
+                    "Aje": "Oyeku Meji children have an insatiable urge for wealth accumulation. The more they acquire, the more they wish to acquire. If they lend people money, they try to exploit their debtors to the maximum. On the other hand, if they are the ones owing other people, they hold onto the money until they are forced to pay up. If they have no money to pay, they do not see any reason why they should speak softly to those they owe. In short, when it comes to meny they love to enjoy the better of two worlds - expoiting those who owe them and holding onto the money they owe for as long as possible.",
+                    "Isegun": "Oyeku Meji children easily pick up enemies either due to ency, jealousy or misunderstanding of their actions. Sometimes, it may be due to the bad attitude of Oyeku Meji children. Instead of recognising their inadequacies and amed their ways accordingly, they usually blame everything on the fact that it is in their destiny to have many enemies. This is an aspect which they need to examine peoperly and review accordingly.",
+                    "Igbalese": "Oyeky Meji children shall inherit the world. They have the capbility to overcome their opponents and achieve more than all their contemporaries. They will succeed in terms of wealth, spouse, children and general well being. ",
+                    "GbogboIre": "Ifa says that it foresees all the Ire in life for the person for whom this Odu is revealed. Ifa says that this person shall be blessed with abundant wealth, good and loving spouse, healthy and well behaved children and all other essential things of life. Ifa also says that the most appropriate time for this person to pray to his/her Olodumare and other Deities is early in the morning. By so doing, Ifa says that all his/her prayers shall be answered. Ifa advises this client to offer ebo with two hens, two pigeons, two rats, two fish, two guines fowls, two cocks and money so that all these good things of life shall be his/hers forever. On this aspect, Oyeku-Meji says: Opele divination seeds are they which after being filled up with food turned their stomach to the ground. This was Ifa's declaration to Peregede, the mother of Ojumomo, the day has dawned, She was advised to offer ebo. It was Peregede who was compalining about her inability to succeed in life. She had no money, no hope of succedding in future. Consequently, she went to th Awo mentioned above for Ifa consultation. She was assured that she would certainly attain success in her life. She was told that she was destined to succeed in life. She was however advised to be communicating to her Olodumare and the Deities very early in the morning as that was the time that the heavenly beings were most disposed to answering her prayers. She was also advised to offer ebo as stated above. She complied with all the advices given by the Awo and noted the observations of the Awo to her. Before long, she succeeded in her trade. Shortly after this, she had a good spouse. Together with spouse, she was. able to take care of her health. Soon after, she became pregnant and has a bouncing baby. After this, she had many more babies. With her husband and childredn, they built a big house. They soon bough a horse. With all her achievements she knew she had hope for a brighter future. She was full of joy for what the Deities has done for her. pele divination seeds are they which after being filled up with food turned their stomach to the ground. This was Ifa's declaration to Peregede, the mother of Ojumomo, the day has dawned, She was advised to offer ebo. She complied. Good day has dawned for me today, I am blessed with wealth, Perengede, You are the mother of Ojumomo. Good day has dawned for me today, I am blessed with a good spouse, Perengede, You are the mother of Ojumomo. Good day has dawned for me today, I am blessed with lovely children, Perengede, You are the mother of Ojumomo. Good day has dawned for me today, I am blessed with comfortable home, Perengede, You are the mother of Ojumomo. Good day has dawned for me today, I am blessed with horses, Perengede, You are the mother of Ojumomo. Good day has dawned for me today, I am blessed with all the good things of life, Perengede, You are the mother of Ojumomo. Ifa says that as long as the person for whom this Odu is revealed knows how to pray every morning, work hard and is hopeful in life, there is no limit to what he/she achieves. He/she shall be blessed with all the good things of life."
+                },
+                "Negative": {
+                    "Iku": "Oyeku Meji - Negative Iku placeholder.",
+                    "Arun": "Oyeku Meji - Negative Arun placeholder.",
+                    "Ejo": "Oyeku Meji - Negative Ejo placeholder.",
+                    "Ofo": "Oyeku Meji - Negative Ofo placeholder.",
+                    "Okutagbunilese": "Oyeku Meji - Negative Okutagbunilese placeholder."
+                },
+                "Orisha": "Ifa - For protection against enemies, financial success, and over-all well being. Ori - For financial success and general protection. Esu Odara - For geeral well being and support. Obatala _ For child bearing and good spouse. Ogun - For protection and direction. Sango - For protection against opposition. Oke - For overall success. Egbe - For support and leadership. Egungun - For support of the ancestors.",
 
-            //     "Taboo":"",
+                "Taboo":"Must never walk in the rain - to avaoid missing his chances of sucess. Must never use Ega, the Palm Bird, for anything - to avoid his/her home from scattering. Must never use water as part of feeding materials for his Ori - to avoid failure in life which may come from his/her prayers not being answered. Must not use millipede for anything - to avoid failure in his/her business. Must not use sand paper leaves for anything - to avoid failure in his/her business undertaking. Must not use Ayunre leaves for anything - to avoid reduction in the protection from the Deities. Must never marry more than one wife at a time: A woman must never marry an already married man - to avoid unending matrimonial crises. Must never farm - to avoid business failure. Must never eat fish - to avoid problem of giving birth to abiku children. Must never use leopard for anything - to avoid being overwhelmed by adversary."
 
-            //     "Profession":"",
+                "Profession":"The best professions of Oyeku Meji children are in Medical fields either as Doctors, pharmacists, physiotherapists, nurses, midwives, medical occultists, Babalawo, herbalists, and so on. They are also good in trading and banking but never as farmers.",
 
-            //     "Names":"",
+                "Names":"Olabaminile - Honour is at hand. Fadeyi - Ifa holds unto this. Ikusaanu - Iku, Death, please be compassionate. Ojumo-Ola - The dawn of honour. Ifasegun - Ifa ensures victory. Fadara - Ifa performs wonders. Atooro - She who brings her success from heaven. Fatooyin - Ifa is praise worthy. Odulere - Odu is profitable. Subuade - The depth of the crown. Ikumapayi - May Death spares this.",
                     
-            //     "Credit":""
-            // },
+                "Credit":"Solagbade Popoola from https://www.scribd.com/document/588401267/Popoola-02-Oyekun"
+            },
             // "Iwori Meji": {
             //     "Positive": {
             //         "Aiku": "Iwori Meji - Positive Aiku placeholder.",
