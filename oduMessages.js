@@ -126,9 +126,9 @@ const oduMessages = {
             }
         },
         "Orisha": "Obatala",
-        "Taboo": "Must not eat fowls – to avoid unconsummated fortunes.",
-        "Names": "Ifanla/Obanla – the exalted Ifa or exalted King.",
-        "Credit": "Apapo Odu Cultural Organization"
+        "Taboo": "",
+        "Names": "",
+        "Credit": ""
     },
     //-------------------------------------------------------------------------------------------------
 };
