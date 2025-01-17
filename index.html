@@ -8,40 +8,48 @@
 </head>
 <body>
     <div class="container-fluid">
-    
-    <h1 style="text-align: center;">Nature Speaks</h1>
+        <h1 style="text-align: center;">Nature Speaks</h1>
 
-    <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6">
-            <h3>Enter Your Cast Details:</h3>
-            <label for="mainCast">Main Cast:</label>
-            <select id="mainCast" class="form-control"></select>
-            <br>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <h3 style="text-align: center;">Enter Your Divination Details</h3>
+                <label for="mainCast">Odu Ifa</label>
+                <select id="mainCast" class="form-control"></select>
+                <br>
 
-            <label for="orientation">Orientation:</label>
-            <select id="orientation" onchange="updateSpecificOrientation()" class="form-control">
-                <option value="Positive">Ire</option>
-                <option value="Negative">Ayewo</option>
-            </select>
-            <br>
+                <label for="orientation">Orientation (Ire / Ayewo)</label>
+                <select id="orientation" onchange="updateSpecificOrientation()" class="form-control">
+                    <option value="Positive">Ire</option>
+                    <option value="Negative">Ayewo</option>
+                </select>
+                <br>
 
-            <label for="specificOrientation">Specific Orientation:</label>
-            <select id="specificOrientation" class="form-control"></select>
-            <br>
+                <label for="specificOrientation">Specific Orientation</label>
+                <select id="specificOrientation" class="form-control"></select>
+                <br>
 
-            <button onclick="performUserDivination()" class="btn btn-md btn-danger">Reveal Message</button>
+                <label for="solution">Solution (Ebo / Adimu)</label>
+                <select id="solution" onchange="updateSolutionDetails()" class="form-control">
+                    <option value="Ebo" selected>Ebo</option>
+                    <option value="Adimu">Adimu</option>
+                </select>
+                <br>
 
-            <div id="divinationResult">
-                <!-- Result will be displayed here -->
+                <label for="solutionDetails">Solution Details</label>
+                <select id="solutionDetails" class="form-control"></select>
+                <br>
+
+                <button onclick="performUserDivination()" class="btn btn-md btn-danger">Reveal Message</button>
+
+                <div id="divinationResult">
+                    <!-- Result will be displayed here -->
+                </div>
+            </div>
+            <div id="configurationResult" class="col-sm-3">
             </div>
         </div>
-        <div id="configurationResult" class="col-sm-3">
-            
-        </div>
-
-    </div>
-    <script type="text/javascript" src="oduMessages.js"></script>
+        <script type="text/javascript" src="oduMessages.js"></script>
     <script>
         
         // Base Odùs
@@ -97,45 +105,85 @@
             const mainCastDropdown = document.getElementById("mainCast");
             populateDropdown(mainCastDropdown, allOdus);
             updateSpecificOrientation();
+            updateSolutionDetails(); // Populate solution details on page load
         };
 
-        // Update Specific Orientation based on selected orientation
+        // Check if oduMessages has data for the selected mainCast, fallback if not
+
+        const getOduMessageData = (mainCast, orientation, specificOrientation, solution, specificSolution) => {
+            return (
+                oduMessages[mainCast]?.[orientation]?.[specificOrientation]?.[solution]?.[specificSolution] ||
+                "No message available for the selected combination."
+            );
+        };
+
+
         const updateSpecificOrientation = () => {
-            const orientation = document.getElementById("orientation").value;
-            const specificOrientationDropdown = document.getElementById("specificOrientation");
-            const mainCastName = document.getElementById("mainCast").value || allOdus[0];
-            const options = oduMessages[mainCastName]?.[orientation]
-                ? Object.keys(oduMessages[mainCastName][orientation])
-                : [];
-            populateDropdown(specificOrientationDropdown, options);
-        };
+                const orientation = document.getElementById("orientation").value;
+                const specificOrientationDropdown = document.getElementById("specificOrientation");
+                const mainCast = document.getElementById("mainCast").value;
 
-        // Perform divination
+                // Use fallback options if no data exists in `oduMessages`
+                const defaultOptions =
+                    orientation === "Positive"
+                        ? ["Aiku", "Aje", "Isegun", "Igbale Ese", "Ire Gbogbo"]
+                        : ["Iku", "Arun", "Ejo", "Ofo", "Okutagbunilese"];
+                const options =
+                    oduMessages[mainCast]?.[orientation] 
+                        ? Object.keys(oduMessages[mainCast][orientation])
+                        : defaultOptions;
+
+                populateDropdown(specificOrientationDropdown, options);
+            };
+
+             const updateSolutionDetails = () => {
+                const solution = document.getElementById("solution").value;
+                const solutionDetailsDropdown = document.getElementById("solutionDetails");
+                const mainCast = document.getElementById("mainCast").value;
+
+                // Use fallback options if no data exists in `oduMessages`
+                const defaultSolutionDetails =
+                    solution === "Ebo"
+                        ? ["Akoru", "Esha"]
+                        : ["Ori", "Osha", "Eegun", "Ifa"];
+                const details =
+                    oduMessages[mainCast]?.Solution?.[solution] 
+                        ? oduMessages[mainCast].Solution[solution]
+                        : defaultSolutionDetails;
+
+                populateDropdown(solutionDetailsDropdown, details);
+            };
+
         const performUserDivination = () => {
-            const mainCastName = document.getElementById("mainCast").value;
-            const orientation = document.getElementById("orientation").value;
-            const specificOrientation = document.getElementById("specificOrientation").value;
+        const mainCast = document.getElementById("mainCast").value;
+        const orientation = document.getElementById("orientation").value;
+        const specificOrientation = document.getElementById("specificOrientation").value;
+        const solution = document.getElementById("solution").value;
+        const solutionDetails = document.getElementById("solutionDetails").value;
 
-            if (!oduMessages[mainCastName]) {
-                alert("No messages available for the selected Odù - " + mainCastName);
-                return;
-            }
+        const message = getOduMessageData(mainCast, orientation, specificOrientation, solution, solutionDetails);
+        const orisha = oduMessages[mainCast]?.Orisha || "No Orisha information available.";
+        const taboo = oduMessages[mainCast]?.Taboo || "No Taboo information available.";
+        const names = oduMessages[mainCast]?.Names || "No Names information available.";
+        const credit = oduMessages[mainCast]?.Credit || "No Credit information available.";
 
-            const resultMessage = oduMessages[mainCastName][orientation][specificOrientation];
-            const resultElement = document.getElementById("divinationResult");
-            const orisha = oduMessages[mainCastName].Orisha;
-            const taboo = oduMessages[mainCastName].Taboo;
-            const profession = oduMessages[mainCastName].Profession;
-            const names = oduMessages[mainCastName].Names;
-            const credit = oduMessages[mainCastName].Credit;
+        // Map orientation to descriptive text
+        const orientationText = orientation === "Positive" ? "Ire" : "Ayewo";
 
-            resultElement.innerHTML = `<h1>Message</h1><br> <strong>
-                ${mainCastName} - ${orientation === "Positive" ? "Ire" : "Ayewo"} (${specificOrientation}) </strong> <br> ${resultMessage || "Message not found."} <br> <br><strong>Orisha:</strong> ${orisha}<br> <br><strong>Taboo:</strong> ${taboo}<br> <br><strong>Profession:</strong> ${profession}<br> <br><strong>Names:</strong> ${names}<br> <br><strong>Credit:</strong> ${credit}<br>
-            `;
-            displayConfiguration(mainCastName);
-        };
+        const resultElement = document.getElementById("divinationResult");
+        resultElement.innerHTML = `
+            <h1 style="text-align: center;">Divination Result</h1>
+            <h3 style="text-align: center;">${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}</h3>
+            <p><strong>Message:</strong> ${message}</p>
+            <p><strong>Orisha:</strong> ${orisha}</p>
+            <p><strong>Taboo:</strong> ${taboo}</p>
+            <p><strong>Names:</strong> ${names}</p>
+            <p><strong>Credit:</strong> ${credit}</p>
+        `;
+        displayConfiguration(mainCast);
+    };
 
-        const displayConfiguration = (oduName) => {
+    const displayConfiguration = (oduName) => {
     const configurationElement = document.getElementById("configurationResult");
     let configHTML = "";
 
