@@ -111,12 +111,18 @@
         // Check if oduMessages has data for the selected mainCast, fallback if not
 
         const getOduMessageData = (mainCast, orientation, specificOrientation, solution, specificSolution) => {
-            return (
-                oduMessages[mainCast]?.[orientation]?.[specificOrientation]?.[solution]?.[specificSolution] ||
-                "No message available for the selected combination."
-            );
+            const orientationData = oduMessages[mainCast]?.[orientation];
+            const specificOrientationData = orientationData?.[specificOrientation];
+            const solutionData = specificOrientationData?.[solution]?.[specificSolution];
+            const messageData = orientationData?.[specificOrientation].Message;
+            
+            return {
+                message: messageData || "No message available ",
+                solutionInfo: solutionData || "No message available for the selected combination.",
+                orientationMessage: orientationData?.Messages || "No general message available for this orientation.",
+                specificOrientationMessage: specificOrientationData?.Message || "No message available for this specific orientation."
+            };
         };
-
 
         const updateSpecificOrientation = () => {
                 const orientation = document.getElementById("orientation").value;
@@ -161,10 +167,15 @@
         const solution = document.getElementById("solution").value;
         const solutionDetails = document.getElementById("solutionDetails").value;
 
-        const message = getOduMessageData(mainCast, orientation, specificOrientation, solution, solutionDetails);
+        // const message = getOduMessageData(mainCast, orientation, specificOrientation, solution, solutionDetails);
+
+        const { message, solutionInfo, orientationMessage, specificOrientationMessage } = 
+        getOduMessageData(mainCast, orientation, specificOrientation, solution, solutionDetails);
+
         const orisha = oduMessages[mainCast]?.Orisha || "No Orisha information available.";
         const taboo = oduMessages[mainCast]?.Taboo || "No Taboo information available.";
         const names = oduMessages[mainCast]?.Names || "No Names information available.";
+        const occupation = oduMessages[mainCast]?.Occupation || "No Occupation information available.";
         const credit = oduMessages[mainCast]?.Credit || "No Credit information available.";
 
         // Map orientation to descriptive text
@@ -174,10 +185,11 @@
         resultElement.innerHTML = `
             <h1 style="text-align: center;">Divination Result</h1>
             <h3 style="text-align: center;">${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}</h3>
-            <p><strong>Message:</strong> ${message}</p>
+            <p><strong>Message:</strong> ${message} ${solutionInfo} </p>
             <p><strong>Orisha:</strong> ${orisha}</p>
             <p><strong>Taboo:</strong> ${taboo}</p>
             <p><strong>Names:</strong> ${names}</p>
+            <p><strong>Occupation:</strong> ${occupation}</p>
             <p><strong>Credit:</strong> ${credit}</p>
         `;
         displayConfiguration(mainCast);
