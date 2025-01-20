@@ -117,8 +117,8 @@
             const messageData = orientationData?.[specificOrientation].Message;
             
             return {
-                message: messageData || "No message available ",
-                solutionInfo: solutionData || "No message available for the selected combination.",
+                message: messageData || "No message available &",
+                solutionInfo: solutionData || "no message available for the selected combination.",
                 orientationMessage: orientationData?.Messages || "No general message available for this orientation.",
                 specificOrientationMessage: specificOrientationData?.Message || "No message available for this specific orientation."
             };
