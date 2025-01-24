@@ -119,7 +119,7 @@
                     <!-- Buttons will be generated dynamically -->
                 </div>
                 <button id="random-btn">Allow Nature Speak</button>
-                <div id="result"></div>
+                <div id="result" style="display: none;"></div>
             </div>
         </div>
         <script type="text/javascript" src="oduMessages.js"></script>
@@ -318,6 +318,7 @@
         function displayMeaning(number, selectedButton) {
             const resultDiv = document.getElementById("result");
             const meaning = numerologyMeanings[number];
+
             resultDiv.innerHTML = `
                 <strong>Numerology Meaning:</strong> ${meaning.numerology}<br><br>
                 <strong>Astrological Influence:</strong> ${meaning.astrology}
@@ -330,6 +331,7 @@
 
             // Highlight the selected button
             selectedButton.classList.add("selected");
+            resultDiv.style.display = "inline-block";
         }
 
           // Function to simulate a random button click
