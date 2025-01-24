@@ -5,13 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature Speaks</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .calculator {
+            display: grid;
+            grid-template-columns: repeat(4, 50px);
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .calculator button {
+            padding: 15px;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .calculator button:hover {
+            background-color: #ddd;
+        }
+
+        .calculator button.selected {
+            background-color: red;
+            color: white;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            display: inline-block;
+            width: 80%;
+            max-width: 400px;
+            background-color: #f9f9f9;
+            color: #333;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
     <div class="container-fluid">
         <h1 style="text-align: center;">Nature Speaks</h1>
 
         <div class="row">
-            <div class="col-sm-3"></div>
+            <div id="configurationResult" class="col-sm-3">
+            </div>
             <div class="col-sm-6">
                 <h3 style="text-align: center;">Enter Your Divination Details</h3>
                 <label for="mainCast">Odu Ifa</label>
@@ -46,10 +97,16 @@
                     <!-- Result will be displayed here -->
                 </div>
             </div>
-            <div id="configurationResult" class="col-sm-3">
+            <div class="col-sm-3">
+                <h3>Click on any number to reveal its meaning to you.</h3>
+                <div class="calculator" id="calculator">
+                    <!-- Buttons will be generated dynamically -->
+                </div>
+                <div id="result"></div>
             </div>
         </div>
         <script type="text/javascript" src="oduMessages.js"></script>
+        <script type="text/javascript" src="numerology.js"></script>
     <script>
         
         // Base Odùs
@@ -202,7 +259,7 @@
     if (baseOdus[oduName]) {
         // For the first 16 Odùs
         const config = baseOdus[oduName];
-        configHTML = `<h2>Odu</h2>`;
+        configHTML = `<h2>Odu Ifa</h2>`;
         config.forEach(line => {
             configHTML += `<p>&nbsp;&nbsp;${line} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${line}</p>`;
         });
@@ -216,7 +273,7 @@
         const secondConfig = baseOdus[secondPart];
 
         if (firstConfig && secondConfig) {
-            configHTML = `<h2>Odu</h2>`;
+            configHTML = `<h2>Odu Ifa</h2>`;
             firstConfig.forEach((line, index) => {
                 configHTML += `<p>&nbsp;&nbsp;${secondConfig[index]} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${line}</p>`;
             });
@@ -230,6 +287,34 @@
 
         // Initialize on page load
         window.onload = populateDropdowns;
+
+        // Generate calculator buttons dynamically
+        const calculatorDiv = document.getElementById("calculator");
+        for (let i = 1; i <= 16; i++) {
+            const button = document.createElement("button");
+            button.textContent = i;
+            button.onclick = () => displayMeaning(i, button);
+            calculatorDiv.appendChild(button);
+        }
+
+        // Function to display Numerology and Astrological meaning and highlight the selected button
+        function displayMeaning(number, selectedButton) {
+            const resultDiv = document.getElementById("result");
+            const meaning = numerologyMeanings[number];
+            resultDiv.innerHTML = `
+                <strong>Numerology Meaning:</strong> ${meaning.numerology}<br><br>
+                <strong>Astrological Influence:</strong> ${meaning.astrology}
+            `;
+            resultDiv.style.color = "green";
+
+            // Reset all buttons to default
+            const buttons = calculatorDiv.querySelectorAll("button");
+            buttons.forEach(button => button.classList.remove("selected"));
+
+            // Highlight the selected button
+            selectedButton.classList.add("selected");
+        }
+
     </script>
 
     </div>
