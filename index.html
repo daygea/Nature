@@ -78,6 +78,7 @@
 
         <div class="row">
             <div id="configurationResult" class="col-sm-3">
+                <br><br> <iframe style="border-radius: 20px;" height="400vh" src="https://eyes.nasa.gov/apps/solar-system/#/earth?featured=false&detailPanel=false&logo=false&search=false&shareButton=false&menu=false&collapseSettingsOptions=true&hideFullScreenToggle=true&hideExternalLinks=true" allowfullscreen ></iframe></iframe>
             </div>
             <div class="col-sm-6">
                 <h3 style="text-align: center;">Enter Your Divination Details</h3>
@@ -280,6 +281,7 @@
         config.forEach(line => {
             configHTML += `<p>&nbsp;&nbsp;${line} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${line}</p>`;
         });
+        configHTML += `<br><iframe style="border-radius: 20px;" height="400vh" src="https://eyes.nasa.gov/apps/solar-system/#/earth?featured=false&detailPanel=false&logo=false&search=false&shareButton=false&menu=false&collapseSettingsOptions=true&hideFullScreenToggle=true&hideExternalLinks=true" allowfullscreen ></iframe></iframe>`;
     } else {
         // For combinations like "Ogbe Oyeku"
         const parts = oduName.split(" ");
@@ -294,6 +296,7 @@
             firstConfig.forEach((line, index) => {
                 configHTML += `<p>&nbsp;&nbsp;${secondConfig[index]} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${line}</p>`;
             });
+            configHTML += `<br><iframe style="border-radius: 20px;" height="400vh" src="https://eyes.nasa.gov/apps/solar-system/#/earth?featured=false&detailPanel=false&logo=false&search=false&shareButton=false&menu=false&collapseSettingsOptions=true&hideFullScreenToggle=true&hideExternalLinks=true" allowfullscreen ></iframe></iframe>`;
         } else {
             configHTML = `<h2>Odu</h2><p>Configuration not found for ${oduName}.</p>`;
         }
