@@ -54,6 +54,22 @@
             color: #333;
             font-size: 14px;
         }
+
+        #random-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #random-btn:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -98,10 +114,11 @@
                 </div>
             </div>
             <div class="col-sm-3">
-                <h3>Click on any number to reveal its meaning to you.</h3>
+                <h4>Click on any number to reveal its meaning to you.</h4>
                 <div class="calculator" id="calculator">
                     <!-- Buttons will be generated dynamically -->
                 </div>
+                <button id="random-btn">Allow Nature Speak</button>
                 <div id="result"></div>
             </div>
         </div>
@@ -314,6 +331,13 @@
             // Highlight the selected button
             selectedButton.classList.add("selected");
         }
+
+          // Function to simulate a random button click
+        document.getElementById("random-btn").onclick = () => {
+            const randomNum = Math.floor(Math.random() * 16) + 1;
+            const randomButton = calculatorDiv.children[randomNum - 1];
+            displayMeaning(randomNum, randomButton);
+        };
 
     </script>
 
