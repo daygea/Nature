@@ -6,10 +6,11 @@
     <title>Nature Speaks</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
  <style>
-        body {
+        .beauty {
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 30px;
+            font-size: 48px;
         }
 
         h1 {
@@ -70,6 +71,7 @@
         #random-btn:hover {
             background-color: #45a049;
         }
+
     </style>
 </head>
 <body>
@@ -77,8 +79,7 @@
         <h1 style="text-align: center;">Nature Speaks</h1>
 
         <div class="row">
-            <div id="configurationResult" class="col-sm-3">
-                <br><br> <iframe style="border-radius: 20px;" height="400vh" src="https://eyes.nasa.gov/apps/solar-system/#/earth?featured=false&detailPanel=false&logo=false&search=false&shareButton=false&menu=false&collapseSettingsOptions=true&hideFullScreenToggle=true&hideExternalLinks=true" allowfullscreen ></iframe></iframe>
+            <div id="configurationResult" class="col-sm-3 beauty">
             </div>
             <div class="col-sm-6">
                 <h3 style="text-align: center;">Enter Your Divination Details</h3>
@@ -114,7 +115,7 @@
                     <!-- Result will be displayed here -->
                 </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 beauty">
                 <h4>Click on any number to reveal its meaning.</h4>
                 <div class="calculator" id="calculator">
                     <!-- Buttons will be generated dynamically -->
@@ -271,44 +272,45 @@
     };
 
     const displayConfiguration = (oduName) => {
-    const configurationElement = document.getElementById("configurationResult");
-    let configHTML = "";
+            const configurationElement = document.getElementById("configurationResult");
+            let configHTML = "";
 
-    if (baseOdus[oduName]) {
-        // For the first 16 Odùs
-        const config = baseOdus[oduName];
-        configHTML = `<h2>Odu Ifa</h2>`;
-        config.forEach(line => {
-            configHTML += `<p>&nbsp;&nbsp;${line} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${line}</p>`;
-        });
-        configHTML += `<br><iframe style="border-radius: 20px;" height="400vh" src="https://eyes.nasa.gov/apps/solar-system/#/earth?featured=false&detailPanel=false&logo=false&search=false&shareButton=false&menu=false&collapseSettingsOptions=true&hideFullScreenToggle=true&hideExternalLinks=true" allowfullscreen ></iframe></iframe>`;
-    } else {
-        // For combinations like "Ogbe Oyeku"
-        const parts = oduName.split(" ");
-        const firstPart = parts[0] === "Ogbe" ? "Ejiogbe" : `${parts[0]} Meji`;
-        const secondPart = parts[1] === "Ogbe" ? "Ejiogbe" : `${parts[1]} Meji`;
+            if (baseOdus[oduName]) {
+                // For the first 16 Odùs
+                const config = baseOdus[oduName];
+                configHTML = `<h2></h2>`;
+                config.forEach(line => {
+                    configHTML += `<p>&nbsp;&nbsp;${line} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${line}</p>`;
+                });
+            } else {
+                // For combinations like "Ogbe Oyeku"
+                const parts = oduName.split(" ");
+                const firstPart = parts[0] === "Ogbe" ? "Ejiogbe" : `${parts[0]} Meji`;
+                const secondPart = parts[1] === "Ogbe" ? "Ejiogbe" : `${parts[1]} Meji`;
 
-        const firstConfig = baseOdus[firstPart];
-        const secondConfig = baseOdus[secondPart];
+                const firstConfig = baseOdus[firstPart];
+                const secondConfig = baseOdus[secondPart];
 
-        if (firstConfig && secondConfig) {
-            configHTML = `<h2>Odu Ifa</h2>`;
-            firstConfig.forEach((line, index) => {
-                configHTML += `<p>&nbsp;&nbsp;${secondConfig[index]} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${line}</p>`;
-            });
-            configHTML += `<br><iframe style="border-radius: 20px;" height="400vh" src="https://eyes.nasa.gov/apps/solar-system/#/earth?featured=false&detailPanel=false&logo=false&search=false&shareButton=false&menu=false&collapseSettingsOptions=true&hideFullScreenToggle=true&hideExternalLinks=true" allowfullscreen ></iframe></iframe>`;
-        } else {
-            configHTML = `<h2>Odu</h2><p>Configuration not found for ${oduName}.</p>`;
-        }
-    }
+                if (firstConfig && secondConfig) {
+                    configHTML = `<h2></h2>`;
+                    firstConfig.forEach((line, index) => {
+                        configHTML += `<p>&nbsp;&nbsp;${secondConfig[index]} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${line}</p>`;
+                    });
+                } else {
+                    configHTML = `<h2>Odu</h2><p>Configuration not found for ${oduName}.</p>`;
+                }
+            }
 
             configurationElement.innerHTML = configHTML;
+
         };
+
+
 
         // Initialize on page load
         window.onload = populateDropdowns;
 
-        // Generate calculator buttons dynamically
+        // Generate buttons dynamically for Numerology and Astrology
         const calculatorDiv = document.getElementById("calculator");
         for (let i = 1; i <= 16; i++) {
             const button = document.createElement("button");
