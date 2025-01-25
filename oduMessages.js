@@ -43,8 +43,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Ejiogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Ejiogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -56,8 +56,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Ejiogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Ejiogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -187,8 +187,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Oyeku creates an end to a cycle, leading to peace or transformation. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Oyeku creates an end to a cycle, leading to peace or transformation. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -200,8 +200,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Oyeku creates an end to a cycle, leading to peace or transformation. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Oyeku creates an end to a cycle, leading to peace or transformation. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -331,8 +331,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Iwori creates transformation and the fire of passion. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Iwori creates transformation and the fire of passion. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -344,8 +344,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Iwori creates transformation and the fire of passion. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Iwori creates transformation and the fire of passion. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -475,8 +475,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Idi creates rebirth and symbolizes creation from obsolete structures.. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Idi creates rebirth and symbolizes creation from obsolete structures.. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -488,8 +488,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Idi creates rebirth and symbolizes creation from obsolete structures. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Idi creates rebirth and symbolizes creation from obsolete structures. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -619,8 +619,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Irosun creates fulfillment of potential and highlights ancestral lineage. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Irosun creates fulfillment of potential and highlights ancestral lineage. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -632,8 +632,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Irosun creates fulfillment of potential and highlights ancestral lineage. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Irosun creates fulfillment of potential and highlights ancestral lineage. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -763,8 +763,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Owonrin creates unexpected change, representing chaos and adaptability. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Owonrin creates unexpected change, representing chaos and adaptability. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -776,8 +776,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Owonrin creates unexpected change, representing chaos and adaptability. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Owonrin creates unexpected change, representing chaos and adaptability. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -907,8 +907,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Obara creates inner transformation and growth by confronting egotism. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -920,8 +920,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Obara creates inner transformation and growth by confronting egotism. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -1051,8 +1051,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -1064,8 +1064,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -1195,8 +1195,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Ogunda creates the removal of obstacles and clearing paths for progress. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Ogunda creates the removal of obstacles and clearing paths for progress. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -1208,8 +1208,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Ogunda creates the removal of obstacles and clearing paths for progress. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Ogunda creates the removal of obstacles and clearing paths for progress. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -1339,8 +1339,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Osa creates radical change through external forces or personal upheaval. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Osa creates radical change through external forces or personal upheaval. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -1352,8 +1352,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Osa creates radical change through external forces or personal upheaval. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Osa creates radical change through external forces or personal upheaval. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -1483,8 +1483,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Ika creates development of personal power and protection through transformation. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Ika creates development of personal power and protection through transformation. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -1496,8 +1496,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Ika creates development of personal power and protection through transformation. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Ika creates development of personal power and protection through transformation. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -1627,8 +1627,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Oturupon creates the maintenance of health, cleansing through disease. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Oturupon creates the maintenance of health, cleansing through disease. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -1640,8 +1640,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Oturupon creates the maintenance of health, cleansing through disease. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Oturupon creates the maintenance of health, cleansing through disease. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -1771,8 +1771,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Otura creates mystic vision, aligning with destiny and Source. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Otura creates mystic vision, aligning with destiny and Source. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -1784,8 +1784,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Otura creates mystic vision, aligning with destiny and Source. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Otura creates mystic vision, aligning with destiny and Source. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -1915,8 +1915,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Irete creates determination, driving self-transformation and persistence. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Irete creates determination, driving self-transformation and persistence. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -1928,8 +1928,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Irete creates determination, driving self-transformation and persistence. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Irete creates determination, driving self-transformation and persistence. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -2059,8 +2059,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Ose creates abundance through prayer and symbolizes fertility. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Ose creates abundance through prayer and symbolizes fertility. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -2072,8 +2072,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Ose creates abundance through prayer and symbolizes fertility. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Ose creates abundance through prayer and symbolizes fertility. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -2203,8 +2203,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Ofun creates the answer to prayers manifesting as a miracle. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Ofun creates the answer to prayers manifesting as a miracle. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -2216,8 +2216,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Ofun creates the answer to prayers manifesting as a miracle. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Ofun creates the answer to prayers manifesting as a miracle. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -2347,8 +2347,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Oyeku creates an end to a cycle, leading to peace or transformation. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Oyeku creates an end to a cycle, leading to peace or transformation. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -2360,8 +2360,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Oyeku creates an end to a cycle, leading to peace or transformation. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Oyeku creates an end to a cycle, leading to peace or transformation. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -2491,8 +2491,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Iwori creates transformation and the fire of passion. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Iwori creates transformation and the fire of passion. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -2504,8 +2504,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Iwori creates transformation and the fire of passion. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Iwori creates transformation and the fire of passion. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -2635,8 +2635,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Idi creates rebirth and symbolizes creation from obsolete structures. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Idi creates rebirth and symbolizes creation from obsolete structures. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -2648,8 +2648,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Idi creates rebirth and symbolizes creation from obsolete structures. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Idi creates rebirth and symbolizes creation from obsolete structures. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -2779,8 +2779,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Irosun creates fulfillment of potential and highlights ancestral lineage. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Irosun creates fulfillment of potential and highlights ancestral lineage. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -2792,8 +2792,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Irosun creates fulfillment of potential and highlights ancestral lineage. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Irosun creates fulfillment of potential and highlights ancestral lineage. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -2923,8 +2923,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Owonrin creates unexpected change, representing chaos and adaptability. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Owonrin creates unexpected change, representing chaos and adaptability. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -2936,8 +2936,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Owonrin creates unexpected change, representing chaos and adaptability. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Owonrin creates unexpected change, representing chaos and adaptability. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -3067,8 +3067,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Obara creates inner transformation and growth by confronting egotism. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Obara creates inner transformation and growth by confronting egotism. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -3080,8 +3080,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Obara creates inner transformation and growth by confronting egotism. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Obara creates inner transformation and growth by confronting egotism. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -3211,8 +3211,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Okanran creates new directions and possibilities, harmonizing thought and emotion. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Okanran creates new directions and possibilities, harmonizing thought and emotion. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -3224,8 +3224,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. OOkanran creates new directions and possibilities, harmonizing thought and emotion. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. OOkanran creates new directions and possibilities, harmonizing thought and emotion. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -3355,8 +3355,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Ogunda creates the removal of obstacles and clearing paths for progress. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Ogunda creates the removal of obstacles and clearing paths for progress. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -3368,8 +3368,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Ogunda creates the removal of obstacles and clearing paths for progress. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Ogunda creates the removal of obstacles and clearing paths for progress. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
@@ -3499,8 +3499,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
                 }
             },
-            "Igbalese": {
-                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Osa creates radical change through external forces or personal upheaval. Igbalese (Stability) assures security and establishment in life.",
+            "Igbale Ese": {
+                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Osa creates radical change through external forces or personal upheaval. Igbale Ese (Stability) assures security and establishment in life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
                     "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
@@ -3512,8 +3512,8 @@ const oduMessages = {
                     "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
                 }
             },
-            "GbogboIre": {
-                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Osa creates radical change through external forces or personal upheaval. GbogboIre (All-round blessings) signifies universal success in all aspects of life.",
+            "Gbogbo Ire": {
+                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Osa creates radical change through external forces or personal upheaval. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
                     "Esha": "The Ebo of Esha ensures divine support in all pursuits."
