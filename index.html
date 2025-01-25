@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 30px;
-            font-size: 48px;
+            font-size: 30px;
         }
 
         h1 {
@@ -116,7 +116,7 @@
                 </div>
             </div>
             <div class="col-sm-3 beauty">
-                <h4>Click on any number to reveal its meaning.</h4>
+                <h4><b>Click on any number to reveal its meaning.</b></h4>
                 <div class="calculator" id="calculator">
                     <!-- Buttons will be generated dynamically -->
                 </div>
@@ -278,7 +278,7 @@
             if (baseOdus[oduName]) {
                 // For the first 16 Odùs
                 const config = baseOdus[oduName];
-                configHTML = `<h2></h2>`;
+                configHTML = `<h1><b>Odu Ifa</b></h1>`;
                 config.forEach(line => {
                     configHTML += `<p>&nbsp;&nbsp;${line} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${line}</p>`;
                 });
@@ -292,7 +292,7 @@
                 const secondConfig = baseOdus[secondPart];
 
                 if (firstConfig && secondConfig) {
-                    configHTML = `<h2></h2>`;
+                    configHTML = `<h1><b>Odu Ifa</b></h1>`;
                     firstConfig.forEach((line, index) => {
                         configHTML += `<p>&nbsp;&nbsp;${secondConfig[index]} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${line}</p>`;
                     });
