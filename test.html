@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numerology Birth Date Meaning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        #birthdate-box {
+            margin-bottom: 20px;
+        }
+
+        input[type="date"] {
+            width: 80%;
+            max-width: 250px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            font-size: 18px;
+            color: #333;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Numerology Birth Date Meaning</h1>
+    <p>Enter your birth date to discover your numerology number and its meaning.</p>
+
+    <div id="birthdate-box">
+        <input type="date" id="birthdate" />
+        <button id="determine-btn">Get Meaning</button>
+    </div>
+
+    <div id="result"></div>
+
+    <script>
+        // Numerology meanings based on single-digit life path numbers
+        const numerologyMeanings = {
+            1: "You are a natural-born leader, independent, ambitious, and full of energy. Ruled by the Sun.",
+            2: "You are intuitive, sensitive, and diplomatic. You thrive in partnerships. Ruled by the Moon.",
+            3: "You are creative, expressive, and optimistic. You love to communicate. Ruled by Jupiter.",
+            4: "You are disciplined, practical, and hardworking. Stability is your strength. Ruled by Saturn.",
+            5: "You are adventurous, dynamic, and free-spirited. Change is your best friend. Ruled by Mercury.",
+            6: "You are responsible, nurturing, and family-oriented. You bring harmony. Ruled by Venus.",
+            7: "You are analytical, introspective, and spiritual. Deep thinking defines you. Ruled by Neptune.",
+            8: "You are powerful, successful, and goal-driven. Money and authority attract you. Ruled by Saturn.",
+            9: "You are compassionate, wise, and idealistic. You care about humanity. Ruled by Mars."
+        };
+
+        // Function to calculate the single-digit numerology number
+        function getNumerologyNumber(dateString) {
+            let digits = dateString.replace(/[^0-9]/g, ""); // Remove non-numeric characters
+            let sum = digits.split("").reduce((acc, num) => acc + parseInt(num), 0);
+            
+            // Reduce to a single-digit number
+            while (sum > 9) {
+                sum = sum.toString().split("").reduce((acc, num) => acc + parseInt(num), 0);
+            }
+            
+            return sum;
+        }
+
+        // Handle button click to determine the meaning
+        document.getElementById("determine-btn").onclick = () => {
+            const birthdate = document.getElementById("birthdate").value;
+            const resultDiv = document.getElementById("result");
+
+            if (!birthdate) {
+                resultDiv.innerHTML = "<strong>Please enter your birth date.</strong>";
+                return;
+            }
+
+            // Get the single-digit numerology number
+            const numerologyNumber = getNumerologyNumber(birthdate);
+
+            // Display the result
+            resultDiv.innerHTML = `
+                <strong>Your Birth Date:</strong> ${birthdate}<br><br>
+                <strong>Your Numerology Number:</strong> ${numerologyNumber}<br>
+                <strong>Meaning:</strong> ${numerologyMeanings[numerologyNumber]}
+            `;
+        };
+    </script>
+</body>
+</html>

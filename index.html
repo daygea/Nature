@@ -6,54 +6,57 @@
     <title>Nature Speaks</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
  <style>
-        .beauty {
+        .beauty{
             font-family: Arial, sans-serif;
             text-align: center;
-            margin-top: 30px;
-            font-size: 30px;
+            margin-top: 20vh;
+            font-size: 20px;
         }
 
         h1 {
             margin-bottom: 20px;
         }
 
-        .calculator {
-            display: grid;
-            grid-template-columns: repeat(4, 50px);
-            gap: 10px;
-            justify-content: center;
-        }
+     #birthdate-box {
+                margin-bottom: 20px;
+            }
 
-        .calculator button {
-            padding: 15px;
-            font-size: 18px;
+       input[type="date"] {
+            width: 80%;
+            max-width: 250px;
+            padding: 10px;
+            font-size: 16px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            background-color: #f0f0f0;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
+        }    
 
-        .calculator button:hover {
-            background-color: #ddd;
-        }
-
-        .calculator button.selected {
-            background-color: red;
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4caf50;
             color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
         }
 
         #result {
-            margin-top: 20px;
-            padding: 15px;
+            margin-top: 30px;
+            padding: 20px;
             border: 1px solid #ccc;
             border-radius: 8px;
-            display: inline-block;
-            width: 80%;
-            max-width: 400px;
             background-color: #f9f9f9;
-            color: #333;
             font-size: 14px;
+            color: #333;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
         }
 
         #random-btn {
@@ -116,16 +119,17 @@
                 </div>
             </div>
             <div class="col-sm-3 beauty">
-                <h4><b>Click on any number to reveal its meaning.</b></h4>
-                <div class="calculator" id="calculator">
-                    <!-- Buttons will be generated dynamically -->
-                </div>
-                <button id="random-btn">Allow Nature Speak</button>
-                <div id="result"></div>
+                <p><b>Enter your birth date.</b></p>
+                    <div id="birthdate-box">
+                        <input type="date" id="birthdate" /><br/><br/>
+                        <button id="determine-btn">Get Meaning</button>
+                    </div>
+
+                    <div id="result"></div>
             </div>
         </div>
         <script type="text/javascript" src="oduMessages.js"></script>
-        <script type="text/javascript" src="numerology.js"></script>
+        <!-- <script type="text/javascript" src="numerology.js"></script> -->
     <script>
         
         // Base Odùs
@@ -310,38 +314,50 @@
         // Initialize on page load
         window.onload = populateDropdowns;
 
-        // Generate buttons dynamically for Numerology and Astrology
-        const calculatorDiv = document.getElementById("calculator");
-        for (let i = 1; i <= 16; i++) {
-            const button = document.createElement("button");
-            button.textContent = i;
-            button.onclick = () => displayMeaning(i, button);
-            calculatorDiv.appendChild(button);
+        // Numerology meanings based on single-digit life path numbers
+        const numerologyMeanings = {
+            1: "You are a natural-born leader, independent, ambitious, and full of energy. Ruled by the Sun.",
+            2: "You are intuitive, sensitive, and diplomatic. You thrive in partnerships. Ruled by the Moon.",
+            3: "You are creative, expressive, and optimistic. You love to communicate. Ruled by Jupiter.",
+            4: "You are disciplined, practical, and hardworking. Stability is your strength. Ruled by Saturn.",
+            5: "You are adventurous, dynamic, and free-spirited. Change is your best friend. Ruled by Mercury.",
+            6: "You are responsible, nurturing, and family-oriented. You bring harmony. Ruled by Venus.",
+            7: "You are analytical, introspective, and spiritual. Deep thinking defines you. Ruled by Neptune.",
+            8: "You are powerful, successful, and goal-driven. Money and authority attract you. Ruled by Saturn.",
+            9: "You are compassionate, wise, and idealistic. You care about humanity. Ruled by Mars."
+        };
+
+         // Function to calculate the single-digit numerology number
+        function getNumerologyNumber(dateString) {
+            let digits = dateString.replace(/[^0-9]/g, ""); // Remove non-numeric characters
+            let sum = digits.split("").reduce((acc, num) => acc + parseInt(num), 0);
+            
+            // Reduce to a single-digit number
+            while (sum > 9) {
+                sum = sum.toString().split("").reduce((acc, num) => acc + parseInt(num), 0);
+            }
+            
+            return sum;
         }
 
-        // Function to display Numerology and Astrological meaning and highlight the selected button
-        function displayMeaning(number, selectedButton) {
+        // Handle button click to determine the meaning
+        document.getElementById("determine-btn").onclick = () => {
+            const birthdate = document.getElementById("birthdate").value;
             const resultDiv = document.getElementById("result");
-            const meaning = numerologyMeanings[number];
+
+            if (!birthdate) {
+                resultDiv.innerHTML = "<strong>Select your birth date.</strong>";
+                return;
+            }
+
+            // Get the single-digit numerology number
+            const numerologyNumber = getNumerologyNumber(birthdate);
+
+            // Display the result
             resultDiv.innerHTML = `
-                <strong>Numerology Meaning:</strong> ${meaning.numerology}<br><br>
-                <strong>Astrological Influence:</strong> ${meaning.astrology}
+                <strong>Numerology No:</strong> ${numerologyNumber}<br>
+                ${numerologyMeanings[numerologyNumber]}
             `;
-            resultDiv.style.color = "green";
-
-            // Reset all buttons to default
-            const buttons = calculatorDiv.querySelectorAll("button");
-            buttons.forEach(button => button.classList.remove("selected"));
-
-            // Highlight the selected button
-            selectedButton.classList.add("selected");
-        }
-
-          // Function to simulate a random button click
-        document.getElementById("random-btn").onclick = () => {
-            const randomNum = Math.floor(Math.random() * 16) + 1;
-            const randomButton = calculatorDiv.children[randomNum - 1];
-            displayMeaning(randomNum, randomButton);
         };
 
     </script>
