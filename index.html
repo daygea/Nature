@@ -6,19 +6,24 @@
     <title>Nature Speaks</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
  <style>
-        .beauty{
+        .odusign{
             font-family: Arial, sans-serif;
             text-align: center;
-            margin-top: 20vh;
+/*            margin-top: 20vh;*/
             font-size: 20px;
         }
-
+        .numerology{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 10vh;
+            font-size: 20px;
+        }
         h1 {
             margin-bottom: 20px;
         }
 
      #birthdate-box {
-                margin-bottom: 20px;
+                margin-bottom: 10px;
             }
 
        input[type="date"] {
@@ -31,7 +36,6 @@
         }    
 
         button {
-            padding: 10px 20px;
             font-size: 16px;
             background-color: #4caf50;
             color: white;
@@ -82,7 +86,7 @@
         <h1 style="text-align: center;">Nature Speaks</h1>
 
         <div class="row">
-            <div id="configurationResult" class="col-sm-3 beauty">
+            <div id="configurationResult" class="col-sm-3 odusign">
             </div>
             <div class="col-sm-6">
                 <h3 style="text-align: center;">Enter Your Divination Details</h3>
@@ -118,11 +122,11 @@
                     <!-- Result will be displayed here -->
                 </div>
             </div>
-            <div class="col-sm-3 beauty">
+            <div class="col-sm-3 numerology">
                 <p><b>Enter your birth date.</b></p>
                     <div id="birthdate-box">
                         <input type="date" id="birthdate" /><br/><br/>
-                        <button id="determine-btn">Get Meaning</button>
+                        <button class="btn btn-md btn-primary" id="determine-btn">Get Meaning</button>
                     </div>
 
                     <div id="result"></div>
@@ -316,15 +320,15 @@
 
         // Numerology meanings based on single-digit life path numbers
         const numerologyMeanings = {
-            1: "You are a natural-born leader, independent, ambitious, and full of energy. Ruled by the Sun.",
-            2: "You are intuitive, sensitive, and diplomatic. You thrive in partnerships. Ruled by the Moon.",
-            3: "You are creative, expressive, and optimistic. You love to communicate. Ruled by Jupiter.",
-            4: "You are disciplined, practical, and hardworking. Stability is your strength. Ruled by Saturn.",
-            5: "You are adventurous, dynamic, and free-spirited. Change is your best friend. Ruled by Mercury.",
-            6: "You are responsible, nurturing, and family-oriented. You bring harmony. Ruled by Venus.",
-            7: "You are analytical, introspective, and spiritual. Deep thinking defines you. Ruled by Neptune.",
-            8: "You are powerful, successful, and goal-driven. Money and authority attract you. Ruled by Saturn.",
-            9: "You are compassionate, wise, and idealistic. You care about humanity. Ruled by Mars."
+            1: "Associated with beginnings, leadership, and creativity. You are ambitious and thrive when taking initiative. Ensure to start new things. You will travel alot. Take care of your head. Pray in water and use to rinse your head on the floor. Don't let your head hit the floor or anything. Ruled by the Sun. Reflects confidence, energy, and self-expression. Associated with Aries' fiery determination. ",
+            2: "Symbolizes balance, duality, and transformation. You are diplomatic and seek harmony in relationships. Prepare to embrace blessings. Start something small and it will grow into fruition. Ruled by the Moon. Associated with emotions and intuition. Linked to Cancer's nurturing nature.",
+            3: "Reflects communication, adaptability, and growth. You excel in communication and bring optimism to others. Get ready to embrace wealth. Ruled by Jupiter. Represents expansion and inspiration. Linked to Sagittarius' adventurous spirit.",
+            4: "Represents stability, security, and structure. You are grounded and value structure in life. Ensure to stay low key. Don't plan travelling this period. Ruled by Saturn. Represents discipline and responsibility. Associated with Capricorn's practical outlook.",
+            5: "Embodies freedom, exploration, and spiritual inquiry. You thrive in change and love to explore new possibilities. You will travel a lot. Be careful with divorce in your marriage. Ruled by Mercury. Represents quick thinking and versatility. Linked to Gemini's and Virgo's curious nature.",
+            6: "Focuses on harmony, love, and nurturing. You are caring and seek to create a harmonious home. This is a time for enjoyment and throwing/ attending parties. Ruled by Venus. Represents love and beauty. Associated with Taurus' stability and Libra's balance.",
+            7: "Tied to analysis, wisdom, and introspection. You are analytical and seek a deeper understanding of life. Be careful of prison and poison. Say more of positive things because the spirits are waiting to listen to you. Ruled by Neptune. Represents intuition and mysticism. Linked to Pisces' spiritual depth.",
+            8: "Indicates ambition, power, and material success. You are ambitious and have strong leadership qualities. This number deals with Karma. This is the time of blessings and achievement for someone that is rightous else all this blessings will be in the dream. Don't keep your money with people for returns or investment. Ruled by Saturn. Reflects discipline and mastery. Often tied to Capricorn's drive for achievement",
+            9: "Suggests humanitarianism, completion, and service. You are idealistic and seek to serve others. Avoid violent/conflict and take things easy to avoid disaster /destruction. Ruled by Mars. Represents passion and courage. Connected to Scorpio's transformative energy."
         };
 
          // Function to calculate the single-digit numerology number
@@ -346,7 +350,7 @@
             const resultDiv = document.getElementById("result");
 
             if (!birthdate) {
-                resultDiv.innerHTML = "<strong>Select your birth date.</strong>";
+                resultDiv.innerHTML = "<span style='color:red;'>Select your birth date.</span>";
                 return;
             }
 
@@ -355,7 +359,7 @@
 
             // Display the result
             resultDiv.innerHTML = `
-                <strong>Numerology No:</strong> ${numerologyNumber}<br>
+                <center><strong>Numerology No:</strong> ${numerologyNumber}</center><br/>
                 ${numerologyMeanings[numerologyNumber]}
             `;
         };
