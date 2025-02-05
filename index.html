@@ -256,11 +256,13 @@
         const { message, solutionInfo, orientationMessage, specificOrientationMessage } = 
         getOduMessageData(mainCast, orientation, specificOrientation, solution, solutionDetails);
 
-        const orisha = oduMessages[mainCast]?.Orisha || "No Orisha information available.";
-        const taboo = oduMessages[mainCast]?.Taboo || "No Taboo information available.";
-        const names = oduMessages[mainCast]?.Names || "No Names information available.";
-        const occupation = oduMessages[mainCast]?.Occupation || "No Occupation information available.";
+        const orisha = oduMessages[mainCast]?.Orisha || "No Orisha available.";
+        const taboo = oduMessages[mainCast]?.Taboo || "No Taboo available.";
+        const names = oduMessages[mainCast]?.Names || "No Names available.";
+        const occupation = oduMessages[mainCast]?.Occupation || "No Occupation available.";
         const credit = oduMessages[mainCast]?.Credit || "No Credit information available.";
+        const audio = oduMessages[mainCast]?.audioURL || "No Audio available.";
+        const video = oduMessages[mainCast]?.videoURL || "No Video available.";
 
         // Map orientation to descriptive text
         const orientationText = orientation === "Positive" ? "Ire" : "Ayewo";
@@ -269,12 +271,13 @@
         resultElement.innerHTML = `
             <h1 style="text-align: center;">Divination Result</h1>
             <h3 style="text-align: center;">${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}</h3>
-            <p><strong>Message:</strong> ${message} ${solutionInfo} </p>
+            <p>${message} ${solutionInfo} </p>
             <p><strong>Orisha:</strong> ${orisha}</p>
             <p><strong>Taboo:</strong> ${taboo}</p>
             <p><strong>Names:</strong> ${names}</p>
             <p><strong>Occupation:</strong> ${occupation}</p>
-            <p><strong>Credit:</strong> ${credit}</p>
+            <p><strong>Audio:</strong> ${audio}</p>
+            <p><strong>Video:</strong> ${video}</p>
         `;
         displayConfiguration(mainCast);
     };
