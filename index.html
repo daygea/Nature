@@ -133,7 +133,6 @@
             </div>
         </div>
         <script type="text/javascript" src="oduMessages.js"></script>
-        <!-- <script type="text/javascript" src="numerology.js"></script> -->
     <script>
         
         // Base Odùs
@@ -250,34 +249,32 @@
         const specificOrientation = document.getElementById("specificOrientation").value;
         const solution = document.getElementById("solution").value;
         const solutionDetails = document.getElementById("solutionDetails").value;
-
-        // const message = getOduMessageData(mainCast, orientation, specificOrientation, solution, solutionDetails);
-
         const { message, solutionInfo, orientationMessage, specificOrientationMessage } = 
         getOduMessageData(mainCast, orientation, specificOrientation, solution, solutionDetails);
-
-        const orisha = oduMessages[mainCast]?.Orisha || "No Orisha available.";
-        const taboo = oduMessages[mainCast]?.Taboo || "No Taboo available.";
-        const names = oduMessages[mainCast]?.Names || "No Names available.";
-        const occupation = oduMessages[mainCast]?.Occupation || "No Occupation available.";
-        const credit = oduMessages[mainCast]?.Credit || "No Credit information available.";
-        const audio = oduMessages[mainCast]?.audioURL || "No Audio available.";
-        const video = oduMessages[mainCast]?.videoURL || "No Video available.";
+        const orisha = oduMessages[mainCast]?.Orisha || "No orisha data available.";
+        const taboo = oduMessages[mainCast]?.Taboo || "No taboo data available.";
+        const names = oduMessages[mainCast]?.Names || "No names data available.";
+        const occupation = oduMessages[mainCast]?.Occupation || "No occupation data available.";
+        const credit = oduMessages[mainCast]?.Credit || "No credit data available.";
+        const audio = oduMessages[mainCast]?.audioURL || "No audio data available.";
+        const video = oduMessages[mainCast]?.videoURL || "No video data available.";
 
         // Map orientation to descriptive text
         const orientationText = orientation === "Positive" ? "Ire" : "Ayewo";
+        const orientationEmi = orientation === "Positive" ? "Awonranmaja" : "Ajagunmale";
 
         const resultElement = document.getElementById("divinationResult");
         resultElement.innerHTML = `
             <h1 style="text-align: center;">Divination Result</h1>
             <h3 style="text-align: center;">${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}</h3>
-            <p>${message} ${solutionInfo} </p>
+            <p>${message} ${solutionInfo} Achieved with ${orientationEmi} and ${specificOrientation} in the house of imole.</p>
             <p><strong>Orisha:</strong> ${orisha}</p>
             <p><strong>Taboo:</strong> ${taboo}</p>
             <p><strong>Names:</strong> ${names}</p>
             <p><strong>Occupation:</strong> ${occupation}</p>
             <p><strong>Audio:</strong> ${audio}</p>
             <p><strong>Video:</strong> ${video}</p>
+            <p><strong>Credit:</strong> ${credit}</p>
         `;
         displayConfiguration(mainCast);
     };
@@ -315,8 +312,6 @@
             configurationElement.innerHTML = configHTML;
 
         };
-
-
 
         // Initialize on page load
         window.onload = populateDropdowns;
@@ -368,16 +363,7 @@
 
             // Get the single-digit numerology number
             const numerologyNumber = getNumerologyNumber(birthdate);
-            
-
             resultDiv.style.display = "none";
-
-            // Display the result
-            // resultDiv.innerHTML = `
-            //     <center><strong>Numerology No:</strong> ${numerologyNumber}</center><br/>
-            //     ${numerologyMeanings[numerologyNumber]}
-            // `;
-
             const resultElement = document.getElementById("divinationResult");
             resultElement.innerHTML = `
                 <center><h1>Numerology No: ${numerologyNumber}</h1></center>
