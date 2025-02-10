@@ -3787,11 +3787,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -3933,11 +3933,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -4079,11 +4079,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -4226,11 +4226,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -4373,11 +4373,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -4519,11 +4519,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -4665,11 +4665,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -4812,11 +4812,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -4959,11 +4959,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -5106,11 +5106,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -5253,11 +5253,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -5399,11 +5399,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -5546,11 +5546,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -5693,11 +5693,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -5839,11 +5839,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -5986,11 +5986,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -6133,11 +6133,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -6280,11 +6280,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -6428,11 +6428,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -6575,11 +6575,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -6722,11 +6722,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -6869,11 +6869,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -7016,11 +7016,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -7163,11 +7163,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -7309,11 +7309,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -7456,11 +7456,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -7603,11 +7603,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -7751,11 +7751,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -7898,11 +7898,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -8045,11 +8045,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -8193,11 +8193,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -8340,11 +8340,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -8488,11 +8488,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -8635,11 +8635,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -8782,11 +8782,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -8929,11 +8929,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -9076,11 +9076,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -9222,11 +9222,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -9369,11 +9369,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -9516,11 +9516,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -9663,11 +9663,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -9810,11 +9810,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -9957,11 +9957,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -10104,11 +10104,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -10251,11 +10251,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -10398,11 +10398,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -10545,11 +10545,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -10692,11 +10692,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -10839,11 +10839,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -10986,11 +10986,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -11134,11 +11134,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -11281,11 +11281,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -11428,11 +11428,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -11575,11 +11575,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -11721,11 +11721,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -11868,11 +11868,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -12015,11 +12015,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -12162,11 +12162,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -12309,11 +12309,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -12456,11 +12456,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -12603,11 +12603,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -12751,11 +12751,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -12898,11 +12898,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -13046,11 +13046,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -13194,11 +13194,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -13342,11 +13342,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -13489,11 +13489,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -13636,11 +13636,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -13783,11 +13783,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -13930,11 +13930,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -14076,11 +14076,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -14223,11 +14223,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -14369,11 +14369,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -14515,11 +14515,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -14662,11 +14662,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -14808,11 +14808,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -14956,11 +14956,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -15103,11 +15103,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -15249,11 +15249,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -15396,11 +15396,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -15543,11 +15543,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -15690,11 +15690,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -15837,11 +15837,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -15984,11 +15984,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -16131,11 +16131,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -16278,11 +16278,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -16426,11 +16426,11 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -16572,11 +16572,1480 @@ const oduMessages = {
                 }
             }
         },
+        "alias":"",
         "Orisha": "",
         "Taboo": "",
         "Names": "",
         "Occupation": "",
-        "Credit": "",
+        "audioURL": "",
+        "videoURL": ""
+    },
+
+
+//Obara Ogunda
+
+    "Obara Ogunda": {
+        "Positive": {
+            "Aiku": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ogunda creates the removal of obstacles and clearing paths for progress. Aiku (Longevity) ensures a long and fulfilling life blessed with health and prosperity.",
+                "Ebo": {
+                    "Akoru": "Through the Ebo of Akoru, longevity and peace are guaranteed.",
+                    "Esha": "With the Ebo of Esha, long life filled with joy is assured."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori ensures alignment with destiny and long life.",
+                    "Osha": "The Adimu of Osha brings divine protection and prolonged life.",
+                    "Eegun": "The Adimu of Eegun invokes ancestral blessings for longevity.",
+                    "Ifa": "The Adimu of Ifa secures divine assurance of longevity."
+                }
+            },
+            "Aje": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ogunda creates the removal of obstacles and clearing paths for progress. Aje (Wealth) foretells financial stability and material success.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru promises unexpected wealth.",
+                    "Esha": "The Ebo of Esha paves the way for financial growth."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori ensures prosperity and abundant wealth.",
+                    "Osha": "The Adimu of Osha aligns your business ventures for success.",
+                    "Eegun": "The Adimu of Eegun invokes wealth from ancestral blessings.",
+                    "Ifa": "The Adimu of Ifa guarantees material and spiritual abundance."
+                }
+            },
+            "Isegun": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ogunda creates the removal of obstacles and clearing paths for progress. Isegun (Victory) signifies triumph over challenges and adversaries.",
+                "Ebo": {
+                    "Akoru": "Victory in battles is ensured through the Ebo of Akoru.",
+                    "Esha": "The Ebo of Esha guarantees overcoming obstacles."
+                },
+                "Adimu": {
+                    "Ori": "With the Adimu of Ori, you will conquer all opposition.",
+                    "Osha": "The Adimu of Osha ensures victory through divine intervention.",
+                    "Eegun": "The Adimu of Eegun grants triumph via ancestral strength.",
+                    "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
+                }
+            },
+            "Igbale Ese": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ogunda creates the removal of obstacles and clearing paths for progress. Igbale Ese (Stability) assures security and establishment in life.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
+                    "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori guarantees a solid foundation for success.",
+                    "Osha": "The Adimu of Osha strengthens your endeavors.",
+                    "Eegun": "The Adimu of Eegun ensures lasting stability through ancestral backing.",
+                    "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
+                }
+            },
+            "Gbogbo Ire": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ogunda creates the removal of obstacles and clearing paths for progress. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
+                    "Esha": "The Ebo of Esha ensures divine support in all pursuits."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori aligns all-round success with your destiny.",
+                    "Osha": "The Adimu of Osha ensures blessings in all facets of life.",
+                    "Eegun": "The Adimu of Eegun invokes ancestral approval for comprehensive blessings.",
+                    "Ifa": "The Adimu of Ifa promises divine alignment for success everywhere."
+                }
+            }
+        },
+        "Negative": {
+            "Iku": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ogunda creates the removal of obstacles and clearing paths for progress. Iku (Death) warns of potential danger to life, requiring spiritual protection.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru ensures protection against untimely death.",
+                    "Esha": "The Ebo of Esha wards off fatal threats."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori safeguards life from harm.",
+                    "Osha": "The Adimu of Osha offers divine protection.",
+                    "Eegun": "The Adimu of Eegun invokes ancestors to shield you from death.",
+                    "Ifa": "The Adimu of Ifa provides spiritual guidance to avoid death."
+                }
+            },
+            "Arun": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ogunda creates the removal of obstacles and clearing paths for progress. Arun (Illness) calls for healing and recovery from all ailments.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru brings quick recovery.",
+                    "Esha": "The Ebo of Esha restores health and vitality."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori promotes emotional and physical healing.",
+                    "Osha": "The Adimu of Osha removes all forms of illness.",
+                    "Eegun": "The Adimu of Eegun ensures protection from recurring sickness.",
+                    "Ifa": "The Adimu of Ifa guarantees total wellness."
+                }
+            },
+            "Ejo": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ogunda creates the removal of obstacles and clearing paths for progress. Ejo (Conflict) highlights disputes that need resolution and peace.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru resolves conflicts and ensures harmony.",
+                    "Esha": "The Ebo of Esha prevents future disputes."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori promotes peaceful resolution.",
+                    "Osha": "The Adimu of Osha restores balance and understanding.",
+                    "Eegun": "The Adimu of Eegun prevents conflicts through ancestral intervention.",
+                    "Ifa": "The Adimu of Ifa grants wisdom to overcome disputes."
+                }
+            },
+            "Ofo": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ogunda creates the removal of obstacles and clearing paths for progress. Ofo (Loss) warns of potential loss, urging caution and spiritual support.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru mitigates losses.",
+                    "Esha": "The Ebo of Esha ensures recovery from any setbacks."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori protects your resources from loss.",
+                    "Osha": "The Adimu of Osha ensures stability in your wealth.",
+                    "Eegun": "The Adimu of Eegun brings ancestral intervention to prevent loss.",
+                    "Ifa": "The Adimu of Ifa secures your path against loss."
+                }
+            },
+            "Okutagbunilese": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ogunda creates the removal of obstacles and clearing paths for progress. Okutagbunilese (Unresolved problems) emphasizes hidden challenges requiring focus and spiritual assistance.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru unravels hidden challenges.",
+                    "Esha": "The Ebo of Esha resolves lingering issues."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori uncovers and resolves mysteries.",
+                    "Osha": "The Adimu of Osha addresses unresolved challenges.",
+                    "Eegun": "The Adimu of Eegun clears obstacles through ancestral guidance.",
+                    "Ifa": "The Adimu of Ifa ensures divine intervention in untangling issues."
+                }
+            }
+        },
+        "alias":"",
+        "Orisha": "",
+        "Taboo": "",
+        "Names": "",
+        "Occupation": "",
+        "audioURL": "",
+        "videoURL": ""
+    },
+
+//Obara Osa
+
+    "Obara Osa": {
+        "Positive": {
+            "Aiku": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Osa creates radical change through external forces or personal upheaval. Aiku (Longevity) ensures a long and fulfilling life blessed with health and prosperity.",
+                "Ebo": {
+                    "Akoru": "Through the Ebo of Akoru, longevity and peace are guaranteed.",
+                    "Esha": "With the Ebo of Esha, long life filled with joy is assured."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori ensures alignment with destiny and long life.",
+                    "Osha": "The Adimu of Osha brings divine protection and prolonged life.",
+                    "Eegun": "The Adimu of Eegun invokes ancestral blessings for longevity.",
+                    "Ifa": "The Adimu of Ifa secures divine assurance of longevity."
+                }
+            },
+            "Aje": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Osa creates radical change through external forces or personal upheaval. Aje (Wealth) foretells financial stability and material success.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru promises unexpected wealth.",
+                    "Esha": "The Ebo of Esha paves the way for financial growth."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori ensures prosperity and abundant wealth.",
+                    "Osha": "The Adimu of Osha aligns your business ventures for success.",
+                    "Eegun": "The Adimu of Eegun invokes wealth from ancestral blessings.",
+                    "Ifa": "The Adimu of Ifa guarantees material and spiritual abundance."
+                }
+            },
+            "Isegun": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Osa creates radical change through external forces or personal upheaval. Isegun (Victory) signifies triumph over challenges and adversaries.",
+                "Ebo": {
+                    "Akoru": "Victory in battles is ensured through the Ebo of Akoru.",
+                    "Esha": "The Ebo of Esha guarantees overcoming obstacles."
+                },
+                "Adimu": {
+                    "Ori": "With the Adimu of Ori, you will conquer all opposition.",
+                    "Osha": "The Adimu of Osha ensures victory through divine intervention.",
+                    "Eegun": "The Adimu of Eegun grants triumph via ancestral strength.",
+                    "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
+                }
+            },
+            "Igbale Ese": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Osa creates radical change through external forces or personal upheaval. Igbale Ese (Stability) assures security and establishment in life.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
+                    "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori guarantees a solid foundation for success.",
+                    "Osha": "The Adimu of Osha strengthens your endeavors.",
+                    "Eegun": "The Adimu of Eegun ensures lasting stability through ancestral backing.",
+                    "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
+                }
+            },
+            "Gbogbo Ire": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Osa creates radical change through external forces or personal upheaval. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
+                    "Esha": "The Ebo of Esha ensures divine support in all pursuits."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori aligns all-round success with your destiny.",
+                    "Osha": "The Adimu of Osha ensures blessings in all facets of life.",
+                    "Eegun": "The Adimu of Eegun invokes ancestral approval for comprehensive blessings.",
+                    "Ifa": "The Adimu of Ifa promises divine alignment for success everywhere."
+                }
+            }
+        },
+        "Negative": {
+            "Iku": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Osa creates radical change through external forces or personal upheaval. Iku (Death) warns of potential danger to life, requiring spiritual protection.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru ensures protection against untimely death.",
+                    "Esha": "The Ebo of Esha wards off fatal threats."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori safeguards life from harm.",
+                    "Osha": "The Adimu of Osha offers divine protection.",
+                    "Eegun": "The Adimu of Eegun invokes ancestors to shield you from death.",
+                    "Ifa": "The Adimu of Ifa provides spiritual guidance to avoid death."
+                }
+            },
+            "Arun": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Osa creates radical change through external forces or personal upheaval. Arun (Illness) calls for healing and recovery from all ailments.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru brings quick recovery.",
+                    "Esha": "The Ebo of Esha restores health and vitality."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori promotes emotional and physical healing.",
+                    "Osha": "The Adimu of Osha removes all forms of illness.",
+                    "Eegun": "The Adimu of Eegun ensures protection from recurring sickness.",
+                    "Ifa": "The Adimu of Ifa guarantees total wellness."
+                }
+            },
+            "Ejo": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Osa creates radical change through external forces or personal upheaval. Ejo (Conflict) highlights disputes that need resolution and peace.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru resolves conflicts and ensures harmony.",
+                    "Esha": "The Ebo of Esha prevents future disputes."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori promotes peaceful resolution.",
+                    "Osha": "The Adimu of Osha restores balance and understanding.",
+                    "Eegun": "The Adimu of Eegun prevents conflicts through ancestral intervention.",
+                    "Ifa": "The Adimu of Ifa grants wisdom to overcome disputes."
+                }
+            },
+            "Ofo": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Osa creates radical change through external forces or personal upheaval. Ofo (Loss) warns of potential loss, urging caution and spiritual support.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru mitigates losses.",
+                    "Esha": "The Ebo of Esha ensures recovery from any setbacks."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori protects your resources from loss.",
+                    "Osha": "The Adimu of Osha ensures stability in your wealth.",
+                    "Eegun": "The Adimu of Eegun brings ancestral intervention to prevent loss.",
+                    "Ifa": "The Adimu of Ifa secures your path against loss."
+                }
+            },
+            "Okutagbunilese": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Osa creates radical change through external forces or personal upheaval. Okutagbunilese (Unresolved problems) emphasizes hidden challenges requiring focus and spiritual assistance.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru unravels hidden challenges.",
+                    "Esha": "The Ebo of Esha resolves lingering issues."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori uncovers and resolves mysteries.",
+                    "Osha": "The Adimu of Osha addresses unresolved challenges.",
+                    "Eegun": "The Adimu of Eegun clears obstacles through ancestral guidance.",
+                    "Ifa": "The Adimu of Ifa ensures divine intervention in untangling issues."
+                }
+            }
+        },
+        "alias":"",
+        "Orisha": "",
+        "Taboo": "",
+        "Names": "",
+        "Occupation": "",
+        "audioURL": "",
+        "videoURL": ""
+    },
+
+
+//Obara Ika
+
+    "Obara Ika": {
+        "Positive": {
+            "Aiku": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ika creates development of personal power and protection through transformation. Aiku (Longevity) ensures a long and fulfilling life blessed with health and prosperity.",
+                "Ebo": {
+                    "Akoru": "Through the Ebo of Akoru, longevity and peace are guaranteed.",
+                    "Esha": "With the Ebo of Esha, long life filled with joy is assured."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori ensures alignment with destiny and long life.",
+                    "Osha": "The Adimu of Osha brings divine protection and prolonged life.",
+                    "Eegun": "The Adimu of Eegun invokes ancestral blessings for longevity.",
+                    "Ifa": "The Adimu of Ifa secures divine assurance of longevity."
+                }
+            },
+            "Aje": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ika creates development of personal power and protection through transformation. Aje (Wealth) foretells financial stability and material success.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru promises unexpected wealth.",
+                    "Esha": "The Ebo of Esha paves the way for financial growth."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori ensures prosperity and abundant wealth.",
+                    "Osha": "The Adimu of Osha aligns your business ventures for success.",
+                    "Eegun": "The Adimu of Eegun invokes wealth from ancestral blessings.",
+                    "Ifa": "The Adimu of Ifa guarantees material and spiritual abundance."
+                }
+            },
+            "Isegun": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ika creates development of personal power and protection through transformation. Isegun (Victory) signifies triumph over challenges and adversaries.",
+                "Ebo": {
+                    "Akoru": "Victory in battles is ensured through the Ebo of Akoru.",
+                    "Esha": "The Ebo of Esha guarantees overcoming obstacles."
+                },
+                "Adimu": {
+                    "Ori": "With the Adimu of Ori, you will conquer all opposition.",
+                    "Osha": "The Adimu of Osha ensures victory through divine intervention.",
+                    "Eegun": "The Adimu of Eegun grants triumph via ancestral strength.",
+                    "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
+                }
+            },
+            "Igbale Ese": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ika creates development of personal power and protection through transformation. Igbale Ese (Stability) assures security and establishment in life.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
+                    "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori guarantees a solid foundation for success.",
+                    "Osha": "The Adimu of Osha strengthens your endeavors.",
+                    "Eegun": "The Adimu of Eegun ensures lasting stability through ancestral backing.",
+                    "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
+                }
+            },
+            "Gbogbo Ire": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ika creates development of personal power and protection through transformation. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
+                    "Esha": "The Ebo of Esha ensures divine support in all pursuits."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori aligns all-round success with your destiny.",
+                    "Osha": "The Adimu of Osha ensures blessings in all facets of life.",
+                    "Eegun": "The Adimu of Eegun invokes ancestral approval for comprehensive blessings.",
+                    "Ifa": "The Adimu of Ifa promises divine alignment for success everywhere."
+                }
+            }
+        },
+        "Negative": {
+            "Iku": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ika creates development of personal power and protection through transformation. Iku (Death) warns of potential danger to life, requiring spiritual protection.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru ensures protection against untimely death.",
+                    "Esha": "The Ebo of Esha wards off fatal threats."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori safeguards life from harm.",
+                    "Osha": "The Adimu of Osha offers divine protection.",
+                    "Eegun": "The Adimu of Eegun invokes ancestors to shield you from death.",
+                    "Ifa": "The Adimu of Ifa provides spiritual guidance to avoid death."
+                }
+            },
+            "Arun": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ika creates development of personal power and protection through transformation. Arun (Illness) calls for healing and recovery from all ailments.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru brings quick recovery.",
+                    "Esha": "The Ebo of Esha restores health and vitality."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori promotes emotional and physical healing.",
+                    "Osha": "The Adimu of Osha removes all forms of illness.",
+                    "Eegun": "The Adimu of Eegun ensures protection from recurring sickness.",
+                    "Ifa": "The Adimu of Ifa guarantees total wellness."
+                }
+            },
+            "Ejo": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ika creates development of personal power and protection through transformation. Ejo (Conflict) highlights disputes that need resolution and peace.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru resolves conflicts and ensures harmony.",
+                    "Esha": "The Ebo of Esha prevents future disputes."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori promotes peaceful resolution.",
+                    "Osha": "The Adimu of Osha restores balance and understanding.",
+                    "Eegun": "The Adimu of Eegun prevents conflicts through ancestral intervention.",
+                    "Ifa": "The Adimu of Ifa grants wisdom to overcome disputes."
+                }
+            },
+            "Ofo": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ika creates development of personal power and protection through transformation. Ofo (Loss) warns of potential loss, urging caution and spiritual support.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru mitigates losses.",
+                    "Esha": "The Ebo of Esha ensures recovery from any setbacks."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori protects your resources from loss.",
+                    "Osha": "The Adimu of Osha ensures stability in your wealth.",
+                    "Eegun": "The Adimu of Eegun brings ancestral intervention to prevent loss.",
+                    "Ifa": "The Adimu of Ifa secures your path against loss."
+                }
+            },
+            "Okutagbunilese": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ika creates development of personal power and protection through transformation. Okutagbunilese (Unresolved problems) emphasizes hidden challenges requiring focus and spiritual assistance.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru unravels hidden challenges.",
+                    "Esha": "The Ebo of Esha resolves lingering issues."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori uncovers and resolves mysteries.",
+                    "Osha": "The Adimu of Osha addresses unresolved challenges.",
+                    "Eegun": "The Adimu of Eegun clears obstacles through ancestral guidance.",
+                    "Ifa": "The Adimu of Ifa ensures divine intervention in untangling issues."
+                }
+            }
+        },
+        "alias":"",
+        "Orisha": "",
+        "Taboo": "",
+        "Names": "",
+        "Occupation": "",
+        "audioURL": "",
+        "videoURL": ""
+    },
+
+
+
+//Obara Oturupon
+
+    "Obara Oturupon": {
+        "Positive": {
+            "Aiku": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Oturupon creates the maintenance of health, cleansing through disease. Aiku (Longevity) ensures a long and fulfilling life blessed with health and prosperity.",
+                "Ebo": {
+                    "Akoru": "Through the Ebo of Akoru, longevity and peace are guaranteed.",
+                    "Esha": "With the Ebo of Esha, long life filled with joy is assured."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori ensures alignment with destiny and long life.",
+                    "Osha": "The Adimu of Osha brings divine protection and prolonged life.",
+                    "Eegun": "The Adimu of Eegun invokes ancestral blessings for longevity.",
+                    "Ifa": "The Adimu of Ifa secures divine assurance of longevity."
+                }
+            },
+            "Aje": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Oturupon creates the maintenance of health, cleansing through disease. Aje (Wealth) foretells financial stability and material success.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru promises unexpected wealth.",
+                    "Esha": "The Ebo of Esha paves the way for financial growth."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori ensures prosperity and abundant wealth.",
+                    "Osha": "The Adimu of Osha aligns your business ventures for success.",
+                    "Eegun": "The Adimu of Eegun invokes wealth from ancestral blessings.",
+                    "Ifa": "The Adimu of Ifa guarantees material and spiritual abundance."
+                }
+            },
+            "Isegun": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Oturupon creates the maintenance of health, cleansing through disease. Isegun (Victory) signifies triumph over challenges and adversaries.",
+                "Ebo": {
+                    "Akoru": "Victory in battles is ensured through the Ebo of Akoru.",
+                    "Esha": "The Ebo of Esha guarantees overcoming obstacles."
+                },
+                "Adimu": {
+                    "Ori": "With the Adimu of Ori, you will conquer all opposition.",
+                    "Osha": "The Adimu of Osha ensures victory through divine intervention.",
+                    "Eegun": "The Adimu of Eegun grants triumph via ancestral strength.",
+                    "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
+                }
+            },
+            "Igbale Ese": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Oturupon creates the maintenance of health, cleansing through disease. Igbale Ese (Stability) assures security and establishment in life.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
+                    "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori guarantees a solid foundation for success.",
+                    "Osha": "The Adimu of Osha strengthens your endeavors.",
+                    "Eegun": "The Adimu of Eegun ensures lasting stability through ancestral backing.",
+                    "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
+                }
+            },
+            "Gbogbo Ire": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Oturupon creates the maintenance of health, cleansing through disease. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
+                    "Esha": "The Ebo of Esha ensures divine support in all pursuits."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori aligns all-round success with your destiny.",
+                    "Osha": "The Adimu of Osha ensures blessings in all facets of life.",
+                    "Eegun": "The Adimu of Eegun invokes ancestral approval for comprehensive blessings.",
+                    "Ifa": "The Adimu of Ifa promises divine alignment for success everywhere."
+                }
+            }
+        },
+        "Negative": {
+            "Iku": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Oturupon creates the maintenance of health, cleansing through disease. Iku (Death) warns of potential danger to life, requiring spiritual protection.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru ensures protection against untimely death.",
+                    "Esha": "The Ebo of Esha wards off fatal threats."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori safeguards life from harm.",
+                    "Osha": "The Adimu of Osha offers divine protection.",
+                    "Eegun": "The Adimu of Eegun invokes ancestors to shield you from death.",
+                    "Ifa": "The Adimu of Ifa provides spiritual guidance to avoid death."
+                }
+            },
+            "Arun": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Oturupon creates the maintenance of health, cleansing through disease. Arun (Illness) calls for healing and recovery from all ailments.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru brings quick recovery.",
+                    "Esha": "The Ebo of Esha restores health and vitality."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori promotes emotional and physical healing.",
+                    "Osha": "The Adimu of Osha removes all forms of illness.",
+                    "Eegun": "The Adimu of Eegun ensures protection from recurring sickness.",
+                    "Ifa": "The Adimu of Ifa guarantees total wellness."
+                }
+            },
+            "Ejo": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Oturupon creates the maintenance of health, cleansing through disease. Ejo (Conflict) highlights disputes that need resolution and peace.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru resolves conflicts and ensures harmony.",
+                    "Esha": "The Ebo of Esha prevents future disputes."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori promotes peaceful resolution.",
+                    "Osha": "The Adimu of Osha restores balance and understanding.",
+                    "Eegun": "The Adimu of Eegun prevents conflicts through ancestral intervention.",
+                    "Ifa": "The Adimu of Ifa grants wisdom to overcome disputes."
+                }
+            },
+            "Ofo": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Oturupon creates the maintenance of health, cleansing through disease. Ofo (Loss) warns of potential loss, urging caution and spiritual support.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru mitigates losses.",
+                    "Esha": "The Ebo of Esha ensures recovery from any setbacks."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori protects your resources from loss.",
+                    "Osha": "The Adimu of Osha ensures stability in your wealth.",
+                    "Eegun": "The Adimu of Eegun brings ancestral intervention to prevent loss.",
+                    "Ifa": "The Adimu of Ifa secures your path against loss."
+                }
+            },
+            "Okutagbunilese": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Oturupon creates the maintenance of health, cleansing through disease. Okutagbunilese (Unresolved problems) emphasizes hidden challenges requiring focus and spiritual assistance.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru unravels hidden challenges.",
+                    "Esha": "The Ebo of Esha resolves lingering issues."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori uncovers and resolves mysteries.",
+                    "Osha": "The Adimu of Osha addresses unresolved challenges.",
+                    "Eegun": "The Adimu of Eegun clears obstacles through ancestral guidance.",
+                    "Ifa": "The Adimu of Ifa ensures divine intervention in untangling issues."
+                }
+            }
+        },
+        "alias":"",
+        "Orisha": "",
+        "Taboo": "",
+        "Names": "",
+        "Occupation": "",
+        "audioURL": "",
+        "videoURL": ""
+    },
+
+
+//Obara Otura
+
+    "Obara Otura": {
+        "Positive": {
+            "Aiku": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Otura creates mystic vision, aligning with destiny and Source. Aiku (Longevity) ensures a long and fulfilling life blessed with health and prosperity.",
+                "Ebo": {
+                    "Akoru": "Through the Ebo of Akoru, longevity and peace are guaranteed.",
+                    "Esha": "With the Ebo of Esha, long life filled with joy is assured."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori ensures alignment with destiny and long life.",
+                    "Osha": "The Adimu of Osha brings divine protection and prolonged life.",
+                    "Eegun": "The Adimu of Eegun invokes ancestral blessings for longevity.",
+                    "Ifa": "The Adimu of Ifa secures divine assurance of longevity."
+                }
+            },
+            "Aje": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Otura creates mystic vision, aligning with destiny and Source. Aje (Wealth) foretells financial stability and material success.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru promises unexpected wealth.",
+                    "Esha": "The Ebo of Esha paves the way for financial growth."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori ensures prosperity and abundant wealth.",
+                    "Osha": "The Adimu of Osha aligns your business ventures for success.",
+                    "Eegun": "The Adimu of Eegun invokes wealth from ancestral blessings.",
+                    "Ifa": "The Adimu of Ifa guarantees material and spiritual abundance."
+                }
+            },
+            "Isegun": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Otura creates mystic vision, aligning with destiny and Source. Isegun (Victory) signifies triumph over challenges and adversaries.",
+                "Ebo": {
+                    "Akoru": "Victory in battles is ensured through the Ebo of Akoru.",
+                    "Esha": "The Ebo of Esha guarantees overcoming obstacles."
+                },
+                "Adimu": {
+                    "Ori": "With the Adimu of Ori, you will conquer all opposition.",
+                    "Osha": "The Adimu of Osha ensures victory through divine intervention.",
+                    "Eegun": "The Adimu of Eegun grants triumph via ancestral strength.",
+                    "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
+                }
+            },
+            "Igbale Ese": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Otura creates mystic vision, aligning with destiny and Source. Igbale Ese (Stability) assures security and establishment in life.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
+                    "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori guarantees a solid foundation for success.",
+                    "Osha": "The Adimu of Osha strengthens your endeavors.",
+                    "Eegun": "The Adimu of Eegun ensures lasting stability through ancestral backing.",
+                    "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
+                }
+            },
+            "Gbogbo Ire": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Otura creates mystic vision, aligning with destiny and Source. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
+                    "Esha": "The Ebo of Esha ensures divine support in all pursuits."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori aligns all-round success with your destiny.",
+                    "Osha": "The Adimu of Osha ensures blessings in all facets of life.",
+                    "Eegun": "The Adimu of Eegun invokes ancestral approval for comprehensive blessings.",
+                    "Ifa": "The Adimu of Ifa promises divine alignment for success everywhere."
+                }
+            }
+        },
+        "Negative": {
+            "Iku": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Otura creates mystic vision, aligning with destiny and Source. Iku (Death) warns of potential danger to life, requiring spiritual protection.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru ensures protection against untimely death.",
+                    "Esha": "The Ebo of Esha wards off fatal threats."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori safeguards life from harm.",
+                    "Osha": "The Adimu of Osha offers divine protection.",
+                    "Eegun": "The Adimu of Eegun invokes ancestors to shield you from death.",
+                    "Ifa": "The Adimu of Ifa provides spiritual guidance to avoid death."
+                }
+            },
+            "Arun": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Otura creates mystic vision, aligning with destiny and Source. Arun (Illness) calls for healing and recovery from all ailments.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru brings quick recovery.",
+                    "Esha": "The Ebo of Esha restores health and vitality."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori promotes emotional and physical healing.",
+                    "Osha": "The Adimu of Osha removes all forms of illness.",
+                    "Eegun": "The Adimu of Eegun ensures protection from recurring sickness.",
+                    "Ifa": "The Adimu of Ifa guarantees total wellness."
+                }
+            },
+            "Ejo": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Otura creates mystic vision, aligning with destiny and Source. Ejo (Conflict) highlights disputes that need resolution and peace.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru resolves conflicts and ensures harmony.",
+                    "Esha": "The Ebo of Esha prevents future disputes."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori promotes peaceful resolution.",
+                    "Osha": "The Adimu of Osha restores balance and understanding.",
+                    "Eegun": "The Adimu of Eegun prevents conflicts through ancestral intervention.",
+                    "Ifa": "The Adimu of Ifa grants wisdom to overcome disputes."
+                }
+            },
+            "Ofo": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Otura creates mystic vision, aligning with destiny and Source. Ofo (Loss) warns of potential loss, urging caution and spiritual support.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru mitigates losses.",
+                    "Esha": "The Ebo of Esha ensures recovery from any setbacks."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori protects your resources from loss.",
+                    "Osha": "The Adimu of Osha ensures stability in your wealth.",
+                    "Eegun": "The Adimu of Eegun brings ancestral intervention to prevent loss.",
+                    "Ifa": "The Adimu of Ifa secures your path against loss."
+                }
+            },
+            "Okutagbunilese": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Otura creates mystic vision, aligning with destiny and Source. Okutagbunilese (Unresolved problems) emphasizes hidden challenges requiring focus and spiritual assistance.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru unravels hidden challenges.",
+                    "Esha": "The Ebo of Esha resolves lingering issues."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori uncovers and resolves mysteries.",
+                    "Osha": "The Adimu of Osha addresses unresolved challenges.",
+                    "Eegun": "The Adimu of Eegun clears obstacles through ancestral guidance.",
+                    "Ifa": "The Adimu of Ifa ensures divine intervention in untangling issues."
+                }
+            }
+        },
+        "alias":"",
+        "Orisha": "",
+        "Taboo": "",
+        "Names": "",
+        "Occupation": "",
+        "audioURL": "",
+        "videoURL": ""
+    },
+
+
+//Obara Irete
+
+    "Obara Irete": {
+        "Positive": {
+            "Aiku": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Irete creates determination, driving self-transformation and persistence. Aiku (Longevity) ensures a long and fulfilling life blessed with health and prosperity.",
+                "Ebo": {
+                    "Akoru": "Through the Ebo of Akoru, longevity and peace are guaranteed.",
+                    "Esha": "With the Ebo of Esha, long life filled with joy is assured."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori ensures alignment with destiny and long life.",
+                    "Osha": "The Adimu of Osha brings divine protection and prolonged life.",
+                    "Eegun": "The Adimu of Eegun invokes ancestral blessings for longevity.",
+                    "Ifa": "The Adimu of Ifa secures divine assurance of longevity."
+                }
+            },
+            "Aje": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Irete creates determination, driving self-transformation and persistence. Aje (Wealth) foretells financial stability and material success.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru promises unexpected wealth.",
+                    "Esha": "The Ebo of Esha paves the way for financial growth."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori ensures prosperity and abundant wealth.",
+                    "Osha": "The Adimu of Osha aligns your business ventures for success.",
+                    "Eegun": "The Adimu of Eegun invokes wealth from ancestral blessings.",
+                    "Ifa": "The Adimu of Ifa guarantees material and spiritual abundance."
+                }
+            },
+            "Isegun": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Irete creates determination, driving self-transformation and persistence. Isegun (Victory) signifies triumph over challenges and adversaries.",
+                "Ebo": {
+                    "Akoru": "Victory in battles is ensured through the Ebo of Akoru.",
+                    "Esha": "The Ebo of Esha guarantees overcoming obstacles."
+                },
+                "Adimu": {
+                    "Ori": "With the Adimu of Ori, you will conquer all opposition.",
+                    "Osha": "The Adimu of Osha ensures victory through divine intervention.",
+                    "Eegun": "The Adimu of Eegun grants triumph via ancestral strength.",
+                    "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
+                }
+            },
+            "Igbale Ese": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Irete creates determination, driving self-transformation and persistence. Igbale Ese (Stability) assures security and establishment in life.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
+                    "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori guarantees a solid foundation for success.",
+                    "Osha": "The Adimu of Osha strengthens your endeavors.",
+                    "Eegun": "The Adimu of Eegun ensures lasting stability through ancestral backing.",
+                    "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
+                }
+            },
+            "Gbogbo Ire": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Irete creates determination, driving self-transformation and persistence. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
+                    "Esha": "The Ebo of Esha ensures divine support in all pursuits."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori aligns all-round success with your destiny.",
+                    "Osha": "The Adimu of Osha ensures blessings in all facets of life.",
+                    "Eegun": "The Adimu of Eegun invokes ancestral approval for comprehensive blessings.",
+                    "Ifa": "The Adimu of Ifa promises divine alignment for success everywhere."
+                }
+            }
+        },
+        "Negative": {
+            "Iku": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Irete creates determination, driving self-transformation and persistence. Iku (Death) warns of potential danger to life, requiring spiritual protection.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru ensures protection against untimely death.",
+                    "Esha": "The Ebo of Esha wards off fatal threats."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori safeguards life from harm.",
+                    "Osha": "The Adimu of Osha offers divine protection.",
+                    "Eegun": "The Adimu of Eegun invokes ancestors to shield you from death.",
+                    "Ifa": "The Adimu of Ifa provides spiritual guidance to avoid death."
+                }
+            },
+            "Arun": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Irete creates determination, driving self-transformation and persistence. Arun (Illness) calls for healing and recovery from all ailments.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru brings quick recovery.",
+                    "Esha": "The Ebo of Esha restores health and vitality."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori promotes emotional and physical healing.",
+                    "Osha": "The Adimu of Osha removes all forms of illness.",
+                    "Eegun": "The Adimu of Eegun ensures protection from recurring sickness.",
+                    "Ifa": "The Adimu of Ifa guarantees total wellness."
+                }
+            },
+            "Ejo": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Irete creates determination, driving self-transformation and persistence. Ejo (Conflict) highlights disputes that need resolution and peace.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru resolves conflicts and ensures harmony.",
+                    "Esha": "The Ebo of Esha prevents future disputes."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori promotes peaceful resolution.",
+                    "Osha": "The Adimu of Osha restores balance and understanding.",
+                    "Eegun": "The Adimu of Eegun prevents conflicts through ancestral intervention.",
+                    "Ifa": "The Adimu of Ifa grants wisdom to overcome disputes."
+                }
+            },
+            "Ofo": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Irete creates determination, driving self-transformation and persistence. Ofo (Loss) warns of potential loss, urging caution and spiritual support.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru mitigates losses.",
+                    "Esha": "The Ebo of Esha ensures recovery from any setbacks."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori protects your resources from loss.",
+                    "Osha": "The Adimu of Osha ensures stability in your wealth.",
+                    "Eegun": "The Adimu of Eegun brings ancestral intervention to prevent loss.",
+                    "Ifa": "The Adimu of Ifa secures your path against loss."
+                }
+            },
+            "Okutagbunilese": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Irete creates determination, driving self-transformation and persistence. Okutagbunilese (Unresolved problems) emphasizes hidden challenges requiring focus and spiritual assistance.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru unravels hidden challenges.",
+                    "Esha": "The Ebo of Esha resolves lingering issues."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori uncovers and resolves mysteries.",
+                    "Osha": "The Adimu of Osha addresses unresolved challenges.",
+                    "Eegun": "The Adimu of Eegun clears obstacles through ancestral guidance.",
+                    "Ifa": "The Adimu of Ifa ensures divine intervention in untangling issues."
+                }
+            }
+        },
+        "alias":"",
+        "Orisha": "",
+        "Taboo": "",
+        "Names": "",
+        "Occupation": "",
+        "audioURL": "",
+        "videoURL": ""
+    },
+
+
+//Obara Ose
+
+    "Obara Ose": {
+        "Positive": {
+            "Aiku": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ose creates abundance through prayer and symbolizes fertility. Aiku (Longevity) ensures a long and fulfilling life blessed with health and prosperity.",
+                "Ebo": {
+                    "Akoru": "Through the Ebo of Akoru, longevity and peace are guaranteed.",
+                    "Esha": "With the Ebo of Esha, long life filled with joy is assured."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori ensures alignment with destiny and long life.",
+                    "Osha": "The Adimu of Osha brings divine protection and prolonged life.",
+                    "Eegun": "The Adimu of Eegun invokes ancestral blessings for longevity.",
+                    "Ifa": "The Adimu of Ifa secures divine assurance of longevity."
+                }
+            },
+            "Aje": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ose creates abundance through prayer and symbolizes fertility. Aje (Wealth) foretells financial stability and material success.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru promises unexpected wealth.",
+                    "Esha": "The Ebo of Esha paves the way for financial growth."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori ensures prosperity and abundant wealth.",
+                    "Osha": "The Adimu of Osha aligns your business ventures for success.",
+                    "Eegun": "The Adimu of Eegun invokes wealth from ancestral blessings.",
+                    "Ifa": "The Adimu of Ifa guarantees material and spiritual abundance."
+                }
+            },
+            "Isegun": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ose creates abundance through prayer and symbolizes fertility. Isegun (Victory) signifies triumph over challenges and adversaries.",
+                "Ebo": {
+                    "Akoru": "Victory in battles is ensured through the Ebo of Akoru.",
+                    "Esha": "The Ebo of Esha guarantees overcoming obstacles."
+                },
+                "Adimu": {
+                    "Ori": "With the Adimu of Ori, you will conquer all opposition.",
+                    "Osha": "The Adimu of Osha ensures victory through divine intervention.",
+                    "Eegun": "The Adimu of Eegun grants triumph via ancestral strength.",
+                    "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
+                }
+            },
+            "Igbale Ese": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ose creates abundance through prayer and symbolizes fertility. Igbale Ese (Stability) assures security and establishment in life.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
+                    "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori guarantees a solid foundation for success.",
+                    "Osha": "The Adimu of Osha strengthens your endeavors.",
+                    "Eegun": "The Adimu of Eegun ensures lasting stability through ancestral backing.",
+                    "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
+                }
+            },
+            "Gbogbo Ire": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ose creates abundance through prayer and symbolizes fertility. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
+                    "Esha": "The Ebo of Esha ensures divine support in all pursuits."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori aligns all-round success with your destiny.",
+                    "Osha": "The Adimu of Osha ensures blessings in all facets of life.",
+                    "Eegun": "The Adimu of Eegun invokes ancestral approval for comprehensive blessings.",
+                    "Ifa": "The Adimu of Ifa promises divine alignment for success everywhere."
+                }
+            }
+        },
+        "Negative": {
+            "Iku": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ose creates abundance through prayer and symbolizes fertility. Iku (Death) warns of potential danger to life, requiring spiritual protection.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru ensures protection against untimely death.",
+                    "Esha": "The Ebo of Esha wards off fatal threats."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori safeguards life from harm.",
+                    "Osha": "The Adimu of Osha offers divine protection.",
+                    "Eegun": "The Adimu of Eegun invokes ancestors to shield you from death.",
+                    "Ifa": "The Adimu of Ifa provides spiritual guidance to avoid death."
+                }
+            },
+            "Arun": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ose creates abundance through prayer and symbolizes fertility. Arun (Illness) calls for healing and recovery from all ailments.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru brings quick recovery.",
+                    "Esha": "The Ebo of Esha restores health and vitality."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori promotes emotional and physical healing.",
+                    "Osha": "The Adimu of Osha removes all forms of illness.",
+                    "Eegun": "The Adimu of Eegun ensures protection from recurring sickness.",
+                    "Ifa": "The Adimu of Ifa guarantees total wellness."
+                }
+            },
+            "Ejo": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ose creates abundance through prayer and symbolizes fertility. Ejo (Conflict) highlights disputes that need resolution and peace.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru resolves conflicts and ensures harmony.",
+                    "Esha": "The Ebo of Esha prevents future disputes."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori promotes peaceful resolution.",
+                    "Osha": "The Adimu of Osha restores balance and understanding.",
+                    "Eegun": "The Adimu of Eegun prevents conflicts through ancestral intervention.",
+                    "Ifa": "The Adimu of Ifa grants wisdom to overcome disputes."
+                }
+            },
+            "Ofo": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ose creates abundance through prayer and symbolizes fertility. Ofo (Loss) warns of potential loss, urging caution and spiritual support.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru mitigates losses.",
+                    "Esha": "The Ebo of Esha ensures recovery from any setbacks."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori protects your resources from loss.",
+                    "Osha": "The Adimu of Osha ensures stability in your wealth.",
+                    "Eegun": "The Adimu of Eegun brings ancestral intervention to prevent loss.",
+                    "Ifa": "The Adimu of Ifa secures your path against loss."
+                }
+            },
+            "Okutagbunilese": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ose creates abundance through prayer and symbolizes fertility. Okutagbunilese (Unresolved problems) emphasizes hidden challenges requiring focus and spiritual assistance.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru unravels hidden challenges.",
+                    "Esha": "The Ebo of Esha resolves lingering issues."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori uncovers and resolves mysteries.",
+                    "Osha": "The Adimu of Osha addresses unresolved challenges.",
+                    "Eegun": "The Adimu of Eegun clears obstacles through ancestral guidance.",
+                    "Ifa": "The Adimu of Ifa ensures divine intervention in untangling issues."
+                }
+            }
+        },
+        "alias":"",
+        "Orisha": "",
+        "Taboo": "",
+        "Names": "",
+        "Occupation": "",
+        "audioURL": "",
+        "videoURL": ""
+    },
+
+
+//Obara Ofun
+
+    "Obara Ofun": {
+        "Positive": {
+            "Aiku": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ofun creates the answer to prayers manifesting as a miracle. Aiku (Longevity) ensures a long and fulfilling life blessed with health and prosperity.",
+                "Ebo": {
+                    "Akoru": "Through the Ebo of Akoru, longevity and peace are guaranteed.",
+                    "Esha": "With the Ebo of Esha, long life filled with joy is assured."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori ensures alignment with destiny and long life.",
+                    "Osha": "The Adimu of Osha brings divine protection and prolonged life.",
+                    "Eegun": "The Adimu of Eegun invokes ancestral blessings for longevity.",
+                    "Ifa": "The Adimu of Ifa secures divine assurance of longevity."
+                }
+            },
+            "Aje": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ofun creates the answer to prayers manifesting as a miracle. Aje (Wealth) foretells financial stability and material success.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru promises unexpected wealth.",
+                    "Esha": "The Ebo of Esha paves the way for financial growth."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori ensures prosperity and abundant wealth.",
+                    "Osha": "The Adimu of Osha aligns your business ventures for success.",
+                    "Eegun": "The Adimu of Eegun invokes wealth from ancestral blessings.",
+                    "Ifa": "The Adimu of Ifa guarantees material and spiritual abundance."
+                }
+            },
+            "Isegun": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ofun creates the answer to prayers manifesting as a miracle. Isegun (Victory) signifies triumph over challenges and adversaries.",
+                "Ebo": {
+                    "Akoru": "Victory in battles is ensured through the Ebo of Akoru.",
+                    "Esha": "The Ebo of Esha guarantees overcoming obstacles."
+                },
+                "Adimu": {
+                    "Ori": "With the Adimu of Ori, you will conquer all opposition.",
+                    "Osha": "The Adimu of Osha ensures victory through divine intervention.",
+                    "Eegun": "The Adimu of Eegun grants triumph via ancestral strength.",
+                    "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
+                }
+            },
+            "Igbale Ese": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ofun creates the answer to prayers manifesting as a miracle. Igbale Ese (Stability) assures security and establishment in life.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
+                    "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori guarantees a solid foundation for success.",
+                    "Osha": "The Adimu of Osha strengthens your endeavors.",
+                    "Eegun": "The Adimu of Eegun ensures lasting stability through ancestral backing.",
+                    "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
+                }
+            },
+            "Gbogbo Ire": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ofun creates the answer to prayers manifesting as a miracle. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
+                    "Esha": "The Ebo of Esha ensures divine support in all pursuits."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori aligns all-round success with your destiny.",
+                    "Osha": "The Adimu of Osha ensures blessings in all facets of life.",
+                    "Eegun": "The Adimu of Eegun invokes ancestral approval for comprehensive blessings.",
+                    "Ifa": "The Adimu of Ifa promises divine alignment for success everywhere."
+                }
+            }
+        },
+        "Negative": {
+            "Iku": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ofun creates the answer to prayers manifesting as a miracle. Iku (Death) warns of potential danger to life, requiring spiritual protection.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru ensures protection against untimely death.",
+                    "Esha": "The Ebo of Esha wards off fatal threats."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori safeguards life from harm.",
+                    "Osha": "The Adimu of Osha offers divine protection.",
+                    "Eegun": "The Adimu of Eegun invokes ancestors to shield you from death.",
+                    "Ifa": "The Adimu of Ifa provides spiritual guidance to avoid death."
+                }
+            },
+            "Arun": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ofun creates the answer to prayers manifesting as a miracle. Arun (Illness) calls for healing and recovery from all ailments.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru brings quick recovery.",
+                    "Esha": "The Ebo of Esha restores health and vitality."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori promotes emotional and physical healing.",
+                    "Osha": "The Adimu of Osha removes all forms of illness.",
+                    "Eegun": "The Adimu of Eegun ensures protection from recurring sickness.",
+                    "Ifa": "The Adimu of Ifa guarantees total wellness."
+                }
+            },
+            "Ejo": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ofun creates the answer to prayers manifesting as a miracle. Ejo (Conflict) highlights disputes that need resolution and peace.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru resolves conflicts and ensures harmony.",
+                    "Esha": "The Ebo of Esha prevents future disputes."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori promotes peaceful resolution.",
+                    "Osha": "The Adimu of Osha restores balance and understanding.",
+                    "Eegun": "The Adimu of Eegun prevents conflicts through ancestral intervention.",
+                    "Ifa": "The Adimu of Ifa grants wisdom to overcome disputes."
+                }
+            },
+            "Ofo": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ofun creates the answer to prayers manifesting as a miracle. Ofo (Loss) warns of potential loss, urging caution and spiritual support.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru mitigates losses.",
+                    "Esha": "The Ebo of Esha ensures recovery from any setbacks."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori protects your resources from loss.",
+                    "Osha": "The Adimu of Osha ensures stability in your wealth.",
+                    "Eegun": "The Adimu of Eegun brings ancestral intervention to prevent loss.",
+                    "Ifa": "The Adimu of Ifa secures your path against loss."
+                }
+            },
+            "Okutagbunilese": {
+                "Message": "Obara creates inner transformation and growth by confronting egotism. Ofun creates the answer to prayers manifesting as a miracle. Okutagbunilese (Unresolved problems) emphasizes hidden challenges requiring focus and spiritual assistance.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru unravels hidden challenges.",
+                    "Esha": "The Ebo of Esha resolves lingering issues."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori uncovers and resolves mysteries.",
+                    "Osha": "The Adimu of Osha addresses unresolved challenges.",
+                    "Eegun": "The Adimu of Eegun clears obstacles through ancestral guidance.",
+                    "Ifa": "The Adimu of Ifa ensures divine intervention in untangling issues."
+                }
+            }
+        },
+        "alias":"",
+        "Orisha": "",
+        "Taboo": "",
+        "Names": "",
+        "Occupation": "",
+        "audioURL": "",
+        "videoURL": ""
+    },
+
+
+//Okanran Ogbe
+
+    "Okanran Ogbe": {
+        "Positive": {
+            "Aiku": {
+                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Aiku (Longevity) ensures a long and fulfilling life blessed with health and prosperity.",
+                "Ebo": {
+                    "Akoru": "Through the Ebo of Akoru, longevity and peace are guaranteed.",
+                    "Esha": "With the Ebo of Esha, long life filled with joy is assured."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori ensures alignment with destiny and long life.",
+                    "Osha": "The Adimu of Osha brings divine protection and prolonged life.",
+                    "Eegun": "The Adimu of Eegun invokes ancestral blessings for longevity.",
+                    "Ifa": "The Adimu of Ifa secures divine assurance of longevity."
+                }
+            },
+            "Aje": {
+                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Aje (Wealth) foretells financial stability and material success.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru promises unexpected wealth.",
+                    "Esha": "The Ebo of Esha paves the way for financial growth."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori ensures prosperity and abundant wealth.",
+                    "Osha": "The Adimu of Osha aligns your business ventures for success.",
+                    "Eegun": "The Adimu of Eegun invokes wealth from ancestral blessings.",
+                    "Ifa": "The Adimu of Ifa guarantees material and spiritual abundance."
+                }
+            },
+            "Isegun": {
+                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Isegun (Victory) signifies triumph over challenges and adversaries.",
+                "Ebo": {
+                    "Akoru": "Victory in battles is ensured through the Ebo of Akoru.",
+                    "Esha": "The Ebo of Esha guarantees overcoming obstacles."
+                },
+                "Adimu": {
+                    "Ori": "With the Adimu of Ori, you will conquer all opposition.",
+                    "Osha": "The Adimu of Osha ensures victory through divine intervention.",
+                    "Eegun": "The Adimu of Eegun grants triumph via ancestral strength.",
+                    "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
+                }
+            },
+            "Igbale Ese": {
+                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Igbale Ese (Stability) assures security and establishment in life.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
+                    "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori guarantees a solid foundation for success.",
+                    "Osha": "The Adimu of Osha strengthens your endeavors.",
+                    "Eegun": "The Adimu of Eegun ensures lasting stability through ancestral backing.",
+                    "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
+                }
+            },
+            "Gbogbo Ire": {
+                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
+                    "Esha": "The Ebo of Esha ensures divine support in all pursuits."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori aligns all-round success with your destiny.",
+                    "Osha": "The Adimu of Osha ensures blessings in all facets of life.",
+                    "Eegun": "The Adimu of Eegun invokes ancestral approval for comprehensive blessings.",
+                    "Ifa": "The Adimu of Ifa promises divine alignment for success everywhere."
+                }
+            }
+        },
+        "Negative": {
+            "Iku": {
+                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Iku (Death) warns of potential danger to life, requiring spiritual protection.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru ensures protection against untimely death.",
+                    "Esha": "The Ebo of Esha wards off fatal threats."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori safeguards life from harm.",
+                    "Osha": "The Adimu of Osha offers divine protection.",
+                    "Eegun": "The Adimu of Eegun invokes ancestors to shield you from death.",
+                    "Ifa": "The Adimu of Ifa provides spiritual guidance to avoid death."
+                }
+            },
+            "Arun": {
+                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Arun (Illness) calls for healing and recovery from all ailments.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru brings quick recovery.",
+                    "Esha": "The Ebo of Esha restores health and vitality."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori promotes emotional and physical healing.",
+                    "Osha": "The Adimu of Osha removes all forms of illness.",
+                    "Eegun": "The Adimu of Eegun ensures protection from recurring sickness.",
+                    "Ifa": "The Adimu of Ifa guarantees total wellness."
+                }
+            },
+            "Ejo": {
+                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Ejo (Conflict) highlights disputes that need resolution and peace.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru resolves conflicts and ensures harmony.",
+                    "Esha": "The Ebo of Esha prevents future disputes."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori promotes peaceful resolution.",
+                    "Osha": "The Adimu of Osha restores balance and understanding.",
+                    "Eegun": "The Adimu of Eegun prevents conflicts through ancestral intervention.",
+                    "Ifa": "The Adimu of Ifa grants wisdom to overcome disputes."
+                }
+            },
+            "Ofo": {
+                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Ofo (Loss) warns of potential loss, urging caution and spiritual support.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru mitigates losses.",
+                    "Esha": "The Ebo of Esha ensures recovery from any setbacks."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori protects your resources from loss.",
+                    "Osha": "The Adimu of Osha ensures stability in your wealth.",
+                    "Eegun": "The Adimu of Eegun brings ancestral intervention to prevent loss.",
+                    "Ifa": "The Adimu of Ifa secures your path against loss."
+                }
+            },
+            "Okutagbunilese": {
+                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Okutagbunilese (Unresolved problems) emphasizes hidden challenges requiring focus and spiritual assistance.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru unravels hidden challenges.",
+                    "Esha": "The Ebo of Esha resolves lingering issues."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori uncovers and resolves mysteries.",
+                    "Osha": "The Adimu of Osha addresses unresolved challenges.",
+                    "Eegun": "The Adimu of Eegun clears obstacles through ancestral guidance.",
+                    "Ifa": "The Adimu of Ifa ensures divine intervention in untangling issues."
+                }
+            }
+        },
+        "alias":"",
+        "Orisha": "",
+        "Taboo": "",
+        "Names": "",
+        "Occupation": "",
+        "audioURL": "",
+        "videoURL": ""
+    },
+
+//Okanran Oyeku
+
+    "Okanran Oyeku": {
+        "Positive": {
+            "Aiku": {
+                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. Oyeku creates an end to a cycle, leading to peace or transformation. It symbolizes divine alignment and harmony. Aiku (Longevity) ensures a long and fulfilling life blessed with health and prosperity.",
+                "Ebo": {
+                    "Akoru": "Through the Ebo of Akoru, longevity and peace are guaranteed.",
+                    "Esha": "With the Ebo of Esha, long life filled with joy is assured."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori ensures alignment with destiny and long life.",
+                    "Osha": "The Adimu of Osha brings divine protection and prolonged life.",
+                    "Eegun": "The Adimu of Eegun invokes ancestral blessings for longevity.",
+                    "Ifa": "The Adimu of Ifa secures divine assurance of longevity."
+                }
+            },
+            "Aje": {
+                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. Oyeku creates an end to a cycle, leading to peace or transformation. It symbolizes divine alignment and harmony. Aje (Wealth) foretells financial stability and material success.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru promises unexpected wealth.",
+                    "Esha": "The Ebo of Esha paves the way for financial growth."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori ensures prosperity and abundant wealth.",
+                    "Osha": "The Adimu of Osha aligns your business ventures for success.",
+                    "Eegun": "The Adimu of Eegun invokes wealth from ancestral blessings.",
+                    "Ifa": "The Adimu of Ifa guarantees material and spiritual abundance."
+                }
+            },
+            "Isegun": {
+                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. Oyeku creates an end to a cycle, leading to peace or transformation. It symbolizes divine alignment and harmony. Isegun (Victory) signifies triumph over challenges and adversaries.",
+                "Ebo": {
+                    "Akoru": "Victory in battles is ensured through the Ebo of Akoru.",
+                    "Esha": "The Ebo of Esha guarantees overcoming obstacles."
+                },
+                "Adimu": {
+                    "Ori": "With the Adimu of Ori, you will conquer all opposition.",
+                    "Osha": "The Adimu of Osha ensures victory through divine intervention.",
+                    "Eegun": "The Adimu of Eegun grants triumph via ancestral strength.",
+                    "Ifa": "The Adimu of Ifa leads you to spiritual and material victory."
+                }
+            },
+            "Igbale Ese": {
+                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. Oyeku creates an end to a cycle, leading to peace or transformation. It symbolizes divine alignment and harmony. Igbale Ese (Stability) assures security and establishment in life.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru brings firm grounding in all endeavors.",
+                    "Esha": "Stability in life and wealth is assured through the Ebo of Esha."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori guarantees a solid foundation for success.",
+                    "Osha": "The Adimu of Osha strengthens your endeavors.",
+                    "Eegun": "The Adimu of Eegun ensures lasting stability through ancestral backing.",
+                    "Ifa": "The Adimu of Ifa provides divine stability in all areas of life."
+                }
+            },
+            "Gbogbo Ire": {
+                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. Oyeku creates an end to a cycle, leading to peace or transformation. It symbolizes divine alignment and harmony. Gbogbo Ire (All-round blessings) signifies universal success in all aspects of life.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru guarantees blessings across all endeavors.",
+                    "Esha": "The Ebo of Esha ensures divine support in all pursuits."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori aligns all-round success with your destiny.",
+                    "Osha": "The Adimu of Osha ensures blessings in all facets of life.",
+                    "Eegun": "The Adimu of Eegun invokes ancestral approval for comprehensive blessings.",
+                    "Ifa": "The Adimu of Ifa promises divine alignment for success everywhere."
+                }
+            }
+        },
+        "Negative": {
+            "Iku": {
+                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. Oyeku creates an end to a cycle, leading to peace or transformation. It symbolizes divine alignment and harmony. Iku (Death) warns of potential danger to life, requiring spiritual protection.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru ensures protection against untimely death.",
+                    "Esha": "The Ebo of Esha wards off fatal threats."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori safeguards life from harm.",
+                    "Osha": "The Adimu of Osha offers divine protection.",
+                    "Eegun": "The Adimu of Eegun invokes ancestors to shield you from death.",
+                    "Ifa": "The Adimu of Ifa provides spiritual guidance to avoid death."
+                }
+            },
+            "Arun": {
+                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. Oyeku creates an end to a cycle, leading to peace or transformation. It symbolizes divine alignment and harmony. Arun (Illness) calls for healing and recovery from all ailments.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru brings quick recovery.",
+                    "Esha": "The Ebo of Esha restores health and vitality."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori promotes emotional and physical healing.",
+                    "Osha": "The Adimu of Osha removes all forms of illness.",
+                    "Eegun": "The Adimu of Eegun ensures protection from recurring sickness.",
+                    "Ifa": "The Adimu of Ifa guarantees total wellness."
+                }
+            },
+            "Ejo": {
+                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. Oyeku creates an end to a cycle, leading to peace or transformation. It symbolizes divine alignment and harmony. Ejo (Conflict) highlights disputes that need resolution and peace.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru resolves conflicts and ensures harmony.",
+                    "Esha": "The Ebo of Esha prevents future disputes."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori promotes peaceful resolution.",
+                    "Osha": "The Adimu of Osha restores balance and understanding.",
+                    "Eegun": "The Adimu of Eegun prevents conflicts through ancestral intervention.",
+                    "Ifa": "The Adimu of Ifa grants wisdom to overcome disputes."
+                }
+            },
+            "Ofo": {
+                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. Oyeku creates an end to a cycle, leading to peace or transformation. It symbolizes divine alignment and harmony. Ofo (Loss) warns of potential loss, urging caution and spiritual support.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru mitigates losses.",
+                    "Esha": "The Ebo of Esha ensures recovery from any setbacks."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori protects your resources from loss.",
+                    "Osha": "The Adimu of Osha ensures stability in your wealth.",
+                    "Eegun": "The Adimu of Eegun brings ancestral intervention to prevent loss.",
+                    "Ifa": "The Adimu of Ifa secures your path against loss."
+                }
+            },
+            "Okutagbunilese": {
+                "Message": "Okanran creates new directions and possibilities, harmonizing thought and emotion. Oyeku creates an end to a cycle, leading to peace or transformation. It symbolizes divine alignment and harmony. Okutagbunilese (Unresolved problems) emphasizes hidden challenges requiring focus and spiritual assistance.",
+                "Ebo": {
+                    "Akoru": "The Ebo of Akoru unravels hidden challenges.",
+                    "Esha": "The Ebo of Esha resolves lingering issues."
+                },
+                "Adimu": {
+                    "Ori": "The Adimu of Ori uncovers and resolves mysteries.",
+                    "Osha": "The Adimu of Osha addresses unresolved challenges.",
+                    "Eegun": "The Adimu of Eegun clears obstacles through ancestral guidance.",
+                    "Ifa": "The Adimu of Ifa ensures divine intervention in untangling issues."
+                }
+            }
+        },
+        "alias":"",
+        "Orisha": "",
+        "Taboo": "",
+        "Names": "",
+        "Occupation": "",
         "audioURL": "",
         "videoURL": ""
     },
@@ -16737,9 +18206,10 @@ const oduMessages = {
         "Taboo": "Onifa yi ko gbodo lo ewe agbosa, ki o ma lo ewe tabi eso tagiri, kii je eran edun, ki o maje koko, ki mu emu, kii je isu esuru tabi ese, ki o ma je isu alo, kii je isu emina, onifa yi kii je eye adan, kii je tabi lo eye odibe, ki o ma lo igi ti o wo si ona, kii je eyin adie, kii je alubosa, ki o ma lo tabi je igbin alukose, kii mu oti rara, ki o ma je ounje gbigbona rara. Onifa yi gbodo sora fun ounje ni jije nitori alubosa yi je eewo re o, ki o si yera fun awon toku. Aso funfun ni o dara fun onifa yi o ",
         "Names": "Ifajuwon",
         "Occupation": "Ise ogun ni o dara fun onifa yi o je ise asela re o ",
-        "Credit": "",
+        "alias": "Osa onilefun, Osa onibu",
         "audioURL": "",
-        "videoURL": ""
+        "videoURL": "",
+        "Credit":""
     },
 
 };

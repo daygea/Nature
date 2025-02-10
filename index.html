@@ -259,6 +259,7 @@
         const credit = oduMessages[mainCast]?.Credit || "No credit data available.";
         const audio = oduMessages[mainCast]?.audioURL || "No audio data available.";
         const video = oduMessages[mainCast]?.videoURL || "No video data available.";
+        const alias = oduMessages[mainCast]?.alias || "No alias data available.";
 
         // Map orientation to descriptive text
         const orientationText = orientation === "Positive" ? "Ire" : "Ayewo";
@@ -269,6 +270,7 @@
             <h1 style="text-align: center;">Divination Result</h1>
             <h3 style="text-align: center;">${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}</h3>
             <p>${message} ${solutionInfo} Achieved with ${orientationEmi} and ${specificOrientation} in the house of imole.</p>
+            <p><strong>Alias:</strong> ${alias}</p>
             <p><strong>Orisha:</strong> ${orisha}</p>
             <p><strong>Taboo:</strong> ${taboo}</p>
             <p><strong>Names:</strong> ${names}</p>
