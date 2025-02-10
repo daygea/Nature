@@ -3235,7 +3235,7 @@ const oduMessages = {
                 }
             },
             "Arun": {
-                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. OObara creates inner transformation and growth by confronting egotism. Arun (Illness) calls for healing and recovery from all ailments.",
+                "Message": "Ogbe brings blessings of life, wealth, and success. It symbolizes divine alignment and harmony. Obara creates inner transformation and growth by confronting egotism. Arun (Illness) calls for healing and recovery from all ailments.",
                 "Ebo": {
                     "Akoru": "The Ebo of Akoru brings quick recovery.",
                     "Esha": "The Ebo of Esha restores health and vitality."
