@@ -64,7 +64,7 @@
         <script src="https://js.paystack.co/v1/inline.js"></script>
     <script>
 
-    const PAYSTACK_PUBLIC_KEY = "pk_test_your_key_here";
+    const PAYSTACK_PUBLIC_KEY = "pk_live_b39b445fba8a155f04a04980705a3c10ae85d673";
        // Define free Odùs (first 16)
     const freeOdus = [
         "Ejiogbe", "Oyeku Meji", "Iwori Meji", "Idi Meji", "Irosun Meji", "Owonrin Meji", 
@@ -73,7 +73,7 @@
     ];
     
 
-    const SECRET_KEY = "your_random_secret";
+    const SECRET_KEY = "DqUHBw7iFj3ia0pyp+QIvKJ5NgJFXE2PcZk95Kt2w6qpqOZ82iAF4Kx88Khb2KFl";
 
         // Encrypt data using AES
     function encryptData(data) {
@@ -114,7 +114,7 @@
     function payForOdu(oduName) {
         let handler = PaystackPop.setup({
             key: PAYSTACK_PUBLIC_KEY,
-            email: "user@example.com", // Replace dynamically if possible
+            email: "kadri_adedeji@yahoo.com", // Replace dynamically if possible
             amount: 100000, // ₦1000 (amount is in kobo)
             currency: "NGN",
             callback: function(response) {
