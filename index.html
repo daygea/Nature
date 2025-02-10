@@ -5,82 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature Speaks</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAARkZGACQkJADr6+sAAgICAAsLCwA/Pz8AFBQUAHNzcwBRUVEAJiYmAAQEBAD///8AxMTEAENDQwB3d3cAGBgYAFVVVQA8PDwAERERAE5OTgABAQEANTU1AHt7ewAlJSUAhISEAAMDAwBra2sAysrKAH19fQBSUlIAJycnAO7u7gCPj48AMDAwAAUFBQD39/cAoaGhACAgIADe3t4AiIiIAAcHBwBvb28AEBAQAERERACjo6MAGRkZANfX1wAiIiIAKysrAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAAAAAACwAEjEeGyoHGAAAAAAAFQAAIQwMAAwMDBcAAAAAAAAAAAwMDAMcAg4ZAAAAAAAAJQ0MDAgWAAUfFQAAAAAAAAABDwwRACEVABMeHhoAAAAAChUMLgwUFSMAAAAAAAAABBANDCkMKAsrJgAAAAAwAAAJDAwnByItIAAAAAAAAAAAAAAMDAwMJC8GAAAAAAAAAAAVHQAAAAAVABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon">
- <style>
-        .odusign{
-            font-family: Arial, sans-serif;
-            text-align: center;
-/*            margin-top: 20vh;*/
-            font-size: 20px;
-        }
-        .numerology{
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 10vh;
-            font-size: 20px;
-        }
-        h1 {
-            margin-bottom: 20px;
-        }
-
-     #birthdate-box {
-                margin-bottom: 10px;
-            }
-
-       input[type="date"] {
-            width: 80%;
-            max-width: 250px;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }    
-
-        button {
-            font-size: 16px;
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-        #result {
-            margin-top: 30px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            background-color: #f9f9f9;
-            font-size: 14px;
-            color: #333;
-            max-width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: left;
-        }
-
-        #random-btn {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        #random-btn:hover {
-            background-color: #45a049;
-        }
-
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container-fluid">
@@ -133,9 +58,78 @@
                     <div id="result"></div>
             </div>
         </div>
-        <script type="text/javascript" src="oduMessages.js"></script>
+        <script type="text/javascript" src="js/oduMessages.js"></script>
+        <script type="text/javascript" src="js/numerology.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+        <script src="https://js.paystack.co/v1/inline.js"></script>
     <script>
-        
+
+    const PAYSTACK_PUBLIC_KEY = "pk_test_your_key_here";
+       // Define free Odùs (first 16)
+    const freeOdus = [
+        "Ejiogbe", "Oyeku Meji", "Iwori Meji", "Idi Meji", "Irosun Meji", "Owonrin Meji", 
+        "Obara Meji", "Okanran Meji", "Ogunda Meji", "Osa Meji", "Ika Meji", "Oturupon Meji", 
+        "Otura Meji", "Irete Meji", "Ose Meji", "Ofun Meji", "Osa Owonrin"
+    ];
+    
+
+    const SECRET_KEY = "your_random_secret";
+
+        // Encrypt data using AES
+    function encryptData(data) {
+        return CryptoJS.AES.encrypt(JSON.stringify(data), SECRET_KEY).toString();
+    }
+
+    // Decrypt data
+    function decryptData(encryptedData) {
+        try {
+            const bytes = CryptoJS.AES.decrypt(encryptedData, SECRET_KEY);
+            return JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
+        } catch (e) {
+            return null;
+        }
+    }
+
+
+    // Check if an Odù is paid for and not expired
+    function isOduPaid(oduName) {
+        const storedData = localStorage.getItem("paidOdus");
+        if (!storedData) return false;
+
+        const paidOdus = decryptData(storedData);
+        if (!paidOdus || !paidOdus[oduName]) return false;
+
+        const expirationTime = paidOdus[oduName];
+        return Date.now() < expirationTime; // True if still valid
+    }
+
+    // Save paid Odù access
+    function grantOduAccess(oduName) {
+        let paidOdus = decryptData(localStorage.getItem("paidOdus")) || {};
+        paidOdus[oduName] = Date.now() + 24 * 60 * 60 * 1000; // Set 24-hour expiry
+        localStorage.setItem("paidOdus", encryptData(paidOdus));
+    }
+
+    // Process Payment with Paystack
+    function payForOdu(oduName) {
+        let handler = PaystackPop.setup({
+            key: PAYSTACK_PUBLIC_KEY,
+            email: "user@example.com", // Replace dynamically if possible
+            amount: 100000, // ₦1000 (amount is in kobo)
+            currency: "NGN",
+            callback: function(response) {
+                alert("Payment successful! Ref: " + response.reference);
+                grantOduAccess(oduName);
+                // displayOduMessage(oduName);
+                performUserDivination();
+            },
+            onClose: function() {
+                alert("Payment cancelled.");
+            }
+        });
+        handler.openIframe();
+    }
+
         // Base Odùs
         const baseOdus = {
             "Ejiogbe": ["|", "|", "|", "|"],
@@ -195,11 +189,11 @@
         // Check if oduMessages has data for the selected mainCast, fallback if not
 
         const getOduMessageData = (mainCast, orientation, specificOrientation, solution, specificSolution) => {
+           
             const orientationData = oduMessages[mainCast]?.[orientation];
             const specificOrientationData = orientationData?.[specificOrientation];
             const solutionData = specificOrientationData?.[solution]?.[specificSolution];
             const messageData = orientationData?.[specificOrientation].Message;
-            
             return {
                 message: messageData || "No message available &",
                 solutionInfo: solutionData || "no message available for the selected combination.",
@@ -244,43 +238,63 @@
                 populateDropdown(solutionDetailsDropdown, details);
             };
 
-        const performUserDivination = () => {
-        const mainCast = document.getElementById("mainCast").value;
-        const orientation = document.getElementById("orientation").value;
-        const specificOrientation = document.getElementById("specificOrientation").value;
-        const solution = document.getElementById("solution").value;
-        const solutionDetails = document.getElementById("solutionDetails").value;
-        const { message, solutionInfo, orientationMessage, specificOrientationMessage } = 
-        getOduMessageData(mainCast, orientation, specificOrientation, solution, solutionDetails);
-        const orisha = oduMessages[mainCast]?.Orisha || "No orisha data available.";
-        const taboo = oduMessages[mainCast]?.Taboo || "No taboo data available.";
-        const names = oduMessages[mainCast]?.Names || "No names data available.";
-        const occupation = oduMessages[mainCast]?.Occupation || "No occupation data available.";
-        const credit = oduMessages[mainCast]?.Credit || "No credit data available.";
-        const audio = oduMessages[mainCast]?.audioURL || "No audio data available.";
-        const video = oduMessages[mainCast]?.videoURL || "No video data available.";
-        const alias = oduMessages[mainCast]?.alias || "No alias data available.";
 
-        // Map orientation to descriptive text
+
+    const performUserDivination = () => {
+    const mainCast = document.getElementById("mainCast").value;
+    // handleOduAccess(mainCast);
+    const orientation = document.getElementById("orientation").value;
+    const specificOrientation = document.getElementById("specificOrientation").value;
+    const solution = document.getElementById("solution").value;
+    const solutionDetails = document.getElementById("solutionDetails").value;
+
+    const { message, solutionInfo } = getOduMessageData(mainCast, orientation, specificOrientation, solution, solutionDetails);
+
+    const orisha = oduMessages[mainCast]?.Orisha || "No orisha data available.";
+    const taboo = oduMessages[mainCast]?.Taboo || "No taboo available.";
+    const names = oduMessages[mainCast]?.Names || "No names available.";
+    const occupation = oduMessages[mainCast]?.Occupation || "No occupation available.";
+    const credit = oduMessages[mainCast]?.Credit || "No credit available.";
+    const alias = oduMessages[mainCast]?.alias || "No alias available.";
+    const audioUrls = oduMessages[mainCast]?.audioURL || [];
+    const videoUrls = oduMessages[mainCast]?.videoURL || [];
+
+    //Map orientation to descriptive text
         const orientationText = orientation === "Positive" ? "Ire" : "Ayewo";
         const orientationEmi = orientation === "Positive" ? "Awonranmaja" : "Ajagunmale";
 
-        const resultElement = document.getElementById("divinationResult");
-        resultElement.innerHTML = `
-            <h1 style="text-align: center;">Divination Result</h1>
-            <h3 style="text-align: center;">${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}</h3>
-            <p>${message} ${solutionInfo} Achieved with ${orientationEmi} and ${specificOrientation} in the house of imole.</p>
-            <p><strong>Alias:</strong> ${alias}</p>
-            <p><strong>Orisha:</strong> ${orisha}</p>
-            <p><strong>Taboo:</strong> ${taboo}</p>
-            <p><strong>Names:</strong> ${names}</p>
-            <p><strong>Occupation:</strong> ${occupation}</p>
-            <p><strong>Audio:</strong> ${audio}</p>
-            <p><strong>Video:</strong> ${video}</p>
-            <p style="padding-bottom:50px"><strong>Credit:</strong> ${credit}</p>
-        `;
-        displayConfiguration(mainCast);
-    };
+    const audioHTML = audioUrls.length
+        ? audioUrls.map(url => `<p><a href="${url}" target="_blank">Listen to Audio</a></p>`).join("")
+        : "<p>No audio available.</p>";
+
+    const videoHTML = videoUrls.length
+        ? videoUrls.map(url => `<p><a href="${url}" target="_blank">Watch Video</a></p>`).join("")
+        : "<p>No video available.</p>";
+
+    const resultElement = document.getElementById("divinationResult");
+
+    if (freeOdus.includes(mainCast) || isOduPaid(mainCast)) {
+    resultElement.innerHTML = `
+        <h1 style="text-align: center;">Divination Result</h1>
+        <h3 style="text-align: center;">${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}</h3>
+        <p>${message} ${solutionInfo}</p>
+        <p><strong>Orisha:</strong> ${orisha}</p>
+        <p><strong>Alias:</strong> ${alias}</p>
+        <p><strong>Taboo:</strong> ${taboo}</p>
+        <p><strong>Names:</strong> ${names}</p>
+        <p><strong>Occupation:</strong> ${occupation}</p>
+        ${audioHTML}
+        ${videoHTML}
+        <p style="padding-bottom:50px"><strong>Credit:</strong> ${credit}</p>
+    `;
+     } else {
+         document.getElementById("divinationResult").innerHTML = `
+               <center> <p style="padding-top:30px;">This Odù requires payment to access. Click below to proceed.</p>
+                <button class="btn btn-lg" onclick="payForOdu('${mainCast}')">Pay ₦1000 for 24-hour access</button></center>
+            `;
+        }
+    displayConfiguration(mainCast);
+};
 
     const displayConfiguration = (oduName) => {
             const configurationElement = document.getElementById("configurationResult");
@@ -319,27 +333,6 @@
         // Initialize on page load
         window.onload = populateDropdowns;
 
-        // Numerology meanings based on single-digit life path numbers
-        const numerologyMeanings = {
-            1: "Linked to new beginnings, leadership, and creativity, you are ambitious and excel when taking the initiative. Make it a priority to start new ventures. Expect frequent travels. Pay special attention to your head. Engage in prayers with water and use it to rinse your head while on the floor, ensuring that your head does not make contact with the ground or any object. Governed by the Sun, this energy embodies confidence, vitality, and self-expression, resonating with Aries' bold and determined nature.",
-
-            2: "Represents balance, duality, and transformation. You are diplomatic and strive for harmony in relationships. Be open to receiving blessings. Start small, and with time, it will flourish. Governed by the Moon, this energy is deeply connected to emotions and intuition, aligning with Cancer’s nurturing essence. Ibeji, an Orisha symbolizing twins, children, and joy, is associated with the sacred number 2. This number reflects Ibeji’s dual nature and the power of balance and harmony. Often depicted as two children, Ibeji represents the inseparable bond of twins and the joy of childhood. Additionally, the number 2 signifies life’s duality and the equilibrium between positive and negative forces",
-
-            3: "Represents communication, adaptability, and growth. You have a natural gift for expression and inspire optimism in others. Prepare to welcome prosperity. Governed by Jupiter, this energy signifies expansion and inspiration, resonating with Sagittarius' adventurous nature.Elegua, also known as Eshu, is an Orisha associated with communication, trickery, and crossroads. Linked to the sacred number 3, this number symbolizes his ability to move between different realms and his trickster essence. It also represents the three roads that intersect at a crossroads, signifying his role as the guardian of paths and doors in this world.Elegua embodies the essence of ashé and is represented by the colors red and black or white and black, reflecting his dual and paradoxical nature. As the intermediary between the human and the divine, he serves as a childlike messenger between both worlds. His deep connection with Orunmila, the Orisha of divination, highlights his pivotal role—nothing can proceed without his consent. He is always honored first, as he opens the doors between worlds and clears the path for life's journey.",
-
-            4: "Symbolizes stability, security, and structure. You are grounded and appreciate order in life. Maintain a low profile and avoid travel during this period. Governed by Saturn, this energy embodies discipline and responsibility, aligning with Capricorn's practical and strategic mindset. The number four represents completion and stability, reflected in the four fundamental elements—Earth, Air, Fire, and Water. It also signifies structure, order, and justice, as well as the four cardinal directions: East, West, North, and South. As a powerful number, it holds the potential to bring balance and harmony when embraced with intention.",
-
-            5: "Represents freedom, exploration, and spiritual inquiry. You thrive in change and eagerly seek new possibilities. Expect frequent travel, but be mindful of challenges in your marriage, particularly regarding divorce. Governed by Mercury, this energy signifies quick thinking and adaptability, resonating with the inquisitive nature of Gemini and Virgo.Oshun, the Orisha of love, beauty, and abundance, is linked to the sacred number 5. This number reflects her sensual and generous spirit, as well as her deep connection to the flow of water and the natural world. It also symbolizes the five senses and the five fundamental elements of nature, embodying harmony, pleasure, and life’s ever-changing currents.",
-
-            6: "Represents harmony, love, and nurturing. You are compassionate and strive to create a peaceful and loving home. This is a time for enjoyment, social gatherings, and celebrations. Governed by Venus, this energy embodies love and beauty, aligning with Taurus' stability and Libra's sense of balance.Sango, the Orisha of thunder, lightning, and justice, is associated with the sacred number 6. This number reflects his strength, authority, and deep connection to the natural elements. It also symbolizes the six aspects of Sango’s power, representing his dynamic and commanding presence in both the physical and spiritual realms",
-
-            7: "Tied to analysis, wisdom, and introspection. You are analytical and seek a deeper understanding of life. Be careful of prison and poison. Say more of positive things because the spirits are waiting to listen to you. Ruled by Neptune. Represents intuition and mysticism. Linked to Pisces' spiritual depth. Ogun, the Orisha of iron, war and labor, is closely tied to the number 7. This number is revered, representing perfection and completeness. For Ogun, it captures his dual essence as both a fierce warrior and a skilled craftsman. The number 7 signifies his powerful influence, reflecting his dominant presence across both spiritual and physical realms. He is the owner of all technology and because this technology shares in his nature, it is almost always used first for war. As Elegba opens the roads, it is Ogún that clears the roads with his machete. He is recognised in the numbers 7 and the colors green and black.",
-
-            8: "Indicates ambition, power, and material success. The number eight holds a special place due to its association with luck, wealth, and success. It is also linked to personal growth, success, and leadership. Number 8 likewise embodies the energy of karma. When number 8 shows up in auspicious ways, expect to receive what you have given. Don't keep your money with people for returns or investment. Ruled by Saturn. Reflects discipline and mastery. Often tied to Capricorn's drive for achievement. Obatala is an Orisha that represents purity, wisdom, and creativity. Obatala is associated with the sacred number 8. He is also the owner of all heads and the mind. Though it was Olorun who created the universe, it is Obatalá who is the creator of the world and humanity. Obatalá is the source of all that is pure, wise peaceful and compassionate. He has a warrior side though through which he enforces justice in the world. His color is white which is often accented with red, purple and other colors to represent his/her different paths. White is most appropriate for Obatalá as it contains all the colors of the rainbow yet is above them. Obatalá is also the only orisha that has both male and female paths",
-
-            9: "Suggests humanitarianism, completion, and service. You are idealistic and seek to serve others. Avoid violent/conflict and take things easy to avoid disaster /destruction. Ruled by Mars. Represents passion and courage. Connected to Scorpio's transformative energy. Oya is an Orisha that represents winds, storms, and transformation. Oya is associated with the sacred number 9. The numbers reflect her power and influence, as well as her ability to create change and transformation. The number 9 represents the nine aspects of Oya's power and her connection to the nine realms of existence. Oyá is the ruler of the winds, the whirlwind and the gates of the cemetery. Her number is nine which recalls her title of Yansa or 'Mother of Nine' in which she rules over the egun or dead. She is also known for the colors of maroon, flowery patterns and nine different colors. She is a fierce warrior who rides to war with Shangó (sharing lightning and fire with him) and was once the wife of Ogún."
-        };
-
          // Function to calculate the single-digit numerology number
         function getNumerologyNumber(dateString) {
             let digits = dateString.replace(/[^0-9]/g, ""); // Remove non-numeric characters
@@ -360,7 +353,7 @@
 
             if (!birthdate) {
                 resultDiv.style.display = "block inline";
-                resultDiv.innerHTML = "<span style='color:red;'>Select your birth date.</span>";
+                resultDiv.innerHTML = "<span style='color:red; font-size:14px'>Select your birth date.</span>";
                 return;
             }
 

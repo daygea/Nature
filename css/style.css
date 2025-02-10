@@ -1,0 +1,58 @@
+ .odusign{
+            font-family: Arial, sans-serif;
+            text-align: center;
+/*            margin-top: 20vh;*/
+            font-size: 20px;
+        }
+        .numerology{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 10vh;
+            font-size: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+
+     #birthdate-box {
+                margin-bottom: 10px;
+            }
+
+       input[type="date"] {
+            width: 80%;
+            max-width: 250px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }    
+
+        button {
+            font-size: 16px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #random-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #random-btn:hover {
+            background-color: #45a049;
+        }
