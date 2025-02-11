@@ -139,14 +139,16 @@ const oduMessages = {
         },
         "Orisha": "Ori re ati Esu pelu Ogun. Orishanla ni o pon dandan fun onifa yi ni bibo.",
         "Taboo": "Apo Sasamura, Ewe Labelabe, Abere iranso, Epa (Groundnuts), Odunkun (Sweet Potato), Eran Agburin, Agbado (Maize), Gbogbo Efo, Ma re aso ni aro, Ma se okanjuwa, Ma sun sinu okunkun, Ma se je ejo, Ma je ope oyinbo (Pine-apple), Ma je okana, Ma se lo akeregbe mu omi tabi pon omi. Eni ti ifa yi ba bi gbogo ma wo aso funfun ni gbogbo igba nitori ayalu ibi ki o ma ba baa.",
-        "Names": "Adeleke",
+        "alias": "Eji Onile",
+        "Names": "Adeleke, Adeyeri, Awolola, Ajeyimika, etc.",
         "Occupation": "Owo sise - Iyo tabi Eso, Ise Awo - (Babalawo/onisegun), Medical Doctor (pharmacist)",
-        "Credit": "",
+        "Credit": "Apapo Odu Cultural Organization, Babalawo Oba Ela Ifa, Babalawo Lanre Olaifa (ijo Orunmila UK), <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri Foundation</a>",
         "audioURL": [
         
         ],
         "videoURL": [
-          
+            "https://www.youtube.com/watch?v=Mqdyl-7MLbA",
+            "https://www.youtube.com/watch?v=qJU52WYvi6A"
         ]
     },
 

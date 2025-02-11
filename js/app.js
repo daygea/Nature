@@ -1,9 +1,7 @@
     const PAYSTACK_PUBLIC_KEY = "pk_live_b39b445fba8a155f04a04980705a3c10ae85d673";
        // Define free Odùs (first 16)
     const freeOdus = [
-        "Ejiogbe", "Oyeku Meji", "Iwori Meji", "Idi Meji", "Irosun Meji", "Owonrin Meji", 
-        "Obara Meji", "Okanran Meji", "Ogunda Meji", "Osa Meji", "Ika Meji", "Oturupon Meji", 
-        "Otura Meji", "Irete Meji", "Ose Meji", "Ofun Meji", "Osa Owonrin"
+        "Ejiogbe", "Osa Owonrin"
     ];
     
     const SECRET_KEY = "DqUHBw7iFj3ia0pyp+QIvKJ5NgJFXE2PcZk95Kt2w6qpqOZ82iAF4Kx88Khb2KFl";
