@@ -3,6 +3,7 @@
     const freeOdus = [
         "Ejiogbe", "Osa Owonrin"
     ];
+    document.getElementById("year").textContent = new Date().getFullYear();
     
     const SECRET_KEY = "DqUHBw7iFj3ia0pyp+QIvKJ5NgJFXE2PcZk95Kt2w6qpqOZ82iAF4Kx88Khb2KFl";
 
