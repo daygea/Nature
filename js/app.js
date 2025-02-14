@@ -259,7 +259,8 @@
                     configHTML = `<h2>Odu</h2><p>Configuration not found for ${oduName}.</p>`;
                 }
             }
-
+            configHTML += `<img src="img/eye.png" />`;
+            
             configurationElement.innerHTML = configHTML;
 
         };
