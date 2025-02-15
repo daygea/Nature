@@ -9,8 +9,13 @@
 </head>
 <body>
     <div class="container-fluid">
-        <h1 style="text-align: center;">Nature Speaks</h1>
-        <center><span>Mo se iba Olorun Olodumare, Ajagunmale, Aworanmaja, Odu Ologbooje, Egan, Gbogbo Eleye, Irinwo Imole, Igba Imole, Okanle ni Irinwo Imole, Otalelugba Imole. Mo se iba gbogbo ajunilo.</span></center>
+        <h1 style="text-align: center;"><img src="img/logo.png" alt="NatureLogo" style="height: 50px;" />Nature Speaks</h1>
+        <div class="row">
+            <div class="col-12 text-center">
+                 <p style="color:green;">Mo se iba Olorun Olodumare, Ajagunmale, Aworanmaja, Odu Ologbooje, Egan, Gbogbo Eleye, Irinwo Imole, Igba Imole, Okanle ni Irinwo Imole, Otalelugba Imole. Mo juba ajunilo.</p>
+            </div>
+        </div>
+        
         <div class="row">
             <div id="configurationResult" class="col-sm-3 odusign">
                 <img src="img/eye.png" style="transform: scaleX(-1);" />
@@ -43,7 +48,7 @@
                 <select id="solutionDetails" class="form-control"></select>
                 <br>
 
-                <button onclick="performUserDivination()" class="btn btn-md btn-danger">Reveal Message</button>
+                <button onclick="performUserDivination()" class="btn btn-md btn-default">Reveal Message</button>
 
                 <div id="divinationResult">
                     <!-- Result will be displayed here -->
@@ -53,7 +58,7 @@
                 <p><b>Enter your birth date.</b></p>
                     <div id="birthdate-box">
                         <input type="date" id="birthdate" /><br/><br/>
-                        <button class="btn btn-md btn-primary" id="determine-btn">Reveal Data</button>
+                        <button class="btn btn-md btn-default" id="determine-btn">Reveal Message</button>
                     </div>
 
                     <div id="result"></div>
@@ -69,7 +74,11 @@
 
                     <div class="col-md-4">
                         <h4>About Nature Speaks</h4>
-                        <p>Nature Speaks is a platform providing deep insights into Ifa spirituality and numerology.</p>
+                        <p>Nature Speaks is a platform providing deep insights into Ifa divination and date of birth.</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a target="_blank" href="https://paystack.com/pay/aokfoundation" class="btn btn-md btn-default">Help move the project move forward.</a>
                     </div>
 
                 </div>
@@ -77,7 +86,7 @@
                 <!-- Copyright -->
                 <div class="row">
                     <div class="col-12 text-center">
-                        <p>&copy; <span id="year"></span> Nature Speaks. All Rights Reserved.</p>
+                        <p>&copy; <span id="year"></span> Nature Speaks by <a target="_blank" href="https://aokfoundation.org/">Aminat Olanbiwoninu Kadri (AOK) Foundation</a>. All Rights Reserved.</p>
                     </div>
                 </div>
             </div>

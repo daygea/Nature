@@ -1,3 +1,7 @@
+ body{
+    color: green;
+ }
+
  .odusign{
             font-family: Arial, sans-serif;
             text-align: center;
@@ -65,7 +69,7 @@
             }
 
             .footer h4 {
-                color: #f8b400;
+                color: green;
             }
 
             .footer a {
