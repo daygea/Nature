@@ -138,11 +138,11 @@ const oduMessages = {
             }
         },
         "Orisha": "Ori re ati Esu pelu Ogun. Orishanla ni o pon dandan fun onifa yi ni bibo.",
-        "Taboo": "Apo Sasamura, Ewe Labelabe, Abere iranso, Epa (Groundnuts), Odunkun (Sweet Potato), Eran Agburin, Agbado (Maize), Gbogbo Efo, Ma re aso ni aro, Ma se okanjuwa, Ma sun sinu okunkun, Ma se je ejo, Ma je ope oyinbo (Pine-apple), Ma je okana, Ma se lo akeregbe mu omi tabi pon omi. Eni ti ifa yi ba bi gbogo ma wo aso funfun ni gbogbo igba nitori ayalu ibi ki o ma ba baa.",
+        "Taboo": "Apo Sasamura, Ewe Labelabe, Abere iranso, Epa (Groundnuts), Odunkun (Sweet Potato), Eran Agburin, Agbado (Maize), Gbogbo Efo, Ma re aso ni aro, Ma se okanjuwa, Ma sun sinu okunkun, Ma se je ejo, Ma je ope oyinbo (Pine-apple), Ma je okana, Ma se lo akeregbe mu omi tabi pon omi. Eni ti ifa yi ba bi gbodo ma wo aso funfun ni gbogbo igba nitori ayalu ibi ki o ma ba baa.",
         "alias": "Eji Onile",
         "Names": "Adeleke, Adeyeri, Awolola, Ajeyimika, etc.",
-        "Occupation": "Owo sise - Iyo tabi Eso, Ise Awo - (Babalawo/onisegun), Medical Doctor (pharmacist)",
-        "Credit": "Apapo Odu Cultural Organization, Babalawo Oba Ela Ifa, Babalawo Lanre Olaifa (ijo Orunmila UK), <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
+        "Occupation": "Owo sise - Iyo tabi Eso, Ise Awo - (Babalawo/Onisegun), Medical Doctor (pharmacist)",
+        "Credit": "Apapo Odu Cultural Organization, Babalawo Lanre Olaifa (ijo Orunmila UK),Babalawo Oba Ela Ifa , <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
         "audioURL": [
         
         ],
@@ -23654,7 +23654,7 @@ const oduMessages = {
             }
         },
         "Orisha": "Ori, Ogun ati esu ni o dara fun onifa yi ni bibo loore koore.",
-        "Taboo": "Onifa yi ko gbodo lo ewe agbosa, ki o ma lo ewe tabi eso tagiri, kii je eran edun, ki o maje koko, ki mu emu, kii je isu esuru tabi ese, ki o ma je isu alo, kii je isu emina, onifa yi kii je eye adan, kii je tabi lo eye odibe, ki o ma lo igi ti o wo si ona, kii je eyin adie, kii je alubosa, ki o ma lo tabi je igbin alukose, kii mu oti rara, ki o ma je ounje gbigbona rara. Onifa yi gbodo sora fun ounje ni jije nitori alubosa yi je eewo re o, ki o si yera fun awon toku. Aso funfun ni o dara fun onifa yi o ",
+        "Taboo": "Onifa yi ko gbodo lo ewe agbosa, ki o ma lo ewe tabi eso tagiri, kii je eran edun, ki o maje koko, ki mu emu, kii je isu esuru tabi ese, ki o ma je isu alo, kii je isu emina, onifa yi kii je eye adan, kii je tabi lo eye obibe (abileyin adan), ki o ma lo igi ti o wo si ona, kii je eyin adie, kii je alubosa, ki o ma lo tabi je igbin alukose, kii mu oti rara, ki o ma je ounje gbigbona rara. Onifa yi gbodo sora fun ounje ni jije nitori alubosa yi je eewo re o, ki o si yera fun awon toku. Aso funfun ni o dara fun onifa yi o ",
         "Names": "Ifajuwon",
         "Occupation": "Ise ogun ni o dara fun onifa yi o je ise asela re o ",
         "alias": "Osa onilefun, Osa onibu",
