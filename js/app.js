@@ -169,7 +169,29 @@
                 populateDropdown(solutionDetailsDropdown, details);
             };
 
+            const smoothScrollTo = (targetPosition, duration) => {
+                const startPosition = window.scrollY;
+                const distance = targetPosition - startPosition;
+                let startTime = null;
 
+                const animation = (currentTime) => {
+                    if (!startTime) startTime = currentTime;
+                    const timeElapsed = currentTime - startTime;
+                    const progress = Math.min(timeElapsed / duration, 1);
+                    
+                    window.scrollTo(0, startPosition + distance * easeInOutQuad(progress));
+
+                    if (timeElapsed < duration) {
+                        requestAnimationFrame(animation);
+                    }
+                };
+
+                const easeInOutQuad = (t) => {
+                    return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+                };
+
+                requestAnimationFrame(animation);
+            };
 
     const performUserDivination = () => {
     const mainCast = document.getElementById("mainCast").value;
@@ -194,13 +216,19 @@
         const orientationText = orientation === "Positive" ? "Ire" : "Ayewo";
         const orientationEmi = orientation === "Positive" ? "Awonranmaja" : "Ajagunmale";
 
-    const audioHTML = audioUrls.length
-        ? audioUrls.map(url => `<p><a href="${url}" target="_blank">Listen to Audio</a></p>`).join("")
-        : "<p>No audio available.</p>";
+    // Generate separate numbered lists for audio and video links
+    let audioHTML = "<p>No audio available.</p>";
+    if (audioUrls.length > 0) {
+        audioHTML = `<b>Audio:</b>` + 
+        audioUrls.map((url, index) => `<p>${index + 1}. <a href="${url}" target="_blank">Listen to Audio</a></p>`).join("");
+    }
 
-    const videoHTML = videoUrls.length
-        ? videoUrls.map(url => `<p><a href="${url}" target="_blank">Watch Video</a></p>`).join("")
-        : "<p>No video available.</p>";
+    let videoHTML = "<p>No video available.</p>";
+    if (videoUrls.length > 0) {
+        videoHTML = `<b>Video:</b>` + 
+        videoUrls.map((url, index) => `<p>${index + 1}. <a href="${url}" target="_blank">Watch Video</a></p>`).join("");
+    }
+
 
     const resultElement = document.getElementById("divinationResult");
 
@@ -228,6 +256,8 @@
 //             `;
         // }
     displayConfiguration(mainCast);
+        // Slow smooth scroll to result section (2 seconds duration)
+    smoothScrollTo(resultElement.offsetTop, 2000);
 };
 
     const displayConfiguration = (oduName) => {
@@ -284,6 +314,8 @@
         document.getElementById("determine-btn").onclick = () => {
             const birthdate = document.getElementById("birthdate").value;
             const resultDiv = document.getElementById("result");
+            const configurationElement = document.getElementById("configurationResult");
+            let configHTML = "";
 
             if (!birthdate) {
                 resultDiv.style.display = "block inline";
@@ -299,4 +331,17 @@
                 <center><h1>Numerology No: ${numerologyNumber}</h1></center>
                 <p>${numerologyMeanings[numerologyNumber]}</p>
             `;
+            configHTML += `<img src="img/eye.png" style="transform: scaleX(-1);" />`;
+            configurationElement.innerHTML = configHTML;
+               // Slow smooth scroll to result section (2 seconds duration)
+    smoothScrollTo(resultElement.offsetTop, 2000);
         };
+
+
+
+
+
+
+
+
+        
