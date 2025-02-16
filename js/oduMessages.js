@@ -142,15 +142,16 @@ const oduMessages = {
         "alias": "Eji Onile",
         "Names": "Adeleke, Adeyeri, Awolola, Ajeyimika, etc.",
         "Occupation": "Owo sise - Iyo tabi Eso, Ise Awo - (Babalawo/Onisegun), Medical Doctor (pharmacist)",
-        "Credit": "Apapo Odu Cultural Organization, Araba Lanre Olaifa (ijo Orunmila UK), Oba Ela Ifa , Oluwo Ifa Alagbado kingdom (Ifa White) , <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
+        "Credit": "Apapo Odu Cultural Organization, Araba Lanre Olaifa (ijo Orunmila UK), Babalawo Fagbemi Ifagbenro, Oba Ela Ifa , Oluwo Ifa Alagbado kingdom (Ifa White) , <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
     
         ],
         "videoData": [
             { url: "https://www.youtube.com/watch?v=Mqdyl-7MLbA", author: "Araba Lanre Olaifa (ijo Orunmila UK)" },
-            { url: "https://www.youtube.com/watch?v=qJU52WYvi6A", author: "Oba Ela Ifa" },
+            { url: "https://www.youtube.com/watch?v=HNeNCNeiXlc", author: "Babalawo Fagbemi Ifagbenro" },
             { url: "https://www.youtube.com/watch?v=g8DyWIARlE0", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" },
-            { url: "https://www.youtube.com/watch?v=Z199uW8GCvo", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" }
+            { url: "https://www.youtube.com/watch?v=qJU52WYvi6A", author: "Oba Ela Ifa" }
+            
         ]
     },
 
@@ -2545,12 +2546,13 @@ const oduMessages = {
         "Taboo": "Ki onifa yi ma se je aja, ki o ma je ejo, ki o ma se je gbogbo ogede rara, ki o ma se lo ile ikan tabi koriko yaya, ki o ma je eran agburin, ki o ma se je obo tabi edun rara, ki o ma lo kokoro Upen (Epin), ki o ma se mu emu tabi gbogbo oti, ki o ma je epa (groundnut), ki o ma se je tabi lo elegede, ki o ma si lo eya oge rara, ki o ma lo aso dudu ati aso pupa. Ki onifa yi gbiyanju lati maa wo aso olomi awo ewe (green) ni igba gbogbo.",
         "Names": "",
         "Occupation": "Aso tita ni owo onifa yi o, tabi ki o ma ran aso, tabi ki onifa yi fi ise miran kun ise aso yi",
-        "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
+        "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), Babalawo Fagbemi Ifagbenro, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
             
         ],
         "videoData": [
-           { url: "https://www.youtube.com/watch?v=ffiH1mCVO7w", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" }
+           { url: "https://www.youtube.com/watch?v=ffiH1mCVO7w", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" },
+           { url: "https://www.youtube.com/watch?v=RRhe16pmH38", author: "Babalawo Fagbemi Ifagbenro" }
         ]
     },
 
@@ -2696,12 +2698,13 @@ const oduMessages = {
         "Taboo": "Ki onifa yi ma je eran aja (dog), ki o ma se je ejo, ki o ma se je eran okete, ki o ma se mu emu tabi oguro, ki onifa yi mase je ila rara (okro), ki o ma se je epa pelu (groundnuts), ki o ma se je eran ikun, ki o ma se je tabi lo eyele, ki onifa yi jina si adie ni jije , ki o ma se lo eran esin tabi ki o je, ki o ma se je efo ebita, ki o ma se lo oparun, ki o ma je eran awawa, ki o ma se je tabi lo eran erin (elephant), ki o ma se lo aso dudu ati pupa rara, ki onifa yi ma si se ilara eniyan, ki o ma si da eniyan loro, nitori ki o ma ba fi owo ara re se ara re.",
         "Names": "",
         "Occupation": "Owo sise ni ise onifa yi tabi ki o ma se ise ohun sinsin tabi ki o ma tee so.",
-        "Credit": "Apapo Odu Cultural Organization, Oluawo Ifakayode Akala-Ifa, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
+        "Credit": "Apapo Odu Cultural Organization, Oluawo Ifakayode Akala-Ifa, Babalawo Fagbemi Ifagbenro, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
             
         ],
         "videoData": [
-           { url: "https://www.youtube.com/watch?v=Gk0MwXOVu18", author: "Oluawo Ifakayode Akala-Ifa" }
+           { url: "https://www.youtube.com/watch?v=Gk0MwXOVu18", author: "Oluawo Ifakayode Akala-Ifa" },
+           { url: "https://www.youtube.com/watch?v=DBOboxwKrxI", author: "Babalawo Fagbemi Ifagbenro" }
         ]
     },
 
@@ -2846,12 +2849,15 @@ const oduMessages = {
         "Taboo": "Ki o ma se je ogede agbagba, ki onifa yi ma se mu oti rara, ki o ma si je ejo, ki onifa yi ma se je tabi lo eye agbigbo, ki o ma si lo eye akala, ki onifa yi ma se je agbon (coconuts), ki o ma je eran agburin, ki onifa yi ma se rin ninu ogbara ojo, ki o si ma lo eyi pelu, ki o ma se je ila (okro), ki o ma si se je akan, ki o ma sere labe igi odan tabi ki o lo rara, ki o ma se je ijapa, ki onifa yi mase je eran aja, ki onifa yi naa ma se lo aso dudu ati aso pupa, ki o ma se lo ewe jiwenne rara, ki onifa yi ma se je akara rara. Aso ala tabi aso ti o ni iho bi lace ni ki onifa yi tera mo ni wiwo oo.",
         "Names": "",
         "Occupation": "Ise contractor ni ise onifa yi, nitori wipe ki i se eniti o gbodo joko ti ise kan ni sise.",
-        "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
+        "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), Babalawo Fagbemi Ifagbenro, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
             
         ],
         "videoData": [
-           { url: "https://www.youtube.com/watch?v=ty7rsmQ-ACM", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" }
+           { url: "https://www.youtube.com/watch?v=ty7rsmQ-ACM", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" },
+            { url: "https://www.youtube.com/watch?v=kretIHbodAc", author: "Babalawo Fagbemi Ifagbenro" }
+
+           
         ]
     },
 
@@ -3148,12 +3154,13 @@ const oduMessages = {
         "Taboo": "Onifa yi ko gboodo joko si ori okiti, ki o ma je eran odogbo, ki onifa yi ma da ajo adko tabi ki o ya owo sowo, onifa yi ko gbodo je adie, ki onifa yi ma se lo aso dudu tabi owu dudu rara, onifa yi ko gbodo lo ohunkohun lara oku, ki onifa yi ma se je eran ewure, ki o ma je eran aguntan, onifa yi ko gbodo se osugbo, ki o ma je eran efon, onifa yi ko gbodo je efo iroko, onifa yi ko gbodo gbe oyan obinrin si enu tabi ki o yan ale, ma se ba eniyan pin aso wo tabi ki o ma sa ope, onifa yi ko gbodo je eran eere tabi eye ure, ki o ma se je eran etu, ki o ma pa tabi lo esinsin rara. Aso funfun ati aso aran ni odara fun onifa yi lore koore.",
         "Names": "",
         "Occupation": "Babalawo tabi owo sise ni ise re.",
-        "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
+        "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), Babalawo Fagbemi Ifagbenro, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
             
         ],
         "videoData": [
-            { url: "https://www.youtube.com/watch?v=PKzp-PgaRwg", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" }
+            { url: "https://www.youtube.com/watch?v=PKzp-PgaRwg", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" },
+            { url: "https://www.youtube.com/watch?v=3EqaDfsN8YA", author: "Babalawo Fagbemi Ifagbenro" }
         ]
     },
 
@@ -3299,13 +3306,16 @@ const oduMessages = {
         "Taboo": "Onifa yi ki je epa (groundnuts), ki o ma se je akan, ki o ma se lo eye ega, ki onifa yi ma se mu ole tabi ki o ba won le ole, onifa yi ko gbodo je eran okete, ki o ma lo tabi je eran ere, ki o ma se lo ewe tabi igi emi, ki o ma se je eran efirimojo, ki o ma se lo ewe tabi owu egudu, ki onifa yi mase je adie opipi, onifa yi ko gbodo je agbado (maize), ki o ma mu oti tabi gbogbo emu, ki o ma je eja esu, ki o ma je eran uki, ki o ma se lo eru ori akitan, ki onifa yi ma se ni ikanra. Aso funfun pelu ewu gereje, ki o si ma mura gegebu oloye ni igba gbogbo.",
         "Names": "",
         "Occupation": "Babalawo tabi owo sise ni ise onifa yi o.",
-        "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
+        "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), Babalawo Fagbemi Ifagbenro, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
         "alias":"Ogbe gbarada, Ogbe Obara",
          "audioData": [
             
         ],
         "videoData": [
-            { url: "https://www.youtube.com/watch?v=9jAshSSMd2Y", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" }
+            { url: "https://www.youtube.com/watch?v=9jAshSSMd2Y", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" },
+            { url: "https://www.youtube.com/watch?v=VjhSWZi_lWE", author: "Babalawo Fagbemi Ifagbenro " }
+
+            
         ]
     },
 
@@ -3597,16 +3607,17 @@ const oduMessages = {
             }
         },
         "Orisha": "Ori, Orisa ala, Esu Odara, Egungun ati Orisa Osun Ebo riru ni ki onifa yi ma di opo re mu lore koore.",
-        "alias":"Ogbe eyonu, Ogbe suuru.",
+        "alias":"Ogbe yonu, Ogbe suuru.",
         "Taboo": "Onifa yi ko gbodo maa binu tabi ko iwosi, ko gbodo fi mariwo ope se ogun, onifa yi ko gbodo rin ninu ojo tabi fi omi ojo san ara re, ko gbodo lo ogere ope tabi ki o je rara, ko gbodo je eran aja, ki o ma se ere ori okiti, onifa yi ko gbodo maa je eniyan niyan, ko gbodo dele enikeni, ki o ma lo esusu tabi ogan, onifa yi ki o je eyele tabi fi se ogun, mafe obinrin pupa, tabi yan ale, tabi ki o gbe ara le obinrin, ma fi wasu-wadu se ohunkohun, ma je eran ewure, agutan, onifa yi ko gbodo lo ewe emi tabi emi, ma se je efo tete rara, onifa yi ko gbodo je akan, epa ati agbado pelu koko. Aso funfun pelu aso abona ni ki o ma wo lore koore.",
         "Names": "",
         "Occupation": "Babalawo, tabi owo sise tabi ise agbe ohun gbingbin tabi ohun osin ni ise re.",
-        "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
+        "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), Babalawo Fagbemi Ifagbenro, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
             
         ],
         "videoData": [
-           { url: "https://www.youtube.com/watch?v=dQLcd3tksAE", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" }
+           { url: "https://www.youtube.com/watch?v=dQLcd3tksAE", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" },
+           { url: "https://www.youtube.com/watch?v=-2ZLvtTRAOA", author: "Babalawo Fagbemi Ifagbenro" }
         ]
     },
 
@@ -3900,17 +3911,20 @@ const oduMessages = {
                 }
             }
         },
-        "alias":"Ogbe Ka re ile",
+        "alias":"Ogbe ka re ile",
         "Orisha": "Ori, Orisa Sango, Ogun, Aje, Ayi ni onifa yi gbodo maa bo ni igba gbogbo.",
         "Taboo": "Onifa yi ko gbodo je eran okere, ki o ma mu emu tabi gbogbo oti, ki i je epa (groundnuts), ki o ma se je akan, ki o ma je ila, onifa yi ko gbodo je eran arika tabi igi arika, ki onifa yi ma se lo ileke, onifa yi ko gbodo fi abe kan ori re, ko si gbodo lo tabi je eso igba dara, onifa yi ko gbodo je koko, ko gbodo je eran okete, ki i je eyin awo, onifa yi ko le pa tabi lo eye elukuku sugbon o le maa sin, onifa yi gbodo ma turaka ni gbogbo igba, onifa yi gbodo maa se itoju alejo dara. AKIYESI: sinsin eye elukuku yi dara fun isegun fun onifa yi, ati wipe ko gbodo je ki o han si eniyan loju wipe owo po ni owo oun. Ki o si mo daju wipe nipa sise itoju alejo yi ni ola re wa. ASO RE: Aso Guinea lorisirisi ni olori aso re, Eyi ni wipe aso ti ko ni iho rara ni ki o po ninu aso onifa yi.",
         "Names": "",
         "Occupation": "Ise agbe ohun osin ni ise onifa yi. Paapa julo onifa yi le se owo okuta tita.",
-        "Credit": "Apapo Odu Cultural Organization, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
+        "Credit": "Apapo Odu Cultural Organization, Babalawo Fagbemi Ifagbenro, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
             
         ],
         "videoData": [
-           { url: "https://www.youtube.com/watch?v=n9HvCy46zRE", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" }
+           { url: "https://www.youtube.com/watch?v=n9HvCy46zRE", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" },
+           { url: "https://www.youtube.com/watch?v=653XVRDPQMg", author: "Babalawo Fagbemi Ifagbenro" }
+
+           
         ]
     },
 
@@ -4056,11 +4070,12 @@ const oduMessages = {
         "Taboo": "Onifa yi ko gbodo lo opon yato si opon ifa, ki o ma fi awo jenu rara, kii lo tabi je tete abalaye, onifa yi ko gbodo je epa (groundnuts), ki i je eran agburin, ki i je eyele, ki onifa yi ma se gba omo to rara o, ki o ma se jeri eniyan rara o, ki o ma se lo ewe tabi egbo gbegi, ki o ma se je koko, ki o ma si mu emu, ki o ma si se je ohun gbigbona, onifa yi ko gbodo je abado yiyan ati guguru, ko gbodo lo oyin rara, ki o ma se lo opoli, ki onifa yi ma se je eran esi. ASO RE: Aso alawo ewe ni ki o po tabi aso oni koriko tabi aso aran ni ki o po ninu aso onifa yi o. ",
         "Names": "",
         "Occupation": "Ise agbe ohun sinsin bi eran, eja, adie, elede ni owo re.",
-        "Credit": "Apapo Odu Cultural Organization, Babalawo Ifatunde Ifatinuwe Ojuotola, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
+        "Credit": "Apapo Odu Cultural Organization, Babalawo Fagbemi Ifagbenro, Babalawo Ifatunde Ifatinuwe Ojuotola, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
             
         ],
         "videoData": [
+            { url: "https://www.youtube.com/watch?v=UMjVY-9hKKQ", author: "Babalawo Fagbemi Ifagbenro" },
             { url: "https://www.youtube.com/watch?v=IC0dwSNji_M", author: "Babalawo Ifatunde Ifatinuwe Ojuotola" }
            
         ]
@@ -4360,12 +4375,12 @@ const oduMessages = {
         "Taboo": "Onifa yi ko gbodo je epa (groundnut), ki i lo eye agbigbo, ko gbodo je akuko adie, ko gbodo je tabi lo eye adan, ki i je akan, onifa yi ko gbodo je eran ewure, ki i pa tabi lo tabi je eran ologbo, onifa yi ko gbodo lo tabi je awon efo wonyi, tete, gbowo tabi efo elegede tabi eso elegede, ma mu oti, siga tabi omije gbigbona ti o ba nyo eruku, ma je ila tabi igi ojiya, ma yan ale tabi ore ikoko, onifa yi ki i je eran okere, ma se ode tabi lo igi iroko, ma se lo ohunkohun lara oku rara, ma lo tabi je eran inaki, ma je koko rara tabi rinrin aganjo oru. ASO RE: Aso funfun ni o dara ju fun onifa yi lati maa wo.",
         "Names": "",
         "Occupation": "Babalawo ni onifa yi ponbele",
-        "Credit": "Apapo Odu Cultural Organization, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
+        "Credit": "Apapo Odu Cultural Organization, Babalawo Fagbemi Ifagbenro, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
             
         ],
         "videoData": [
-            { url: "", author: "" }
+            { url: "https://www.youtube.com/watch?v=F6EnivvFsYQ", author: "Babalawo Fagbemi Ifagbenro" }
         ]
     },
 
@@ -4512,12 +4527,12 @@ const oduMessages = {
         "Taboo": "Onifa yi ko gbodo lo alangba, ki o ma se je egusi bara ati egusi atowo, ki i lo eye igun, ki o ma se lo ewe agbonyin, onifa yi ko gbodo je agbon, onifa yi ko gbodo lo ohun gbigbona, owo sisan tabi oro miran tabi omi gbigbona, onifa yi ko gbodo lowo ninu sise ogun buruku rara, ma se je orogbo, ki i je eyin adie, ki o ma se lo aso odun, onifa yi ko gbodo se agidi ibi owo sisan tabi oro miran, ibi ti onifa yi ba ti dide lo, ki o ma se pada joko si ibe mo, ki o ma si rin irin oganjo oru, ki i je eran olube, ki o ma j ogede agbagba rara, onifa yi ko gbodo mu oti kankan rara, onifa yi ko gbodo mu oti kankan rara. Aso funfun ni o dara ni wiwo fun onifa yi ni gbogbo igba.",
         "Names": "",
         "Occupation": "Ise agbe ohun gbingbin tabi babalawo ni ise onifa yi o, tabi ki o se owo ewe ati egbo ni tite pelu ikoride. Onifa yi tun le se agbe fun orisa oko.",
-        "Credit": "Apapo Odu Cultural Organization, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
+        "Credit": "Apapo Odu Cultural Organization, abalawo Fagbemi Ifagbenro, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
             
         ],
         "videoData": [
-           
+           { url: "https://www.youtube.com/watch?v=0JhkMqm5jGI", author: "Babalawo Fagbemi Ifagbenro" }
         ]
     },
 
@@ -4663,12 +4678,13 @@ const oduMessages = {
         "Taboo": "Onifa yi ko le je ila (okro), ko le mu emu oguro tabi ope, ki je akan, ko gbodo je ounje gbigbona tabi igbo mimu, ko gbodo lo iyo ara ope sse ogun, onifa yi ko gbdo je efo iroko, ki i je eyele, onifa yi ko gbodo je eyin kankan rara, ki ilo eye kannakanna, ko gbodo lo tabi je eran inaki, ki i je tete abalaye, ko gbodo je tabi lo eye atiworo, onifa yi ko gbodo lo ewe isin tabi eso re. Aso funfun ni o dara fun onifa yi tabi aso elewe bi aso ankara ni o dara ni wiwo fun.",
         "Names": "",
         "Occupation": "Onifa yi le se adesa, ise osu, tabi ise ogun (agbede, mechanic, panel beater)",
-        "Credit": "Apapo Odu Cultural Organization, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
+        "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
             
         ],
         "videoData": [
-           
+           { url: "https://www.youtube.com/watch?v=m9MTWRy86s4", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" },
+           { url: "https://www.youtube.com/watch?v=MJkCJ6LLRIw", author: "Babalawo Fagbemi Ifagbenro" }
         ]
     },
 
