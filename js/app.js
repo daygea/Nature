@@ -219,14 +219,14 @@
       // Generate numbered list for audio links
     const audioHTML = audioData.length
         ? audioData.map((item, index) => 
-            `<p> <a href="${item.url}" target="_blank">Listen to Audio</a> by ${item.author}</p>`
+            `<p> <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Listen to Audio</a> by ${item.author}</p>`
           ).join("")
         : "<p>No audio available.</p>";
 
     // Generate numbered list for video links
     const videoHTML = videoData.length
         ? videoData.map((item, index) => 
-            `<p> <a href="${item.url}" target="_blank">Watch Video</a> by ${item.author}</p>`
+            `<p> <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Watch Video</a> by ${item.author}</p>`
           ).join("")
         : "<p>No video available.</p>";
 
