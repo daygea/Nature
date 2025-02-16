@@ -255,9 +255,9 @@
 // We want a future where young people are driving transformative change and achieving their full potential. <a target="_blank" href="https://aokfoundation.org/">https://aokfoundation.org</a></p> <br/>
 //             `;
         // }
-    displayConfiguration(mainCast);
+        displayConfiguration(mainCast);
         // Slow smooth scroll to result section (2 seconds duration)
-    smoothScrollTo(resultElement.offsetTop, 2000);
+        //smoothScrollTo(resultElement.offsetTop, 2000);
 };
 
     const displayConfiguration = (oduName) => {
@@ -334,7 +334,7 @@
             configHTML += `<img src="img/eye.png" style="transform: scaleX(-1);" />`;
             configurationElement.innerHTML = configHTML;
                // Slow smooth scroll to result section (2 seconds duration)
-    smoothScrollTo(resultElement.offsetTop, 2000);
+            // smoothScrollTo(resultElement.offsetTop, 2000);
         };
 
 
@@ -344,4 +344,3 @@
 
 
 
-        
