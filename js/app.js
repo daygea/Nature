@@ -209,26 +209,26 @@
     const occupation = oduMessages[mainCast]?.Occupation || "No occupation available.";
     const credit = oduMessages[mainCast]?.Credit || "No credit available.";
     const alias = oduMessages[mainCast]?.alias || "No alias available.";
-    const audioUrls = oduMessages[mainCast]?.audioURL || [];
-    const videoUrls = oduMessages[mainCast]?.videoURL || [];
+    const audioData = oduMessages[mainCast]?.audioData || [];
+    const videoData = oduMessages[mainCast]?.videoData || [];
 
     //Map orientation to descriptive text
         const orientationText = orientation === "Positive" ? "Ire" : "Ayewo";
         const orientationEmi = orientation === "Positive" ? "Awonranmaja" : "Ajagunmale";
 
-    // Generate separate numbered lists for audio and video links
-    let audioHTML = "<p>No audio available.</p>";
-    if (audioUrls.length > 0) {
-        audioHTML = `<b>Audio:</b>` + 
-        audioUrls.map((url, index) => `<p>${index + 1}. <a href="${url}" target="_blank">Listen to Audio</a></p>`).join("");
-    }
+      // Generate numbered list for audio links
+    const audioHTML = audioData.length
+        ? audioData.map((item, index) => 
+            `<p> <a href="${item.url}" target="_blank">Listen to Audio</a> by ${item.author}</p>`
+          ).join("")
+        : "<p>No audio available.</p>";
 
-    let videoHTML = "<p>No video available.</p>";
-    if (videoUrls.length > 0) {
-        videoHTML = `<b>Video:</b>` + 
-        videoUrls.map((url, index) => `<p>${index + 1}. <a href="${url}" target="_blank">Watch Video</a></p>`).join("");
-    }
-
+    // Generate numbered list for video links
+    const videoHTML = videoData.length
+        ? videoData.map((item, index) => 
+            `<p> <a href="${item.url}" target="_blank">Watch Video</a> by ${item.author}</p>`
+          ).join("")
+        : "<p>No video available.</p>";
 
     const resultElement = document.getElementById("divinationResult");
 

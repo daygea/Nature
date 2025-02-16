@@ -142,13 +142,15 @@ const oduMessages = {
         "alias": "Eji Onile",
         "Names": "Adeleke, Adeyeri, Awolola, Ajeyimika, etc.",
         "Occupation": "Owo sise - Iyo tabi Eso, Ise Awo - (Babalawo/Onisegun), Medical Doctor (pharmacist)",
-        "Credit": "Apapo Odu Cultural Organization, Babalawo Lanre Olaifa (ijo Orunmila UK),Babalawo Oba Ela Ifa , <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
-        "audioURL": [
-        
+        "Credit": "Apapo Odu Cultural Organization, Araba Lanre Olaifa (ijo Orunmila UK), Oba Ela Ifa , Oluwo Ifa Alagbado kingdom (Ifa White) , <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
+         "audioData": [
+    
         ],
-        "videoURL": [
-            "https://www.youtube.com/watch?v=Mqdyl-7MLbA",
-            "https://www.youtube.com/watch?v=qJU52WYvi6A"
+        "videoData": [
+            { url: "https://www.youtube.com/watch?v=Mqdyl-7MLbA", author: "Araba Lanre Olaifa (ijo Orunmila UK)" },
+            { url: "https://www.youtube.com/watch?v=qJU52WYvi6A", author: "Oba Ela Ifa" },
+            { url: "https://www.youtube.com/watch?v=g8DyWIARlE0", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" },
+            { url: "https://www.youtube.com/watch?v=Z199uW8GCvo", author: "lOuwo Ifa Alagbado Kingdom (Ifa White)" }
         ]
     },
 
@@ -4803,10 +4805,10 @@ const oduMessages = {
             }
         },
         "alias":"",
-        "Orisha": "",
-        "Taboo": "",
+        "Orisha": "Ori, Orisa-ala, Ope ni ki onifa yi maa bo ni oore koore.",
+        "Taboo": "Onifa yi ko gbodo je ogede agbagba, ko gbodo je agbon, ki i lo tabi je eye oriri, ko gbodo je tabi lo eye adaba, ki i lo tabi pa eye ayekoto, ki o ma se lo ekemo, ki i lo eso elegbede tabi efo re, ki o ma se lo eye igun, ki o ma lo eso tagiri tabi ewe re, ki o ma se mu oti rara, onifa yi ko gbodo je eja esu, onifa yi kii je ila (okro), ki o ma se je akan, kii mu osan agbalumo, kii mu tabi lo eso ewe oyin tabi apon, ki o ma se lo tabi je ojele owun tabi ila kale. Aso funfun ni ki onifa yi maa wo pelu bata funfun, fila funfun, ati ohun oso ara funfun, ni ki onifa yi maa wo.",
         "Names": "",
-        "Occupation": "",
+        "Occupation": "Babalawo yanran ni onifa yi o",
         "Credit": "Apapo Odu Cultural Organization, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
         "audioURL": [
         
