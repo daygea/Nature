@@ -193,72 +193,72 @@
                 requestAnimationFrame(animation);
             };
 
-    const performUserDivination = () => {
-    const mainCast = document.getElementById("mainCast").value;
-    // handleOduAccess(mainCast);
-    const orientation = document.getElementById("orientation").value;
-    const specificOrientation = document.getElementById("specificOrientation").value;
-    const solution = document.getElementById("solution").value;
-    const solutionDetails = document.getElementById("solutionDetails").value;
+            const performUserDivination = () => {
+            const mainCast = document.getElementById("mainCast").value;
+            // handleOduAccess(mainCast);
+            const orientation = document.getElementById("orientation").value;
+            const specificOrientation = document.getElementById("specificOrientation").value;
+            const solution = document.getElementById("solution").value;
+            const solutionDetails = document.getElementById("solutionDetails").value;
 
-    const { message, solutionInfo } = getOduMessageData(mainCast, orientation, specificOrientation, solution, solutionDetails);
+            const { message, solutionInfo } = getOduMessageData(mainCast, orientation, specificOrientation, solution, solutionDetails);
 
-    const orisha = oduMessages[mainCast]?.Orisha || "No orisha data available.";
-    const taboo = oduMessages[mainCast]?.Taboo || "No taboo available.";
-    const names = oduMessages[mainCast]?.Names || "No names available.";
-    const occupation = oduMessages[mainCast]?.Occupation || "No occupation available.";
-    const credit = oduMessages[mainCast]?.Credit || "No credit available.";
-    const alias = oduMessages[mainCast]?.alias || "No alias available.";
-    const audioData = oduMessages[mainCast]?.audioData || [];
-    const videoData = oduMessages[mainCast]?.videoData || [];
+            const orisha = oduMessages[mainCast]?.Orisha || "No orisha data available.";
+            const taboo = oduMessages[mainCast]?.Taboo || "No taboo available.";
+            const names = oduMessages[mainCast]?.Names || "No names available.";
+            const occupation = oduMessages[mainCast]?.Occupation || "No occupation available.";
+            const credit = oduMessages[mainCast]?.Credit || "No credit available.";
+            const alias = oduMessages[mainCast]?.alias || "No alias available.";
+            const audioData = oduMessages[mainCast]?.audioData || [];
+            const videoData = oduMessages[mainCast]?.videoData || [];
 
-    //Map orientation to descriptive text
-        const orientationText = orientation === "Positive" ? "Ire" : "Ayewo";
-        const orientationEmi = orientation === "Positive" ? "Awonranmaja" : "Ajagunmale";
+            //Map orientation to descriptive text
+                const orientationText = orientation === "Positive" ? "Ire" : "Ayewo";
+                const orientationEmi = orientation === "Positive" ? "Awonranmaja" : "Ajagunmale";
 
-      // Generate numbered list for audio links
-    const audioHTML = audioData.length
-        ? audioData.map((item, index) => 
-            `<p> <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Listen to Audio</a> by ${item.author}</p>`
-          ).join("")
-        : "<p>No audio available.</p>";
+              // Generate numbered list for audio links
+            const audioHTML = audioData.length
+                ? audioData.map((item, index) => 
+                    `<p> <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Listen to Audio</a> by ${item.author}</p>`
+                  ).join("")
+                : "<p>No audio available.</p>";
 
-    // Generate numbered list for video links
-    const videoHTML = videoData.length
-        ? videoData.map((item, index) => 
-            `<p> <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Watch Video</a> by ${item.author}</p>`
-          ).join("")
-        : "<p>No video available.</p>";
+            // Generate numbered list for video links
+            const videoHTML = videoData.length
+                ? videoData.map((item, index) => 
+                    `<p> <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Watch Video</a> by ${item.author}</p>`
+                  ).join("")
+                : "<p>No video available.</p>";
 
-    const resultElement = document.getElementById("divinationResult");
+            const resultElement = document.getElementById("divinationResult");
 
-    // if (freeOdus.includes(mainCast) || isOduPaid(mainCast)) {
-    resultElement.innerHTML = `
-        <h1 style="text-align: center;">Divination Result</h1>
-        <h3 style="text-align: center;">${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}</h3>
-        <p>${message} ${solutionInfo}</p>
-        <p><strong>Orisha:</strong> ${orisha}</p>
-        <p><strong>Alias:</strong> ${alias}</p>
-        <p><strong>Taboo:</strong> ${taboo}</p>
-        <p><strong>Names:</strong> ${names}</p>
-        <p><strong>Occupation:</strong> ${occupation}</p>
-        ${audioHTML}
-        ${videoHTML}
-        <p style="padding-bottom:50px"><strong>Credit:</strong> ${credit}</p>
-    `;
-     // } else {
-//          document.getElementById("divinationResult").innerHTML = `
-//                <center> <h4 style="padding-top:30px;">Kindly donate ₦1,000 for 24-hour access to ${mainCast}</h4> <br/>
-//                 <button class="btn btn-lg" onclick="payForOdu('${mainCast}')">Donate Now</button></center>
-//                 <h3>About the NGO</h3>
-//                 <p>Aminat Olanbiwoninu Kadri - AOK Foundation was established in July, 2019 as an organisation committed to improving the quality of life for disadvantaged Africans, by partnering with visionary organizations to enable young people in Africa have access to quality education. <br/><br/>
-// We want a future where young people are driving transformative change and achieving their full potential. <a target="_blank" href="https://aokfoundation.org/">https://aokfoundation.org</a></p> <br/>
-//             `;
-        // }
-        displayConfiguration(mainCast);
-        // Slow smooth scroll to result section (2 seconds duration)
-        //smoothScrollTo(resultElement.offsetTop, 2000);
-};
+            // if (freeOdus.includes(mainCast) || isOduPaid(mainCast)) {
+            resultElement.innerHTML = `
+                <h1 style="text-align: center;">Divination Result</h1>
+                <h3 style="text-align: center;">${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}</h3>
+                <p>${message} ${solutionInfo}</p>
+                <p><strong>Orisha:</strong> ${orisha}</p>
+                <p><strong>Alias:</strong> ${alias}</p>
+                <p><strong>Taboo:</strong> ${taboo}</p>
+                <p><strong>Names:</strong> ${names}</p>
+                <p><strong>Occupation:</strong> ${occupation}</p>
+                ${audioHTML}
+                ${videoHTML}
+                <p style="padding-bottom:50px"><strong>Credit:</strong> ${credit}</p>
+            `;
+             // } else {
+        //          document.getElementById("divinationResult").innerHTML = `
+        //                <center> <h4 style="padding-top:30px;">Kindly donate ₦1,000 for 24-hour access to ${mainCast}</h4> <br/>
+        //                 <button class="btn btn-lg" onclick="payForOdu('${mainCast}')">Donate Now</button></center>
+        //                 <h3>About the NGO</h3>
+        //                 <p>Aminat Olanbiwoninu Kadri - AOK Foundation was established in July, 2019 as an organisation committed to improving the quality of life for disadvantaged Africans, by partnering with visionary organizations to enable young people in Africa have access to quality education. <br/><br/>
+        // We want a future where young people are driving transformative change and achieving their full potential. <a target="_blank" href="https://aokfoundation.org/">https://aokfoundation.org</a></p> <br/>
+        //             `;
+                // }
+                displayConfiguration(mainCast);
+                // Slow smooth scroll to result section (2 seconds duration)
+                //smoothScrollTo(resultElement.offsetTop, 2000);
+        };
 
     const displayConfiguration = (oduName) => {
             const configurationElement = document.getElementById("configurationResult");
