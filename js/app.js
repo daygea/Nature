@@ -219,14 +219,14 @@
               // Generate numbered list for audio links
             const audioHTML = audioData.length
                 ? audioData.map((item, index) => 
-                    `<p> <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Listen to Audio</a> by ${item.author}</p>`
+                    `<p> <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Listen to Audio</a> of ${item.author}</p>`
                   ).join("")
                 : "<p>No audio available.</p>";
 
             // Generate numbered list for video links
             const videoHTML = videoData.length
                 ? videoData.map((item, index) => 
-                    `<p> <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Watch Video</a> by ${item.author}</p>`
+                    `<p> <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Watch Video</a> of ${item.author}</p>`
                   ).join("")
                 : "<p>No video available.</p>";
 
@@ -333,7 +333,7 @@
             `;
             configHTML += `<img src="img/eye.png" style="transform: scaleX(-1);" />`;
             configurationElement.innerHTML = configHTML;
-               // Slow smooth scroll to result section (2 seconds duration)
+            // Slow smooth scroll to result section (2 seconds duration)
             // smoothScrollTo(resultElement.offsetTop, 2000);
         };
 
