@@ -4996,7 +4996,7 @@ const oduMessages = {
         },
        "alias":"",
         "Orisha": "Ori, Orisa-ala ati Ogun ni ki onifa yi maa bo ni gbogbo gba",
-        "Taboo": "",
+        "Taboo": "Onifa yi ko gbodo je eyele, ko gbodo je eye adaba, ki i je ireke (sugar cane), ki onifa yi ma je epa (groundnuts), ko gbodo je agbon, ki o si ma se kanju wa owo, ki i je akan, ki i je ila pelu ewedu, onifa yi ki je efo ebire, ko gbodo je agbado, ki i wo nu ojo (rain), ko gbodo je obi isu tabi ikokore, ki o ma je esuru tabi isu ese, ki o ma se je eran eere, ki o ma se lo igi oro, onifa yi ko gbodo je isu odunkuni. ASO RE: Sanyan tabi aso oniho (lace) ni olori aso onifa yi o.",
         "Names": "",
         "Occupation": "Onifa yi le se ise osu, o si tun le se owo, tabi ki o ma ko orin.",
         "Credit": "Apapo Odu Cultural Organization, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
@@ -5146,11 +5146,11 @@ const oduMessages = {
                 }
             }
         },
-       "alias":"",
-        "Orisha": "",
-        "Taboo": "",
+       "alias":"Oyeku Sidin",
+        "Orisha": "Ori, Aje, Ogun ati Esu odara ni ki onifa yi maa bo ni oore koore.",
+        "Taboo": "Onifa yi ko gbodo lo adin rara, ko gbodo lo igba ti won ti fi se adin ri, yala lati fi mu omi taabi se ohun miran rara. Ko gbodo lo labalaba, onifa yi ko gbodo fi ara kana so aran, ki i jade ni oganjo oru, ki ije akuko adie, onifa yi ko gbodo lo idin tabi pa idun, ki i je isu emina tabi ki o lo, ki onifa yi ma se sare aso ju omo lo oo, ki o ma si se se ogun ika tabi ki o da eniyan loro rara, onifa yi ko gbodo pa ejo tabi je ejo, ko gbodo je eye agbigbo tabi ki o lo, ki i lo ileke rara, tabi se agbere si obinrin tabi enikeni, ki o ma se kanju wa owo rara, onifa yi ko gbodo je tabi lo eran oni, kii ba won mu ole tabi ki o tu eru ti kii se tire wo rara. ASO RE: Omo ni aso onifa yi pelu aso funfun.",
         "Names": "",
-        "Occupation": "",
+        "Occupation": "Babalawo tabi ki o ma se owo inikere ni tabi ni ise onifa yi o",
         "Credit": "Apapo Odu Cultural Organization, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
             
@@ -5299,10 +5299,10 @@ const oduMessages = {
             }
         },
        "alias":"",
-        "Orisha": "",
-        "Taboo": "",
+        "Orisha": "Ori, Egungun, Obalufon ni ki onifa yi maa bo ni igba gbogbo.",
+        "Taboo": "Onifa yi ko gbodo ba eniyan pin irori lo rara, ki je eja ojiji, ko gbodo je eja epiya, kii je eja sawa (eyikeyi), onifa yi kii je gbogbo eja osa, kii mu gbogbo emu ati oti, kii je ogede omini ko gbodo je adie dudu, kii lo eja osin, ko gbodo lo ohunkohun lara oku, ko si ohunkohun ti onifa yi gbodo lo lara eran ekun, kii pa tabi je pelu lo eran ologbo, ko gbodo je ireke (sugar cane), ko gbodo lo tabi je agbon idodu, kii mu oti rara, onifa yi ko gbodo je pepeye. ASO RE: Aso Olosun ti o ni pupa ni o dara fun onifa yi o pelu aso funfun.",
         "Names": "",
-        "Occupation": "",
+        "Occupation": "Babalawo, tabi agbegi lere, carpenter, furniture, bricklaying ni ise asela re. Eyi je ise Obalufon.",
         "Credit": "Apapo Odu Cultural Organization, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
             
@@ -5450,11 +5450,11 @@ const oduMessages = {
                 }
             }
         },
-        "alias":"Oye Won irin Mi",
-        "Orisha": "",
-        "Taboo": "",
+        "alias":"Oye won irin mi",
+        "Orisha": "Ori pelu Ogun ni orisa re ti iwo yoo maa di opo re mu ni igba gbogbo.",
+        "Taboo": "Gbogbo adie je eewo fun onifa yi, onifa yi ko gbdo je eran elede, kii je eran oni, kii je eran legugu, ko gbodo je igbin (Snail), ko gbodo je akan, ki je ijapa, gbogbo isu di eewo fun onifa yi pelu, onifa yi ko gbodo je eja obokun, ko gbodo je eran ere, gbogbo ohun ti o ba ti njo ti di eewo fun onifa yi oo, onifa yi ko gbodo jo rara (dancing), onifa yi ko gbodo je agbon, obi, orogbo, kii yan kanrinkan lehin ti o ba ti we tan, Onifa yi gbodo ji ma si ibinu pelu inu fufu, onifa yi ko gbodo titori ale yiyan ba iyawo ile re ja. ASO RE: Aso funfun ni orisirisi aso ni aso re.",
         "Names": "",
-        "Occupation": "",
+        "Occupation": "Ise ogun ni ise re (mechanic, panel-beater, turner, tailor, etc)",
          "audioData": [
             
         ],
