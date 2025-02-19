@@ -1356,6 +1356,7 @@ const oduMessages = {
         "Occupation": "Onifa yi le se ise ologun. O si tun le se ise owo miran. paapa ti onifa yi ba se ise ni abe eniyan ko ni eewo rara tabi ise babalawo.",
         "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
+            { url: "https://drive.google.com/file/d/17s2Q0NJQUquC0koX8hDnF5oW3V2qJok9/view?usp=drive_link", author: "Babalawo" }
 
         ],
         "videoData": [
@@ -4542,7 +4543,7 @@ const oduMessages = {
         "Taboo": "Onifa yi ko gbodo lo alangba, ki o ma se je egusi bara ati egusi atowo, ki i lo eye igun, ki o ma se lo ewe agbonyin, onifa yi ko gbodo je agbon, onifa yi ko gbodo lo ohun gbigbona, owo sisan tabi oro miran tabi omi gbigbona, onifa yi ko gbodo lowo ninu sise ogun buruku rara, ma se je orogbo, ki i je eyin adie, ki o ma se lo aso odun, onifa yi ko gbodo se agidi ibi owo sisan tabi oro miran, ibi ti onifa yi ba ti dide lo, ki o ma se pada joko si ibe mo, ki o ma si rin irin oganjo oru, ki i je eran olube, ki o ma j ogede agbagba rara, onifa yi ko gbodo mu oti kankan rara, onifa yi ko gbodo mu oti kankan rara. Aso funfun ni o dara ni wiwo fun onifa yi ni gbogbo igba.",
         "Names": "",
         "Occupation": "Ise agbe ohun gbingbin tabi babalawo ni ise onifa yi o, tabi ki o se owo ewe ati egbo ni tite pelu ikoride. Onifa yi tun le se agbe fun orisa oko.",
-        "Credit": "Apapo Odu Cultural Organization, abalawo Fagbemi Ifagbenro, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
+        "Credit": "Apapo Odu Cultural Organization, Babalawo Fagbemi Ifagbenro, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
             
         ],
