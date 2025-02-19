@@ -144,6 +144,7 @@ const oduMessages = {
         "Occupation": "Owo sise - Iyo tabi Eso, Ise Awo - (Babalawo/Onisegun), Medical Doctor (pharmacist)",
         "Credit": "Apapo Odu Cultural Organization, Araba Lanre Olaifa (ijo Orunmila UK), Babalawo Fagbemi Ifagbenro, Oba Ela Ifa , Oluwo Ifa Alagbado kingdom (Ifa White) , <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
+            { url: "https://drive.google.com/file/d/1dTXPlXaF9PIEsRFzbn7fpa3plNNrvKsZ/view?usp=drive_link", author: "Araba Ifaleke Awurela" },
     
         ],
         "videoData": [
@@ -298,7 +299,8 @@ const oduMessages = {
         "Occupation": "Ise aso ni winwun tabi ni tita, Ogbin oko tabi eran sinsin tabi ise itusile, aso re elewe tabi adire ati gini",
         "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
-            
+            { url: "https://drive.google.com/file/d/1dR-HjoW3JjrAYRjc6mhRlJj9f5XQlbTM/view?usp=drive_link", author: "Araba Ifaleke Awurela" }
+
         ],
         "videoData": [
            { url: "https://www.youtube.com/watch?v=wSugMEiWXF0", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" }
@@ -448,7 +450,8 @@ const oduMessages = {
         "Occupation": "Eja tita tabi Eja Sinsin tabi owo sise tabi ise olugbala aso re aso oniho werewere.",
         "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
-            
+            { url: "https://drive.google.com/file/d/1dAjnOcEGIEM5hoEVvBJxUpoRPFPZKpFZ/view?usp=drive_link", author: "Araba Ifaleke Awurela" }
+
         ],
         "videoData": [
            { url: "https://www.youtube.com/watch?v=7YMxi0NK-qo", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" }
@@ -598,6 +601,7 @@ const oduMessages = {
         "Occupation": "Ise Aremo ni ise onifa yi o. Bi ise ogun tita tabi ise isegun tabi agbebi omo (Nurse)",
         "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
+            { url: "https://drive.google.com/file/d/1dB51VLfAm8xRLvNDjpTxxy1aZr6TcSsv/view?usp=drive_link", author: "Babalawo Ifaseun Ifagbenro" }
             
         ],
         "videoData": [
@@ -748,7 +752,8 @@ const oduMessages = {
         "Occupation": "Isease ni loso ni ise re (Barber, Tailor, Goldsmith, tabi Sawo sesegun, Aso ti o dara fun o ni wiwo ni awon aso ti o ni owu lara pupo bi Jakad, Aso Aran.",
         "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
-            
+            { url: "https://drive.google.com/file/d/1dDz0tzOSpAMyg6l-MmTA9EN53AEA73eB/view?usp=drive_link", author: "Babalawo Ifaseun Ifagbenro" }
+
         ],
         "videoData": [
            { url: "https://www.youtube.com/watch?v=B-45imm8Ujo", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" }
@@ -898,6 +903,7 @@ const oduMessages = {
         "Occupation": "Ise Babalawo tabi owo sise ni ise onifa yi",
         "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
+            { url: "https://drive.google.com/file/d/1d8QTsDVVo8TnZXgiLU-rbdVC5OigsjWU/view?usp=drive_link", author: "Araba Ifaleke Awurela" }
             
         ],
         "videoData": [
@@ -1048,7 +1054,8 @@ const oduMessages = {
         "Occupation": "Onifa yi le se ise Babalawo. Sugbon nkan osin ni ona ola re tabi ise agbe (Farming).",
         "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
-            
+            { url: "https://drive.google.com/file/d/1OMq5Bedn9Fl_1vQucS73kyFrvE-Z-3g5/view?usp=drive_link", author: "Araba Ifaleke Awurela" }
+
         ],
         "videoData": [
            { url: "https://www.youtube.com/watch?v=RsRGLNLm5w8", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" }
@@ -1198,7 +1205,8 @@ const oduMessages = {
         "Occupation": "Onifa yi le se ise ademi, o le se owo eran pipa tabi eran siso ni tita tabi ise tu sile, O si tun le se ise ologun (Army, Olopa, Navy, Air-force).",
         "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
-            
+            { url: "https://drive.google.com/file/d/1dFFHWa0vIoNpaZZWQioZOtlwUVWJXUuK/view?usp=drive_link", author: "Araba Ifaleke Awurela" }
+
         ],
         "videoData": [
            { url: "https://www.youtube.com/watch?v=Qf7cxnjOsw0", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" }
@@ -1348,7 +1356,7 @@ const oduMessages = {
         "Occupation": "Onifa yi le se ise ologun. O si tun le se ise owo miran. paapa ti onifa yi ba se ise ni abe eniyan ko ni eewo rara tabi ise babalawo.",
         "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
-            
+
         ],
         "videoData": [
            { url: "https://www.youtube.com/watch?v=X7qh6H0Riwo", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" }
@@ -1498,7 +1506,8 @@ const oduMessages = {
         "Occupation": "Ise Babalawo tabi owo sise ni ise onifa yi o. Onifa yi ko le sin eniyan, beeni ko le se ise labe enikeni. Ki onifa yi so sora gidi ki o ma pe eniyan ni Aje rara.",
         "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
-            
+            { url: "https://drive.google.com/file/d/1dCExrtVUTkWD6XD0GKXOQhjyMaD-8YW3/view?usp=drive_link", author: "Araba Ifaleke Awurela" }
+
         ],
         "videoData": [
            { url: "https://www.youtube.com/watch?v=FkkJd3uLZJQ", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" }
@@ -1648,7 +1657,8 @@ const oduMessages = {
         "Occupation": "Babalawo ponbele ni onifa yi o. Tabi ki o lo se esin ifa ti o ba je wipe ise miran ni o nse.",
         "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
-            
+            { url: "https://drive.google.com/file/d/1dBXOvuy0mAm5uGgSuuDIevZS-VJ26FP8/view?usp=drive_link", author: "Araba Ifaleke Awurela" }
+
         ],
         "videoData": [
            { url: "https://www.youtube.com/watch?v=7HVXeHt5pP8", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" }
@@ -1798,7 +1808,7 @@ const oduMessages = {
         "Occupation": "Ise awon oni balufon ni ise onifa yi o. (Bricklayer, Agbe gi lere)",
         "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
-            
+            { url: "https://drive.google.com/file/d/1dO8UK2BbyQJXKHEqBdfGzJ11kwVesmIU/view?usp=drive_link", author: "Araba Ifaleke Awurela" }
         ],
         "videoData": [
            { url: "https://www.youtube.com/watch?v=z3kRgy73NnQ", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" }
@@ -1948,7 +1958,8 @@ const oduMessages = {
         "Occupation": "Babalawo tabi Medical Doctor tabi ise Alalufa tabi Woli ni ise re. Nitori ojise ni onifa yi lati ode orun.",
         "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
-            
+            { url: "https://drive.google.com/file/d/1dSba1ch1sa6gWkNujQ6VUJ9dqA8MRNTA/view?usp=drive_link", author: "Araba Ifaleke Awurela" }
+
         ],
         "videoData": [
            { url: "https://www.youtube.com/watch?v=d69EJivUlRM", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" }
@@ -2098,6 +2109,7 @@ const oduMessages = {
         "Occupation": "Babalawo ponbe tabi ise ojise ni ise re",
         "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
+            { url: "https://drive.google.com/file/d/1dB2hVARVrg-flwHFfnwcPZraGTLbOxOo/view?usp=drive_link", author: "Araba Ifaleke Awurela" }
             
         ],
         "videoData": [
@@ -2248,7 +2260,8 @@ const oduMessages = {
         "Occupation": "Babalawo tabi ise ogun",
         "Credit": "Apapo Odu Cultural Organization, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
-            
+            { url: "https://drive.google.com/file/d/1dEA7EQGmwYKDroHuYCF7nPEadevdBEKS/view?usp=drive_link", author: "Araba Ifaleke Awurela" }
+
         ],
         "videoData": [
            { url: "https://www.youtube.com/watch?v=L4uK39F2bWM", author: "Babalawo" }
@@ -2398,6 +2411,7 @@ const oduMessages = {
         "Occupation": "Ise ogun, Babalawo",
         "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
+            { url: "https://drive.google.com/file/d/1dPCf9WttuTjyI_Ogko7a9scqgA9wJPlB/view?usp=drive_link", author: "Babalawo Ifaseun Ifagbenro" }
             
         ],
         "videoData": [
@@ -2548,7 +2562,8 @@ const oduMessages = {
         "Occupation": "Aso tita ni owo onifa yi o, tabi ki o ma ran aso, tabi ki onifa yi fi ise miran kun ise aso yi",
         "Credit": "Apapo Odu Cultural Organization, Oluwo Ifa Alagbado Kingdom (Ifa White), Babalawo Fagbemi Ifagbenro, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
-            
+            { url: " https://drive.google.com/file/d/1d8KQ8ukAO7uVUu3kZEQRDruoi4rI7-wf/view?usp=drive_link", author: "Babalawo" }
+
         ],
         "videoData": [
            { url: "https://www.youtube.com/watch?v=ffiH1mCVO7w", author: "Oluwo Ifa Alagbado Kingdom (Ifa White)" },
@@ -4835,6 +4850,7 @@ const oduMessages = {
             
         ],
         "videoData": [
+            { url: "https://www.youtube.com/watch?v=i6OmtiHmUCI", author: "Babalawo Fagbemi Ifagbenro" }
            
         ]
     },
@@ -4978,10 +4994,10 @@ const oduMessages = {
             }
         },
        "alias":"",
-        "Orisha": "",
+        "Orisha": "Ori, Orisa-ala ati Ogun ni ki onifa yi maa bo ni gbogbo gba",
         "Taboo": "",
         "Names": "",
-        "Occupation": "",
+        "Occupation": "Onifa yi le se ise osu, o si tun le se owo, tabi ki o ma ko orin.",
         "Credit": "Apapo Odu Cultural Organization, <a target='_blank' href='https://aokfoundation.org/'>Aminat Olanbiwoninu Kadri (AOK) Foundation</a>",
          "audioData": [
             
