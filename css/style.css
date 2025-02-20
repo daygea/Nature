@@ -1,17 +1,20 @@
  body{
     color: green;
     background-color: white;
-    font-family: cursive;
+    font-family: Courier, monospace;
+    font-weight: bold;
  }
 
  .odusign{
-            font-family: cursive;
+            font-family: Courier, monospace;
+            font-weight: bold;
             text-align: center;
 /*            margin-top: 20vh;*/
             font-size: 20px;
         }
         .numerology{
-            font-family: cursive;
+            font-family: Courier, monospace;
+             font-weight: bold;
             text-align: center;
             margin-top: 10vh;
             font-size: 20px;
