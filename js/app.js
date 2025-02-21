@@ -334,7 +334,7 @@
             configHTML += `<img src="img/eye.png" style="transform: scaleX(-1);" />`;
             configurationElement.innerHTML = configHTML;
             // Slow smooth scroll to result section (2 seconds duration)
-            // smoothScrollTo(resultElement.offsetTop, 2000);
+            smoothScrollTo(resultElement.offsetTop, 2000);
         };
 
 
