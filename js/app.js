@@ -331,7 +331,7 @@
                 <center><h1>Numerology No: ${numerologyNumber}</h1></center>
                 <p>${numerologyMeanings[numerologyNumber]}</p>
             `;
-            configHTML += `<img src="img/eye.png" style="transform: scaleX(-1);" />`;
+            configHTML += `<img class="moving-bg" src="img/eye2.png" />`;
             configurationElement.innerHTML = configHTML;
             // Slow smooth scroll to result section (2 seconds duration)
             smoothScrollTo(resultElement.offsetTop, 2000);

@@ -4,6 +4,22 @@
     font-family: Courier, monospace;
     font-weight: bold;
  }
+.moving-bg {
+/*  width: 100vw;
+  height: 100vh;*/
+  background-image: url('img/eye.png');
+  background-size: cover;
+/*  position: fixed;*/
+  animation: moveAround 10s linear infinite;
+}
+
+@keyframes moveAround {
+  0% { transform: scaleX(-1) translate(0, 0); }
+  25% { transform: scaleX(-1) translate(20px, 20px); }
+  50% { transform: scaleX(-1) translate(-20px, -20px); }
+  75% { transform: scaleX(-1) translate(20px, -20px); }
+  100% { transform: scaleX(-1) translate(0, 0); }
+}
 
  .odusign{
             font-family: Courier, monospace;
