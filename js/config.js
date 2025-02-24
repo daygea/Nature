@@ -1,4 +1,21 @@
-// config.js
-const PAYSTACK_PUBLIC_KEY = "pk_live_b39b445fba8a155f04a04980705a3c10ae85d673";  // Replace with your actual key
+function loadScript(src) {
+    return new Promise((resolve, reject) => {
+        const script = document.createElement("script");
+        script.src = src;
+        script.onload = resolve;
+        script.onerror = reject;
+        document.body.appendChild(script);
+    });
+}
 
-export { PAYSTACK_PUBLIC_KEY };  // Allow other scripts to use it
+// Load scripts one after another
+window.onload = async () => {
+    try {
+    	await loadScript("js/app.js");
+        await loadScript("js/oduMessages.js");
+        await loadScript("js/numerology.js");        
+        console.log("All scripts loaded successfully.");
+    } catch (error) {
+        console.error("Error loading scripts:", error);
+    }
+};

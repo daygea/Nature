@@ -1,15 +1,15 @@
  body{
+    -webkit-user-select: none; /* Disable text selection */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     color: green;
     background-color: white;
     font-family: Courier, monospace;
     font-weight: bold;
  }
 .moving-bg {
-/*  width: 100vw;
-  height: 100vh;*/
-  background-image: url('img/eye.png');
   background-size: cover;
-/*  position: fixed;*/
   animation: moveAround 10s linear infinite;
 }
 
