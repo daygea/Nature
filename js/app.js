@@ -333,7 +333,10 @@ setInterval(function () {
         };
 
         // Initialize on page load
-        window.onload = populateDropdowns;
+        window.onload = function() {
+            document.getElementById("preloader").style.display = "none";
+            populateDropdowns();
+        };
 
          // Function to calculate the single-digit numerology number
         function getNumerologyNumber(dateString) {
