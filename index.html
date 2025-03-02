@@ -14,7 +14,8 @@
         <div class="spinner"></div>
     </div>
     <div class="container-fluid">
-        <h1 style="text-align: center; "><a href="index.html" style="color: green; text-decoration: none;"><img src="img/logo.png" alt="NatureLogo" style="height: 50px;" />NatureSpeaks</a></h1>
+        <h1 style="text-align: center; "><a href="index.html" style="color: green; text-decoration: none;"><img src="img/logo.png" alt="NatureLogo" style="height: 50px;" />NatureSpeaks</a><span style="font-size:12px;">Be Illuminated</span></h1>
+
         <div class="row">
             <div class="col-12 text-center">
                  <p>Mo se iba <b>Olorun Olodumare</b>, Ajagunmale, Aworanmaja, Odu Ologbooje, Egan, Gbogbo Eleye, Irinwo Imole, Igba Imole, Okanle ni Irinwo Imole, Otalelugba Imole. Mo seba gbogbo Ajunilo.</p>
@@ -26,7 +27,7 @@
                 <img class="moving-bg" src="img/eye3.gif"/>
             </div>
             <div class="col-sm-6">
-                <h3 style="text-align: center;  font-weight: bold;">Enter Your Divination Details</h3>
+                <h3 style="text-align: center;  font-weight: bold;">Divination Details</h3>
                 <label for="mainCast">Odu Ifa</label>
                 <select id="mainCast" class="form-control"></select>
                 <br>
@@ -56,10 +57,9 @@
                 <button onclick="performUserDivination()" class="btn btn-md btn-success">Reveal Message</button>
             </div>
             <div class="col-sm-3 numerology">
-                <p><b>Enter your birth date.</b></p>
-                    <div id="birthdate-box">
-                        <input type="date" id="birthdate" /><br/><br/>
-                        <button class="btn btn-md btn-success" id="determine-btn">Reveal Message</button>
+                     <p><b>Select a Circle</b></p>
+                     <div class="calculator" id="calculator">
+                            <!-- Buttons will be generated dynamically -->
                     </div>
                     <div id="result"></div>
             </div>
@@ -89,7 +89,7 @@
                 <div class="row">
                     <div class="col-12 text-center" style="color: green;">
                         <h4 style=" font-weight: bold;">About Nature Speaks</h4>
-                        <p>Nature Speaks is a free platform providing deep insights into Ifa divination and dates of birth.</p>
+                        <p>Nature Speaks is a free platform providing deep insights into divination.</p>
                         <p>Aboru, Aboye, Abosise. Kindly send us more data for the application on <b style="color:red;">aokfoundationng@gmail.com</b> or on Whatsapp <a style="color:red;" target="_blank" aria-label="Chat on WhatsApp" href="https://wa.me/2348034256265"> +2348034256265
 <a />Please provide your name and title along side the data provided for proper referencing. Ire o.</p>
                     </div>
@@ -104,8 +104,8 @@
             </div>
         </footer>
     </div>
-<script type="text/javascript" src="js/obfuscatedOduMessages.js"></script>
-<script type="text/javascript" src="js/obfuscatedNumerology.js"></script>
+<script type="text/javascript" src="js/oduMessages.js"></script>
+<script type="text/javascript" src="js/numerology.js"></script>
 <script type="text/javascript" src="js/obfuscatedApp.js"></script>
 </body>
 </html>

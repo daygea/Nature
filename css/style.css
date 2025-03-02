@@ -1,3 +1,9 @@
+@media print {
+    body {
+        display: none !important;
+    }
+}
+
  body{
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -99,7 +105,7 @@
             background-color: #4caf50;
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 25px;
             cursor: pointer;
             transition: background-color 0.3s;
         }
@@ -147,3 +153,52 @@
                 color: #f8b400;
             }
 
+
+ .calculator {
+            display: grid;
+            grid-template-columns: repeat(3, 50px);
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .calculator button {
+              width: 50px; /* Set fixed width */
+                height: 50px; /* Set fixed height */
+                font-size: 20px; /* Adjust text size */
+                text-align: center;
+                line-height: 50px; /* Keep text centered */
+                border-radius: 50%; /* Make buttons circular */
+                transition: background-color 0.3s ease-in-out; /* Smooth color transition */
+        }
+
+        .calculator button:hover {
+            background-color: white;
+            border: 1px solid green;
+        }
+
+        .calculator button:focus {
+            outline: none;
+            background-color: white;
+            border: 1px solid green;
+            color: green;
+        }
+
+       .calculator button.clicked {
+            font-weight: bold; /* Make number appear strong without affecting size */
+        }
+
+         #random-btn {
+            margin-top: 20px;
+            padding: 25px;
+            font-size: 16px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #random-btn:hover {
+            background-color: #45a049;
+        }

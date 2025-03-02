@@ -34,7 +34,17 @@ setInterval(function () {
     }
 }, 1000);
 
+window.onbeforeprint = function () {
+    alert("Printing is disabled on this application.");
+    setTimeout(() => window.stop(), 100); // Stop printing
+};
 
+window.addEventListener("keydown", function (event) {
+    if (event.ctrlKey && event.key === "p") { // Disable Ctrl + P
+        alert("Printing is disabled.");
+        event.preventDefault();
+    }
+});
 
     // Define free Odùs (first 16)
     const freeOdus = [
@@ -272,8 +282,7 @@ setInterval(function () {
 
             // if (freeOdus.includes(mainCast) || isOduPaid(mainCast)) {
             resultElement.innerHTML = `
-                <h1 style="text-align: center;">Divination Result</h1>
-                <h3 style="text-align: center;">${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}</h3>
+                <h3 style="text-align: center; margin-top:20px">${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}</h3>
                 <p>${message} ${solutionInfo}</p>
                 <p><strong>Orisha:</strong> ${orisha}</p>
                 <p><strong>Alias:</strong> ${alias}</p>
@@ -329,14 +338,70 @@ setInterval(function () {
             }
 
             configurationElement.innerHTML = configHTML;
+             smoothScrollTo(configurationElement.offsetTop, 2000);
 
         };
 
         // Initialize on page load
         window.onload = function() {
             document.getElementById("preloader").style.display = "none";
+            generateHiddenButtons();
             populateDropdowns();
         };
+
+
+        // Generate calculator buttons with hidden numbers
+        function generateHiddenButtons() {
+            const calculatorDiv = document.getElementById("calculator");
+            calculatorDiv.innerHTML = ""; // Clear existing buttons
+
+            let numbers = Array.from({ length: 9 }, (_, i) => i + 1);
+            numbers.sort(() => Math.random() - 0.5); // Shuffle numbers
+
+            numbers.forEach((num) => {
+                const button = document.createElement("button");
+                button.textContent = ""; // Hide number initially
+                button.dataset.number = num; // Store the actual number in a data attribute
+
+                button.onclick = function () {
+                    this.textContent = this.dataset.number; // Reveal number on click
+                    displayMeaning(this.dataset.number, button);
+                    setTimeout(generateHiddenButtons, 1000); // Re-randomize after 1 sec
+                };
+
+                calculatorDiv.appendChild(button);
+            });
+        }
+
+
+        // Function to display Numerology and Astrological meaning and highlight the selected button
+        function displayMeaning(number, selectedButton) {
+
+             // Get the single-digit numerology number
+            const numerologyNumber = number;
+            const resultDiv = document.getElementById("result");
+            const configurationElement = document.getElementById("configurationResult");
+            let configHTML = "";
+          
+            resultDiv.style.display = "none";
+            const resultElement = document.getElementById("divinationResult");
+            resultElement.innerHTML = `
+                <h3 style="text-align: center; margin-top:20px">Numerology Number: ${numerologyNumber}</h1>
+                <p>${numerologyMeanings[numerologyNumber]}</p>
+            `;
+            configHTML += `<img class="moving-bg" src="img/eye3.gif" />`;
+            configurationElement.innerHTML = configHTML;
+            // Slow smooth scroll to result section (2 seconds duration)
+            smoothScrollTo(resultElement.offsetTop, 2000);
+        }
+
+          // Function to simulate a random button click
+        document.getElementById("random-btn").onclick = () => {
+            const randomNum = Math.floor(Math.random() * 9) + 1;
+            const randomButton = calculatorDiv.children[randomNum - 1];
+            displayMeaning(randomNum, randomButton);
+        };
+
 
          // Function to calculate the single-digit numerology number
         function getNumerologyNumber(dateString) {
