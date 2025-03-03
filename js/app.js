@@ -1,50 +1,50 @@
-// document.addEventListener("contextmenu", function (e) {
-//     e.preventDefault(); // Disable right-click
-// });
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault(); // Disable right-click
+        });
 
-// document.addEventListener("copy", function (e) {
-//     e.preventDefault(); // Disable copying
-// });
+        document.addEventListener("copy", function (e) {
+            e.preventDefault(); // Disable copying
+        });
 
-// document.addEventListener("cut", function (e) {
-//     e.preventDefault(); // Disable cutting
-// });
+        document.addEventListener("cut", function (e) {
+            e.preventDefault(); // Disable cutting
+        });
 
-// document.addEventListener("paste", function (e) {
-//     e.preventDefault(); // Disable pasting
-// });
+        document.addEventListener("paste", function (e) {
+            e.preventDefault(); // Disable pasting
+        });
 
-// document.addEventListener("keydown", function (e) {
-//     if (
-//         e.key === "F12" || 
-//         (e.ctrlKey && e.shiftKey && e.key === "I") || 
-//         (e.ctrlKey && e.shiftKey && e.key === "J") || 
-//         (e.ctrlKey && e.key === "U")
-//     ) {
-//         e.preventDefault(); // Disable DevTools
-//     }
-// });
+        document.addEventListener("keydown", function (e) {
+            if (
+                e.key === "F12" || 
+                (e.ctrlKey && e.shiftKey && e.key === "I") || 
+                (e.ctrlKey && e.shiftKey && e.key === "J") || 
+                (e.ctrlKey && e.key === "U")
+            ) {
+                e.preventDefault(); // Disable DevTools
+            }
+        });
 
-// setInterval(function () {
-//     if (window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200) {
-//         document.body.innerHTML = "Access Denied!";
-//         setTimeout(function () {
-//             window.location.href = "about:blank"; // Redirect
-//         }, 1000);
-//     }
-// }, 1000);
+        setInterval(function () {
+            if (window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200) {
+                document.body.innerHTML = "Access Denied!";
+                setTimeout(function () {
+                    window.location.href = "about:blank"; // Redirect
+                }, 1000);
+            }
+        }, 1000);
 
-// window.onbeforeprint = function () {
-//     alert("Printing is disabled on this application.");
-//     setTimeout(() => window.stop(), 100); // Stop printing
-// };
+        window.onbeforeprint = function () {
+            alert("Printing is disabled on this application.");
+            setTimeout(() => window.stop(), 100); // Stop printing
+        };
 
-// window.addEventListener("keydown", function (event) {
-//     if (event.ctrlKey && event.key === "p") { // Disable Ctrl + P
-//         alert("Printing is disabled.");
-//         event.preventDefault();
-//     }
-// });
+        window.addEventListener("keydown", function (event) {
+            if (event.ctrlKey && event.key === "p") { // Disable Ctrl + P
+                alert("Printing is disabled.");
+                event.preventDefault();
+            }
+        });
 
     // Define free Odùs (first 16)
     const freeOdus = [
