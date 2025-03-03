@@ -1,50 +1,50 @@
-document.addEventListener("contextmenu", function (e) {
-    e.preventDefault(); // Disable right-click
-});
+// document.addEventListener("contextmenu", function (e) {
+//     e.preventDefault(); // Disable right-click
+// });
 
-document.addEventListener("copy", function (e) {
-    e.preventDefault(); // Disable copying
-});
+// document.addEventListener("copy", function (e) {
+//     e.preventDefault(); // Disable copying
+// });
 
-document.addEventListener("cut", function (e) {
-    e.preventDefault(); // Disable cutting
-});
+// document.addEventListener("cut", function (e) {
+//     e.preventDefault(); // Disable cutting
+// });
 
-document.addEventListener("paste", function (e) {
-    e.preventDefault(); // Disable pasting
-});
+// document.addEventListener("paste", function (e) {
+//     e.preventDefault(); // Disable pasting
+// });
 
-document.addEventListener("keydown", function (e) {
-    if (
-        e.key === "F12" || 
-        (e.ctrlKey && e.shiftKey && e.key === "I") || 
-        (e.ctrlKey && e.shiftKey && e.key === "J") || 
-        (e.ctrlKey && e.key === "U")
-    ) {
-        e.preventDefault(); // Disable DevTools
-    }
-});
+// document.addEventListener("keydown", function (e) {
+//     if (
+//         e.key === "F12" || 
+//         (e.ctrlKey && e.shiftKey && e.key === "I") || 
+//         (e.ctrlKey && e.shiftKey && e.key === "J") || 
+//         (e.ctrlKey && e.key === "U")
+//     ) {
+//         e.preventDefault(); // Disable DevTools
+//     }
+// });
 
-setInterval(function () {
-    if (window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200) {
-        document.body.innerHTML = "Access Denied!";
-        setTimeout(function () {
-            window.location.href = "about:blank"; // Redirect
-        }, 1000);
-    }
-}, 1000);
+// setInterval(function () {
+//     if (window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200) {
+//         document.body.innerHTML = "Access Denied!";
+//         setTimeout(function () {
+//             window.location.href = "about:blank"; // Redirect
+//         }, 1000);
+//     }
+// }, 1000);
 
-window.onbeforeprint = function () {
-    alert("Printing is disabled on this application.");
-    setTimeout(() => window.stop(), 100); // Stop printing
-};
+// window.onbeforeprint = function () {
+//     alert("Printing is disabled on this application.");
+//     setTimeout(() => window.stop(), 100); // Stop printing
+// };
 
-window.addEventListener("keydown", function (event) {
-    if (event.ctrlKey && event.key === "p") { // Disable Ctrl + P
-        alert("Printing is disabled.");
-        event.preventDefault();
-    }
-});
+// window.addEventListener("keydown", function (event) {
+//     if (event.ctrlKey && event.key === "p") { // Disable Ctrl + P
+//         alert("Printing is disabled.");
+//         event.preventDefault();
+//     }
+// });
 
     // Define free Odùs (first 16)
     const freeOdus = [
@@ -396,11 +396,11 @@ window.addEventListener("keydown", function (event) {
         }
 
           // Function to simulate a random button click
-        document.getElementById("random-btn").onclick = () => {
-            const randomNum = Math.floor(Math.random() * 9) + 1;
-            const randomButton = calculatorDiv.children[randomNum - 1];
-            displayMeaning(randomNum, randomButton);
-        };
+        // document.getElementById("random-btn").onclick = () => {
+        //     const randomNum = Math.floor(Math.random() * 9) + 1;
+        //     const randomButton = calculatorDiv.children[randomNum - 1];
+        //     displayMeaning(randomNum, randomButton);
+        // };
 
 
          // Function to calculate the single-digit numerology number
@@ -417,31 +417,31 @@ window.addEventListener("keydown", function (event) {
         }
 
         // Handle button click to determine the meaning
-        document.getElementById("determine-btn").onclick = () => {
-            const birthdate = document.getElementById("birthdate").value;
-            const resultDiv = document.getElementById("result");
-            const configurationElement = document.getElementById("configurationResult");
-            let configHTML = "";
+        // document.getElementById("determine-btn").onclick = () => {
+        //     const birthdate = document.getElementById("birthdate").value;
+        //     const resultDiv = document.getElementById("result");
+        //     const configurationElement = document.getElementById("configurationResult");
+        //     let configHTML = "";
 
-            if (!birthdate) {
-                resultDiv.style.display = "block inline";
-                resultDiv.innerHTML = "<span style='color:red; font-size:14px'>Select your birth date.</span>";
-                return;
-            }
+        //     if (!birthdate) {
+        //         resultDiv.style.display = "block inline";
+        //         resultDiv.innerHTML = "<span style='color:red; font-size:14px'>Select your birth date.</span>";
+        //         return;
+        //     }
 
-            // Get the single-digit numerology number
-            const numerologyNumber = getNumerologyNumber(birthdate);
-            resultDiv.style.display = "none";
-            const resultElement = document.getElementById("divinationResult");
-            resultElement.innerHTML = `
-                <center><h1>Numerology No: ${numerologyNumber}</h1></center>
-                <p>${numerologyMeanings[numerologyNumber]}</p>
-            `;
-            configHTML += `<img class="moving-bg" src="img/eye3.gif" />`;
-            configurationElement.innerHTML = configHTML;
-            // Slow smooth scroll to result section (2 seconds duration)
-            smoothScrollTo(resultElement.offsetTop, 2000);
-        };
+        //     // Get the single-digit numerology number
+        //     const numerologyNumber = getNumerologyNumber(birthdate);
+        //     resultDiv.style.display = "none";
+        //     const resultElement = document.getElementById("divinationResult");
+        //     resultElement.innerHTML = `
+        //         <center><h1>Numerology No: ${numerologyNumber}</h1></center>
+        //         <p>${numerologyMeanings[numerologyNumber]}</p>
+        //     `;
+        //     configHTML += `<img class="moving-bg" src="img/eye3.gif" />`;
+        //     configurationElement.innerHTML = configHTML;
+        //     // Slow smooth scroll to result section (2 seconds duration)
+        //     smoothScrollTo(resultElement.offsetTop, 2000);
+        // };
 
 
 
