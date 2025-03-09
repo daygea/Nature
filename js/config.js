@@ -1,7 +1,7 @@
 // Allowed Domains (Modify these with your actual domains)
 const allowedDomains = [
-    "yourgithubusername.github.io",  // GitHub Pages domain
-    "yourwebsite.com"                 // Your shared hosting subdomain
+    "daygea.github.io/Nature",  // GitHub Pages domain
+    "nature.aokfoundation.org"                 // Your shared hosting subdomain
 ];
 
 const userAgent = navigator.userAgent.toLowerCase();

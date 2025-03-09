@@ -258,7 +258,7 @@
                 // }
                 displayConfiguration(mainCast);
                 // Slow smooth scroll to result section (2 seconds duration)
-                // smoothScrollTo(resultElement.offsetTop, 2000);
+                smoothScrollTo(resultElement.offsetTop, 2000);
         };
 
     const displayConfiguration = (oduName) => {
