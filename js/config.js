@@ -1,3 +1,6 @@
+// NS6224.HOSTGATOR.COM
+// NS6223.HOSTGATOR.COM
+
 // Allowed Domains (Modify these with your actual domains)
 const allowedDomains = [
     "daygea.github.io/Nature",  // GitHub Pages domain
@@ -12,7 +15,7 @@ const isLocal = location.protocol === "file:" ||
 
 // List of bot-like User-Agents
 const botUserAgents = [
-    "bot", "crawler", "spider", "Scrapy", "Python-urllib", "requests", "curl", "wget", "headless"
+    "bot", "crawler", "spider", "Scrapy", "Python-urllib", "requests", "curl", "wget", "headless", "selenium", "phantomjs"
 ];
 
 // Detect bots based on User-Agent
