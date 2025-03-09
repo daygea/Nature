@@ -29,13 +29,6 @@
 // <script type="text/javascript" src="js/obfuscatedNumerology.js"></script>
 // <script type="text/javascript" src="js/obfuscatedApp.js"></script>
 
-    // <p><b>Enter your birth date.</b></p>
-    //                 <div id="birthdate-box">
-    //                     <input type="date" id="birthdate" /><br/><br/>
-
-    //                     <button class="btn btn-md btn-success" id="determine-btn">Reveal Message</button>
-    //                 </div>
-
   // 5. Rules the tongue, heart, lungs, blood circulation.
   // 6. Rules chronic conditions, stomach problems, liver.
   // 7. Rules Kidney

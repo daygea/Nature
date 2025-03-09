@@ -97,7 +97,7 @@
             amount: 100000, // ₦1000 (amount is in kobo)
             currency: "NGN",
             callback: function(response) {
-                alert("Payment successful! Ref: " + response.reference);
+                alert("Donation made successfully, Thank you! Ref: " + response.reference);
                 grantOduAccess(oduName);
                 // displayOduMessage(oduName);
                 performUserDivination();
@@ -267,16 +267,16 @@
               // Generate numbered list for audio links
             const audioHTML = audioData.length
                 ? audioData.map((item, index) => 
-                    `<p> <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Listen to Audio</a> of ${item.author}</p>`
+                    `<p style="margin-right:10px; float:left"> <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Listen to Audio</a> of ${item.author}</p>`
                   ).join("")
-                : "<p>No audio available.</p>";
+                : "<p></p>";
 
             // Generate numbered list for video links
             const videoHTML = videoData.length
                 ? videoData.map((item, index) => 
-                    `<p> <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Watch Video</a> of ${item.author}</p>`
+                    `<p style="margin-right:5px; float:left"> <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Watch Video</a> of ${item.author}</p> `
                   ).join("")
-                : "<p>No video available.</p>";
+                : "<p></p>";
 
             const resultElement = document.getElementById("divinationResult");
 
@@ -289,8 +289,9 @@
                 <p><strong>Taboo:</strong> ${taboo}</p>
                 <p><strong>Names:</strong> ${names}</p>
                 <p><strong>Occupation:</strong> ${occupation}</p>
-                ${audioHTML}
-                ${videoHTML}
+                    ${audioHTML}
+                    ${videoHTML} 
+                <br style="clear:both;"/>
                 <p style="padding-bottom:50px"><strong>Credit:</strong> ${credit}</p>
             `;
              // } else {
@@ -304,7 +305,7 @@
                 // }
                 displayConfiguration(mainCast);
                 // Slow smooth scroll to result section (2 seconds duration)
-                //smoothScrollTo(resultElement.offsetTop, 2000);
+                smoothScrollTo(resultElement.offsetTop, 2000);
         };
 
     const displayConfiguration = (oduName) => {
@@ -338,7 +339,7 @@
             }
 
             configurationElement.innerHTML = configHTML;
-             smoothScrollTo(configurationElement.offsetTop, 2000);
+             // smoothScrollTo(configurationElement.offsetTop, 2000);
 
         };
 
@@ -386,7 +387,7 @@
             resultDiv.style.display = "none";
             const resultElement = document.getElementById("divinationResult");
             resultElement.innerHTML = `
-                <h3 style="text-align: center; margin-top:20px">Numerology Number: ${numerologyNumber}</h1>
+                <h3 style="text-align: center; margin-top:20px">Numerology: ${numerologyNumber}</h3>
                 <p>${numerologyMeanings[numerologyNumber]}</p>
             `;
             configHTML += `<img class="moving-bg" src="img/eye3.gif" />`;
@@ -416,32 +417,32 @@
             return sum;
         }
 
-        // Handle button click to determine the meaning
-        // document.getElementById("determine-btn").onclick = () => {
-        //     const birthdate = document.getElementById("birthdate").value;
-        //     const resultDiv = document.getElementById("result");
-        //     const configurationElement = document.getElementById("configurationResult");
-        //     let configHTML = "";
+        //Handle button click to determine the meaning
+        document.getElementById("determine-btn").onclick = () => {
+            const birthdate = document.getElementById("birthdate").value;
+            const resultDiv = document.getElementById("result");
+            const configurationElement = document.getElementById("configurationResult");
+            let configHTML = "";
 
-        //     if (!birthdate) {
-        //         resultDiv.style.display = "block inline";
-        //         resultDiv.innerHTML = "<span style='color:red; font-size:14px'>Select your birth date.</span>";
-        //         return;
-        //     }
+            if (!birthdate) {
+                resultDiv.style.display = "block inline";
+                resultDiv.innerHTML = "<span style='color:red; font-size:14px'>Select your birth date.</span>";
+                return;
+            }
 
-        //     // Get the single-digit numerology number
-        //     const numerologyNumber = getNumerologyNumber(birthdate);
-        //     resultDiv.style.display = "none";
-        //     const resultElement = document.getElementById("divinationResult");
-        //     resultElement.innerHTML = `
-        //         <center><h1>Numerology No: ${numerologyNumber}</h1></center>
-        //         <p>${numerologyMeanings[numerologyNumber]}</p>
-        //     `;
-        //     configHTML += `<img class="moving-bg" src="img/eye3.gif" />`;
-        //     configurationElement.innerHTML = configHTML;
-        //     // Slow smooth scroll to result section (2 seconds duration)
-        //     smoothScrollTo(resultElement.offsetTop, 2000);
-        // };
+            // Get the single-digit numerology number
+            const numerologyNumber = getNumerologyNumber(birthdate);
+            resultDiv.style.display = "none";
+            const resultElement = document.getElementById("divinationResult");
+            resultElement.innerHTML = `
+                <h3 style="text-align: center; margin-top:20px">Numerology: ${numerologyNumber}</h3>
+                <p>${numerologyMeanings[numerologyNumber]}</p>
+            `;
+            configHTML += `<img class="moving-bg" src="img/eye3.gif" />`;
+            configurationElement.innerHTML = configHTML;
+            // Slow smooth scroll to result section (2 seconds duration)
+            smoothScrollTo(resultElement.offsetTop, 2000);
+        };
 
 
 

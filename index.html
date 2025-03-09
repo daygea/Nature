@@ -58,17 +58,30 @@
                 <button onclick="performUserDivination()" class="btn btn-md btn-success">Reveal Message</button>
             </div>
             <div class="col-sm-3 numerology">
-                     <p><b>Pick One</b></p>
+                    <div id="result"></div>
+                    <p><b>Enter your birth date.</b></p>
+                    <div id="birthdate-box">
+                        <input type="date" id="birthdate" /><br/><br/>
+
+                        <button class="btn btn-md btn-success" id="determine-btn">Reveal Message</button>
+                    </div>
+                    <p><b>OR</b></p>
+                     <p><b>Pick a Circle</b></p>
                      <div class="calculator" id="calculator">
                             <!-- Buttons will be generated dynamically -->
                     </div>
-                    <div id="result"></div>
+                    
             </div>
         </div>
 
         <div class="container">
              <div class="row">
                 <div class="col-12" style="color: green; text-align: justify;" id="divinationResult">
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" style="color: green; text-align: justify;" id="numerologyResult">
                     
                 </div>
             </div>
@@ -90,7 +103,7 @@
                 <div class="row">
                     <div class="col-12 text-center" style="color: green;">
                         <h4 style=" font-weight: bold;">About Nature Speaks</h4>
-                        <p>Nature Speaks is a free platform providing deep insights into Ifa divination.</p>
+                        <p>Nature Speaks is a free platform providing deep insights into Ifa divination and Numerology</p>
                         <p>Aboru, Aboye, Abosise. Kindly send us more data for the application on <b style="color:red;">aokfoundationng@gmail.com</b> or on Whatsapp <a style="color:red;" target="_blank" aria-label="Chat on WhatsApp" href="https://wa.me/2348034256265"> +2348034256265
 <a />Please provide your name and title along side the data provided for proper referencing. Ire o.</p>
                     </div>
@@ -107,6 +120,6 @@
     </div>
 <script type="text/javascript" src="js/oduMessages.js"></script>
 <script type="text/javascript" src="js/numerology.js"></script>
-<script type="text/javascript" src="js/obfuscatedApp.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
