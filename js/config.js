@@ -1,7 +1,7 @@
-// Allowed Domains (Modify with your actual domains)
+// Allowed Domains (Modify these with your actual domains)
 const allowedDomains = [
-    "daygea.github.io/Nature/",  // GitHub Pages domain
-    "nature.aokfoundation.org/",                // Your shared hosting subdomain
+    "yourgithubusername.github.io",  // GitHub Pages domain
+    "yourwebsite.com"                 // Your shared hosting subdomain
 ];
 
 const userAgent = navigator.userAgent.toLowerCase();
@@ -17,28 +17,28 @@ const botUserAgents = [
 
 // Detect bots based on User-Agent
 if (!isLocal && botUserAgents.some(bot => userAgent.includes(bot))) {
-    document.body.innerHTML = "Access Denied!";
+    console.warn("Bot detected! Blocking access...");
     setTimeout(() => window.location.href = "https://aokfoundation.org", 2000);
 }
 
 // Detect headless browsers
 if (!isLocal && navigator.webdriver) {
-    document.body.innerHTML = "Access Denied!";
+    console.warn("Headless browser detected! Blocking access...");
     setTimeout(() => window.location.href = "https://aokfoundation.org", 2000);
 }
 
 // Prevent requests without JavaScript execution
 document.addEventListener("DOMContentLoaded", function () {
     if (!isLocal && (!window.location || !navigator.userAgent)) {
-        document.body.innerHTML = "Access Denied!";
+        console.warn("Suspicious request detected! Blocking...");
         setTimeout(() => window.location.href = "https://aokfoundation.org", 2000);
     }
 });
 
-// Block bot-like direct requests (only for suspicious requests)
+// Block bot-like direct requests (only for suspicious cases)
 setTimeout(() => {
     if (!isLocal && document.referrer === "" && botUserAgents.some(bot => userAgent.includes(bot))) {
-        document.body.innerHTML = "Access Denied!";
+        console.warn("No referrer, likely bot! Blocking...");
         setTimeout(() => window.location.href = "https://aokfoundation.org", 2000);
     }
 }, 500);
@@ -58,34 +58,31 @@ document.addEventListener("keydown", function (e) {
     }
 });
 
-// Stronger DevTools Detection (but no unnecessary redirection)
-let checkDevTools = setInterval(() => {
-    let before = new Date().getTime();
-    debugger;
-    let after = new Date().getTime();
-    if (after - before > 100) { 
-        document.body.innerHTML = "DevTools Detected! Page Locked!";
+// Improved DevTools Detection (no crashing)
+setInterval(() => {
+    const widthDiff = window.outerWidth - window.innerWidth;
+    const heightDiff = window.outerHeight - window.innerHeight;
+
+    if (widthDiff > 250 || heightDiff > 250) { // Larger threshold to avoid false positives
+        console.warn("DevTools Detected! Redirecting...");
         setTimeout(() => window.location.href = "https://aokfoundation.org", 2000);
     }
-}, 2000);
+}, 3000);
 
-// Prevent console access
+// Prevent console access (but without crashing)
 (function () {
-    let _consoleLog = console.log;
-    console.log = function () {
-        _consoleLog.apply(console, arguments);
-        document.body.innerHTML = "Console access blocked!";
-        setTimeout(() => window.location.href = "https://aokfoundation.org", 2000);
-    };
+    const originalConsole = { ...console };
+    
+    Object.keys(console).forEach(method => {
+        console[method] = function () {
+            if (!isLocal) {
+                console.warn("Unauthorized console access attempt detected.");
+            } else {
+                originalConsole[method].apply(console, arguments);
+            }
+        };
+    });
 })();
-
-// Detect changes in window size (sign of DevTools being opened)
-setInterval(function () {
-    if (window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200) {
-        document.body.innerHTML = "Access Denied!";
-        setTimeout(() => window.location.href = "https://aokfoundation.org", 2000);
-    }
-}, 2000);
 
 // Disable printing
 window.onbeforeprint = function () {
@@ -99,5 +96,5 @@ window.addEventListener("keydown", function (event) {
     }
 });
 
-// Log hostname to help debug
-console.log("Current hostname: ", location.hostname);
+// Debugging info
+console.log("Current hostname:", location.hostname);
