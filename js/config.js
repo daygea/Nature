@@ -1,46 +1,45 @@
-// List of bot-like User-Agents
-const botUserAgents = [
-    "bot", "crawler", "spider", "Scrapy", "Python-urllib", "requests", "curl", "wget", "headless"
+// Allowed Domains (Modify with your actual domains)
+const allowedDomains = [
+    "daygea.github.io/Nature/",  // GitHub Pages domain
+    "nature.aokfoundation.org/",                // Your shared hosting subdomain
 ];
 
 const userAgent = navigator.userAgent.toLowerCase();
-
-// Allowed Domains (Modify with your actual domains)
-const allowedDomains = [
-    "daygea.github.io/Nature",  // GitHub Pages domain
-    "nature.aokfoundation.org",                // Your shared hosting subdomain
-];
-
 const isLocal = location.protocol === "file:" || 
                 location.hostname === "localhost" || 
                 location.hostname === "127.0.0.1" || 
                 allowedDomains.includes(location.hostname.toLowerCase());
 
+// List of bot-like User-Agents
+const botUserAgents = [
+    "bot", "crawler", "spider", "Scrapy", "Python-urllib", "requests", "curl", "wget", "headless"
+];
+
 // Detect bots based on User-Agent
 if (!isLocal && botUserAgents.some(bot => userAgent.includes(bot))) {
     document.body.innerHTML = "Access Denied!";
-    setTimeout(() => window.location.href = "https://aokfoundation.org", 1000);
+    setTimeout(() => window.location.href = "https://aokfoundation.org", 2000);
 }
 
 // Detect headless browsers
 if (!isLocal && navigator.webdriver) {
     document.body.innerHTML = "Access Denied!";
-    setTimeout(() => window.location.href = "https://aokfoundation.org", 1000);
+    setTimeout(() => window.location.href = "https://aokfoundation.org", 2000);
 }
 
 // Prevent requests without JavaScript execution
 document.addEventListener("DOMContentLoaded", function () {
     if (!isLocal && (!window.location || !navigator.userAgent)) {
         document.body.innerHTML = "Access Denied!";
-        setTimeout(() => window.location.href = "https://aokfoundation.org", 1000);
+        setTimeout(() => window.location.href = "https://aokfoundation.org", 2000);
     }
 });
 
-// Block requests without a referrer ONLY for bot-like traffic
+// Block bot-like direct requests (only for suspicious requests)
 setTimeout(() => {
     if (!isLocal && document.referrer === "" && botUserAgents.some(bot => userAgent.includes(bot))) {
         document.body.innerHTML = "Access Denied!";
-        setTimeout(() => window.location.href = "https://aokfoundation.org", 1000);
+        setTimeout(() => window.location.href = "https://aokfoundation.org", 2000);
     }
 }, 500);
 
@@ -59,23 +58,24 @@ document.addEventListener("keydown", function (e) {
     }
 });
 
-// Detect if DevTools is opened and redirect to blank page
-let devToolsOpened = false;
-setInterval(() => {
+// Stronger DevTools Detection (but no unnecessary redirection)
+let checkDevTools = setInterval(() => {
     let before = new Date().getTime();
+    debugger;
     let after = new Date().getTime();
-    if (after - before > 100) { // If debugger takes too long, DevTools is open
-        devToolsOpened = true;
-        window.location.href = "about:blank";  // Redirect if DevTools is detected
+    if (after - before > 100) { 
+        document.body.innerHTML = "DevTools Detected! Page Locked!";
+        setTimeout(() => window.location.href = "https://aokfoundation.org", 2000);
     }
-}, 1000);
+}, 2000);
 
 // Prevent console access
 (function () {
     let _consoleLog = console.log;
     console.log = function () {
         _consoleLog.apply(console, arguments);
-        setTimeout(() => { window.location.href = "about:blank"; }, 500);
+        document.body.innerHTML = "Console access blocked!";
+        setTimeout(() => window.location.href = "https://aokfoundation.org", 2000);
     };
 })();
 
@@ -83,11 +83,9 @@ setInterval(() => {
 setInterval(function () {
     if (window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200) {
         document.body.innerHTML = "Access Denied!";
-        setTimeout(function () {
-            window.location.href = "https://aokfoundation.org"; // Redirect
-        }, 1000);
+        setTimeout(() => window.location.href = "https://aokfoundation.org", 2000);
     }
-}, 1000);
+}, 2000);
 
 // Disable printing
 window.onbeforeprint = function () {
