@@ -45,7 +45,7 @@
     // Process Payment with Paystack
     function payForOdu(oduName) {
         let handler = PaystackPop.setup({
-            key: PAYSTACK_PUBLIC_KEY,
+            key: "pk_live_b39b445fba8a155f04a04980705a3c10ae85d673",
             email: "info@aokfoundation.org", // Replace dynamically if possible
             amount: 100000, // ₦1000 (amount is in kobo)
             currency: "NGN",
@@ -233,7 +233,7 @@
 
             const resultElement = document.getElementById("divinationResult");
 
-            // if (freeOdus.includes(mainCast) || isOduPaid(mainCast)) {
+            if (freeOdus.includes(mainCast) || isOduPaid(mainCast)) {
             resultElement.innerHTML = `
                 <h3 style="text-align: center; margin-top:20px">${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}</h3>
                 <p>${message} ${solutionInfo}</p>
@@ -247,15 +247,13 @@
                 <br style="clear:both;"/>
                 <p style="padding-bottom:50px"><strong>Credit:</strong> ${credit}</p>
             `;
-             // } else {
-        //          document.getElementById("divinationResult").innerHTML = `
-        //                <center> <h4 style="padding-top:30px;">Kindly donate ₦1,000 for 24-hour access to ${mainCast}</h4> <br/>
-        //                 <button class="btn btn-lg" onclick="payForOdu('${mainCast}')">Donate Now</button></center>
-        //                 <h3>About the NGO</h3>
-        //                 <p>Aminat Olanbiwoninu Kadri - AOK Foundation was established in July, 2019 as an organisation committed to improving the quality of life for disadvantaged Africans, by partnering with visionary organizations to enable young people in Africa have access to quality education. <br/><br/>
-        // We want a future where young people are driving transformative change and achieving their full potential. <a target="_blank" href="https://aokfoundation.org/">https://aokfoundation.org</a></p> <br/>
-        //             `;
-                // }
+             } else {
+                 document.getElementById("divinationResult").innerHTML = `
+                       <center> <h4 style="padding-top:30px;">Kindly donate ₦1,000 for 24-hour access to ${mainCast}</h4> <br/>
+                        <button class="btn btn-lg btn-warning" onclick="payForOdu('${mainCast}')">Donate Now</button></center>
+                       
+                    `;
+                }
                 displayConfiguration(mainCast);
                 // Slow smooth scroll to result section (2 seconds duration)
                 smoothScrollTo(resultElement.offsetTop, 2000);
