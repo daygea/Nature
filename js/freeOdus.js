@@ -1,3 +1,10 @@
     const freeOdus = [
-        "Ejiogbe", "Obara Ofun"
+        "Ejiogbe", 
+        "Oyeku Meji", 
+        "Iwori Meji", 
+        "Idi Meji", 
+        "Irosun Ika", 
+        "Osa Ogbe", 
+        "Osa Owonrin", 
+        "Obara Ofun"
     ];

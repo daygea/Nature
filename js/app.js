@@ -245,7 +245,7 @@
             `;
              } else {
                  document.getElementById("divinationResult").innerHTML = `
-                       <center> <h4 style="padding-top:30px;">Kindly donate ₦1,000 for 24-hour access to ${mainCast}</h4> <br/>
+                       <center> <h4 style="padding-top:30px;">Kindly donate N1,000 to the NGO for a 24-hour access to ${mainCast}</h4> <br/>
                         <button class="btn btn-lg btn-warning" onclick="payForOdu('${mainCast}')">Donate Now</button></center>
                        
                     `;
