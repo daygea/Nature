@@ -4,7 +4,8 @@
 // Allowed Domains (Modify these with your actual domains)
 const allowedDomains = [
     "daygea.github.io/Nature",  // GitHub Pages domain
-    "nature.aokfoundation.org"                 // Your shared hosting subdomain
+    "nature.aokfoundation.org",  // Your shared hosting subdomain
+    "nature-ddv.pages.dev"
 ];
 
 const userAgent = navigator.userAgent.toLowerCase();
