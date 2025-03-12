@@ -306,27 +306,63 @@
 
 
         // Generate calculator buttons with hidden numbers
+        // function generateHiddenButtons() {
+        //     const calculatorDiv = document.getElementById("calculator");
+        //     calculatorDiv.innerHTML = ""; // Clear existing buttons
+
+        //     let numbers = Array.from({ length: 9 }, (_, i) => i + 1);
+        //     numbers.sort(() => Math.random() - 0.5); // Shuffle numbers
+
+        //     numbers.forEach((num) => {
+        //         const button = document.createElement("button");
+        //         button.textContent = ""; // Hide number initially
+        //         button.dataset.number = num; // Store the actual number in a data attribute
+
+        //         button.onclick = function () {
+        //             this.textContent = this.dataset.number; // Reveal number on click
+        //             displayMeaning(this.dataset.number, button);
+        //             setTimeout(generateHiddenButtons, 1000); // Re-randomize after 1 sec
+        //         };
+
+        //         calculatorDiv.appendChild(button);
+        //     });
+        // }
+
         function generateHiddenButtons() {
             const calculatorDiv = document.getElementById("calculator");
+            if (!calculatorDiv) return;
+
             calculatorDiv.innerHTML = ""; // Clear existing buttons
 
             let numbers = Array.from({ length: 9 }, (_, i) => i + 1);
             numbers.sort(() => Math.random() - 0.5); // Shuffle numbers
 
-            numbers.forEach((num) => {
+            let radius = 80; // Radius of the circle
+            let centerX = 100, centerY = 100; // Center position
+
+            numbers.forEach((num, index) => {
+                const angle = (index * (360 / numbers.length)) * (Math.PI / 180);
+                const x = centerX + radius * Math.cos(angle) - 25; // Adjust for button size
+                const y = centerY + radius * Math.sin(angle) - 25;
+
                 const button = document.createElement("button");
-                button.textContent = ""; // Hide number initially
-                button.dataset.number = num; // Store the actual number in a data attribute
+                button.textContent = "";
+                button.dataset.number = num;
+
+                button.style.left = `${x}px`;
+                button.style.top = `${y}px`;
 
                 button.onclick = function () {
-                    this.textContent = this.dataset.number; // Reveal number on click
+                    this.textContent = this.dataset.number;
+                    this.classList.add("clicked");
                     displayMeaning(this.dataset.number, button);
-                    setTimeout(generateHiddenButtons, 1000); // Re-randomize after 1 sec
+                    setTimeout(generateHiddenButtons, 1000);
                 };
 
                 calculatorDiv.appendChild(button);
             });
         }
+
 
 
         // Function to display Numerology and Astrological meaning and highlight the selected button
