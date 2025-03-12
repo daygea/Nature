@@ -1,4 +1,3 @@
-
     document.getElementById("year").textContent = new Date().getFullYear();
     
     const SECRET_KEY = "DqUHBw7iFj3ia0pyp+QIvKJ5NgJFXE2PcZk95Kt2w6qpqOZ82iAF4Kx88Khb2KFl";
@@ -18,37 +17,37 @@
         }
     }
 
-
-    // Check if an Odù is paid for and not expired
-    function isOduPaid(oduName) {
+    function isOduPaid(oduName, orientation, specificOrientation, solution, solutionDetails) {
         const storedData = localStorage.getItem("paidOdus");
         if (!storedData) return false;
 
         const paidOdus = decryptData(storedData);
-        if (!paidOdus || !paidOdus[oduName]) return false;
+        if (!paidOdus) return false;
 
-        const expirationTime = paidOdus[oduName];
-        return Date.now() < expirationTime; // True if still valid
+        const combinationKey = `${oduName}-${orientation}-${specificOrientation}-${solution}-${solutionDetails}`;
+        const expirationTime = paidOdus[combinationKey];
+
+        return expirationTime && Date.now() < expirationTime;
     }
 
-    // Save paid Odù access
-    function grantOduAccess(oduName) {
+    function grantOduAccess(oduName, orientation, specificOrientation, solution, solutionDetails) {
         let paidOdus = decryptData(localStorage.getItem("paidOdus")) || {};
-        paidOdus[oduName] = Date.now() + 24 * 60 * 60 * 1000; // Set 24-hour expiry
+        
+        const combinationKey = `${oduName}-${orientation}-${specificOrientation}-${solution}-${solutionDetails}`;
+        paidOdus[combinationKey] = Date.now() + 24 * 60 * 60 * 1000; // Set 24-hour expiry
+
         localStorage.setItem("paidOdus", encryptData(paidOdus));
     }
 
-    // Process Payment with Paystack
-    function payForOdu(oduName) {
+    function payForOdu(oduName, orientation, specificOrientation, solution, solutionDetails) {
         let handler = PaystackPop.setup({
             key: "pk_live_b39b445fba8a155f04a04980705a3c10ae85d673",
-            email: "info@aokfoundation.org", // Replace dynamically if possible
+            email: "info@aokfoundation.org",
             amount: 100000, // ₦1000 (amount is in kobo)
             currency: "NGN",
             callback: function(response) {
                 alert("Donation made successfully, Thank you! Ref: " + response.reference);
-                grantOduAccess(oduName);
-                // displayOduMessage(oduName);
+                grantOduAccess(oduName, orientation, specificOrientation, solution, solutionDetails);
                 performUserDivination();
             },
             onClose: function() {
@@ -57,6 +56,7 @@
         });
         handler.openIframe();
     }
+
 
         // Base Odùs
         const baseOdus = {
@@ -229,27 +229,36 @@
 
             const resultElement = document.getElementById("divinationResult");
 
-            if (freeOdus.includes(mainCast) || isOduPaid(mainCast)) {
-            resultElement.innerHTML = `
-                <h3 style="text-align: center; margin-top:20px">${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}</h3>
-                <p>${message} ${solutionInfo}</p>
-                <p><strong>Orisha:</strong> ${orisha}</p>
-                <p><strong>Alias:</strong> ${alias}</p>
-                <p><strong>Taboo:</strong> ${taboo}</p>
-                <p><strong>Names:</strong> ${names}</p>
-                <p><strong>Occupation:</strong> ${occupation}</p>
-                    ${audioHTML}
-                    ${videoHTML} 
-                <br style="clear:both;"/>
-                <p style="padding-bottom:50px"><strong>Credit:</strong> ${credit}</p>
-            `;
-             } else {
-                 document.getElementById("divinationResult").innerHTML = `
-                       <center> <h4 style="padding-top:30px;">Kindly donate N1,000 to the NGO for a 24-hour access to ${mainCast}</h4> <br/>
-                        <button class="btn btn-lg btn-warning" onclick="payForOdu('${mainCast}')">Donate Now</button></center>
-                       
+                if (freeOdus.includes(mainCast) || isOduPaid(mainCast, orientation, specificOrientation, solution, solutionDetails)) {
+                    resultElement.innerHTML = `
+                        <h3 style="text-align: center; margin-top:20px">${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}</h3>
+                        <p>${message} ${solutionInfo}</p>
+                        <p><strong>Orisha:</strong> ${orisha}</p>
+                        <p><strong>Alias:</strong> ${alias}</p>
+                        <p><strong>Taboo:</strong> ${taboo}</p>
+                        <p><strong>Names:</strong> ${names}</p>
+                        <p><strong>Occupation:</strong> ${occupation}</p>
+                        ${audioHTML}
+                        ${videoHTML}
+                        <br style="clear:both;"/>
+                        <p style="padding-bottom:50px"><strong>Credit:</strong> ${credit}</p>
+                    `;
+                } else {
+                    document.getElementById("divinationResult").innerHTML = `
+                        <center>
+                            <h4 style="padding-top:30px;">
+                                Kindly donate N1,000 to the NGO for a 24-hour access to 
+                                ${mainCast}, ${orientationText}  (${specificOrientation}), ${solution} ${solutionDetails}.
+                            </h4>
+                            <br/>
+                            <button class="btn btn-lg btn-warning" 
+                                onclick="payForOdu('${mainCast}', '${orientation}', '${specificOrientation}', '${solution}', '${solutionDetails}')">
+                                Donate Now
+                            </button>
+                        </center>
                     `;
                 }
+
                 displayConfiguration(mainCast);
                 // Slow smooth scroll to result section (2 seconds duration)
                 smoothScrollTo(resultElement.offsetTop, 2000);
@@ -286,8 +295,6 @@
             }
 
             configurationElement.innerHTML = configHTML;
-             // smoothScrollTo(configurationElement.offsetTop, 2000);
-
         };
 
         // Initialize on page load
@@ -342,14 +349,6 @@
             // Slow smooth scroll to result section (2 seconds duration)
             smoothScrollTo(resultElement.offsetTop, 2000);
         }
-
-          // Function to simulate a random button click
-        // document.getElementById("random-btn").onclick = () => {
-        //     const randomNum = Math.floor(Math.random() * 9) + 1;
-        //     const randomButton = calculatorDiv.children[randomNum - 1];
-        //     displayMeaning(randomNum, randomButton);
-        // };
-
 
          // Function to calculate the single-digit numerology number
         function getNumerologyNumber(dateString) {
