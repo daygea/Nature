@@ -57,7 +57,6 @@
         handler.openIframe();
     }
 
-
         // Base Odùs
         const baseOdus = {
             "Ejiogbe": ["|", "|", "|", "|"],
@@ -304,29 +303,7 @@
             populateDropdowns();
         };
 
-
-        // Generate calculator buttons with hidden numbers
-        // function generateHiddenButtons() {
-        //     const calculatorDiv = document.getElementById("calculator");
-        //     calculatorDiv.innerHTML = ""; // Clear existing buttons
-
-        //     let numbers = Array.from({ length: 9 }, (_, i) => i + 1);
-        //     numbers.sort(() => Math.random() - 0.5); // Shuffle numbers
-
-        //     numbers.forEach((num) => {
-        //         const button = document.createElement("button");
-        //         button.textContent = ""; // Hide number initially
-        //         button.dataset.number = num; // Store the actual number in a data attribute
-
-        //         button.onclick = function () {
-        //             this.textContent = this.dataset.number; // Reveal number on click
-        //             displayMeaning(this.dataset.number, button);
-        //             setTimeout(generateHiddenButtons, 1000); // Re-randomize after 1 sec
-        //         };
-
-        //         calculatorDiv.appendChild(button);
-        //     });
-        // }
+         // Generate calculator buttons with hidden numbers
 
         function generateHiddenButtons() {
             const calculatorDiv = document.getElementById("calculator");
@@ -362,8 +339,6 @@
                 calculatorDiv.appendChild(button);
             });
         }
-
-
 
         // Function to display Numerology and Astrological meaning and highlight the selected button
         function displayMeaning(number, selectedButton) {
