@@ -33,6 +33,10 @@
             width: 100%;
             height: 100%;
             background: white;
+            background-image: url('../img/priest.jpeg');
+             background-position: center;
+              background-repeat: no-repeat;
+/*              background-size: cover;*/
             display: flex;
             justify-content: center;
             align-items: center;
