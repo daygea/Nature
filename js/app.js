@@ -352,7 +352,7 @@
             resultDiv.style.display = "none";
             const resultElement = document.getElementById("divinationResult");
             resultElement.innerHTML = `
-                <h3 style="text-align: center; margin-top:20px">Numerology: ${numerologyNumber}</h3>
+                <h3 style="text-align: center; margin-top:20px; font-weight:bold;">Numerology: ${numerologyNumber}</h3>
                 <p>${numerologyMeanings[numerologyNumber]}</p>
             `;
             configHTML += `<img class="moving-bg" src="img/eye3.gif" />`;
@@ -392,7 +392,7 @@
             resultDiv.style.display = "none";
             const resultElement = document.getElementById("divinationResult");
             resultElement.innerHTML = `
-                <h3 style="text-align: center; margin-top:20px">Numerology: ${numerologyNumber}</h3>
+                <h3 style="text-align: center; margin-top:20px; font-weight:bold;">Numerology: ${numerologyNumber}</h3>
                 <p>${numerologyMeanings[numerologyNumber]}</p>
             `;
             configHTML += `<img class="moving-bg" src="img/eye3.gif" />`;
