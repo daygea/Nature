@@ -200,31 +200,48 @@ async function hashPassword(password) {
 // Store the hashed admin password securely (replace with your actual hash)
 const storedHashedPassword = "c2b6df82a1f9e1ae08bffac7d5358d8b752b191f35601e975bb33e43ad948b8b"; 
 
-// Function to toggle admin field visibility using a secret key combination
-document.addEventListener("keydown", function(event) {
-    if (event.ctrlKey && event.shiftKey && event.key === "X") {
-        const adminField = document.getElementById("adminPasswordContainer");
-        adminField.style.display = adminField.style.display === "none" ? "block" : "none";
+let isAdminAuthenticated = false;
+
+// Tap detection for mobile users
+let tapCount = 0;
+document.getElementById("hiddenTapArea").addEventListener("click", function() {
+    tapCount++;
+    if (tapCount === 5) {
+        document.getElementById("adminPasswordContainer").style.display = "block";
+        tapCount = 0; // Reset tap count
     }
+    setTimeout(() => (tapCount = 0), 3000); // Reset if no tap in 3 sec
 });
 
+// Admin Login Function
+const authenticateAdmin = async () => {
+    const adminPasswordInput = document.getElementById("adminPassword").value;
+    const hashedInputPassword = await hashPassword(adminPasswordInput);
+
+    if (hashedInputPassword === storedHashedPassword) {
+        isAdminAuthenticated = true;
+        document.getElementById("adminPasswordContainer").style.display = "none";
+        document.getElementById("adminLogoutContainer").style.display = "block";
+    } else {
+        alert("Incorrect password! Please try again.");
+    }
+};
+
+// Admin Logout Function
+const logoutAdmin = () => {
+    isAdminAuthenticated = false;
+    document.getElementById("adminPassword").value = ""; // Clear password field
+    document.getElementById("adminPasswordContainer").style.display = "block";
+    document.getElementById("adminLogoutContainer").style.display = "none";
+};
+
+// Function to handle divination with admin access check
 const performUserDivination = async () => {
     const mainCast = document.getElementById("mainCast").value;
     const orientation = document.getElementById("orientation").value;
     const specificOrientation = document.getElementById("specificOrientation").value;
     const solution = document.getElementById("solution").value;
     const solutionDetails = document.getElementById("solutionDetails").value;
-    const adminPasswordInput = document.getElementById("adminPassword").value;
-
-    const hashedInputPassword = await hashPassword(adminPasswordInput);
-
-    if (hashedInputPassword === storedHashedPassword) {
-        // Hide password input field when the admin is authenticated
-        document.getElementById("adminPasswordContainer").style.display = "none";
-    } else if (adminPasswordInput) {
-        alert("Incorrect password! Please try again.");
-        return;
-    }
 
     const { message, solutionInfo } = getOduMessageData(mainCast, orientation, specificOrientation, solution, solutionDetails);
 
@@ -257,7 +274,7 @@ const performUserDivination = async () => {
 
     const resultElement = document.getElementById("divinationResult");
 
-    if (hashedInputPassword === storedHashedPassword || freeOdus.includes(mainCast) || isOduPaid(mainCast, orientation, specificOrientation, solution, solutionDetails)) {
+    if (isAdminAuthenticated || freeOdus.includes(mainCast) || isOduPaid(mainCast, orientation, specificOrientation, solution, solutionDetails)) {
         resultElement.innerHTML = `
             <h3 style="text-align: center; margin-top:20px">${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}</h3>
             <p>${message} ${solutionInfo}</p>
