@@ -355,7 +355,7 @@
                 <h3 style="text-align: center; margin-top:20px; font-weight:bold;">Numerology: ${numerologyNumber}</h3>
                 <p>${numerologyMeanings[numerologyNumber]}</p>
             `;
-            configHTML += `<img class="moving-bg" src="img/eye3.gif" />`;
+            configHTML += `<img class="moving-bg" src="img/bird.gif" />`;
             configurationElement.innerHTML = configHTML;
             // Slow smooth scroll to result section (2 seconds duration)
             smoothScrollTo(resultElement.offsetTop, 2000);
@@ -395,7 +395,7 @@
                 <h3 style="text-align: center; margin-top:20px; font-weight:bold;">Numerology: ${numerologyNumber}</h3>
                 <p>${numerologyMeanings[numerologyNumber]}</p>
             `;
-            configHTML += `<img class="moving-bg" src="img/eye3.gif" />`;
+            configHTML += `<img class="moving-bg" src="img/bird.gif" />`;
             configurationElement.innerHTML = configHTML;
             // Slow smooth scroll to result section (2 seconds duration)
             smoothScrollTo(resultElement.offsetTop, 2000);

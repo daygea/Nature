@@ -11,6 +11,10 @@
             user-select: none;
             color: green;
             background-color: white;
+            background-image: url('../img/background.jpg');
+            background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
             font-family: Courier, monospace;
             font-weight: bold;
          }
@@ -185,7 +189,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            animation: rotate 500s linear infinite;
+            animation: rotate 333s linear infinite;
         }
 
         .calculator button {
