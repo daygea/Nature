@@ -189,79 +189,109 @@
                 requestAnimationFrame(animation);
             };
 
-            const performUserDivination = () => {
-            const mainCast = document.getElementById("mainCast").value;
-            // handleOduAccess(mainCast);
-            const orientation = document.getElementById("orientation").value;
-            const specificOrientation = document.getElementById("specificOrientation").value;
-            const solution = document.getElementById("solution").value;
-            const solutionDetails = document.getElementById("solutionDetails").value;
+// Function to hash the password using SHA-256
+async function hashPassword(password) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(password);
+    const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+    return Array.from(new Uint8Array(hashBuffer)).map(b => b.toString(16).padStart(2, '0')).join('');
+}
 
-            const { message, solutionInfo } = getOduMessageData(mainCast, orientation, specificOrientation, solution, solutionDetails);
+// Store the hashed admin password securely (replace with your actual hash)
+const storedHashedPassword = "c2b6df82a1f9e1ae08bffac7d5358d8b752b191f35601e975bb33e43ad948b8b"; 
 
-            const orisha = oduMessages[mainCast]?.Orisha || "No orisha data available.";
-            const taboo = oduMessages[mainCast]?.Taboo || "No taboo available.";
-            const names = oduMessages[mainCast]?.Names || "No names available.";
-            const occupation = oduMessages[mainCast]?.Occupation || "No occupation available.";
-            const credit = oduMessages[mainCast]?.Credit || "No credit available.";
-            const alias = oduMessages[mainCast]?.alias || "No alias available.";
-            const audioData = oduMessages[mainCast]?.audioData || [];
-            const videoData = oduMessages[mainCast]?.videoData || [];
+// Function to toggle admin field visibility using a secret key combination
+document.addEventListener("keydown", function(event) {
+    if (event.ctrlKey && event.shiftKey && event.key === "X") {
+        const adminField = document.getElementById("adminPasswordContainer");
+        adminField.style.display = adminField.style.display === "none" ? "block" : "none";
+    }
+});
 
-            //Map orientation to descriptive text
-                const orientationText = orientation === "Positive" ? "Ire" : "Ayewo";
-                const orientationEmi = orientation === "Positive" ? "Awonranmaja" : "Ajagunmale";
+const performUserDivination = async () => {
+    const mainCast = document.getElementById("mainCast").value;
+    const orientation = document.getElementById("orientation").value;
+    const specificOrientation = document.getElementById("specificOrientation").value;
+    const solution = document.getElementById("solution").value;
+    const solutionDetails = document.getElementById("solutionDetails").value;
+    const adminPasswordInput = document.getElementById("adminPassword").value;
 
-              // Generate numbered list for audio links
-            const audioHTML = audioData.length
-                ? audioData.map((item, index) => 
-                    `<p style="margin-right:10px; float:left"> <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Listen to Audio</a> of ${item.author}</p>`
-                  ).join("")
-                : "<p></p>";
+    const hashedInputPassword = await hashPassword(adminPasswordInput);
 
-            // Generate numbered list for video links
-            const videoHTML = videoData.length
-                ? videoData.map((item, index) => 
-                    `<p style="margin-right:5px; float:left"> <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Watch Video</a> of ${item.author}</p> `
-                  ).join("")
-                : "<p></p>";
+    if (hashedInputPassword === storedHashedPassword) {
+        // Hide password input field when the admin is authenticated
+        document.getElementById("adminPasswordContainer").style.display = "none";
+    } else if (adminPasswordInput) {
+        alert("Incorrect password! Please try again.");
+        return;
+    }
 
-            const resultElement = document.getElementById("divinationResult");
+    const { message, solutionInfo } = getOduMessageData(mainCast, orientation, specificOrientation, solution, solutionDetails);
 
-                if (freeOdus.includes(mainCast) || isOduPaid(mainCast, orientation, specificOrientation, solution, solutionDetails)) {
-                    resultElement.innerHTML = `
-                        <h3 style="text-align: center; margin-top:20px">${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}</h3>
-                        <p>${message} ${solutionInfo}</p>
-                        <p><strong>Orisha:</strong> ${orisha}</p>
-                        <p><strong>Alias:</strong> ${alias}</p>
-                        <p><strong>Taboo:</strong> ${taboo}</p>
-                        <p><strong>Names:</strong> ${names}</p>
-                        <p><strong>Occupation:</strong> ${occupation}</p>
-                        ${audioHTML}
-                        ${videoHTML}
-                        <br style="clear:both;"/>
-                        <p style="padding-bottom:50px"><strong>Credit:</strong> ${credit}</p>
-                    `;
-                } else {
-                    document.getElementById("divinationResult").innerHTML = `
-                        <center>
-                            <h4 style="padding-top:30px;">
-                                Kindly donate N1,000 to the NGO for a 24-hour access to 
-                                ${mainCast}, ${orientationText}  (${specificOrientation}), ${solution} ${solutionDetails}.
-                            </h4>
-                            <br/>
-                            <button class="btn btn-lg btn-warning" 
-                                onclick="payForOdu('${mainCast}', '${orientation}', '${specificOrientation}', '${solution}', '${solutionDetails}')">
-                                Donate Now
-                            </button>
-                        </center>
-                    `;
-                }
+    const orisha = oduMessages[mainCast]?.Orisha || "No orisha data available.";
+    const taboo = oduMessages[mainCast]?.Taboo || "No taboo available.";
+    const names = oduMessages[mainCast]?.Names || "No names available.";
+    const occupation = oduMessages[mainCast]?.Occupation || "No occupation available.";
+    const credit = oduMessages[mainCast]?.Credit || "No credit available.";
+    const alias = oduMessages[mainCast]?.alias || "No alias available.";
+    const audioData = oduMessages[mainCast]?.audioData || [];
+    const videoData = oduMessages[mainCast]?.videoData || [];
 
-                displayConfiguration(mainCast);
-                // Slow smooth scroll to result section (2 seconds duration)
-                smoothScrollTo(resultElement.offsetTop, 2000);
-        };
+    const orientationText = orientation === "Positive" ? "Ire" : "Ayewo";
+
+    const audioHTML = audioData.length
+        ? audioData.map((item, index) => 
+            `<p style="margin-right:10px; float:left"> 
+                <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Listen to Audio</a> of ${item.author}
+            </p>`
+          ).join("")
+        : "<p></p>";
+
+    const videoHTML = videoData.length
+        ? videoData.map((item, index) => 
+            `<p style="margin-right:5px; float:left"> 
+                <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Watch Video</a> of ${item.author}
+            </p>`
+          ).join("")
+        : "<p></p>";
+
+    const resultElement = document.getElementById("divinationResult");
+
+    if (hashedInputPassword === storedHashedPassword || freeOdus.includes(mainCast) || isOduPaid(mainCast, orientation, specificOrientation, solution, solutionDetails)) {
+        resultElement.innerHTML = `
+            <h3 style="text-align: center; margin-top:20px">${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}</h3>
+            <p>${message} ${solutionInfo}</p>
+            <p><strong>Orisha:</strong> ${orisha}</p>
+            <p><strong>Alias:</strong> ${alias}</p>
+            <p><strong>Taboo:</strong> ${taboo}</p>
+            <p><strong>Names:</strong> ${names}</p>
+            <p><strong>Occupation:</strong> ${occupation}</p>
+            ${audioHTML}
+            ${videoHTML}
+            <br style="clear:both;"/>
+            <p style="padding-bottom:50px"><strong>Credit:</strong> ${credit}</p>
+        `;
+    } else {
+        resultElement.innerHTML = `
+            <center>
+                <h4 style="padding-top:30px;">
+                    Kindly donate N1,000 to the NGO for a 24-hour access to 
+                    ${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}.
+                </h4>
+                <br/>
+                <button class="btn btn-lg btn-warning" 
+                    onclick="payForOdu('${mainCast}', '${orientation}', '${specificOrientation}', '${solution}', '${solutionDetails}')">
+                    Donate Now
+                </button>
+            </center>
+        `;
+    }
+
+    displayConfiguration(mainCast);
+    smoothScrollTo(resultElement.offsetTop, 2000);
+};
+
+
 
     const displayConfiguration = (oduName) => {
             const configurationElement = document.getElementById("configurationResult");
