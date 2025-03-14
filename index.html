@@ -14,32 +14,30 @@
         <div class="spinner"></div>
     </div>
     <div class="container-fluid">
-        <center><a href="index.html" style="color: green; text-decoration: none;"><img src="img/logo.png" style="height:70px" alt="NatureLogo"/></a></center>
+        <center><a href="index.html" style="color: green; text-decoration: none;"><img src="img/logo.png" style="height:75px" alt="NatureLogo"/></a></center>
 
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8 text-center">
-                 <p>Mo se iba <b>Olorun Olodumare</b>, Ajagunmale, Aworanmaja, Odu Ologbooje, Egan, Gbogbo Eleye, Irinwo Imole, Igba Imole, Okanle ni Irinwo Imole, Otalelugba Imole. Mo seba gbogbo Ajunilo.</p>
+                 <p>Mo se iba <b>Olorun Olodumare</b>, Ajagunmale, Aworanmaja, Odu Ologbooje, Egan, Gbogbo Eleye, Irinwo Imole, Igba Imole, Okanlenirinwo Imole, Otalelugba Imole. Mo se iba gbogbo Ajunilo.</p>
             </div>
-                            <!-- Hidden Tap Area -->
-        <div id="hiddenTapArea" style="position: absolute; top: 0; left: 0; width: 50px; height: 50px;"></div>
         </div>
         
         <div class="row">
             <div id="configurationResult" class="col-sm-3 odusign" style="font-family: cursive;">
-                <img class="moving-bg" src="img/bird.gif"/>
+                <img id="hiddenTapArea" class="moving-bg" src="img/bird.gif"/>
             </div>
             <div class="col-sm-6">
 
                 <!-- Admin Password Input (Hidden by Default) -->
                 <div id="adminPasswordContainer" style="display: none;">
-                    <input type="password" id="adminPassword" placeholder="Enter Admin Password" />
-                    <button onclick="authenticateAdmin()">Login</button>
+                   <center> <input type="password" id="adminPassword" placeholder="Enter Admin Password" />
+                    <button onclick="authenticateAdmin()">Login</button> </center>
                 </div>
 
                 <!-- Admin Logout Button (Hidden by Default) -->
                 <div id="adminLogoutContainer" style="display: none;">
-                    <button onclick="logoutAdmin()">Logout</button>
+                   <center> <button class="btn btn-md btn-danger" onclick="logoutAdmin()">Logout</button> </center>
                 </div>
 
 

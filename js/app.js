@@ -206,11 +206,19 @@ let isAdminAuthenticated = false;
 let tapCount = 0;
 document.getElementById("hiddenTapArea").addEventListener("click", function() {
     tapCount++;
-    if (tapCount === 5) {
+    if (tapCount === 9) {
         document.getElementById("adminPasswordContainer").style.display = "block";
         tapCount = 0; // Reset tap count
     }
     setTimeout(() => (tapCount = 0), 3000); // Reset if no tap in 3 sec
+});
+
+// Detect "Enter" key press in admin password input field
+document.getElementById("adminPassword").addEventListener("keypress", async function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault(); // Prevent default behavior
+        await authenticateAdmin(); // Call the admin authentication function
+    }
 });
 
 // Admin Login Function
@@ -233,6 +241,7 @@ const logoutAdmin = () => {
     document.getElementById("adminPassword").value = ""; // Clear password field
     document.getElementById("adminPasswordContainer").style.display = "block";
     document.getElementById("adminLogoutContainer").style.display = "none";
+    location.reload();
 };
 
 // Function to handle divination with admin access check
@@ -345,7 +354,11 @@ const performUserDivination = async () => {
 
         // Initialize on page load
         window.onload = function() {
-            document.getElementById("preloader").style.display = "none";
+
+             setTimeout(() => {
+                document.getElementById("preloader").style.display = "none";
+            }, 3000); // Adjust time as needed
+
             generateHiddenButtons();
             populateDropdowns();
         };
@@ -421,29 +434,35 @@ const performUserDivination = async () => {
             return sum;
         }
 
-        //Handle button click to determine the meaning
+       //Handle button click to determine the meaning
         document.getElementById("determine-btn").onclick = () => {
             const birthdate = document.getElementById("birthdate").value;
             const resultDiv = document.getElementById("result");
             const configurationElement = document.getElementById("configurationResult");
             let configHTML = "";
 
+            // Reset previous error messages before checking birthdate
+            resultDiv.innerHTML = "";
+            resultDiv.style.display = "none"; 
+
             if (!birthdate) {
-                resultDiv.style.display = "block inline";
+                resultDiv.style.display = "block";
                 resultDiv.innerHTML = "<span style='color:red; font-size:14px'>Select your birth date.</span>";
                 return;
             }
 
             // Get the single-digit numerology number
             const numerologyNumber = getNumerologyNumber(birthdate);
-            resultDiv.style.display = "none";
             const resultElement = document.getElementById("divinationResult");
+
             resultElement.innerHTML = `
                 <h3 style="text-align: center; margin-top:20px; font-weight:bold;">Numerology: ${numerologyNumber}</h3>
                 <p>${numerologyMeanings[numerologyNumber]}</p>
             `;
+
             configHTML += `<img class="moving-bg" src="img/bird.gif" />`;
             configurationElement.innerHTML = configHTML;
+
             // Slow smooth scroll to result section (2 seconds duration)
             smoothScrollTo(resultElement.offsetTop, 2000);
         };
