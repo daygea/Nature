@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nature Speaks</title>
+    <title>Nature Speaks by AOK Foundation</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/favicon.png">
@@ -14,60 +14,47 @@
         <div class="spinner"></div>
     </div>
     <div class="container-fluid">
-        <center><a href="index.html" style="color: green; text-decoration: none;"><img src="img/logo.png" style="height:75px" alt="NatureLogo"/></a></center>
-
+        <center><a href="index.html" style="color: green; text-decoration: none;"><img src="img/logo.png" style="height:75px" alt="Nature Speaks Logo"/></a></center>
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8 text-center">
                  <p>Mo se iba <b>Olorun Olodumare</b>, Ajagunmale, Aworanmaja, Odu Ologbooje, Egan, Gbogbo Eleye, Irinwo Imole, Igba Imole, Okanlenirinwo Imole, Otalelugba Imole. Mo se iba gbogbo Ajunilo.</p>
             </div>
         </div>
-        
         <div class="row">
             <div id="configurationResult" class="col-sm-3 odusign" style="font-family: cursive;">
                 <img id="hiddenTapArea" class="moving-bg" src="img/bird.gif"/>
             </div>
             <div class="col-sm-6">
-
-                <!-- Admin Password Input (Hidden by Default) -->
                 <div id="adminPasswordContainer" style="display: none;">
                    <center> <input type="password" id="adminPassword" placeholder="Enter Admin Password" />
                     <button onclick="authenticateAdmin()">Login</button> </center>
                 </div>
-
-                <!-- Admin Logout Button (Hidden by Default) -->
                 <div id="adminLogoutContainer" style="display: none;">
                    <center> <button class="btn btn-md btn-danger" onclick="logoutAdmin()">Logout</button> </center>
                 </div>
-
-
                 <h3 style="text-align: center;  font-weight: bold;">Divination Details</h3>
                 <label for="mainCast">Odu Ifa</label>
                 <select id="mainCast" class="form-control"></select>
                 <br>
-
                 <label for="orientation">Orientation (Ire / Ayewo)</label>
                 <select id="orientation" onchange="updateSpecificOrientation()" class="form-control">
                     <option value="Positive">Ire</option>
                     <option value="Negative">Ayewo</option>
                 </select>
                 <br>
-
                 <label for="specificOrientation">Specific Orientation</label>
                 <select id="specificOrientation" class="form-control"></select>
                 <br>
-
                 <label for="solution">Solution (Ebo / Adimu)</label>
                 <select id="solution" onchange="updateSolutionDetails()" class="form-control">
                     <option value="Ebo" selected>Ebo</option>
                     <option value="Adimu">Adimu</option>
                 </select>
                 <br>
-
                 <label for="solutionDetails">Solution Details</label>
                 <select id="solutionDetails" class="form-control"></select>
                 <br>
-
                 <button onclick="performUserDivination()" class="btn btn-md btn-success">Reveal Message</button>
             </div>
             <div class="col-sm-3 numerology">
@@ -75,18 +62,14 @@
                     <p><b>Enter your birth date.</b></p>
                     <div id="birthdate-box">
                         <input type="date" id="birthdate" /><br/><br/>
-
                         <button class="btn btn-md btn-success" id="determine-btn">Reveal Message</button>
                     </div>
                     <p><b>OR</b></p>
                      <p><b>Pick a Circle</b></p>
-                     <div class="calculator" id="calculator">
-                            <!-- Buttons will be generated dynamically -->
+                     <div class="calculator" id="calculator">    
                     </div>
-                    
             </div>
         </div>
-
         <div class="container">
              <div class="row">
                 <div class="col-12" style="color: green; text-align: justify;" id="divinationResult">
@@ -99,29 +82,23 @@
                 </div>
             </div>
         </div>
-
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <!-- Support Section -->
                     <div class="col-md-4"></div>
                     <div class="col-md-4"></div>
                     <div class="col-md-4">
                         <a target="_blank" style="color:white; text-decoration: none;" href="https://paystack.com/pay/aokfoundation" class="btn btn-md btn-danger">SUPPORT OUR MISSION</a>
                     </div>
                 </div>
-
-                <!-- About Section -->
                 <div class="row">
                     <div class="col-12 text-center" style="color: green;">
                         <h4 style=" font-weight: bold;">About Nature Speaks</h4>
                         <p>Nature Speaks is a platform providing deep insights into Ifa divination and Numerology</p>
                         <p>Aboru, Aboye, Abosise. Kindly send us data for the application on <b style="color:red;">aokfoundationng@gmail.com</b> or on Whatsapp <a style="color:red;" target="_blank" aria-label="Chat on WhatsApp" href="https://wa.me/2348034256265"> +2348034256265
-<a/>Please provide your name and title along side the data provided for proper referencing. Ire o.</p>
+<a/>Please provide your name and title along side the data provided for proper referencing. For any form of collaboration, you can reach us on <span style="color:red;">+2348034256265</span> or through our Website: <a style="color:red;" target="_blank" href="https://aokfoundation.org/">https://aokfoundation.org</a>  Ire o.</p>
                     </div>
                 </div>
-
-                <!-- Copyright -->
                 <div class="row">
                     <div class="col-12 text-center" style="color: green;">
                         <p>&copy; <span id="year"></span> Nature Speaks by <a style="color:red;" target="_blank" href="https://aokfoundation.org/">Aminat Olanbiwoninu Kadri (AOK) Foundation</a>. All Rights Reserved.</p>

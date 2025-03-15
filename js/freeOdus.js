@@ -5,6 +5,5 @@
         "Idi Meji", 
         "Irosun Ika", 
         "Osa Ogbe", 
-        "Osa Owonrin", 
-        "Okanran Ofun"
+        "Osa Owonrin",
     ];
