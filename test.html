@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ifá AI Divination</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; padding: 20px; }
+        .container { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); display: inline-block; }
+        button { padding: 10px; margin: 10px; border: none; background: #007bff; color: white; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ifá AI Divination</h1>
+        <button id="castButton">Cast Ifá</button>
+        <p id="result">Your divination result will appear here.</p>
+        <p id="recommendation"></p>
+        <button id="speak">🔊 Listen to Interpretation</button>
+    </div>
+
+    <script>
+        class IfaDivination {
+            constructor() {
+                this.oduBinaryMap = this.generateOduBinaryMap();
+            }
+
+            generateOduBinaryMap() {
+                const oduMap = {};
+                for (let i = 0; i < 256; i++) {
+                    let binary = i.toString(2).padStart(8, '0');
+                    oduMap[binary] = `Odu ${i + 1}`;
+                }
+                return oduMap;
+            }
+
+            castIfa() {
+                let binaryOdu = '';
+                for (let i = 0; i < 8; i++) {
+                    binaryOdu += Math.random() > 0.5 ? '1' : '0';
+                }
+                return this.oduBinaryMap[binaryOdu];
+            }
+
+            interpretOdu(odu) {
+                const interpretations = {
+                    "Odu 1": "Great fortune and success are ahead.",
+                    "Odu 2": "Caution is required. A challenge may arise.",
+                    "Odu 3": "Spiritual cleansing is necessary for clarity."
+                };
+                return interpretations[odu] || "Divine wisdom is unfolding. Seek balance.";
+            }
+
+            getAIRecommendation(odu) {
+                const recommendations = {
+                    "Odu 1": "Perform a gratitude ritual and take bold steps.",
+                    "Odu 2": "Avoid conflicts and seek guidance before making decisions.",
+                    "Odu 3": "Meditate and seek spiritual grounding."
+                };
+                return recommendations[odu] || "Stay adaptable and open-minded.";
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const divination = new IfaDivination();
+            const castButton = document.getElementById("castButton");
+            const resultText = document.getElementById("result");
+            const recommendationText = document.getElementById("recommendation");
+            const speakButton = document.getElementById("speak");
+
+            castButton.addEventListener("click", function () {
+                const odu = divination.castIfa();
+                const interpretation = divination.interpretOdu(odu);
+                const recommendation = divination.getAIRecommendation(odu);
+
+                resultText.innerHTML = `<strong>${odu}:</strong> ${interpretation}`;
+                recommendationText.innerHTML = `<em>Recommendation:</em> ${recommendation}`;
+            });
+
+            speakButton.addEventListener("click", function () {
+                const utterance = new SpeechSynthesisUtterance(resultText.innerText);
+                speechSynthesis.speak(utterance);
+            });
+        });
+    </script>
+</body>
+</html>

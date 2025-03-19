@@ -69,6 +69,16 @@
             "Ose Meji": ["|", "||", "|", "||"],
             "Ofun Meji": ["||", "|", "||", "|"]
         };
+        // Image paths for mapping
+        const imageMap = {
+            "|": "img/openOpele.png",
+            "||": "img/closeOpele.png"
+        };
+
+        // Function to convert a symbol array into image elements
+        const getOduImages = (symbols) => {
+            return symbols.map(symbol => `<img src="${imageMap[symbol]}" alt="${symbol}" width="30" height="50">`).join("");
+        };
         // Generate all 256 Odù combinations
         const generateOduCombinations = () => {
             const baseOduNames = Object.keys(baseOdus);
@@ -274,15 +284,18 @@ const performUserDivination = async () => {
     displayConfiguration(mainCast);
     smoothScrollTo(resultElement.offsetTop, 2000);
 };
-    const displayConfiguration = (oduName) => {
+
+        const displayConfiguration = (oduName) => {
             const configurationElement = document.getElementById("configurationResult");
-            let configHTML = "";
+            let configHTML = `<h1><b>Odu Ifa</b></h1>`;
+
             if (baseOdus[oduName]) {
                 // For the first 16 Odùs
                 const config = baseOdus[oduName];
-                configHTML = `<h1><b>Odu Ifa</b></h1>`;
                 config.forEach(line => {
-                    configHTML += `<p>&nbsp;&nbsp;${line} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${line}</p>`;
+                    configHTML += `<div style="display: flex; align-items: center; gap: 20px; padding-left:150px;">
+                                    ${getOduImages([line])} ${getOduImages([line])}
+                                   </div>`;
                 });
             } else {
                 // For combinations like "Ogbe Oyeku"
@@ -291,17 +304,22 @@ const performUserDivination = async () => {
                 const secondPart = parts[1] === "Ogbe" ? "Ejiogbe" : `${parts[1]} Meji`;
                 const firstConfig = baseOdus[firstPart];
                 const secondConfig = baseOdus[secondPart];
+
                 if (firstConfig && secondConfig) {
-                    configHTML = `<h1><b>Odu Ifa</b></h1>`;
                     firstConfig.forEach((line, index) => {
-                        configHTML += `<p>&nbsp;&nbsp;${secondConfig[index]} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${line}</p>`;
+                        configHTML += `<div style="display: flex; align-items: center; gap: 20px; padding-left:150px;">
+                                        ${getOduImages([secondConfig[index]])} ${getOduImages([line])}
+                                       </div>`;
                     });
                 } else {
                     configHTML = `<h2>Odu</h2><p>Configuration not found for ${oduName}.</p>`;
                 }
             }
+
             configurationElement.innerHTML = configHTML;
         };
+
+
         // Initialize on page load
         window.onload = function() {
              setTimeout(() => {
