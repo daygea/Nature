@@ -242,3 +242,42 @@
         }
 
 
+/*.odu-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}*/
+
+/* Header image (overlapping top) */
+.odu-header {
+/*    position: absolute;*/
+    top: 50px; /* Adjust this value to move it up/down */
+    z-index: 2;
+/*    width: 80px;*/
+}
+
+/*/* Footer image (overlapping bottom) */
+.odu-footer {
+    position: absolute;
+    bottom: -20px; /* Adjust this value to move it up/down */
+    z-index: 2;
+    width: 80px;
+}
+
+/* Individual Odù lines */
+.odu-line-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Odù image size */
+.odu-line {
+    width: 30px;
+    height: 50px;
+}*/
