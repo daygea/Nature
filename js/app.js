@@ -296,7 +296,7 @@ const displayConfiguration = (oduName) => {
     const configurationElement = document.getElementById("configurationResult");
 
     let configHTML = `
-        <div class="odu-container">
+        <div class="odu-container" id="odu-container">
             <img src="img/chain.png" alt="Odu Header" class="odu-header">
     `;
 
@@ -339,6 +339,14 @@ const displayConfiguration = (oduName) => {
     `;
 
     configurationElement.innerHTML = configHTML;
+
+    // Apply background image dynamically after content is inserted
+    setTimeout(() => {
+        const oduContainer = document.getElementById("odu-container");
+        if (oduContainer) {
+            oduContainer.style.backgroundImage = "url('img/opon.png')"; // Change path as needed
+        }
+    }, 100);
 };
 
 
