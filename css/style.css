@@ -242,27 +242,28 @@
         }
 
 
-/*.odu-container {
+/* Container for Odù images */
+.odu-container {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: fit-content;
     margin: auto;
-}*/
+}
 
 /* Header image (overlapping top) */
 .odu-header {
-/*    position: absolute;*/
-    top: 50px; /* Adjust this value to move it up/down */
+    position: absolute;
+    top: -25px; /* Adjust this value to move it up/down */
     z-index: 2;
-/*    width: 80px;*/
+    width: 80px;
 }
 
-/*/* Footer image (overlapping bottom) */
+/* Footer image (overlapping bottom) */
 .odu-footer {
     position: absolute;
-    bottom: -20px; /* Adjust this value to move it up/down */
+    bottom: -25px; /* Adjust this value to move it up/down */
     z-index: 2;
     width: 80px;
 }
@@ -271,7 +272,7 @@
 .odu-line-container {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 22px;
     position: relative;
     z-index: 1;
 }
@@ -280,4 +281,4 @@
 .odu-line {
     width: 30px;
     height: 50px;
-}*/
+}

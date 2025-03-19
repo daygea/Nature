@@ -71,13 +71,15 @@
         };
         // Image paths for mapping
         const imageMap = {
-            "|": "img/openOpele.png",
-            "||": "img/closeOpele.png"
+            "|": "img/openOpele-before.png",
+            "||": "img/closeOpele-before.png"
         };
 
-        // Function to convert a symbol array into image elements
+       // Function to convert a symbol array into image elements
         const getOduImages = (symbols) => {
-            return symbols.map(symbol => `<img src="${imageMap[symbol]}" alt="${symbol}" width="30" height="50">`).join("");
+            return symbols.map(symbol => 
+                `<img src="${imageMap[symbol]}" alt="${symbol}" class="odu-line">`
+            ).join("");
         };
         // Generate all 256 Odù combinations
         const generateOduCombinations = () => {
@@ -111,6 +113,10 @@
             updateSpecificOrientation();
             updateSolutionDetails(); // Populate solution details on page load
         };
+        document.getElementById("mainCast").addEventListener("change", function() {
+            const selectedOdu = this.value; // Get the selected Odu Ifa from the dropdown or input
+            displayConfiguration(selectedOdu); // Pass it to the function
+        });
         // Check if oduMessages has data for the selected mainCast, fallback if not
         const getOduMessageData = (mainCast, orientation, specificOrientation, solution, specificSolution) => {
             const orientationData = oduMessages[mainCast]?.[orientation];
@@ -285,39 +291,55 @@ const performUserDivination = async () => {
     smoothScrollTo(resultElement.offsetTop, 2000);
 };
 
-        const displayConfiguration = (oduName) => {
-            const configurationElement = document.getElementById("configurationResult");
-            let configHTML = `<h1><b>Odu Ifa</b></h1>`;
+// Function to display Odù configuration with overlapping images
+const displayConfiguration = (oduName) => {
+    const configurationElement = document.getElementById("configurationResult");
 
-            if (baseOdus[oduName]) {
-                // For the first 16 Odùs
-                const config = baseOdus[oduName];
-                config.forEach(line => {
-                    configHTML += `<div style="display: flex; align-items: center; gap: 20px; padding-left:150px;">
-                                    ${getOduImages([line])} ${getOduImages([line])}
-                                   </div>`;
-                });
-            } else {
-                // For combinations like "Ogbe Oyeku"
-                const parts = oduName.split(" ");
-                const firstPart = parts[0] === "Ogbe" ? "Ejiogbe" : `${parts[0]} Meji`;
-                const secondPart = parts[1] === "Ogbe" ? "Ejiogbe" : `${parts[1]} Meji`;
-                const firstConfig = baseOdus[firstPart];
-                const secondConfig = baseOdus[secondPart];
+    let configHTML = `
+        <div class="odu-container">
+            <img src="img/chain.png" alt="Odu Header" class="odu-header">
+    `;
 
-                if (firstConfig && secondConfig) {
-                    firstConfig.forEach((line, index) => {
-                        configHTML += `<div style="display: flex; align-items: center; gap: 20px; padding-left:150px;">
-                                        ${getOduImages([secondConfig[index]])} ${getOduImages([line])}
-                                       </div>`;
-                    });
-                } else {
-                    configHTML = `<h2>Odu</h2><p>Configuration not found for ${oduName}.</p>`;
-                }
-            }
+    if (baseOdus[oduName]) {
+        // For the first 16 Odùs
+        const config = baseOdus[oduName];
 
-            configurationElement.innerHTML = configHTML;
-        };
+        config.forEach(line => {
+            configHTML += `
+                <div class="odu-line-container">
+                    ${getOduImages([line])} ${getOduImages([line])}
+                </div>
+            `;
+        });
+
+    } else {
+        // For combinations like "Ogbe Oyeku"
+        const parts = oduName.split(" ");
+        const firstPart = parts[0] === "Ogbe" ? "Ejiogbe" : `${parts[0]} Meji`;
+        const secondPart = parts[1] === "Ogbe" ? "Ejiogbe" : `${parts[1]} Meji`;
+        const firstConfig = baseOdus[firstPart];
+        const secondConfig = baseOdus[secondPart];
+
+        if (firstConfig && secondConfig) {
+            firstConfig.forEach((line, index) => {
+                configHTML += `
+                    <div class="odu-line-container">
+                        ${getOduImages([secondConfig[index]])} ${getOduImages([line])}
+                    </div>
+                `;
+            });
+        } else {
+            configHTML = `<h2>Odu</h2><p>Configuration not found for ${oduName}.</p>`;
+        }
+    }
+
+    configHTML += `
+            <img src="img/opeleFooter.png" alt="Odu Footer" class="odu-footer">
+        </div>
+    `;
+
+    configurationElement.innerHTML = configHTML;
+};
 
 
         // Initialize on page load
