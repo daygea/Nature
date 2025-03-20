@@ -186,7 +186,14 @@ async function hashPassword(password) {
     return Array.from(new Uint8Array(hashBuffer)).map(b => b.toString(16).padStart(2, '0')).join('');
 }
 // Store the hashed admin password securely (replace with your actual hash)
-const storedHashedPassword = "c2b6df82a1f9e1ae08bffac7d5358d8b752b191f35601e975bb33e43ad948b8b"; 
+// const storedHashedPassword = "c2b6df82a1f9e1ae08bffac7d5358d8b752b191f35601e975bb33e43ad948b8b"; 
+// List of pre-hashed admin passwords (add more if needed)
+const storedHashedPasswords = [
+    "c2b6df82a1f9e1ae08bffac7d5358d8b752b191f35601e975bb33e43ad948b8b",
+    "43dc88eaab6c2de6208ba193a48ef66309f05e810d3af47e5c654218d8bfadd8",
+    "4849a6a362ae149353a4077359f4886f6a1e89399c6aa90f3d0678d129c833eb",
+    "01fcd586d878e01b7fc94d5ba229fe5a03e228ec54df1638cecced060c9b4e1e"
+];
 let isAdminAuthenticated = false;
 // Tap detection for mobile users
 let tapCount = 0;
@@ -210,7 +217,7 @@ const authenticateAdmin = async () => {
     const adminPasswordInput = document.getElementById("adminPassword").value;
     const hashedInputPassword = await hashPassword(adminPasswordInput);
 
-    if (hashedInputPassword === storedHashedPassword) {
+    if (storedHashedPasswords.includes(hashedInputPassword)) {
         isAdminAuthenticated = true;
         document.getElementById("adminPasswordContainer").style.display = "none";
         document.getElementById("adminLogoutContainer").style.display = "block";
