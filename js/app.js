@@ -233,51 +233,127 @@ const logoutAdmin = () => {
     location.reload();
 };
 // Function to handle divination with admin access check
+// const performUserDivination = async () => {
+//     const mainCast = document.getElementById("mainCast").value;
+//     const orientation = document.getElementById("orientation").value;
+//     const specificOrientation = document.getElementById("specificOrientation").value;
+//     const solution = document.getElementById("solution").value;
+//     const solutionDetails = document.getElementById("solutionDetails").value;
+//     const { message, solutionInfo } = getOduMessageData(mainCast, orientation, specificOrientation, solution, solutionDetails);
+//     const orisha = oduMessages[mainCast]?.Orisha || "No orisha data available.";
+//     const taboo = oduMessages[mainCast]?.Taboo || "No taboo available.";
+//     const names = oduMessages[mainCast]?.Names || "No names available.";
+//     const occupation = oduMessages[mainCast]?.Occupation || "No occupation available.";
+//     const credit = oduMessages[mainCast]?.Credit || "No credit available.";
+//     const alias = oduMessages[mainCast]?.alias || "No alias available.";
+//     const audioData = oduMessages[mainCast]?.audioData || [];
+//     const videoData = oduMessages[mainCast]?.videoData || [];
+//     const orientationText = orientation === "Positive" ? "Ire" : "Ayewo";
+//     const audioHTML = audioData.length
+//         ? audioData.map((item, index) => 
+//             `<p style="margin-right:10px; float:left"> 
+//                 <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Listen to Audio</a> of ${item.author}
+//             </p>`
+//           ).join("")
+//         : "<p></p>";
+//     const videoHTML = videoData.length
+//         ? videoData.map((item, index) => 
+//             `<p style="margin-right:5px; float:left"> 
+//                 <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Watch Video</a> of ${item.author}
+//             </p>`
+//           ).join("")
+//         : "<p></p>";
+//     const resultElement = document.getElementById("divinationResult");
+//     if (isAdminAuthenticated || freeOdus.includes(mainCast) || isOduPaid(mainCast, orientation, specificOrientation, solution, solutionDetails)) {
+//         resultElement.innerHTML = `
+//             <h3 style="text-align: center; margin-top:20px">${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}</h3>
+//             <p>${message} ${solutionInfo}</p>
+//             <p><strong>Orisha:</strong> ${orisha}</p>
+//             <p><strong>Alias:</strong> ${alias}</p>
+//             <p><strong>Taboo:</strong> ${taboo}</p>
+//             <p><strong>Names:</strong> ${names}</p>
+//             <p><strong>Occupation:</strong> ${occupation}</p>
+//             ${audioHTML}
+//             ${videoHTML}
+//             <br style="clear:both;"/>
+//             <p style="padding-bottom:50px"><strong>Credit:</strong> ${credit}</p>
+//         `;
+//     } else {
+//         resultElement.innerHTML = `
+//             <center>
+//                 <h4 style="padding-top:30px;">
+//                     Kindly donate N1,000 to the NGO for a 24-hour access to 
+//                     ${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}.
+//                 </h4>
+//                 <br/>
+//                 <button class="btn btn-lg btn-warning" 
+//                     onclick="payForOdu('${mainCast}', '${orientation}', '${specificOrientation}', '${solution}', '${solutionDetails}')">
+//                     Donate Now
+//                 </button>
+//             </center>
+//         `;
+//     }
+//     displayConfiguration(mainCast);
+//     smoothScrollTo(resultElement.offsetTop, 2000);
+// };
+
+// Function to handle divination with admin access check
 const performUserDivination = async () => {
     const mainCast = document.getElementById("mainCast").value;
     const orientation = document.getElementById("orientation").value;
     const specificOrientation = document.getElementById("specificOrientation").value;
     const solution = document.getElementById("solution").value;
     const solutionDetails = document.getElementById("solutionDetails").value;
+    
     const { message, solutionInfo } = getOduMessageData(mainCast, orientation, specificOrientation, solution, solutionDetails);
-    const orisha = oduMessages[mainCast]?.Orisha || "No orisha data available.";
-    const taboo = oduMessages[mainCast]?.Taboo || "No taboo available.";
-    const names = oduMessages[mainCast]?.Names || "No names available.";
-    const occupation = oduMessages[mainCast]?.Occupation || "No occupation available.";
-    const credit = oduMessages[mainCast]?.Credit || "No credit available.";
-    const alias = oduMessages[mainCast]?.alias || "No alias available.";
-    const audioData = oduMessages[mainCast]?.audioData || [];
-    const videoData = oduMessages[mainCast]?.videoData || [];
+    
+    const oduData = oduMessages[mainCast] || {};
+    const orisha = oduData.Orisha;
+    const taboo = oduData.Taboo;
+    const names = oduData.Names;
+    const occupation = oduData.Occupation;
+    const credit = oduData.Credit;
+    const alias = oduData.alias;
+    const audioData = oduData.audioData || [];
+    const videoData = oduData.videoData || [];
+
     const orientationText = orientation === "Positive" ? "Ire" : "Ayewo";
+
+    // Generate audio & video HTML if available
     const audioHTML = audioData.length
-        ? audioData.map((item, index) => 
+        ? audioData.map(item => 
             `<p style="margin-right:10px; float:left"> 
                 <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Listen to Audio</a> of ${item.author}
             </p>`
           ).join("")
-        : "<p></p>";
+        : "";
+
     const videoHTML = videoData.length
-        ? videoData.map((item, index) => 
+        ? videoData.map(item => 
             `<p style="margin-right:5px; float:left"> 
                 <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Watch Video</a> of ${item.author}
             </p>`
           ).join("")
-        : "<p></p>";
+        : "";
+
     const resultElement = document.getElementById("divinationResult");
+
     if (isAdminAuthenticated || freeOdus.includes(mainCast) || isOduPaid(mainCast, orientation, specificOrientation, solution, solutionDetails)) {
-        resultElement.innerHTML = `
+        let resultHTML = `
             <h3 style="text-align: center; margin-top:20px">${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}</h3>
             <p>${message} ${solutionInfo}</p>
-            <p><strong>Orisha:</strong> ${orisha}</p>
-            <p><strong>Alias:</strong> ${alias}</p>
-            <p><strong>Taboo:</strong> ${taboo}</p>
-            <p><strong>Names:</strong> ${names}</p>
-            <p><strong>Occupation:</strong> ${occupation}</p>
-            ${audioHTML}
-            ${videoHTML}
-            <br style="clear:both;"/>
-            <p style="padding-bottom:50px"><strong>Credit:</strong> ${credit}</p>
         `;
+
+        if (orisha) resultHTML += `<p><strong>Orisha:</strong> ${orisha}</p>`;
+        if (alias) resultHTML += `<p><strong>Alias:</strong> ${alias}</p>`;
+        if (taboo) resultHTML += `<p><strong>Taboo:</strong> ${taboo}</p>`;
+        if (names) resultHTML += `<p><strong>Names:</strong> ${names}</p>`;
+        if (occupation) resultHTML += `<p><strong>Occupation:</strong> ${occupation}</p>`;
+        if (credit) resultHTML += `<p style="padding-bottom:50px"><strong>Credit:</strong> ${credit}</p>`;
+
+        resultHTML += `${audioHTML} ${videoHTML} <br style="clear:both;"/>`;
+
+        resultElement.innerHTML = resultHTML;
     } else {
         resultElement.innerHTML = `
             <center>
@@ -293,6 +369,7 @@ const performUserDivination = async () => {
             </center>
         `;
     }
+
     displayConfiguration(mainCast);
     smoothScrollTo(resultElement.offsetTop, 2000);
 };
