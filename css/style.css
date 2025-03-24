@@ -212,6 +212,7 @@
         .calculator button:hover {
             background-color: white;
             border: 1px solid green;
+            color: green;
         }
 
         .calculator button:focus {

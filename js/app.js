@@ -389,7 +389,7 @@ const displayConfiguration = (oduName) => {
                 const x = centerX + radius * Math.cos(angle) - 25; // Adjust for button size
                 const y = centerY + radius * Math.sin(angle) - 25;
                 const button = document.createElement("button");
-                button.textContent = "";
+                button.textContent = num;
                 button.dataset.number = num;
                 button.style.left = `${x}px`;
                 button.style.top = `${y}px`;
@@ -420,40 +420,74 @@ const displayConfiguration = (oduName) => {
             // Slow smooth scroll to result section (2 seconds duration)
             smoothScrollTo(resultElement.offsetTop, 2000);
         }
-         // Function to calculate the single-digit numerology number
-        function getNumerologyNumber(dateString) {
-            let digits = dateString.replace(/[^0-9]/g, ""); // Remove non-numeric characters
-            let sum = digits.split("").reduce((acc, num) => acc + parseInt(num), 0);
-            // Reduce to a single-digit number
-            while (sum > 9) {
-                sum = sum.toString().split("").reduce((acc, num) => acc + parseInt(num), 0);
-            }
-            return sum;
-        }
-       //Handle button click to determine the meaning
-        document.getElementById("determine-btn").onclick = () => {
-            const birthdate = document.getElementById("birthdate").value;
-            const resultDiv = document.getElementById("result");
-            const configurationElement = document.getElementById("configurationResult");
-            let configHTML = "";
-            // Reset previous error messages before checking birthdate
-            resultDiv.innerHTML = "";
-            resultDiv.style.display = "none"; 
-            if (!birthdate) {
-                resultDiv.style.display = "block";
-                resultDiv.innerHTML = "<span style='color:red; font-size:14px'>Select your birth date.</span>";
-                return;
-            }
-            // Get the single-digit numerology number
-            const numerologyNumber = getNumerologyNumber(birthdate);
-            const resultElement = document.getElementById("divinationResult");
-            resultElement.innerHTML = `
-                <h3 style="text-align: center; margin-top:20px; font-weight:bold;">Numerology: ${numerologyNumber}</h3>
-                <p>${numerologyMeanings[numerologyNumber]}</p>
-            `;
-            configHTML += `<img class="moving-bg" src="img/bird.gif" />`;
-            configurationElement.innerHTML = configHTML;
-            // Slow smooth scroll to result section (2 seconds duration)
-            smoothScrollTo(resultElement.offsetTop, 2000);
-        };
+
+
+        // Function to calculate the single-digit numerology number
+function getNumerologyNumber(dateString) {
+    let digits = dateString.replace(/[^0-9]/g, ""); // Remove non-numeric characters
+    let sum = digits.split("").reduce((acc, num) => acc + parseInt(num), 0);
+    // Reduce to a single-digit number
+    while (sum > 9) {
+        sum = sum.toString().split("").reduce((acc, num) => acc + parseInt(num), 0);
+    }
+    return sum;
+}
+
+// Function to calculate week number within a month
+function getWeekOfMonth(date) {
+    const firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
+    return Math.ceil((date.getDate() + firstDay.getDay()) / 7);
+}
+
+// Handle button click to determine the meaning
+document.getElementById("determine-btn").onclick = () => {
+    const birthdate = document.getElementById("birthdate").value;
+    const resultDiv = document.getElementById("result");
+    const configurationElement = document.getElementById("configurationResult");
+    let configHTML = "";
+    
+    // Reset previous error messages before checking birthdate
+    resultDiv.innerHTML = "";
+    resultDiv.style.display = "none"; 
+    if (!birthdate) {
+        resultDiv.style.display = "block";
+        resultDiv.innerHTML = "<span style='color:red; font-size:14px'>Select your birth date.</span>";
+        return;
+    }
+    
+    const birthDateObj = new Date(birthdate);
+    const birthDay = birthDateObj.getDate();
+    const birthMonth = birthDateObj.getMonth() + 1;
+    const birthYear = birthDateObj.getFullYear();
+    
+    const currentDate = new Date();
+    const currentYear = currentDate.getFullYear();
+    const currentMonth = currentDate.getMonth() + 1;
+    const currentDay = currentDate.getDate();
+    const currentWeek = getWeekOfMonth(currentDate);
+
+    // Calculate different numerology vibrations
+    const lifeTimeVibration = getNumerologyNumber(`${birthDay}${birthMonth}${birthYear}`);
+    const currentYearVibration = getNumerologyNumber(`${birthDay}${birthMonth}${currentYear}`);
+    const currentMonthVibration = getNumerologyNumber(`${birthDay}${birthMonth}${currentYear}${currentMonth}`);
+    const currentWeekVibration = getNumerologyNumber(`${birthDay}${birthMonth}${currentYear}${currentMonth}${currentWeek}`);
+    const currentDayVibration = getNumerologyNumber(`${birthDay}${birthMonth}${currentYear}${currentMonth}${currentDay}`);
+
+    const resultElement = document.getElementById("divinationResult");
+    resultElement.innerHTML = `
+        <h3 style="text-align: center; margin-top:20px; font-weight:bold;">Numerology Results</h3>
+        <p><strong style="font-size:30px; font-weight: bold;">Life Time Vibration is ${lifeTimeVibration}</strong> - ${numerologyMeanings[lifeTimeVibration]}</p>
+        <p><strong style="font-size:30px; font-weight: bold;">This year's Vibration is ${currentYearVibration}</strong> - ${numerologyMeanings[currentYearVibration]}</p>
+        <p><strong style="font-size:30px; font-weight: bold;">This month's Vibration is ${currentMonthVibration}</strong> - ${numerologyMeanings[currentMonthVibration]}</p>
+        <p><strong style="font-size:30px; font-weight: bold;">This week's Vibration is ${currentWeekVibration}</strong> - ${numerologyMeanings[currentWeekVibration]}</p>
+        <p><strong style="font-size:30px; font-weight: bold;">Today's Vibration is ${currentDayVibration}</strong> - ${numerologyMeanings[currentDayVibration]}</p>
+    `;
+
+    configHTML += `<img class="moving-bg" src="img/bird.gif" />`;
+    configurationElement.innerHTML = configHTML;
+    
+    // Slow smooth scroll to result section (2 seconds duration)
+    smoothScrollTo(resultElement.offsetTop, 2000);
+};
+
 
