@@ -220,14 +220,111 @@ const authenticateAdmin = async () => {
         isAdminAuthenticated = true;
         document.getElementById("adminPasswordContainer").style.display = "none";
         document.getElementById("adminLogoutContainer").style.display = "block";
+
     } else {
         alert("Incorrect password! Please try again.");
     }
 };
+
+function printDivinationResult() {
+    if (!isAdminAuthenticated) {
+        alert("Only admins can print.");
+        return;
+    }
+    const printHeader = document.getElementById("configurationResult").innerHTML;
+    const printContent = document.getElementById("divinationResult").innerHTML;
+
+    // Create an iframe
+    const printWindow = window.open("", "_blank");
+    printWindow.document.write(`
+        <html>
+        <head>
+            <title>Print Preview</title>
+            <style>
+                body{
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            color: green;
+            background-color: white;
+            background-image: url('../img/background.jpg');
+            background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            font-family: Courier, monospace;
+            font-weight: bold;
+         }
+         /* Container for Odù images */
+        .odu-container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        /*    width: fit-content;*/
+            width: 12%;
+            margin: auto;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Header image (overlapping top) */
+        .odu-header {
+            position: absolute;
+            top: -25px; /* Adjust this value to move it up/down */
+            z-index: 2;
+            width: 80px;
+        }
+
+        /* Footer image (overlapping bottom) */
+        .odu-footer {
+            position: absolute;
+            bottom: -25px; /* Adjust this value to move it up/down */
+            z-index: 2;
+            width: 80px;
+        }
+
+        /* Individual Odù lines */
+        .odu-line-container {
+            display: flex;
+            justify-content: center;
+            gap: 22px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Odù image size */
+        .odu-line {
+            width: 30px;
+            height: 50px;
+        }
+
+                @media print {
+                    body { visibility: visible; }
+                }
+            </style>
+        </head>
+        <body>
+        <center><a href="/" style="color: green; text-decoration: none;"><img src="img/logo.png" style="height:75px" alt="Nature Speaks Logo"/></a></center>
+        <center><p>Mo juba <b>OLODUMARE</b>, Ajagunmale, Aworanmaja, Odu Ologbooje, Egan, Gbogbo Eleye, Irinwo Imole, Igba Imole, Okanlenirinwo Imole, Otalelugba Imole, Oduduwa ati gbogbo Oba Alade. Mo juba gbogbo Ajunilo.</p></center>
+            
+           <center> ${printHeader} </center> <br/>
+            ${printContent}
+        </body>
+        </html>
+    `);
+    
+    printWindow.document.close();
+    printWindow.focus();
+    setTimeout(() => printWindow.print(), 500); // Give time to render
+}
+
+
 // Admin Logout Function
 const logoutAdmin = () => {
     isAdminAuthenticated = false;
-    document.getElementById("adminPassword").value = ""; // Clear password field
+    document.getElementById("adminPassword").value = "";
     document.getElementById("adminPasswordContainer").style.display = "block";
     document.getElementById("adminLogoutContainer").style.display = "none";
     location.reload();
@@ -372,36 +469,47 @@ const displayConfiguration = (oduName) => {
              setTimeout(() => {
                 document.getElementById("preloader").style.display = "none";
             }, 3000); // Adjust time as needed
-            generateHiddenButtons();
+            generateCircularButtons();
             populateDropdowns();
         };
          // Generate calculator buttons with hidden numbers
-        function generateHiddenButtons() {
+        let canClick = true;
+        function generateCircularButtons() {
+            if (!canClick) return; // Prevent rapid clicks
+            canClick = false;
+            setTimeout(() => (canClick = true), 500); // Allow clicking after 500ms
+
             const calculatorDiv = document.getElementById("calculator");
             if (!calculatorDiv) return;
             calculatorDiv.innerHTML = ""; // Clear existing buttons
+
             let numbers = Array.from({ length: 9 }, (_, i) => i + 1);
             numbers.sort(() => Math.random() - 0.5); // Shuffle numbers
-            let radius = 80; // Radius of the circle
-            let centerX = 100, centerY = 100; // Center position
+            let radius = 80;
+            let centerX = 100, centerY = 100;
+
             numbers.forEach((num, index) => {
                 const angle = (index * (360 / numbers.length)) * (Math.PI / 180);
-                const x = centerX + radius * Math.cos(angle) - 25; // Adjust for button size
+                const x = centerX + radius * Math.cos(angle) - 25;
                 const y = centerY + radius * Math.sin(angle) - 25;
+
                 const button = document.createElement("button");
                 button.textContent = num;
                 button.dataset.number = num;
                 button.style.left = `${x}px`;
                 button.style.top = `${y}px`;
+
                 button.onclick = function () {
-                    this.textContent = this.dataset.number;
+                    if (!canClick) return;
                     this.classList.add("clicked");
                     displayMeaning(this.dataset.number, button);
                     setTimeout(generateHiddenButtons, 1000);
                 };
+
                 calculatorDiv.appendChild(button);
             });
         }
+
         // Function to display Numerology and Astrological meaning and highlight the selected button
         function displayMeaning(number, selectedButton) {
              // Get the single-digit numerology number

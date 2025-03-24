@@ -1,12 +1,17 @@
 // NS6224.HOSTGATOR.COM
 // NS6223.HOSTGATOR.COM
 // Disable printing
+// Allow printing only if admin is authenticated
 window.onbeforeprint = function () {
-    alert("Printing is disabled on this application.");
-    setTimeout(() => window.stop(), 100); // Stop printing
+    if (!isAdminAuthenticated) {
+        alert("Printing is disabled on this application.");
+        setTimeout(() => window.stop(), 100); // Stop printing
+    }
 };
+
+// Disable Ctrl + P unless admin is logged in
 window.addEventListener("keydown", function (event) {
-    if (event.ctrlKey && event.key === "p") { // Disable Ctrl + P
+    if (!isAdminAuthenticated && event.ctrlKey && event.key === "p") {
         alert("Printing is disabled.");
         event.preventDefault();
     }
