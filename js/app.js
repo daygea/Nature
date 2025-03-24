@@ -239,9 +239,9 @@ function printDivinationResult() {
     printWindow.document.write(`
         <html>
         <head>
-            <title>Print Preview</title>
+            <title>Print - Nature Speaks</title>
             <style>
-                body{
+            body{
             -webkit-user-select: none;
             -moz-user-select: none;
             -ms-user-select: none;
@@ -255,7 +255,6 @@ function printDivinationResult() {
             font-family: Courier, monospace;
             font-weight: bold;
          }
-         /* Container for Odù images */
         .odu-container {
             position: relative;
             display: flex;
@@ -268,24 +267,18 @@ function printDivinationResult() {
             background-position: center;
             background-repeat: no-repeat;
         }
-
-        /* Header image (overlapping top) */
         .odu-header {
             position: absolute;
             top: -25px; /* Adjust this value to move it up/down */
             z-index: 2;
             width: 80px;
         }
-
-        /* Footer image (overlapping bottom) */
         .odu-footer {
             position: absolute;
             bottom: -25px; /* Adjust this value to move it up/down */
             z-index: 2;
             width: 80px;
         }
-
-        /* Individual Odù lines */
         .odu-line-container {
             display: flex;
             justify-content: center;
@@ -293,16 +286,13 @@ function printDivinationResult() {
             position: relative;
             z-index: 1;
         }
-
-        /* Odù image size */
         .odu-line {
             width: 30px;
             height: 50px;
         }
-
-                @media print {
-                    body { visibility: visible; }
-                }
+        @media print {
+            body { visibility: visible; }
+        }
             </style>
         </head>
         <body>
@@ -583,12 +573,12 @@ document.getElementById("determine-btn").onclick = () => {
 
     const resultElement = document.getElementById("divinationResult");
     resultElement.innerHTML = `
-        <h3 style="text-align: center; margin-top:20px; font-weight:bold;">Numerology Results</h3>
-        <p><strong style="font-size:30px; font-weight: bold;">Life Time Vibration is ${lifeTimeVibration}</strong> - ${numerologyMeanings[lifeTimeVibration]}</p>
-        <p><strong style="font-size:30px; font-weight: bold;">This year's Vibration is ${currentYearVibration}</strong> - ${numerologyMeanings[currentYearVibration]}</p>
-        <p><strong style="font-size:30px; font-weight: bold;">This month's Vibration is ${currentMonthVibration}</strong> - ${numerologyMeanings[currentMonthVibration]}</p>
-        <p><strong style="font-size:30px; font-weight: bold;">This week's Vibration is ${currentWeekVibration}</strong> - ${numerologyMeanings[currentWeekVibration]}</p>
-        <p><strong style="font-size:30px; font-weight: bold;">Today's Vibration is ${currentDayVibration}</strong> - ${numerologyMeanings[currentDayVibration]}</p>
+        <h3 style="text-align: center; margin-top:20px; font-weight:bold;">Numerology Results</h3>        
+        <p><strong style="font-weight:bold; font-size: 22px;">Today's Vibration is ${currentDayVibration}</strong> - ${numerologyMeanings[currentDayVibration]}</p>
+        <p><strong style="font-weight:bold; font-size: 22px;">This week's Vibration is ${currentWeekVibration}</strong> - ${numerologyMeanings[currentWeekVibration]}</p>
+        <p><strong style="font-weight:bold; font-size: 22px;">This month's Vibration is ${currentMonthVibration}</strong> - ${numerologyMeanings[currentMonthVibration]}</p>
+        <p><strong style="font-weight:bold; font-size: 22px;">This year's Vibration is ${currentYearVibration}</strong> - ${numerologyMeanings[currentYearVibration]}</p>
+        <p><strong style="font-weight:bold; font-size: 22px;">Your Life Time Vibration is ${lifeTimeVibration}</strong> - ${numerologyMeanings[lifeTimeVibration]}</p>
     `;
 
     configHTML += `<img class="moving-bg" src="img/bird.gif" />`;
