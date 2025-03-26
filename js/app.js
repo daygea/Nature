@@ -364,15 +364,15 @@ const performUserDivination = async () => {
     if (isAdminAuthenticated || freeOdus.includes(mainCast) || isOduPaid(mainCast, orientation, specificOrientation, solution, solutionDetails)) {
         let resultHTML = `
             <h3 style="text-align: center; margin-top:20px">${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}</h3>
-            <p>${message} ${solutionInfo}</p>
+            <p>${message} ${solutionInfo}</p><hr>
         `;
 
-        if (orisha) resultHTML += `<p><strong>Orisha:</strong> ${orisha}</p>`;
-        if (alias) resultHTML += `<p><strong>Alias:</strong> ${alias}</p>`;
-        if (taboo) resultHTML += `<p><strong>Taboo:</strong> ${taboo}</p>`;
-        if (names) resultHTML += `<p><strong>Names:</strong> ${names}</p>`;
-        if (occupation) resultHTML += `<p><strong>Occupation:</strong> ${occupation}</p>`;
-        resultHTML += `${audioHTML} ${videoHTML} <br style="clear:both;"/>`;
+        if (orisha) resultHTML += `<p><strong>Orisha:</strong> ${orisha}</p><hr>`;
+        if (alias) resultHTML += `<p><strong>Alias:</strong> ${alias}</p><hr>`;
+        if (taboo) resultHTML += `<p><strong>Taboo:</strong> ${taboo}</p><hr>`;
+        if (names) resultHTML += `<p><strong>Names:</strong> ${names}</p><hr>`;
+        if (occupation) resultHTML += `<p><strong>Occupation:</strong> ${occupation}</p><hr>`;
+        resultHTML += `${audioHTML} ${videoHTML} <br style="clear:both;"/> <hr>`;
         if (credit) resultHTML += `<p style="padding-bottom:50px"><strong>Credit:</strong> ${credit}</p>`;
         resultElement.innerHTML = resultHTML;
     } else {
@@ -571,15 +571,68 @@ document.getElementById("determine-btn").onclick = () => {
     const currentWeekVibration = getNumerologyNumber(`${birthDay}${birthMonth}${currentYear}${currentMonth}${currentWeek}`);
     const currentDayVibration = getNumerologyNumber(`${birthDay}${birthMonth}${currentYear}${currentMonth}${currentDay}`);
 
+    const astrologyData = getZodiacSign(birthdate);
+    if (!astrologyData) {
+        console.log("Invalid Date of Birth.");
+        return;
+    }
+
+    let userSign = astrologyData; 
+    let rulers = userSign.ruler.includes("&") ? userSign.ruler.split(" & ") : [userSign.ruler]; // Handle single & dual rulers
+
     const resultElement = document.getElementById("divinationResult");
     resultElement.innerHTML = `
-        <h3 style="text-align: center; margin-top:20px; font-weight:bold;">Numerology Results</h3>        
+        <h3 style="text-align: center; margin-top:20px; font-weight:bold;">Message</h3>        
         <p><strong style="font-weight:bold; font-size: 22px;">Today's Vibration is ${currentDayVibration}</strong> - ${numerologyMeanings[currentDayVibration]}</p>
+        <hr>
         <p><strong style="font-weight:bold; font-size: 22px;">This week's Vibration is ${currentWeekVibration}</strong> - ${numerologyMeanings[currentWeekVibration]}</p>
+        <hr>
         <p><strong style="font-weight:bold; font-size: 22px;">This month's Vibration is ${currentMonthVibration}</strong> - ${numerologyMeanings[currentMonthVibration]}</p>
+        <hr>
         <p><strong style="font-weight:bold; font-size: 22px;">This year's Vibration is ${currentYearVibration}</strong> - ${numerologyMeanings[currentYearVibration]}</p>
-        <p><strong style="font-weight:bold; font-size: 22px;">Your Life Time Vibration is ${lifeTimeVibration}</strong> - ${numerologyMeanings[lifeTimeVibration]}</p>
+        <hr>
+        <p><strong style="font-weight:bold; font-size: 22px;">Lifetime Vibration is ${lifeTimeVibration}</strong> - ${numerologyMeanings[lifeTimeVibration]}</p>
+       <center><p><strong style="font-weight:bold; font-size: 22px;">Notes on your Astrology Data</strong></p></center>
+       <hr>
+        <p><strong style="font-weight:bold; font-size: 20px;">🔮 Astrology Sign:</strong> ${astrologyData.symbol} ${astrologyData.name} (${astrologyData.animal})</p>
+        <p><strong style="font-weight:bold; font-size: 20px;">🪐 Ruling Planet:</strong> ${astrologyData.ruler}</p>
+        <p><strong style="font-weight:bold; font-size: 20px;">✨ Element:</strong> ${astrologyData.element}</p>
+        <p><strong style="font-weight:bold; font-size: 20px;">🔥 Traits:</strong> ${astrologyData.traits}</p>
+        <p><strong style="font-weight:bold; font-size: 20px;">💪 Strengths:</strong> ${astrologyData.strengths}</p>
+        <p><strong style="font-weight:bold; font-size: 20px;">⚠️ Weaknesses:</strong> ${astrologyData.weaknesses}</p>
+        <p><strong style="font-weight:bold; font-size: 20px;">📖 Meaning:</strong> ${astrologyData.message}</p>
+        <hr>
+        <p><strong style="font-weight:bold; font-size: 20px;">🌌 Planetary Influence: </strong> ${astrologyData.planetaryInfluence.planet}</p>
+       
+        <p><strong style="font-weight:bold; font-size: 20px;">🔮 Effect:</strong> ${astrologyData.planetaryInfluence.effect}</p>
+        <p><strong style="font-weight:bold; font-size: 20px;">📢 Advice:</strong> ${astrologyData.planetaryInfluence.advice}</p>
+        <hr>
+        <p><strong style="font-weight:bold; font-size: 22px;">🚀 Planetary Transits</strong></p>
+        <p><strong style="font-weight:bold; font-size: 20px;">💫 Major Influence:</strong> ${astrologyData.transits.majorInfluences}</p>
+        <p><strong style="font-weight:bold; font-size: 20px;">🔄 Upcoming Shift:</strong> ${astrologyData.transits.upcomingShift}</p>
+        
+
     `;
+    resultElement.innerHTML += `
+        <hr>
+        <h3 style="text-align: center; font-weight:bold;">🌍 Planetary Wisdom</h3>
+    `;
+    rulers.forEach(ruler => {
+    let planetData = planetaryTransits[ruler] || {
+        yorubaName: "Unknown",
+        currentInfluence: "No specific influence found for this planet.",
+        upcomingShift: "No upcoming transits available.",
+        ifaProverb: "Wisdom is beyond the stars – seek your inner truth."
+    };
+
+    resultElement.innerHTML += `
+        <p><strong style="font-weight:bold; font-size: 22px;">🔆 Planetary Influence:</strong> ${planetData.yorubaName} (${ruler})</p>
+        <p><strong style="font-weight:bold; font-size: 22px;">🌀 Influence:</strong> ${planetData.currentInfluence}</p>
+        <p><strong style="font-weight:bold; font-size: 22px;">🔄 Upcoming Shift:</strong> ${planetData.upcomingShift}</p>
+        <p><strong style="font-weight:bold; font-size: 22px;">📜 Itumo:</strong> "${planetData.ifaProverb}"</p>
+        <hr>
+    `;
+});
 
     configHTML += `<img class="moving-bg" src="img/bird.gif" />`;
     configurationElement.innerHTML = configHTML;
@@ -588,4 +641,18 @@ document.getElementById("determine-btn").onclick = () => {
     smoothScrollTo(resultElement.offsetTop, 2000);
 };
 
+// Function to determine Zodiac Sign based on Date of Birth
+function getZodiacSign(dob) {
+    const [year, month, day] = dob.split("-").map(num => parseInt(num, 10));
+    const dobFormatted = `${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
+
+    for (const sign of astrologyData) {
+        if ((dobFormatted >= sign.start && dobFormatted <= sign.end) ||
+            (sign.start.startsWith("12") && dobFormatted >= sign.start) ||
+            (sign.end.startsWith("01") && dobFormatted <= sign.end)) {
+            return sign;
+        }
+    }
+    return null;
+}
 
