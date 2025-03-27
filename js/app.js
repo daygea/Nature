@@ -317,11 +317,13 @@ const logoutAdmin = () => {
     document.getElementById("adminPassword").value = "";
     document.getElementById("adminPasswordContainer").style.display = "block";
     document.getElementById("adminLogoutContainer").style.display = "none";
+    resetSpeechState();
     location.reload();
 };
 
 // Function to handle divination with admin access check
 const performUserDivination = async () => {
+    resetSpeechState();
     const mainCast = document.getElementById("mainCast").value;
     const orientation = document.getElementById("orientation").value;
     const specificOrientation = document.getElementById("specificOrientation").value;
@@ -390,7 +392,7 @@ const performUserDivination = async () => {
             </center>
         `;
     }
-
+    removeControl();
     displayConfiguration(mainCast);
     smoothScrollTo(resultElement.offsetTop, 2000);
 };
@@ -461,6 +463,7 @@ const displayConfiguration = (oduName) => {
             }, 3000); // Adjust time as needed
             generateCircularButtons();
             populateDropdowns();
+            speechSynthesis.cancel(); // Stop any ongoing speech
         };
          // Generate calculator buttons with hidden numbers
         let canClick = true;
@@ -493,7 +496,7 @@ const displayConfiguration = (oduName) => {
                     if (!canClick) return;
                     this.classList.add("clicked");
                     displayMeaning(this.dataset.number, button);
-                    setTimeout(generateHiddenButtons, 1000);
+                    setTimeout(generateCircularButtons, 1000);
                 };
 
                 calculatorDiv.appendChild(button);
@@ -502,6 +505,7 @@ const displayConfiguration = (oduName) => {
 
         // Function to display Numerology and Astrological meaning and highlight the selected button
         function displayMeaning(number, selectedButton) {
+            resetSpeechState();
              // Get the single-digit numerology number
             const numerologyNumber = number;
             const resultDiv = document.getElementById("result");
@@ -515,8 +519,10 @@ const displayConfiguration = (oduName) => {
             `;
             configHTML += `<img class="moving-bg" src="img/bird.gif" />`;
             configurationElement.innerHTML = configHTML;
+            showControls();
             // Slow smooth scroll to result section (2 seconds duration)
             smoothScrollTo(resultElement.offsetTop, 2000);
+            
         }
 
 
@@ -539,6 +545,7 @@ function getWeekOfMonth(date) {
 
 // Handle button click to determine the meaning
 document.getElementById("determine-btn").onclick = () => {
+    resetSpeechState();
     const birthdate = document.getElementById("birthdate").value;
     const resultDiv = document.getElementById("result");
     const configurationElement = document.getElementById("configurationResult");
@@ -594,22 +601,22 @@ document.getElementById("determine-btn").onclick = () => {
         <p><strong style="font-weight:bold; font-size: 22px;">Lifetime Vibration is ${lifeTimeVibration}</strong> - ${numerologyMeanings[lifeTimeVibration]}</p>
        <center><p><strong style="font-weight:bold; font-size: 22px;">Notes on your Astrology Data</strong></p></center>
        <hr>
-        <p><strong style="font-weight:bold; font-size: 20px;">🔮 Astrology Sign:</strong> ${astrologyData.symbol} ${astrologyData.name} (${astrologyData.animal})</p>
-        <p><strong style="font-weight:bold; font-size: 20px;">🪐 Ruling Planet:</strong> ${astrologyData.ruler}</p>
-        <p><strong style="font-weight:bold; font-size: 20px;">✨ Element:</strong> ${astrologyData.element}</p>
-        <p><strong style="font-weight:bold; font-size: 20px;">🔥 Traits:</strong> ${astrologyData.traits}</p>
-        <p><strong style="font-weight:bold; font-size: 20px;">💪 Strengths:</strong> ${astrologyData.strengths}</p>
-        <p><strong style="font-weight:bold; font-size: 20px;">⚠️ Weaknesses:</strong> ${astrologyData.weaknesses}</p>
-        <p><strong style="font-weight:bold; font-size: 20px;">📖 Meaning:</strong> ${astrologyData.message}</p>
+        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">🔮 Astrology Sign:</strong> ${astrologyData.symbol} ${astrologyData.name} (${astrologyData.animal})</p>
+        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">🪐 Ruling Planet:</strong> ${astrologyData.ruler}</p>
+        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">✨ Element:</strong> ${astrologyData.element}</p>
+        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">🔥 Traits:</strong> ${astrologyData.traits}</p>
+        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">💪 Strengths:</strong> ${astrologyData.strengths}</p>
+        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">⚠️ Weaknesses:</strong> ${astrologyData.weaknesses}</p>
+        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">📖 Meaning:</strong> ${astrologyData.message}</p>
         <hr>
-        <p><strong style="font-weight:bold; font-size: 20px;">🌌 Planetary Influence: </strong> ${astrologyData.planetaryInfluence.planet}</p>
+        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">🌌 Planetary Influence: </strong> ${astrologyData.planetaryInfluence.planet}</p>
        
-        <p><strong style="font-weight:bold; font-size: 20px;">🔮 Effect:</strong> ${astrologyData.planetaryInfluence.effect}</p>
-        <p><strong style="font-weight:bold; font-size: 20px;">📢 Advice:</strong> ${astrologyData.planetaryInfluence.advice}</p>
+        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">🔮 Effect:</strong> ${astrologyData.planetaryInfluence.effect}</p>
+        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">📢 Advice:</strong> ${astrologyData.planetaryInfluence.advice}</p>
         <hr>
-        <p><strong style="font-weight:bold; font-size: 22px;">🚀 Planetary Transits</strong></p>
-        <p><strong style="font-weight:bold; font-size: 20px;">💫 Major Influence:</strong> ${astrologyData.transits.majorInfluences}</p>
-        <p><strong style="font-weight:bold; font-size: 20px;">🔄 Upcoming Shift:</strong> ${astrologyData.transits.upcomingShift}</p>
+        <p><strong style="font-weight:bold; font-size: 22px; text-align: justify;">🚀 Planetary Transits</strong></p>
+        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">💫 Major Influence:</strong> ${astrologyData.transits.majorInfluences}</p>
+        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">🔄 Upcoming Shift:</strong> ${astrologyData.transits.upcomingShift}</p>
         
 
     `;
@@ -636,6 +643,8 @@ document.getElementById("determine-btn").onclick = () => {
 
     configHTML += `<img class="moving-bg" src="img/bird.gif" />`;
     configurationElement.innerHTML = configHTML;
+
+    showControls();
     
     // Slow smooth scroll to result section (2 seconds duration)
     smoothScrollTo(resultElement.offsetTop, 2000);
@@ -654,5 +663,102 @@ function getZodiacSign(dob) {
         }
     }
     return null;
+}
+
+let speech = null;
+let isPlaying = false;
+let isPaused = false;
+
+function togglePlayPause() {
+    const playPauseBtn = document.getElementById("playPauseBtn");
+
+    if (isPlaying && !isPaused) {
+        // Pause the speech
+        window.speechSynthesis.pause();
+        isPaused = true;
+        playPauseBtn.innerHTML = "▶️ Resume";
+    } else if (isPaused) {
+        // Resume the speech
+        window.speechSynthesis.resume();
+        isPaused = false;
+        playPauseBtn.innerHTML = "⏸ Pause";
+    } else {
+        // Restart the speech from the beginning
+        playResult();
+        playPauseBtn.innerHTML = "⏸ Pause";
+    }
+
+    isPlaying = true;
+}
+
+function playResult() {
+    const text = document.getElementById("divinationResult").textContent;
+
+    if (!text.trim()) return;
+
+    // Stop any ongoing speech before playing new one
+    window.speechSynthesis.cancel();
+
+    speech = new SpeechSynthesisUtterance(text);
+    speech.lang = "en-US"; // Change this for Yoruba support
+
+    speech.onend = () => {
+        isPlaying = false;
+        isPaused = false;
+        document.getElementById("playPauseBtn").innerHTML = "🔊 Play Voice"; // Reset button
+    };
+
+    window.speechSynthesis.speak(speech);
+    isPlaying = true;
+    isPaused = false;
+}
+
+function resetSpeechState() {
+    // Cancel ongoing speech when navigating elsewhere
+    window.speechSynthesis.cancel();
+    isPlaying = false;
+    isPaused = false;
+    const playPauseBtn = document.getElementById("playPauseBtn");
+    if (playPauseBtn) {
+        playPauseBtn.innerHTML = "🔊 Play Voice"; // Reset button text
+    }
+}
+
+
+function showControls() {
+    let controls = document.getElementById("voiceControls");
+
+    // If controls already exist, do nothing
+    if (controls) return;
+
+    // Create controls dynamically
+    controls = document.createElement("div");
+    controls.id = "voiceControls";
+    controls.style.textAlign = "center";
+    controls.style.marginTop = "20px";
+    
+     controls.innerHTML = `
+        <button id="playPauseBtn" onclick="togglePlayPause()" style="padding: 10px; font-size: 16px;">🔊 Play Voice</button>
+    `;
+
+    document.getElementById("divinationResult").appendChild(controls);
+}
+
+function removeControl() {
+    const controls = document.getElementById("voiceControls");
+    if (controls) {
+        controls.remove(); // Remove the entire div, not just hide it
+    }
+}
+
+// Function to stop any ongoing speech before starting a new one
+function stopSpeech() {
+    if (speechSynthesis.speaking || speechSynthesis.paused) {
+        speechSynthesis.cancel();
+        isPaused = false;
+        if (document.getElementById("pauseBtn")) {
+            document.getElementById("pauseBtn").innerText = "Pause";
+        }
+    }
 }
 

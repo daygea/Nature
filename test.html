@@ -3,22 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hash</title>
+    <title>Sand Divination AI</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        .figure { font-size: 32px; line-height: 1.5; margin: 20px 0; }
+        #interpretation { font-size: 18px; font-weight: bold; margin-top: 20px; }
+    </style>
 </head>
 <body>
-    <div class="container">
-       <center>Hello World!!!</center> 
-    </div>
+
+    <h1>🔮 Sand Divination AI</h1>
+    <p>Tap the button to receive a divination reading.</p>
+    <button onclick="generateFigure()">🔮 Generate Reading</button>
+    
+    <div class="figure" id="figure"></div>
+    <div id="interpretation"></div>
 
     <script>
-        async function hashPassword(password) {
-            const encoder = new TextEncoder();
-            const data = encoder.encode(password);
-            const hashBuffer = await crypto.subtle.digest("SHA-256", data);
-            return Array.from(new Uint8Array(hashBuffer)).map(b => b.toString(16).padStart(2, '0')).join('');
+        // Geomantic figures and meanings
+        const geomanticFigures = [
+            { name: "Albus", symbol: "⚫⚫\n⚫⚫\n⚫⚫\n⚫⚫", meaning: "Wisdom, purity, and peace ahead." },
+            { name: "Fortuna Major", symbol: "⚫⚫\n⚫⚫\n⚫⚫\n⚫", meaning: "Great success and divine blessings." },
+            { name: "Fortuna Minor", symbol: "⚫⚫\n⚫\n⚫⚫\n⚫⚫", meaning: "Small victories—stay patient and persistent." },
+            { name: "Rubeus", symbol: "⚫\n⚫⚫\n⚫\n⚫⚫", meaning: "Passion, danger, and transformation." },
+            { name: "Acquisitio", symbol: "⚫⚫\n⚫⚫\n⚫\n⚫", meaning: "Gain in wealth or knowledge is coming." },
+            { name: "Amissio", symbol: "⚫\n⚫\n⚫⚫\n⚫⚫", meaning: "Loss—let go of the past to move forward." },
+            { name: "Carcer", symbol: "⚫⚫\n⚫\n⚫\n⚫⚫", meaning: "Restriction—take time for reflection." },
+            { name: "Conjunctio", symbol: "⚫\n⚫⚫\n⚫⚫\n⚫", meaning: "Union—connections will be important now." }
+        ];
+
+        // Generate a random sand divination figure
+        function generateFigure() {
+            let randomFigure = geomanticFigures[Math.floor(Math.random() * geomanticFigures.length)];
+            
+            // Display the figure
+            document.getElementById("figure").innerHTML = `<pre>${randomFigure.symbol}</pre>`;
+            document.getElementById("interpretation").innerText = `✨ ${randomFigure.name}: ${randomFigure.meaning}`;
+
+            // Speak the interpretation
+            speakResult(randomFigure.meaning);
         }
 
-        hashPassword("").then(console.log);
+        // Speak the result using AI voice
+        function speakResult(text) {
+            let speech = new SpeechSynthesisUtterance();
+            speech.text = text;
+            speech.lang = "en-US";
+            speech.rate = 1.0;
+            speech.pitch = 1.1;
+            speechSynthesis.speak(speech);
+        }
     </script>
+
 </body>
 </html>

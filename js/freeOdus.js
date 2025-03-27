@@ -6,4 +6,5 @@
         "Irosun Ika", 
         "Osa Ogbe", 
         "Osa Owonrin",
+        "Irete Ose",
     ];
