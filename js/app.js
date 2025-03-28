@@ -762,27 +762,6 @@ function stopSpeech() {
     }
 }
 
-// function toggleChatbot() {
-//     if (window.innerWidth <= 768) {  
-//         // Mobile: Hide chatbot completely
-//         chatbot.style.display = "none";  
-//         toggleButton.style.display = "none";
-       
-//     } else {
-//         // Show floating chatbot on desktop
-//         let chatbot = document.getElementById("chatbot-container");
-//         let toggleButton = document.getElementById("chatbot-toggle");
-
-//         if (chatbot.style.display === "none" || chatbot.style.display === "") {
-//             chatbot.style.display = "block";
-//             toggleButton.style.display = "none"; 
-//         } else {
-//             chatbot.style.display = "none";
-//             toggleButton.style.display = "block"; 
-//         }
-//     }
-// }
-
 function toggleChatbot() {
     let chatbot = document.getElementById("chatbot-container");
     let toggleButton = document.getElementById("chatbot-toggle");
