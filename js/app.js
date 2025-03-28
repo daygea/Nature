@@ -775,6 +775,15 @@ function toggleChatbot() {
     }
 }
 
+
+// Ensure chatbot starts minimized
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("chatbot-container").style.display = "none";
+    document.getElementById("chatbot-toggle").style.display = "block";
+});
+
+
+
 // Handle Enter and Shift+Enter keypress
 document.getElementById("chatbot-input").addEventListener("keydown", function(event) {
     if (event.key === "Enter" && !event.shiftKey) {
