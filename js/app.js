@@ -764,40 +764,10 @@ function stopSpeech() {
 
 function toggleChatbot() {
     if (window.innerWidth <= 768) {  
-        // Open a pop-up chat window on mobile
-        let chatbotWindow = window.open("", "Chatbot", "width=400,height=500");
-        chatbotWindow.document.write(`
-            <html>
-            <head>
-                <title>NatureSpeaks Chatbot</title>
-                <style>
-                    body { font-family: Arial, sans-serif; padding: 10px; }
-                    #messages { height: 400px; overflow-y: auto; border: 1px solid #008000; padding: 5px; }
-                    input { width: 80%; padding: 8px; }
-                    button { padding: 8px; background: #008000; color: white; border: none; }
-                </style>
-            </head>
-            <body>
-                <h3 style="color:#008000;">NatureSpeaks Chat</h3>
-                <div id="messages"></div>
-                <input id="chatbot-input" placeholder="Ask a question...">
-                <button onclick="sendMessage()">Send</button>
-                <script>
-                    function sendMessage() {
-                        let input = document.getElementById("chatbot-input").value.trim();
-                        if (input === "") return;
-                        let messagesDiv = document.getElementById("messages");
-                        messagesDiv.innerHTML += "<p><strong>You:</strong> " + input + "</p>";
-                        messagesDiv.innerHTML += "<p><strong>NatureSpeaks:</strong> " + getBotResponse(input) + "</p>";
-                        document.getElementById("chatbot-input").value = "";
-                    }
-                    function getBotResponse(userInput) {
-                        return "I am still learning, but feel free to ask me about Ifa and Yoruba spirituality!";
-                    }
-                </script>
-            </body>
-            </html>
-        `);
+        // Mobile: Hide chatbot completely
+        chatbot.style.display = "none";  
+        toggleButton.style.display = "none";
+       
     } else {
         // Show floating chatbot on desktop
         let chatbot = document.getElementById("chatbot-container");
@@ -922,7 +892,7 @@ async function sendMessage() {
     // Show loading message
     let botResponseElement = document.createElement("div");
     botResponseElement.classList.add("chat-message", "bot-message");
-    botResponseElement.innerHTML = `>> <em>Thinking...</em>`;
+    botResponseElement.innerHTML = `<em>>> Thinking...</em>`;
     messagesDiv.appendChild(botResponseElement);
 
     // Check if the question exists in ifaKnowledgeBase

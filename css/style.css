@@ -390,30 +390,3 @@
 #chatbot-toggle:hover {
     background: #006400;
 }
-
-/* Mobile Styles */
-@media screen and (max-width: 480px) {
-    #chatbot-container {
-        width: 95%;
-        left: 2.5%;
-        bottom: 10px;
-        max-width: none;
-    }
-
-    #chatbot-messages {
-        height: 200px;
-    }
-
-    #chatbot-input {
-        font-size: 12px;
-    }
-
-    #chatbot-send {
-        font-size: 12px;
-    }
-
-    #chatbot-toggle {
-        font-size: 14px;
-        padding: 8px 12px;
-    }
-}

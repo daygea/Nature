@@ -1,5 +1,6 @@
 const ifaKnowledgeBase = {
     "hello": "Hello, how can i be of help today",
+    "hi": "Hello, how can i be of help today",
     "thanks": "You are welcome",
     "thank you": "You are welcome",
     "ifa": "Ifa is the sacred divination system of the Yoruba people, providing wisdom through Odu Ifa. It is the foundation of Yoruba spirituality and philosophy.",
@@ -57,8 +58,7 @@ const ifaKnowledgeBase = {
     "babalawo": "A Babalawo is a high priest of Ifa who is trained in divination, ritual work, and spiritual guidance.",
     "odu Ifa": "Odu Ifa are the sacred scriptures of Ifa, containing the wisdom and guidance of Orunmila.",
     "sacrifice": "Sacrifices (Ebo) depend on the Odu revealed and the guidance of the Babalawo. They help balance energies and remove obstacles.",
-    "who can consult Ifa": "Anyone seeking guidance, whether Yoruba or not, can consult Ifa for wisdom and direction.",
-    "can women become Ifa priests": "Yes, women can become Iyanifas, who are female priests trained in Ifa wisdom and divination.",
-    "predict the future": "Ifa does not predict the future in absolute terms but provides insight into possible outcomes and solutions.",
+    "consult": "Anyone seeking guidance, whether Yoruba or not, can consult Ifa for wisdom and direction.",
+    "predict": "Ifa does not predict the future in absolute terms but provides insight into possible outcomes and solutions.",
     "learn": "You can learn Ifa through a trained Babalawo or Iyanifa, studying the Odu Ifa and undergoing initiation if necessary."
 };
