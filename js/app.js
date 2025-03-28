@@ -762,17 +762,41 @@ function stopSpeech() {
     }
 }
 
-function toggleChatbot() {
-    if (window.innerWidth <= 768) {  
-        // Mobile: Hide chatbot completely
-        chatbot.style.display = "none";  
-        toggleButton.style.display = "none";
+// function toggleChatbot() {
+//     if (window.innerWidth <= 768) {  
+//         // Mobile: Hide chatbot completely
+//         chatbot.style.display = "none";  
+//         toggleButton.style.display = "none";
        
-    } else {
-        // Show floating chatbot on desktop
-        let chatbot = document.getElementById("chatbot-container");
-        let toggleButton = document.getElementById("chatbot-toggle");
+//     } else {
+//         // Show floating chatbot on desktop
+//         let chatbot = document.getElementById("chatbot-container");
+//         let toggleButton = document.getElementById("chatbot-toggle");
 
+//         if (chatbot.style.display === "none" || chatbot.style.display === "") {
+//             chatbot.style.display = "block";
+//             toggleButton.style.display = "none"; 
+//         } else {
+//             chatbot.style.display = "none";
+//             toggleButton.style.display = "block"; 
+//         }
+//     }
+// }
+
+function toggleChatbot() {
+    let chatbot = document.getElementById("chatbot-container");
+    let toggleButton = document.getElementById("chatbot-toggle");
+
+    if (window.innerWidth <= 768) {  
+        // Mobile: Show chatbot as a full-width bottom overlay
+        chatbot.style.position = "fixed";
+        chatbot.style.bottom = "0";
+        chatbot.style.left = "0";
+        chatbot.style.width = "100%";
+        chatbot.style.height = "60vh"; 
+        chatbot.style.display = "block";  
+    } else {
+        // Desktop: Show floating chatbot
         if (chatbot.style.display === "none" || chatbot.style.display === "") {
             chatbot.style.display = "block";
             toggleButton.style.display = "none"; 
@@ -782,6 +806,7 @@ function toggleChatbot() {
         }
     }
 }
+
 
 
 // Ensure chatbot starts minimized
