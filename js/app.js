@@ -767,24 +767,31 @@ function toggleChatbot() {
     let toggleButton = document.getElementById("chatbot-toggle");
 
     if (window.innerWidth <= 768) {  
-        // Mobile: Show chatbot as a full-width bottom overlay
+        // Ensure chatbot is a floating window on mobile instead of a popup
         chatbot.style.position = "fixed";
-        chatbot.style.bottom = "0";
-        chatbot.style.left = "0";
-        chatbot.style.width = "100%";
-        chatbot.style.height = "60vh"; 
-        chatbot.style.display = "block";  
+        chatbot.style.bottom = "10px";
+        chatbot.style.right = "10px";
+        chatbot.style.width = "90vw";  // Adjust width for small screens
+        chatbot.style.height = "80vh"; // Adjust height for mobile usability
+        chatbot.style.borderRadius = "10px";
     } else {
-        // Desktop: Show floating chatbot
-        if (chatbot.style.display === "none" || chatbot.style.display === "") {
-            chatbot.style.display = "block";
-            toggleButton.style.display = "none"; 
-        } else {
-            chatbot.style.display = "none";
-            toggleButton.style.display = "block"; 
-        }
+        chatbot.style.position = "fixed";
+        chatbot.style.bottom = "20px";
+        chatbot.style.right = "20px";
+        chatbot.style.width = "350px"; // Normal desktop width
+        chatbot.style.height = "500px"; // Normal desktop height
+    }
+
+    // Toggle visibility
+    if (chatbot.style.display === "none" || chatbot.style.display === "") {
+        chatbot.style.display = "block";
+        toggleButton.style.display = "none"; 
+    } else {
+        chatbot.style.display = "none";
+        toggleButton.style.display = "block"; 
     }
 }
+
 
 
 
