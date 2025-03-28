@@ -772,14 +772,14 @@ function toggleChatbot() {
         chatbot.style.bottom = "10px";
         chatbot.style.right = "10px";
         chatbot.style.width = "90vw";  // Adjust width for small screens
-        chatbot.style.height = "80vh"; // Adjust height for mobile usability
+        chatbot.style.height = "50vh"; // Adjust height for mobile usability
         chatbot.style.borderRadius = "10px";
     } else {
         chatbot.style.position = "fixed";
         chatbot.style.bottom = "20px";
         chatbot.style.right = "20px";
         chatbot.style.width = "350px"; // Normal desktop width
-        chatbot.style.height = "500px"; // Normal desktop height
+        chatbot.style.height = "380px"; // Normal desktop height
     }
 
     // Toggle visibility
