@@ -297,7 +297,7 @@ function printDivinationResult() {
         </head>
         <body>
         <center><a href="/" style="color: green; text-decoration: none;"><img src="img/logo.png" style="height:75px" alt="Nature Speaks Logo"/></a></center>
-        <center><p>Mo juba <b>OLODUMARE</b>, Ajagunmale, Aworanmaja, Odu Ologbooje, Egan, Gbogbo Eleye, Irinwo Imole, Igba Imole, Okanlenirinwo Imole, Otalelugba Imole, Oduduwa ati gbogbo Oba Alade. Mo juba gbogbo Ajunilo.</p></center>
+        <center><p>Mo juba <b>OLODUMARE</b>, Ajagunmale, Awonomaja, Odu Ologbooje, Egan, Gbogbo Eleye, Irinwo Imole, Igba Imole, Okanlenirinwo Imole, Otalelugba Imole, Oduduwa ati gbogbo Oba Alade. Mo juba gbogbo Ajunilo.</p></center>
             
            <center> ${printHeader} </center> <br/>
             ${printContent}
@@ -763,15 +763,53 @@ function stopSpeech() {
 }
 
 function toggleChatbot() {
-    let chatbot = document.getElementById("chatbot-container");
-    let toggleButton = document.getElementById("chatbot-toggle");
-
-    if (chatbot.style.display === "none" || chatbot.style.display === "") {
-        chatbot.style.display = "block";
-        toggleButton.style.display = "none"; // Hide toggle button
+    if (window.innerWidth <= 768) {  
+        // Open a pop-up chat window on mobile
+        let chatbotWindow = window.open("", "Chatbot", "width=400,height=500");
+        chatbotWindow.document.write(`
+            <html>
+            <head>
+                <title>NatureSpeaks Chatbot</title>
+                <style>
+                    body { font-family: Arial, sans-serif; padding: 10px; }
+                    #messages { height: 400px; overflow-y: auto; border: 1px solid #008000; padding: 5px; }
+                    input { width: 80%; padding: 8px; }
+                    button { padding: 8px; background: #008000; color: white; border: none; }
+                </style>
+            </head>
+            <body>
+                <h3 style="color:#008000;">NatureSpeaks Chat</h3>
+                <div id="messages"></div>
+                <input id="chatbot-input" placeholder="Ask a question...">
+                <button onclick="sendMessage()">Send</button>
+                <script>
+                    function sendMessage() {
+                        let input = document.getElementById("chatbot-input").value.trim();
+                        if (input === "") return;
+                        let messagesDiv = document.getElementById("messages");
+                        messagesDiv.innerHTML += "<p><strong>You:</strong> " + input + "</p>";
+                        messagesDiv.innerHTML += "<p><strong>NatureSpeaks:</strong> " + getBotResponse(input) + "</p>";
+                        document.getElementById("chatbot-input").value = "";
+                    }
+                    function getBotResponse(userInput) {
+                        return "I am still learning, but feel free to ask me about Ifa and Yoruba spirituality!";
+                    }
+                </script>
+            </body>
+            </html>
+        `);
     } else {
-        chatbot.style.display = "none";
-        toggleButton.style.display = "block"; // Show toggle button again
+        // Show floating chatbot on desktop
+        let chatbot = document.getElementById("chatbot-container");
+        let toggleButton = document.getElementById("chatbot-toggle");
+
+        if (chatbot.style.display === "none" || chatbot.style.display === "") {
+            chatbot.style.display = "block";
+            toggleButton.style.display = "none"; 
+        } else {
+            chatbot.style.display = "none";
+            toggleButton.style.display = "block"; 
+        }
     }
 }
 
@@ -815,7 +853,8 @@ async function getAIResponse(userInput) {
             { role: "system", content: "You are a helpful assistant specializing in Ifa divination and Yoruba spirituality." },
             { role: "user", content: userInput }
         ],
-        max_tokens: 150
+        max_tokens: 200,
+        temperature: 0.7
     };
 
     try {
@@ -825,11 +864,20 @@ async function getAIResponse(userInput) {
             body: JSON.stringify(data)
         });
 
+        if (!response.ok) {
+            throw new Error(`API Error: ${response.status}`);
+        }
+
         const responseData = await response.json();
-        return responseData.choices[0].message.content.trim();
+
+        if (responseData.choices && responseData.choices.length > 0) {
+            return responseData.choices[0].message.content.trim();
+        } else {
+            return "I'm sorry, I couldn't generate a response. Please try again.";
+        }
     } catch (error) {
-        console.error("Error fetching AI response:", error);
-        return "Sorry, I am having trouble processing your request right now.";
+        console.error("Error fetching response:", error);
+        return "Sorry, I'm having trouble processing your request right now.";
     }
 }
 
@@ -854,23 +902,53 @@ async function getBotResponse(userInput) {
     }
 }
 
+
 async function sendMessage() {
     let inputField = document.getElementById("chatbot-input");
     let messagesDiv = document.getElementById("chatbot-messages");
-    let userMessage = inputField.value.trim();
+    let userMessage = inputField.value.trim().toLowerCase(); // Normalize input
 
     if (userMessage === "") return; // Don't send empty messages
 
-    // Display user message
-    displayMessage(userMessage, "user");
+     // Create user message element
+    let userMessageElement = document.createElement("div");
+    userMessageElement.classList.add("chat-message", "user-message");
+    userMessageElement.innerHTML = `> ${userMessage}`;
+    messagesDiv.appendChild(userMessageElement);
 
-    // Get AI response and display
-    let botResponse = await getBotResponse(userMessage);
-    displayMessage(botResponse, "bot");
-
-    // Clear input
+    // Clear input field
     inputField.value = "";
+
+    // Show loading message
+    let botResponseElement = document.createElement("div");
+    botResponseElement.classList.add("chat-message", "bot-message");
+    botResponseElement.innerHTML = `>> <em>Thinking...</em>`;
+    messagesDiv.appendChild(botResponseElement);
+
+    // Check if the question exists in ifaKnowledgeBase
+    let response = checkIfaKnowledgeBase(userMessage);
+
+    if (!response) {
+        try {
+            response = await getAIResponse(userMessage); // Call AI only if no local match
+        } catch (error) {
+            console.error("Error fetching AI response:", error);
+            response = "Sorry, I couldn't process your request.";
+        }
+    }
+
+    // Update response in chat
+    botResponseElement.innerHTML = `>> ${response}`;
 
     // Auto-scroll to latest message
     messagesDiv.scrollTop = messagesDiv.scrollHeight;
+}
+
+function checkIfaKnowledgeBase(userMessage) {
+    for (let key in ifaKnowledgeBase) {
+        if (userMessage.includes(key)) {
+            return ifaKnowledgeBase[key]; // Return the matching answer
+        }
+    }
+    return null; // No match found
 }

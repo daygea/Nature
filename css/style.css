@@ -310,6 +310,36 @@
     flex-direction: column;
 }
 
+/* Chat message container */
+.chat-message {
+    display: flex;
+    width: fit-content;  /* Only as wide as the content */
+    max-width: 80%;  /* Prevents overly wide messages */
+    margin: 5px 0;  /* Space above and below messages */
+    padding: 8px 12px; /* Padding inside the bubble */
+    border-radius: 10px;
+    word-wrap: break-word;
+}
+
+/* User messages (green background) */
+.user-message {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-align: left;
+    align-self: flex-start;
+    margin-bottom: 10px;  /* Extra space below user message */
+}
+
+/* Bot messages (light background) */
+.bot-message {
+    background-color: #f1f1f1;
+    color: black;
+    text-align: left;
+    align-self: flex-start;
+    margin-top: 5px; /* Space between user and bot messages */
+}
+
+
 /* Input Area */
 #chatbot-input-container {
     display: flex;
