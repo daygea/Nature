@@ -762,3 +762,106 @@ function stopSpeech() {
     }
 }
 
+function toggleChatbot() {
+    let chatbot = document.getElementById("chatbot-container");
+    let toggleButton = document.getElementById("chatbot-toggle");
+
+    if (chatbot.style.display === "none" || chatbot.style.display === "") {
+        chatbot.style.display = "block";
+        toggleButton.style.display = "none"; // Hide toggle button
+    } else {
+        chatbot.style.display = "none";
+        toggleButton.style.display = "block"; // Show toggle button again
+    }
+}
+
+// Handle Enter and Shift+Enter keypress
+document.getElementById("chatbot-input").addEventListener("keydown", function(event) {
+    if (event.key === "Enter" && !event.shiftKey) {
+        event.preventDefault(); // Prevent new line
+        sendMessage();
+    }
+});
+
+// Display chat messages dynamically
+function displayMessage(text, sender) {
+    let messagesDiv = document.getElementById("chatbot-messages");
+    let messageElement = document.createElement("p");
+    messageElement.innerHTML = `<strong>${sender === "user" ? "You" : "NatureSpeaks"}:</strong> ${text}`;
+    messagesDiv.appendChild(messageElement);
+}
+
+async function getAIResponse(userInput) {
+    const apiKey = "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"; // Replace with your actual API key
+    const apiUrl = "https://api.openai.com/v1/chat/completions";
+
+    const headers = {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${apiKey}`
+    };
+
+    const data = {
+        model: "gpt-3.5-turbo", // Use "gpt-4" if available
+        messages: [
+            { role: "system", content: "You are a helpful assistant specializing in Ifa divination and Yoruba spirituality." },
+            { role: "user", content: userInput }
+        ],
+        max_tokens: 150
+    };
+
+    try {
+        const response = await fetch(apiUrl, {
+            method: "POST",
+            headers: headers,
+            body: JSON.stringify(data)
+        });
+
+        const responseData = await response.json();
+        return responseData.choices[0].message.content.trim();
+    } catch (error) {
+        console.error("Error fetching AI response:", error);
+        return "Sorry, I am having trouble processing your request right now.";
+    }
+}
+
+async function getBotResponse(userInput) {
+    userInput = userInput.toLowerCase();
+    let bestMatch = null;
+
+    // Check if the user's input matches a keyword in ifaKnowledgeBase
+    for (let keyword in ifaKnowledgeBase) {
+        if (userInput.includes(keyword)) {
+            bestMatch = ifaKnowledgeBase[keyword];
+            break; // Stop searching after finding a match
+        }
+    }
+
+    // If a match is found, return the knowledge base response
+    if (bestMatch) {
+        return bestMatch;
+    } else {
+        // If no match is found, use AI to generate an answer
+        return await getAIResponse(userInput);
+    }
+}
+
+async function sendMessage() {
+    let inputField = document.getElementById("chatbot-input");
+    let messagesDiv = document.getElementById("chatbot-messages");
+    let userMessage = inputField.value.trim();
+
+    if (userMessage === "") return; // Don't send empty messages
+
+    // Display user message
+    displayMessage(userMessage, "user");
+
+    // Get AI response and display
+    let botResponse = await getBotResponse(userMessage);
+    displayMessage(botResponse, "bot");
+
+    // Clear input
+    inputField.value = "";
+
+    // Auto-scroll to latest message
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+}

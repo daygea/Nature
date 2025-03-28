@@ -97,7 +97,8 @@
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                    </div>
                     <div class="col-md-4"></div>
                     <div class="col-md-4">
                         <a target="_blank" style="color:white; text-decoration: none;" href="https://flutterwave.com/donate/ggjzsfk3o8bd" class="btn btn-md btn-danger">SUPPORT OUR MISSION</a>
@@ -115,6 +116,21 @@
                         <p>&copy; <span id="year"></span> Nature Speaks by <a style="color:red;" target="_blank" href="https://aokfoundation.org/">Aminat Olanbiwoninu Kadri (AOK) Foundation</a>. All Rights Reserved.</p>
                     </div>
                 </div>
+
+                <div id="chatbot-container" class="hidden">
+                    <div id="chatbot-header">
+                        <span>🔮 NatureSpeaks Chatbot</span>
+                        <button onclick="toggleChatbot()">❌</button>
+                    </div>
+                    <div id="chatbot-messages"></div>
+                    <div id="chatbot-input-container">
+                        <textarea id="chatbot-input" placeholder="Ask a question..."></textarea>
+                        <button id="send-btn" onclick="sendMessage()">Send</button>
+                    </div>
+                </div>
+
+                <button id="chatbot-toggle" onclick="toggleChatbot()">💬 Chat with NatureSpeaks</button>
+
             </div>
         </footer>
     </div>
@@ -124,7 +140,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 <script src="https://js.paystack.co/v1/inline.js"></script>
 <script type="text/javascript" src="js/illuminatedFreeOdus.js"></script>
-<script type="text/javascript" src="js/illuminatedApp.js"></script>
+<script type="text/javascript" src="js/knowledgeBase.js"></script>
 <script type="text/javascript" src="js/illuminatedConfig.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
 </body>
 </html>
