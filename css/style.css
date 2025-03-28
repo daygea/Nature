@@ -416,10 +416,14 @@
 #chatbot-toggle:hover {
     background: #006400;
 }
-
-/* Hide chatbot on mobile devices */
+/* Mobile-specific styling */
 @media screen and (max-width: 768px) {
-    #chatbot-container, #chatbot-toggle {
-        display: none !important;
+    #chatbot-container {
+        width: 100%;
+        height: 60vh; /* Covers part of the screen */
+        bottom: 0;
+        right: 0;
+        left: 0;
+        border-radius: 10px 10px 0 0; /* Rounded top corners */
     }
 }
