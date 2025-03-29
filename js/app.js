@@ -862,26 +862,54 @@ async function getAIResponse(userInput) {
     }
 }
 
-async function getBotResponse(userInput) {
-    userInput = userInput.toLowerCase();
-    let bestMatch = null;
+// async function getBotResponse(userInput) {
+//     userInput = userInput.toLowerCase();
+//     let bestMatch = null;
 
-    // Check if the user's input matches a keyword in ifaKnowledgeBase
-    for (let keyword in ifaKnowledgeBase) {
-        if (userInput.includes(keyword)) {
-            bestMatch = ifaKnowledgeBase[keyword];
-            break; // Stop searching after finding a match
+//     // Check if the user's input matches a keyword in ifaKnowledgeBase
+//     for (let keyword in ifaKnowledgeBase) {
+//         if (userInput.includes(keyword)) {
+//             bestMatch = ifaKnowledgeBase[keyword];
+//             break; // Stop searching after finding a match
+//         }
+//     }
+
+//     // If a match is found, return the knowledge base response
+//     if (bestMatch) {
+//         return bestMatch;
+//     } else {
+//         // If no match is found, use AI to generate an answer
+//         return await getAIResponse(userInput);
+//     }
+// }
+
+
+async function getBotResponse(userInput) {
+    userInput = userInput.toLowerCase().trim();
+    let possibleResponses = [];
+
+    for (let key in ifaKnowledgeBase) {
+        let keywords = key.split(",").map(k => k.trim().toLowerCase()); // Split multiple keywords
+
+        if (keywords.some(keyword => userInput.includes(keyword))) {
+            possibleResponses.push(ifaKnowledgeBase[key]); // Collect matching responses
         }
     }
 
-    // If a match is found, return the knowledge base response
-    if (bestMatch) {
-        return bestMatch;
-    } else {
-        // If no match is found, use AI to generate an answer
-        return await getAIResponse(userInput);
+    // If only one match, return the response
+    if (possibleResponses.length === 1) {
+        return possibleResponses[0];
     }
+
+    // If multiple matches found, ask for clarification
+    if (possibleResponses.length > 1) {
+        return `I found multiple possible answers. Can you clarify?\n\n- ${possibleResponses.join("\n- ")}`;
+    }
+
+    // If no match found, fallback to AI-generated response
+    return await getAIResponse(userInput);
 }
+
 
 
 async function sendMessage() {
