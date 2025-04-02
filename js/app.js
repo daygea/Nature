@@ -333,6 +333,7 @@ const performUserDivination = async () => {
     const { message, solutionInfo } = getOduMessageData(mainCast, orientation, specificOrientation, solution, solutionDetails);
     
     const oduData = oduMessages[mainCast] || {};
+    const aseIfa = oduData.AseIfa || [];
     const orisha = oduData.Orisha;
     const taboo = oduData.Taboo;
     const names = oduData.Names;
@@ -343,6 +344,12 @@ const performUserDivination = async () => {
     const videoData = oduData.videoData || [];
 
     const orientationText = orientation === "Positive" ? "Ire" : "Ayewo";
+
+    const aseIfaHTML = aseIfa.length
+    ? aseIfa.map(item => 
+        `<p>${item}</p><hr/>`
+      ).join("")
+    : "";
 
     // Generate audio & video HTML if available
     const audioHTML = audioData.length
@@ -369,6 +376,7 @@ const performUserDivination = async () => {
             <p>${message} ${solutionInfo}</p><hr>
         `;
 
+        resultHTML += `${aseIfaHTML}`; 
         if (orisha) resultHTML += `<p><strong>Orisha:</strong> ${orisha}</p><hr>`;
         if (alias) resultHTML += `<p><strong>Alias:</strong> ${alias}</p><hr>`;
         if (taboo) resultHTML += `<p><strong>Taboo:</strong> ${taboo}</p><hr>`;
