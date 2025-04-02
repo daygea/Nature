@@ -828,7 +828,7 @@ function displayMessage(text, sender) {
 }
 
 async function getAIResponse(userInput) {
-    const apiKey = "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"; // Replace with your actual API key
+    const apiKey = "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";
     const apiUrl = "https://api.openai.com/v1/chat/completions";
 
     const headers = {
@@ -837,7 +837,7 @@ async function getAIResponse(userInput) {
     };
 
     const data = {
-        model: "gpt-3.5-turbo", // Use "gpt-4" if available
+        model: "gpt-4", // Use "gpt-4" if available
         messages: [
             { role: "system", content: "You are a helpful assistant specializing in Ifa divination and Yoruba spirituality." },
             { role: "user", content: userInput }

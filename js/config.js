@@ -102,3 +102,5 @@ setTimeout(() => {
 // }
 
 // hashPassword("").then(console.log);
+
+// openAI - "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"
