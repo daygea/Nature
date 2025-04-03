@@ -296,8 +296,8 @@ function printDivinationResult() {
             </style>
         </head>
         <body>
-        <center><a href="/" style="color: green; text-decoration: none;"><img src="img/logo.png" style="height:75px" alt="Nature Speaks Logo"/></a></center>
-        <center><p>Mo juba <b>OLODUMARE</b>, Ajagunmale, Awonomaja, Odu Ologbooje, Egan, Gbogbo Eleye, Irinwo Imole, Igba Imole, Okanlenirinwo Imole, Otalelugba Imole, Oduduwa ati gbogbo Oba Alade. Mo juba gbogbo Ajunilo.</p></center>
+        <center><a href="/" style="color: green; text-decoration: none;"><img src="img/logo.png" style="height:75px" alt="NatureSpeaks Logo"/></a></center>
+        <center><p>Mo juba <b>OLODUMARE</b>, Ajagunmale, Awonomaja, Odu Ologbooje, Egan, Gbogbo Eleye, Irinwo Imale, Igba Imale, Okanlenirinwo Imale, Otalelugba Imale, Oduduwa, Gbogbo Oba Alade. Mo juba Gbogbo Ajunilo.</p></center>
             
            <center> ${printHeader} </center> <br/>
             ${printContent}
@@ -354,7 +354,7 @@ const performUserDivination = async () => {
     // Generate audio & video HTML if available
     const audioHTML = audioData.length
         ? audioData.map(item => 
-            `<p style="margin-right:10px; float:left"> 
+            `<p class="col-md-6" style="float:left;"> 
                 <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Listen to Audio</a> of ${item.author}
             </p>`
           ).join("")
@@ -362,7 +362,7 @@ const performUserDivination = async () => {
 
     const videoHTML = videoData.length
         ? videoData.map(item => 
-            `<p style="margin-right:5px; float:left"> 
+            `<p class="col-md-6" style="float:left;"> 
                 <a href="${item.url}" target="_blank"><img src="img/player.png" style="height: 20px;" />Watch Video</a> of ${item.author}
             </p>`
           ).join("")
@@ -382,7 +382,7 @@ const performUserDivination = async () => {
         if (taboo) resultHTML += `<p><strong>Taboo:</strong> ${taboo}</p><hr>`;
         if (names) resultHTML += `<p><strong>Names:</strong> ${names}</p><hr>`;
         if (occupation) resultHTML += `<p><strong>Occupation:</strong> ${occupation}</p><hr>`;
-        resultHTML += `${audioHTML} ${videoHTML} <br style="clear:both;"/> <hr>`;
+        resultHTML += `${audioHTML} ${videoHTML} <hr style="clear:both;"/>`;
         if (credit) resultHTML += `<p style="padding-bottom:50px"><strong>Credit:</strong> ${credit}</p>`;
         resultElement.innerHTML = resultHTML;
     } else {
@@ -597,7 +597,7 @@ document.getElementById("determine-btn").onclick = () => {
 
     const resultElement = document.getElementById("divinationResult");
     resultElement.innerHTML = `
-        <h3 style="text-align: center; margin-top:20px; font-weight:bold;">Message</h3>        
+        <h3 style="text-align: center; margin-top:20px; font-weight:bold;">Revealed Messages</h3>        
         <p><strong style="font-weight:bold; font-size: 22px;">Today's Vibration is ${currentDayVibration}</strong> - ${numerologyMeanings[currentDayVibration]}</p>
         <hr>
         <p><strong style="font-weight:bold; font-size: 22px;">This week's Vibration is ${currentWeekVibration}</strong> - ${numerologyMeanings[currentWeekVibration]}</p>
@@ -800,16 +800,11 @@ function toggleChatbot() {
     }
 }
 
-
-
-
 // Ensure chatbot starts minimized
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("chatbot-container").style.display = "none";
     document.getElementById("chatbot-toggle").style.display = "block";
 });
-
-
 
 // Handle Enter and Shift+Enter keypress
 document.getElementById("chatbot-input").addEventListener("keydown", function(event) {
@@ -870,28 +865,6 @@ async function getAIResponse(userInput) {
     }
 }
 
-// async function getBotResponse(userInput) {
-//     userInput = userInput.toLowerCase();
-//     let bestMatch = null;
-
-//     // Check if the user's input matches a keyword in ifaKnowledgeBase
-//     for (let keyword in ifaKnowledgeBase) {
-//         if (userInput.includes(keyword)) {
-//             bestMatch = ifaKnowledgeBase[keyword];
-//             break; // Stop searching after finding a match
-//         }
-//     }
-
-//     // If a match is found, return the knowledge base response
-//     if (bestMatch) {
-//         return bestMatch;
-//     } else {
-//         // If no match is found, use AI to generate an answer
-//         return await getAIResponse(userInput);
-//     }
-// }
-
-
 async function getBotResponse(userInput) {
     userInput = userInput.toLowerCase().trim();
     let possibleResponses = [];
@@ -917,8 +890,6 @@ async function getBotResponse(userInput) {
     // If no match found, fallback to AI-generated response
     return await getAIResponse(userInput);
 }
-
-
 
 async function sendMessage() {
     let inputField = document.getElementById("chatbot-input");
