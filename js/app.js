@@ -347,7 +347,7 @@ const performUserDivination = async () => {
 
     const aseIfaHTML = aseIfa.length
     ? aseIfa.map(item => 
-        `<p>${item}</p><hr/>`
+        `<p>${item}</p>`
       ).join("")
     : "";
 
@@ -373,10 +373,10 @@ const performUserDivination = async () => {
     if (isAdminAuthenticated || freeOdus.includes(mainCast) || isOduPaid(mainCast, orientation, specificOrientation, solution, solutionDetails)) {
         let resultHTML = `
             <h3 style="text-align: center; margin-top:20px">${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}</h3>
-            <p>${message} ${solutionInfo}</p><hr>
+            <p>${message} ${solutionInfo}</p>
         `;
 
-        resultHTML += `${aseIfaHTML}`; 
+        resultHTML += `${aseIfaHTML}<hr/>`; 
         if (orisha) resultHTML += `<p><strong>Orisha:</strong> ${orisha}</p><hr>`;
         if (alias) resultHTML += `<p><strong>Alias:</strong> ${alias}</p><hr>`;
         if (taboo) resultHTML += `<p><strong>Taboo:</strong> ${taboo}</p><hr>`;
