@@ -620,9 +620,9 @@ document.getElementById("fullname-btn").addEventListener("click", () => {
 
     resultElement.innerHTML = `
         <h3 style="text-align:center; font-weight:bold; margin-top:20px;">🔡 Vibration for "${fullName}"</h3> <hr/>
-        <p style="font-size: 20px"><strong>Destiny Number:</strong> ${details.destiny} ${numerologyMeanings[details.destiny] || "No meaning found"}</p> <hr/>
-        <p style="font-size: 20px"><strong>The inner you — your heart’s deepest desires (Soul Urge No) :</strong> ${details.soulUrge} ${numerologyMeanings[details.soulUrge] || "No meaning found"}</p> <hr/>
-        <p style="font-size: 20px"><strong>How the world sees you — your outer personality (Quiescent No):</strong> ${details.quiescent} ${numerologyMeanings[details.quiescent] || "No meaning found"}</p> <hr/>
+        <p style="font-size: 20px"><strong>Destiny Number:</strong> ${details.destiny} <br/>${numerologyMeanings[details.destiny] || "No meaning found"}</p> <hr/>
+        <p style="font-size: 20px"><strong>The inner you — your heart’s deepest desires (Soul Urge No) :</strong> ${details.soulUrge} <br/> ${numerologyMeanings[details.soulUrge] || "No meaning found"}</p> <hr/>
+        <p style="font-size: 20px"><strong>How the world sees you — your outer personality (Quiescent No):</strong> ${details.quiescent} <br/> ${numerologyMeanings[details.quiescent] || "No meaning found"}</p> <hr/>
     `;
 
     smoothScrollTo(resultElement.offsetTop, 2000);
