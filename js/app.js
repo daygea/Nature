@@ -372,7 +372,7 @@ const performUserDivination = async () => {
 
     if (isAdminAuthenticated || freeOdus.includes(mainCast) || isOduPaid(mainCast, orientation, specificOrientation, solution, solutionDetails)) {
         let resultHTML = `
-            <h3 style="text-align: center; margin-top:20px">${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}</h3>
+            <h3 style="text-align: center; margin-top:20px; font-weight: bold;">${mainCast}, ${orientationText} (${specificOrientation}), ${solution} ${solutionDetails}</h3>
             <p>${message} ${solutionInfo}</p>
         `;
 
@@ -520,6 +520,7 @@ const displayConfiguration = (oduName) => {
             const configurationElement = document.getElementById("configurationResult");
             let configHTML = "";
             resultDiv.style.display = "none";
+            document.getElementById("nameresult").style.display = "none";
             const resultElement = document.getElementById("divinationResult");
             resultElement.innerHTML = `
                 <h3 style="text-align: center; margin-top:20px; font-weight:bold;">Vibration: ${numerologyNumber}</h3><hr/>
@@ -608,6 +609,7 @@ document.getElementById("fullname-btn").addEventListener("click", () => {
     // Reset previous error messages before checking birthdate
     resultDiv.innerHTML = "";
     resultDiv.style.display = "none"; 
+    document.getElementById("result").style.display = "none";
     if (!fullName) {
         resultDiv.style.display = "block";
         resultDiv.innerHTML = "<span style='color:red; font-size:14px'>Please enter your full name</span>";
@@ -617,10 +619,10 @@ document.getElementById("fullname-btn").addEventListener("click", () => {
     const details = getNameNumerology(fullName);
 
     resultElement.innerHTML = `
-        <h3 style="text-align:center; font-weight:bold;">🔡 Vibration for "${fullName}"</h3> <hr/>
+        <h3 style="text-align:center; font-weight:bold; margin-top:20px;">🔡 Vibration for "${fullName}"</h3> <hr/>
         <p style="font-size: 20px"><strong>Destiny Number:</strong> ${details.destiny} ${numerologyMeanings[details.destiny] || "No meaning found"}</p> <hr/>
-        <p style="font-size: 20px"><strong>The inner you — your heart’s deepest desires, motivations, and true self (Soul Urge No) :</strong> ${details.soulUrge} ${numerologyMeanings[details.soulUrge] || "No meaning found"}</p> <hr/>
-        <p style="font-size: 20px"><strong>How the world sees you — your outer personality, first impressions, and social traits (Quiescent No):</strong> ${details.quiescent} ${numerologyMeanings[details.quiescent] || "No meaning found"}</p> <hr/>
+        <p style="font-size: 20px"><strong>The inner you — your heart’s deepest desires (Soul Urge No) :</strong> ${details.soulUrge} ${numerologyMeanings[details.soulUrge] || "No meaning found"}</p> <hr/>
+        <p style="font-size: 20px"><strong>How the world sees you — your outer personality (Quiescent No):</strong> ${details.quiescent} ${numerologyMeanings[details.quiescent] || "No meaning found"}</p> <hr/>
     `;
 
     smoothScrollTo(resultElement.offsetTop, 2000);
@@ -637,6 +639,7 @@ document.getElementById("determine-btn").onclick = () => {
     // Reset previous error messages before checking birthdate
     resultDiv.innerHTML = "";
     resultDiv.style.display = "none"; 
+    document.getElementById("nameresult").style.display = "none";
     if (!birthdate) {
         resultDiv.style.display = "block";
         resultDiv.innerHTML = "<span style='color:red; font-size:14px'>Select your birth date.</span>";
@@ -684,22 +687,22 @@ document.getElementById("determine-btn").onclick = () => {
         <p><strong style="font-weight:bold; font-size: 22px;">Lifetime Vibration is ${lifeTimeVibration}</strong> ${numerologyMeanings[lifeTimeVibration]}</p>
        <center><p><strong style="font-weight:bold; font-size: 22px;">Notes on your Astrology Data</strong></p></center>
        <hr>
-        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">🔮 Astrology Sign:</strong> ${astrologyData.symbol} ${astrologyData.name} (${astrologyData.animal})</p>
-        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">🪐 Ruling Planet:</strong> ${astrologyData.ruler}</p>
-        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">✨ Element:</strong> ${astrologyData.element}</p>
-        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">🔥 Traits:</strong> ${astrologyData.traits}</p>
-        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">💪 Strengths:</strong> ${astrologyData.strengths}</p>
-        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">⚠️ Weaknesses:</strong> ${astrologyData.weaknesses}</p>
-        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">📖 Meaning:</strong> ${astrologyData.message}</p>
+        <p><strong style="font-weight:bold; font-size: 20px;">🔮 Astrology Sign:</strong> ${astrologyData.symbol} ${astrologyData.name} (${astrologyData.animal})</p>
+        <p><strong style="font-weight:bold; font-size: 20px;">🪐 Ruling Planet:</strong> ${astrologyData.ruler}</p>
+        <p><strong style="font-weight:bold; font-size: 20px;">✨ Element:</strong> ${astrologyData.element}</p>
+        <p><strong style="font-weight:bold; font-size: 20px;">🔥 Traits:</strong> ${astrologyData.traits}</p>
+        <p><strong style="font-weight:bold; font-size: 20px;">💪 Strengths:</strong> ${astrologyData.strengths}</p>
+        <p><strong style="font-weight:bold; font-size: 20px;">⚠️ Weaknesses:</strong> ${astrologyData.weaknesses}</p>
+        <p><strong style="font-weight:bold; font-size: 20px;">📖 Meaning:</strong> ${astrologyData.message}</p>
         <hr>
-        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">🌌 Planetary Influence: </strong> ${astrologyData.planetaryInfluence.planet}</p>
+        <p><strong style="font-weight:bold; font-size: 20px;">🌌 Planetary Influence: </strong> ${astrologyData.planetaryInfluence.planet}</p>
        
-        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">🔮 Effect:</strong> ${astrologyData.planetaryInfluence.effect}</p>
-        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">📢 Advice:</strong> ${astrologyData.planetaryInfluence.advice}</p>
+        <p><strong style="font-weight:bold; font-size: 20px;">🔮 Effect:</strong> ${astrologyData.planetaryInfluence.effect}</p>
+        <p><strong style="font-weight:bold; font-size: 20px;">📢 Advice:</strong> ${astrologyData.planetaryInfluence.advice}</p>
         <hr>
-        <p><strong style="font-weight:bold; font-size: 22px; text-align: justify;">🚀 Planetary Transits</strong></p>
-        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">💫 Major Influence:</strong> ${astrologyData.transits.majorInfluences}</p>
-        <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">🔄 Upcoming Shift:</strong> ${astrologyData.transits.upcomingShift}</p>
+        <p><strong style="font-weight:bold; font-size: 22px;">🚀 Planetary Transits</strong></p>
+        <p><strong style="font-weight:bold; font-size: 20px;">💫 Major Influence:</strong> ${astrologyData.transits.majorInfluences}</p>
+        <p><strong style="font-weight:bold; font-size: 20px;">🔄 Upcoming Shift:</strong> ${astrologyData.transits.upcomingShift}</p>
         
 
     `;
