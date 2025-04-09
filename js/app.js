@@ -522,7 +522,7 @@ const displayConfiguration = (oduName) => {
             resultDiv.style.display = "none";
             const resultElement = document.getElementById("divinationResult");
             resultElement.innerHTML = `
-                <h3 style="text-align: center; margin-top:20px; font-weight:bold;">Numerology: ${numerologyNumber}</h3>
+                <h3 style="text-align: center; margin-top:20px; font-weight:bold;">Vibration: ${numerologyNumber}</h3><hr/>
                 <p>${numerologyMeanings[numerologyNumber]}</p>
             `;
             configHTML += `<img class="moving-bg" src="img/bird.gif" />`;
@@ -535,13 +535,16 @@ const displayConfiguration = (oduName) => {
 
 
         // Function to calculate the single-digit numerology number
+
 function getNumerologyNumber(dateString) {
     let digits = dateString.replace(/[^0-9]/g, ""); // Remove non-numeric characters
     let sum = digits.split("").reduce((acc, num) => acc + parseInt(num), 0);
-    // Reduce to a single-digit number
-    while (sum > 9) {
+
+    // Continue reducing unless the number is a master number (11 or 22)
+    while (sum > 22 || (sum > 9 && sum !== 11 && sum !== 22)) {
         sum = sum.toString().split("").reduce((acc, num) => acc + parseInt(num), 0);
     }
+
     return sum;
 }
 
@@ -550,6 +553,78 @@ function getWeekOfMonth(date) {
     const firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
     return Math.ceil((date.getDate() + firstDay.getDay()) / 7);
 }
+
+function getNameNumerology(fullName) {
+    const name = fullName.toUpperCase().replace(/[^A-Z]/g, ""); // Remove non-letters
+    let total = 0;
+    let vowelTotal = 0;
+    let consonantTotal = 0;
+
+    const letterValues = {
+        A: 1, J: 1, S: 1,
+        B: 2, K: 11, T: 2,
+        C: 3, L: 3, U: 3,
+        D: 4, M: 4, V: 22,
+        E: 5, N: 5, W: 5,
+        F: 6, O: 6, X: 6,
+        G: 7, P: 7, Y: 7,
+        H: 8, Q: 8, Z: 8,
+        I: 9, R: 9
+    };
+
+    const vowels = ["A", "E", "I", "O", "U"];
+
+    for (let char of name) {
+        let val = letterValues[char] || 0;
+        total += val;
+        if (vowels.includes(char)) {
+            vowelTotal += val;
+        } else {
+            consonantTotal += val;
+        }
+    }
+
+    return {
+        destiny: reduceNumber(total),
+        soulUrge: reduceNumber(vowelTotal),
+        quiescent: reduceNumber(consonantTotal)
+    };
+}
+
+// Keep master numbers 11 and 22
+function reduceNumber(num) {
+    while (num > 9 && num !== 11 && num !== 22) {
+        num = num.toString().split('').reduce((sum, d) => sum + parseInt(d), 0);
+    }
+    return num;
+}
+
+
+document.getElementById("fullname-btn").addEventListener("click", () => {
+    const fullName = document.getElementById("fullname").value.trim();
+    const resultElement = document.getElementById("divinationResult");
+    const resultDiv = document.getElementById("nameresult");
+
+    // Reset previous error messages before checking birthdate
+    resultDiv.innerHTML = "";
+    resultDiv.style.display = "none"; 
+    if (!fullName) {
+        resultDiv.style.display = "block";
+        resultDiv.innerHTML = "<span style='color:red; font-size:14px'>Please enter your full name</span>";
+        return;
+    }
+
+    const details = getNameNumerology(fullName);
+
+    resultElement.innerHTML = `
+        <h3 style="text-align:center; font-weight:bold;">🔡 Vibration for "${fullName}"</h3> <hr/>
+        <p style="font-size: 20px"><strong>Destiny Number:</strong> ${details.destiny} ${numerologyMeanings[details.destiny] || "No meaning found"}</p> <hr/>
+        <p style="font-size: 20px"><strong>The inner you — your heart’s deepest desires, motivations, and true self (Soul Urge No) :</strong> ${details.soulUrge} ${numerologyMeanings[details.soulUrge] || "No meaning found"}</p> <hr/>
+        <p style="font-size: 20px"><strong>How the world sees you — your outer personality, first impressions, and social traits (Quiescent No):</strong> ${details.quiescent} ${numerologyMeanings[details.quiescent] || "No meaning found"}</p> <hr/>
+    `;
+
+    smoothScrollTo(resultElement.offsetTop, 2000);
+});
 
 // Handle button click to determine the meaning
 document.getElementById("determine-btn").onclick = () => {
@@ -598,15 +673,15 @@ document.getElementById("determine-btn").onclick = () => {
     const resultElement = document.getElementById("divinationResult");
     resultElement.innerHTML = `
         <h3 style="text-align: center; margin-top:20px; font-weight:bold;">Revealed Messages</h3>        
-        <p><strong style="font-weight:bold; font-size: 22px;">Today's Vibration is ${currentDayVibration}</strong> - ${numerologyMeanings[currentDayVibration]}</p>
+        <p><strong style="font-weight:bold; font-size: 22px;">Today's Vibration is ${currentDayVibration}</strong> ${numerologyMeanings[currentDayVibration]}</p>
         <hr>
-        <p><strong style="font-weight:bold; font-size: 22px;">This week's Vibration is ${currentWeekVibration}</strong> - ${numerologyMeanings[currentWeekVibration]}</p>
+        <p><strong style="font-weight:bold; font-size: 22px;">This week's Vibration is ${currentWeekVibration}</strong> ${numerologyMeanings[currentWeekVibration]}</p>
         <hr>
-        <p><strong style="font-weight:bold; font-size: 22px;">This month's Vibration is ${currentMonthVibration}</strong> - ${numerologyMeanings[currentMonthVibration]}</p>
+        <p><strong style="font-weight:bold; font-size: 22px;">This month's Vibration is ${currentMonthVibration}</strong> ${numerologyMeanings[currentMonthVibration]}</p>
         <hr>
-        <p><strong style="font-weight:bold; font-size: 22px;">This year's Vibration is ${currentYearVibration}</strong> - ${numerologyMeanings[currentYearVibration]}</p>
+        <p><strong style="font-weight:bold; font-size: 22px;">This year's Vibration is ${currentYearVibration}</strong> ${numerologyMeanings[currentYearVibration]}</p>
         <hr>
-        <p><strong style="font-weight:bold; font-size: 22px;">Lifetime Vibration is ${lifeTimeVibration}</strong> - ${numerologyMeanings[lifeTimeVibration]}</p>
+        <p><strong style="font-weight:bold; font-size: 22px;">Lifetime Vibration is ${lifeTimeVibration}</strong> ${numerologyMeanings[lifeTimeVibration]}</p>
        <center><p><strong style="font-weight:bold; font-size: 22px;">Notes on your Astrology Data</strong></p></center>
        <hr>
         <p><strong style="font-weight:bold; font-size: 20px; text-align: justify;">🔮 Astrology Sign:</strong> ${astrologyData.symbol} ${astrologyData.name} (${astrologyData.animal})</p>
