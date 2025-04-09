@@ -239,7 +239,7 @@ function printDivinationResult() {
     printWindow.document.write(`
         <html>
         <head>
-            <title>Print - Nature Speaks</title>
+            <title>Print - NatureSpeaks - Be Illuminated...</title>
             <style>
             body{
             -webkit-user-select: none;
@@ -301,6 +301,8 @@ function printDivinationResult() {
             
            <center> ${printHeader} </center> <br/>
             ${printContent}
+
+            <center> Ire o. </center>
         </body>
         </html>
     `);
@@ -622,7 +624,7 @@ document.getElementById("fullname-btn").addEventListener("click", () => {
         <h3 style="text-align:center; font-weight:bold; margin-top:20px;">🔡 Vibration for "${fullName}"</h3> <hr/>
         <p><strong>Destiny Number:</strong> ${details.destiny} <br/>${numerologyMeanings[details.destiny] || "No meaning found"}</p> <hr/>
         <p><strong>The inner you — your heart’s deepest desires (Soul Urge No) :</strong> ${details.soulUrge} <br/> ${numerologyMeanings[details.soulUrge] || "No meaning found"}</p> <hr/>
-        <p><strong>How the world sees you — your outer personality (Quiescent No):</strong> ${details.quiescent} <br/> ${numerologyMeanings[details.quiescent] || "No meaning found"}</p> <hr/>
+        <p><strong>How the world sees you — your outer personality (Quiet Self No):</strong> ${details.quiescent} <br/> ${numerologyMeanings[details.quiescent] || "No meaning found"}</p> <hr/>
     `;
 
     smoothScrollTo(resultElement.offsetTop, 2000);
@@ -915,7 +917,7 @@ async function getAIResponse(userInput) {
             { role: "system", content: "You are a helpful assistant specializing in Ifa divination and Yoruba spirituality." },
             { role: "user", content: userInput }
         ],
-        max_tokens: 200,
+        max_tokens: 2048,
         temperature: 0.7
     };
 
