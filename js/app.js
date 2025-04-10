@@ -1,183 +1,183 @@
-    document.getElementById("year").textContent = new Date().getFullYear();
-    const SECRET_KEY = "DqUHBw7iFj3ia0pyp+QIvKJ5NgJFXE2PcZk95Kt2w6qpqOZ82iAF4Kx88Khb2KFl";
-        // Encrypt data using AES
-    function encryptData(data) {
-        return CryptoJS.AES.encrypt(JSON.stringify(data), SECRET_KEY).toString();
+document.getElementById("year").textContent = new Date().getFullYear();
+const SECRET_KEY = "DqUHBw7iFj3ia0pyp+QIvKJ5NgJFXE2PcZk95Kt2w6qpqOZ82iAF4Kx88Khb2KFl";
+    // Encrypt data using AES
+function encryptData(data) {
+    return CryptoJS.AES.encrypt(JSON.stringify(data), SECRET_KEY).toString();
+}
+// Decrypt data
+function decryptData(encryptedData) {
+    try {
+        const bytes = CryptoJS.AES.decrypt(encryptedData, SECRET_KEY);
+        return JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
+    } catch (e) {
+        return null;
     }
-    // Decrypt data
-    function decryptData(encryptedData) {
-        try {
-            const bytes = CryptoJS.AES.decrypt(encryptedData, SECRET_KEY);
-            return JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
-        } catch (e) {
-            return null;
+}
+function isOduPaid(oduName, orientation, specificOrientation, solution, solutionDetails) {
+    const storedData = localStorage.getItem("paidOdus");
+    if (!storedData) return false;
+
+    const paidOdus = decryptData(storedData);
+    if (!paidOdus) return false;
+
+    const combinationKey = `${oduName}-${orientation}-${specificOrientation}-${solution}-${solutionDetails}`;
+    const expirationTime = paidOdus[combinationKey];
+
+    return expirationTime && Date.now() < expirationTime;
+}
+function grantOduAccess(oduName, orientation, specificOrientation, solution, solutionDetails) {
+    let paidOdus = decryptData(localStorage.getItem("paidOdus")) || {};
+    
+    const combinationKey = `${oduName}-${orientation}-${specificOrientation}-${solution}-${solutionDetails}`;
+    paidOdus[combinationKey] = Date.now() + 24 * 60 * 60 * 1000; // Set 24-hour expiry
+
+    localStorage.setItem("paidOdus", encryptData(paidOdus));
+}
+function payForOdu(oduName, orientation, specificOrientation, solution, solutionDetails) {
+    let handler = PaystackPop.setup({
+        key: "pk_live_b39b445fba8a155f04a04980705a3c10ae85d673",
+        email: "info@aokfoundation.org",
+        amount: 100000, // ₦1000 (amount is in kobo)
+        currency: "NGN",
+        callback: function(response) {
+            alert("Donation made successfully, Thank you! Ref: " + response.reference);
+            grantOduAccess(oduName, orientation, specificOrientation, solution, solutionDetails);
+            performUserDivination();
+        },
+        onClose: function() {
+            alert("Payment cancelled.");
         }
-    }
-    function isOduPaid(oduName, orientation, specificOrientation, solution, solutionDetails) {
-        const storedData = localStorage.getItem("paidOdus");
-        if (!storedData) return false;
+    });
+    handler.openIframe();
+}
+// Base Odùs
+const baseOdus = {
+    "Ejiogbe": ["|", "|", "|", "|"],
+    "Oyeku Meji": ["||", "||", "||", "||"],
+    "Iwori Meji": ["||", "|", "|", "||"],
+    "Idi Meji": ["|", "||", "||", "|"],
+    "Irosun Meji": ["|", "|", "||", "||"],
+    "Owonrin Meji": ["||", "||", "|", "|"],
+    "Obara Meji": ["|", "||", "||", "||"],
+    "Okanran Meji": ["||", "||", "||", "|"],
+    "Ogunda Meji": ["|", "|", "|", "||"],
+    "Osa Meji": ["||", "|", "|", "|"],
+    "Ika Meji": ["||", "|", "||", "||"],
+    "Oturupon Meji": ["||", "||", "|", "||"],
+    "Otura Meji": ["|", "||", "|", "|"],
+    "Irete Meji": ["|", "|", "||", "|"],
+    "Ose Meji": ["|", "||", "|", "||"],
+    "Ofun Meji": ["||", "|", "||", "|"]
+};
+// Image paths for mapping
+const imageMap = {
+    "|": "img/openOpele-before.png",
+    "||": "img/closeOpele-before.png"
+};
 
-        const paidOdus = decryptData(storedData);
-        if (!paidOdus) return false;
-
-        const combinationKey = `${oduName}-${orientation}-${specificOrientation}-${solution}-${solutionDetails}`;
-        const expirationTime = paidOdus[combinationKey];
-
-        return expirationTime && Date.now() < expirationTime;
-    }
-    function grantOduAccess(oduName, orientation, specificOrientation, solution, solutionDetails) {
-        let paidOdus = decryptData(localStorage.getItem("paidOdus")) || {};
-        
-        const combinationKey = `${oduName}-${orientation}-${specificOrientation}-${solution}-${solutionDetails}`;
-        paidOdus[combinationKey] = Date.now() + 24 * 60 * 60 * 1000; // Set 24-hour expiry
-
-        localStorage.setItem("paidOdus", encryptData(paidOdus));
-    }
-    function payForOdu(oduName, orientation, specificOrientation, solution, solutionDetails) {
-        let handler = PaystackPop.setup({
-            key: "pk_live_b39b445fba8a155f04a04980705a3c10ae85d673",
-            email: "info@aokfoundation.org",
-            amount: 100000, // ₦1000 (amount is in kobo)
-            currency: "NGN",
-            callback: function(response) {
-                alert("Donation made successfully, Thank you! Ref: " + response.reference);
-                grantOduAccess(oduName, orientation, specificOrientation, solution, solutionDetails);
-                performUserDivination();
-            },
-            onClose: function() {
-                alert("Payment cancelled.");
+// Function to convert a symbol array into image elements
+const getOduImages = (symbols) => {
+    return symbols.map(symbol => 
+        `<img src="${imageMap[symbol]}" alt="${symbol}" class="odu-line">`
+    ).join("");
+};
+// Generate all 256 Odù combinations
+const generateOduCombinations = () => {
+    const baseOduNames = Object.keys(baseOdus);
+    const allOdus = [...baseOduNames];
+    baseOduNames.forEach(firstOdu => {
+        baseOduNames.forEach(secondOdu => {
+            if (firstOdu !== secondOdu) {
+                let firstName = firstOdu === "Ejiogbe" ? "Ogbe" : firstOdu.split(" ")[0];
+                let secondName = secondOdu === "Ejiogbe" ? "Ogbe" : secondOdu.split(" ")[0];
+                allOdus.push(`${firstName} ${secondName}`);
             }
         });
-        handler.openIframe();
-    }
-        // Base Odùs
-        const baseOdus = {
-            "Ejiogbe": ["|", "|", "|", "|"],
-            "Oyeku Meji": ["||", "||", "||", "||"],
-            "Iwori Meji": ["||", "|", "|", "||"],
-            "Idi Meji": ["|", "||", "||", "|"],
-            "Irosun Meji": ["|", "|", "||", "||"],
-            "Owonrin Meji": ["||", "||", "|", "|"],
-            "Obara Meji": ["|", "||", "||", "||"],
-            "Okanran Meji": ["||", "||", "||", "|"],
-            "Ogunda Meji": ["|", "|", "|", "||"],
-            "Osa Meji": ["||", "|", "|", "|"],
-            "Ika Meji": ["||", "|", "||", "||"],
-            "Oturupon Meji": ["||", "||", "|", "||"],
-            "Otura Meji": ["|", "||", "|", "|"],
-            "Irete Meji": ["|", "|", "||", "|"],
-            "Ose Meji": ["|", "||", "|", "||"],
-            "Ofun Meji": ["||", "|", "||", "|"]
-        };
-        // Image paths for mapping
-        const imageMap = {
-            "|": "img/openOpele-before.png",
-            "||": "img/closeOpele-before.png"
-        };
-
-       // Function to convert a symbol array into image elements
-        const getOduImages = (symbols) => {
-            return symbols.map(symbol => 
-                `<img src="${imageMap[symbol]}" alt="${symbol}" class="odu-line">`
-            ).join("");
-        };
-        // Generate all 256 Odù combinations
-        const generateOduCombinations = () => {
-            const baseOduNames = Object.keys(baseOdus);
-            const allOdus = [...baseOduNames];
-            baseOduNames.forEach(firstOdu => {
-                baseOduNames.forEach(secondOdu => {
-                    if (firstOdu !== secondOdu) {
-                        let firstName = firstOdu === "Ejiogbe" ? "Ogbe" : firstOdu.split(" ")[0];
-                        let secondName = secondOdu === "Ejiogbe" ? "Ogbe" : secondOdu.split(" ")[0];
-                        allOdus.push(`${firstName} ${secondName}`);
-                    }
-                });
-            });
-            return allOdus;
-        };
-        const allOdus = generateOduCombinations();
-        // Populate dropdowns
-        const populateDropdown = (dropdown, options) => {
-            dropdown.innerHTML = ""; // Clear existing options
-            options.forEach(option => {
-                const optElement = document.createElement("option");
-                optElement.value = option;
-                optElement.textContent = option;
-                dropdown.appendChild(optElement);
-            });
-        };
-        const populateDropdowns = () => {
-            const mainCastDropdown = document.getElementById("mainCast");
-            populateDropdown(mainCastDropdown, allOdus);
-            updateSpecificOrientation();
-            updateSolutionDetails(); // Populate solution details on page load
-        };
-        document.getElementById("mainCast").addEventListener("change", function() {
-            const selectedOdu = this.value; // Get the selected Odu Ifa from the dropdown or input
-            displayConfiguration(selectedOdu); // Pass it to the function
-        });
-        // Check if oduMessages has data for the selected mainCast, fallback if not
-        const getOduMessageData = (mainCast, orientation, specificOrientation, solution, specificSolution) => {
-            const orientationData = oduMessages[mainCast]?.[orientation];
-            const specificOrientationData = orientationData?.[specificOrientation];
-            const solutionData = specificOrientationData?.[solution]?.[specificSolution];
-            const messageData = orientationData?.[specificOrientation].Message;
-            return {
-                message: messageData || "No message available &",
-                solutionInfo: solutionData || "no message available for the selected combination.",
-                orientationMessage: orientationData?.Messages || "No general message available for this orientation.",
-                specificOrientationMessage: specificOrientationData?.Message || "No message available for this specific orientation."
-            };
-        };
-        const updateSpecificOrientation = () => {
-                const orientation = document.getElementById("orientation").value;
-                const specificOrientationDropdown = document.getElementById("specificOrientation");
-                const mainCast = document.getElementById("mainCast").value;
-                // Use fallback options if no data exists in `oduMessages`
-                const defaultOptions =
-                    orientation === "Positive"
-                        ? ["Aiku", "Aje", "Isegun", "Igbale Ese", "Gbogbo Ire"]
-                        : ["Iku", "Arun", "Ejo", "Ofo", "Okutagbunilese"];
-                const options =
-                    oduMessages[mainCast]?.[orientation] 
-                        ? Object.keys(oduMessages[mainCast][orientation])
-                        : defaultOptions;
-                populateDropdown(specificOrientationDropdown, options);
-            };
-             const updateSolutionDetails = () => {
-                const solution = document.getElementById("solution").value;
-                const solutionDetailsDropdown = document.getElementById("solutionDetails");
-                const mainCast = document.getElementById("mainCast").value;
-                // Use fallback options if no data exists in `oduMessages`
-                const defaultSolutionDetails =
-                    solution === "Ebo"
-                        ? ["Akoru", "Esha"]
-                        : ["Ori", "Osha", "Eegun", "Ifa"];
-                const details =
-                    oduMessages[mainCast]?.Solution?.[solution] 
-                        ? oduMessages[mainCast].Solution[solution]
-                        : defaultSolutionDetails;
-                populateDropdown(solutionDetailsDropdown, details);
-            };
-            const smoothScrollTo = (targetPosition, duration) => {
-                const startPosition = window.scrollY;
-                const distance = targetPosition - startPosition;
-                let startTime = null;
-                const animation = (currentTime) => {
-                    if (!startTime) startTime = currentTime;
-                    const timeElapsed = currentTime - startTime;
-                    const progress = Math.min(timeElapsed / duration, 1);
-                    window.scrollTo(0, startPosition + distance * easeInOutQuad(progress));
-                    if (timeElapsed < duration) {
-                        requestAnimationFrame(animation);
-                    }
-                };
-                const easeInOutQuad = (t) => {
-                    return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
-                };
-                requestAnimationFrame(animation);
-            };
+    });
+    return allOdus;
+};
+const allOdus = generateOduCombinations();
+// Populate dropdowns
+const populateDropdown = (dropdown, options) => {
+    dropdown.innerHTML = ""; // Clear existing options
+    options.forEach(option => {
+        const optElement = document.createElement("option");
+        optElement.value = option;
+        optElement.textContent = option;
+        dropdown.appendChild(optElement);
+    });
+};
+const populateDropdowns = () => {
+    const mainCastDropdown = document.getElementById("mainCast");
+    populateDropdown(mainCastDropdown, allOdus);
+    updateSpecificOrientation();
+    updateSolutionDetails(); // Populate solution details on page load
+};
+document.getElementById("mainCast").addEventListener("change", function() {
+    const selectedOdu = this.value; // Get the selected Odu Ifa from the dropdown or input
+    displayConfiguration(selectedOdu); // Pass it to the function
+});
+// Check if oduMessages has data for the selected mainCast, fallback if not
+const getOduMessageData = (mainCast, orientation, specificOrientation, solution, specificSolution) => {
+    const orientationData = oduMessages[mainCast]?.[orientation];
+    const specificOrientationData = orientationData?.[specificOrientation];
+    const solutionData = specificOrientationData?.[solution]?.[specificSolution];
+    const messageData = orientationData?.[specificOrientation].Message;
+    return {
+        message: messageData || "No message available &",
+        solutionInfo: solutionData || "no message available for the selected combination.",
+        orientationMessage: orientationData?.Messages || "No general message available for this orientation.",
+        specificOrientationMessage: specificOrientationData?.Message || "No message available for this specific orientation."
+    };
+};
+const updateSpecificOrientation = () => {
+        const orientation = document.getElementById("orientation").value;
+        const specificOrientationDropdown = document.getElementById("specificOrientation");
+        const mainCast = document.getElementById("mainCast").value;
+        // Use fallback options if no data exists in `oduMessages`
+        const defaultOptions =
+            orientation === "Positive"
+                ? ["Aiku", "Aje", "Isegun", "Igbale Ese", "Gbogbo Ire"]
+                : ["Iku", "Arun", "Ejo", "Ofo", "Okutagbunilese"];
+        const options =
+            oduMessages[mainCast]?.[orientation] 
+                ? Object.keys(oduMessages[mainCast][orientation])
+                : defaultOptions;
+        populateDropdown(specificOrientationDropdown, options);
+    };
+const updateSolutionDetails = () => {
+    const solution = document.getElementById("solution").value;
+    const solutionDetailsDropdown = document.getElementById("solutionDetails");
+    const mainCast = document.getElementById("mainCast").value;
+    // Use fallback options if no data exists in `oduMessages`
+    const defaultSolutionDetails =
+        solution === "Ebo"
+            ? ["Akoru", "Esha"]
+            : ["Ori", "Osha", "Eegun", "Ifa"];
+    const details =
+        oduMessages[mainCast]?.Solution?.[solution] 
+            ? oduMessages[mainCast].Solution[solution]
+            : defaultSolutionDetails;
+    populateDropdown(solutionDetailsDropdown, details);
+};
+const smoothScrollTo = (targetPosition, duration) => {
+    const startPosition = window.scrollY;
+    const distance = targetPosition - startPosition;
+    let startTime = null;
+    const animation = (currentTime) => {
+        if (!startTime) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+        window.scrollTo(0, startPosition + distance * easeInOutQuad(progress));
+        if (timeElapsed < duration) {
+            requestAnimationFrame(animation);
+        }
+    };
+    const easeInOutQuad = (t) => {
+        return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+    };
+    requestAnimationFrame(animation);
+};
 // Function to hash the password using SHA-256
 async function hashPassword(password) {
     const encoder = new TextEncoder();
@@ -311,7 +311,6 @@ function printDivinationResult() {
     printWindow.focus();
     setTimeout(() => printWindow.print(), 500); // Give time to render
 }
-
 
 // Admin Logout Function
 const logoutAdmin = () => {
@@ -464,80 +463,77 @@ const displayConfiguration = (oduName) => {
         }
     }, 100);
 };
+// Initialize on page load
+window.onload = function() {
+     setTimeout(() => {
+        document.getElementById("preloader").style.display = "none";
+    }, 3000); // Adjust time as needed
+    generateCircularButtons();
+    populateDropdowns();
+    speechSynthesis.cancel(); // Stop any ongoing speech
+};
+ // Generate calculator buttons with hidden numbers
+let canClick = true;
+function generateCircularButtons() {
+    if (!canClick) return; // Prevent rapid clicks
+    canClick = false;
+    setTimeout(() => (canClick = true), 500); // Allow clicking after 500ms
 
+    const calculatorDiv = document.getElementById("calculator");
+    if (!calculatorDiv) return;
+    calculatorDiv.innerHTML = ""; // Clear existing buttons
 
-        // Initialize on page load
-        window.onload = function() {
-             setTimeout(() => {
-                document.getElementById("preloader").style.display = "none";
-            }, 3000); // Adjust time as needed
-            generateCircularButtons();
-            populateDropdowns();
-            speechSynthesis.cancel(); // Stop any ongoing speech
+    let numbers = Array.from({ length: 9 }, (_, i) => i + 1);
+    numbers.sort(() => Math.random() - 0.5); // Shuffle numbers
+    let radius = 80;
+    let centerX = 100, centerY = 100;
+
+    numbers.forEach((num, index) => {
+        const angle = (index * (360 / numbers.length)) * (Math.PI / 180);
+        const x = centerX + radius * Math.cos(angle) - 25;
+        const y = centerY + radius * Math.sin(angle) - 25;
+
+        const button = document.createElement("button");
+        button.textContent = num;
+        button.dataset.number = num;
+        button.style.left = `${x}px`;
+        button.style.top = `${y}px`;
+
+        button.onclick = function () {
+            if (!canClick) return;
+            this.classList.add("clicked");
+            displayMeaning(this.dataset.number, button);
+            setTimeout(generateCircularButtons, 1000);
         };
-         // Generate calculator buttons with hidden numbers
-        let canClick = true;
-        function generateCircularButtons() {
-            if (!canClick) return; // Prevent rapid clicks
-            canClick = false;
-            setTimeout(() => (canClick = true), 500); // Allow clicking after 500ms
 
-            const calculatorDiv = document.getElementById("calculator");
-            if (!calculatorDiv) return;
-            calculatorDiv.innerHTML = ""; // Clear existing buttons
+        calculatorDiv.appendChild(button);
+    });
+}
 
-            let numbers = Array.from({ length: 9 }, (_, i) => i + 1);
-            numbers.sort(() => Math.random() - 0.5); // Shuffle numbers
-            let radius = 80;
-            let centerX = 100, centerY = 100;
+// Function to display Numerology and Astrological meaning and highlight the selected button
+function displayMeaning(number, selectedButton) {
+    resetSpeechState();
+     // Get the single-digit numerology number
+    const numerologyNumber = number;
+    const resultDiv = document.getElementById("result");
+    const configurationElement = document.getElementById("configurationResult");
+    let configHTML = "";
+    resultDiv.style.display = "none";
+    document.getElementById("nameresult").style.display = "none";
+    const resultElement = document.getElementById("divinationResult");
+    resultElement.innerHTML = `
+        <h3 style="text-align: center; margin-top:20px; font-weight:bold;">Energy ${numerologyNumber} - ${summaryNumerologyMeanings[numerologyNumber]}</h3><hr/>
+        <p>${numerologyMeanings[numerologyNumber]}</p>
+    `;
+    configHTML += `<img class="moving-bg" src="img/bird.gif" />`;
+    configurationElement.innerHTML = configHTML;
+    showControls();
+    // Slow smooth scroll to result section (2 seconds duration)
+    smoothScrollTo(resultElement.offsetTop, 2000);
+    
+}
 
-            numbers.forEach((num, index) => {
-                const angle = (index * (360 / numbers.length)) * (Math.PI / 180);
-                const x = centerX + radius * Math.cos(angle) - 25;
-                const y = centerY + radius * Math.sin(angle) - 25;
-
-                const button = document.createElement("button");
-                button.textContent = num;
-                button.dataset.number = num;
-                button.style.left = `${x}px`;
-                button.style.top = `${y}px`;
-
-                button.onclick = function () {
-                    if (!canClick) return;
-                    this.classList.add("clicked");
-                    displayMeaning(this.dataset.number, button);
-                    setTimeout(generateCircularButtons, 1000);
-                };
-
-                calculatorDiv.appendChild(button);
-            });
-        }
-
-        // Function to display Numerology and Astrological meaning and highlight the selected button
-        function displayMeaning(number, selectedButton) {
-            resetSpeechState();
-             // Get the single-digit numerology number
-            const numerologyNumber = number;
-            const resultDiv = document.getElementById("result");
-            const configurationElement = document.getElementById("configurationResult");
-            let configHTML = "";
-            resultDiv.style.display = "none";
-            document.getElementById("nameresult").style.display = "none";
-            const resultElement = document.getElementById("divinationResult");
-            resultElement.innerHTML = `
-                <h3 style="text-align: center; margin-top:20px; font-weight:bold;">Vibration: ${numerologyNumber}</h3><hr/>
-                <p>${numerologyMeanings[numerologyNumber]}</p>
-            `;
-            configHTML += `<img class="moving-bg" src="img/bird.gif" />`;
-            configurationElement.innerHTML = configHTML;
-            showControls();
-            // Slow smooth scroll to result section (2 seconds duration)
-            smoothScrollTo(resultElement.offsetTop, 2000);
-            
-        }
-
-
-        // Function to calculate the single-digit numerology number
+// Function to calculate the single-digit numerology number
 
 function getNumerologyNumber(dateString) {
     let digits = dateString.replace(/[^0-9]/g, ""); // Remove non-numeric characters
@@ -602,7 +598,6 @@ function reduceNumber(num) {
     return num;
 }
 
-
 document.getElementById("fullname-btn").addEventListener("click", () => {
     const fullName = document.getElementById("fullname").value.trim();
     const resultElement = document.getElementById("divinationResult");
@@ -621,10 +616,15 @@ document.getElementById("fullname-btn").addEventListener("click", () => {
     const details = getNameNumerology(fullName);
 
     resultElement.innerHTML = `
-        <h3 style="text-align:center; font-weight:bold; margin-top:20px;">🔡 Vibration for "${fullName}"</h3> <hr/>
-        <p><strong>Destiny Number:</strong> ${details.destiny} <br/>${numerologyMeanings[details.destiny] || "No meaning found"}</p> <hr/>
-        <p><strong>The inner you — your heart’s deepest desires (Soul Urge No) :</strong> ${details.soulUrge} <br/> ${numerologyMeanings[details.soulUrge] || "No meaning found"}</p> <hr/>
-        <p><strong>How the world sees you — your outer personality (Quiet Self No):</strong> ${details.quiescent} <br/> ${numerologyMeanings[details.quiescent] || "No meaning found"}</p> <hr/>
+        <h3 style="text-align:center; font-weight:bold; margin-top:20px;">📖 Message for "${fullName}"</h3> <hr/>
+        <p><strong>How the world sees you  - ${summaryNumerologyMeanings[details.quiescent]}</strong> </p> 
+        <p>${numerologyMeanings[details.quiescent] || "No meaning found"}</p> <hr/>
+
+        <p><strong>Your heart’s deepest desires - ${summaryNumerologyMeanings[details.soulUrge]}</strong> </p> 
+        <p>${numerologyMeanings[details.soulUrge] || "No meaning found"}</p> <hr/>
+
+        <p><strong>Your Destiny - ${summaryNumerologyMeanings[details.destiny]}</strong></p> 
+        <p>${numerologyMeanings[details.destiny] || "No meaning found"}</p> <hr/>
     `;
 
     smoothScrollTo(resultElement.offsetTop, 2000);
@@ -677,16 +677,21 @@ document.getElementById("determine-btn").onclick = () => {
 
     const resultElement = document.getElementById("divinationResult");
     resultElement.innerHTML = `
-        <h3 style="text-align: center; margin-top:20px; font-weight:bold;">Revealed Messages</h3>        
-        <p><strong style="font-weight:bold; font-size: 22px;">Today's Vibration is ${currentDayVibration}</strong> ${numerologyMeanings[currentDayVibration]}</p>
+        <h3 style="text-align: center; margin-top:20px; font-weight:bold;">📖Revealed Messages</h3>        
+        <p><strong style="font-weight:bold; font-size: 22px;">Today's energy is ${currentDayVibration} - ${summaryNumerologyMeanings[currentDayVibration]}</strong> </p>
+        <p>${numerologyMeanings[currentDayVibration]}</p>
         <hr>
-        <p><strong style="font-weight:bold; font-size: 22px;">This week's Vibration is ${currentWeekVibration}</strong> ${numerologyMeanings[currentWeekVibration]}</p>
+        <p><strong style="font-weight:bold; font-size: 22px;">This week's energy is ${currentWeekVibration} - ${summaryNumerologyMeanings[currentWeekVibration]}</strong></p> 
+        <p>${numerologyMeanings[currentWeekVibration]}</p>
         <hr>
-        <p><strong style="font-weight:bold; font-size: 22px;">This month's Vibration is ${currentMonthVibration}</strong> ${numerologyMeanings[currentMonthVibration]}</p>
+        <p><strong style="font-weight:bold; font-size: 22px;">This month's energy is ${currentMonthVibration} - ${summaryNumerologyMeanings[currentMonthVibration]}</strong></p> 
+        <p>${numerologyMeanings[currentMonthVibration]}</p>
         <hr>
-        <p><strong style="font-weight:bold; font-size: 22px;">This year's Vibration is ${currentYearVibration}</strong> ${numerologyMeanings[currentYearVibration]}</p>
+        <p><strong style="font-weight:bold; font-size: 22px;">This year's energy is ${currentYearVibration} - ${summaryNumerologyMeanings[currentYearVibration]}</strong></p> 
+        <p>${numerologyMeanings[currentYearVibration]}</p>
         <hr>
-        <p><strong style="font-weight:bold; font-size: 22px;">Lifetime Vibration is ${lifeTimeVibration}</strong> ${numerologyMeanings[lifeTimeVibration]}</p>
+        <p><strong style="font-weight:bold; font-size: 22px;">Lifetime energy is ${lifeTimeVibration} - ${summaryNumerologyMeanings[lifeTimeVibration]}</strong></p> 
+        <p>${numerologyMeanings[lifeTimeVibration]}</p>
        <center><p><strong style="font-weight:bold; font-size: 22px;">Notes on your Astrology Data</strong></p></center>
        <hr>
         <p><strong style="font-weight:bold; font-size: 20px;">🔮 Astrology Sign:</strong> ${astrologyData.symbol} ${astrologyData.name} (${astrologyData.animal})</p>
@@ -811,7 +816,6 @@ function resetSpeechState() {
         playPauseBtn.innerHTML = "🔊 Play Voice"; // Reset button text
     }
 }
-
 
 function showControls() {
     let controls = document.getElementById("voiceControls");
