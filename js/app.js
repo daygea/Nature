@@ -911,10 +911,8 @@ function appendMessage(message, sender = 'bot') {
     document.getElementById("chatbot-messages").scrollTop = document.getElementById("chatbot-messages").scrollHeight;
 }
 
-
-
-async function getAIResponse(userInput) {
-    const apiKey = "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";
+async function getAIResponse() {
+    const apiKey = "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";  // Replace this securely
     const apiUrl = "https://api.openai.com/v1/chat/completions";
 
     const headers = {
@@ -923,37 +921,20 @@ async function getAIResponse(userInput) {
     };
 
     const data = {
-        model: "gpt-4", // Use "gpt-4" if available
-        messages: [
-            { role: "system", content: "You are a helpful assistant specializing in Ifa divination and Yoruba spirituality." },
-            { role: "user", content: userInput }
-        ],
+        model: "gpt-4",
+        messages: chatHistory,
         max_tokens: 2048,
         temperature: 0.7
     };
 
-    try {
-        const response = await fetch(apiUrl, {
-            method: "POST",
-            headers: headers,
-            body: JSON.stringify(data)
-        });
+    const response = await fetch(apiUrl, {
+        method: "POST",
+        headers: headers,
+        body: JSON.stringify(data)
+    });
 
-        if (!response.ok) {
-            throw new Error(`API Error: ${response.status}`);
-        }
-
-        const responseData = await response.json();
-
-        if (responseData.choices && responseData.choices.length > 0) {
-            return responseData.choices[0].message.content.trim();
-        } else {
-            return "I'm sorry, I couldn't generate a response. Please try again.";
-        }
-    } catch (error) {
-        console.error("Error fetching response:", error);
-        return "Sorry, I'm having trouble processing your request right now.";
-    }
+    const result = await response.json();
+    return result.choices[0].message.content.trim();
 }
 
 async function getBotResponse(userInput) {
@@ -985,53 +966,44 @@ async function getBotResponse(userInput) {
 async function sendMessage() {
     let inputField = document.getElementById("chatbot-input");
     let messagesDiv = document.getElementById("chatbot-messages");
-    let userMessage = inputField.value.trim().toLowerCase(); // Normalize input
+    let userMessage = inputField.value.trim().toLowerCase();
 
-    if (userMessage === "") return; // Don't send empty messages
+    if (userMessage === "") return;
 
-    // Create user message wrapper
-    let userWrapper = document.createElement("div");
-    userWrapper.classList.add("chat-message-wrapper", "align-right");
-
+    // Show user message
     let userMessageElement = document.createElement("div");
-    userMessageElement.classList.add("chat-message", "user-message");
-    userMessageElement.innerHTML = `${userMessage}`;
-
-    userWrapper.appendChild(userMessageElement);
-    messagesDiv.appendChild(userWrapper);
-
-
-    // Clear input field
+    userMessageElement.classList.add("chat-message-wrapper", "align-right");
+    userMessageElement.innerHTML = `<div class="chat-message user-message">${userMessage}</div>`;
+    messagesDiv.appendChild(userMessageElement);
     inputField.value = "";
 
-  // Show bot thinking message
-let botWrapper = document.createElement("div");
-botWrapper.classList.add("chat-message-wrapper", "align-left");
+    // Store in chat memory
+    chatHistory.push({ role: "user", content: userMessage });
 
-let botResponseElement = document.createElement("div");
-botResponseElement.classList.add("chat-message", "bot-message");
-botResponseElement.innerHTML = `<em>>> Thinking...</em>`;
+    // Show bot loading
+    let botResponseElement = document.createElement("div");
+    botResponseElement.classList.add("chat-message-wrapper", "align-left");
+    botResponseElement.innerHTML = `<div class="chat-message bot-message"><em>Thinking...</em></div>`;
+    messagesDiv.appendChild(botResponseElement);
 
-botWrapper.appendChild(botResponseElement);
-messagesDiv.appendChild(botWrapper);
-
-
-    // Check if the question exists in ifaKnowledgeBase
+    // Check if local response exists
     let response = checkIfaKnowledgeBase(userMessage);
 
     if (!response) {
         try {
-            response = await getAIResponse(userMessage); // Call AI only if no local match
-        } catch (error) {
-            console.error("Error fetching AI response:", error);
+            response = await getAIResponse(); // ← no longer passing input directly
+        } catch (err) {
+            console.error(err);
             response = "Sorry, I couldn't process your request.";
         }
     }
 
-    // Update response in chat
-    botResponseElement.innerHTML = `${response}`;
+    // Update AI response visually
+    botResponseElement.innerHTML = `<div class="chat-message bot-message">${response}</div>`;
 
-    // Auto-scroll to latest message
+    // Save bot reply to memory
+    chatHistory.push({ role: "assistant", content: response });
+
     messagesDiv.scrollTop = messagesDiv.scrollHeight;
 }
 
@@ -1043,3 +1015,10 @@ function checkIfaKnowledgeBase(userMessage) {
     }
     return null; // No match found
 }
+
+function resetChatMemory() {
+    chatHistory = [
+        { role: "system", content: "You are a helpful assistant specializing in Ifa divination and Yoruba spirituality." }
+    ];
+}
+

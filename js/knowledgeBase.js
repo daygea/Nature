@@ -1,3 +1,7 @@
+let chatHistory = [
+    { role: "system", content: "You are a helpful assistant specializing in Ifa divination and Yoruba spirituality." }
+];
+
 const ifaKnowledgeBase = {
     "hello": "Hello! How can I assist you today?",
     "hi": "Hi there! What would you like to know?",
