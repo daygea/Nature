@@ -37,7 +37,7 @@
             <div id="configurationResult" class="col-sm-3 odusign" style="font-family: cursive;">
                 <img id="hiddenTapArea" class="moving-bg" src="img/bird.gif"/>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 ifaDetails">
                 <div id="adminPasswordContainer" style="display: none;">
                    <center> <input type="password" id="adminPassword" placeholder="Enter Admin Password" />
                     <button onclick="authenticateAdmin()">Login</button> </center>
@@ -107,7 +107,7 @@
                     <div class="col-md-4">
                     </div>
                     <div class="col-md-4">
-                        <a target="_blank" href="https://paystack.com/pay/aokfoundation" class="btn btn-md btn-default app-btn" style="color: green; text-decoration: none;">SUPPORT OUR MISSION</a>
+                        <a target="_blank" href="https://paystack.com/pay/aokfoundation" class="btn btn-md btn-default app-btn" style="color: green; text-decoration: none; margin-top: 2vh">SUPPORT OUR MISSION</a>
                     </div>
                     <div class="col-md-4">
                     </div>
@@ -122,7 +122,7 @@
                 <div class="row">
                     <div class="col-12 text-center" style="color: green;">
                        
-                        <p style="color:red; padding-top: 2vh">Disclaimer: This app is for informational and educational purposes only. It is not intended to replace professional advice or consultation.<p>
+                        <p style="color:red; padding-top: 1vh">Disclaimer: This app is for informational and educational purposes only. It is not intended to replace professional advice or consultation.<p>
 
                          <p>&copy; <span id="year"></span> NatureSpeaks by <a style="color:green;" target="_blank" href="https://aokfoundation.org/">Aminat Olanbiwoninu Kadri (AOK) Foundation</a>. All Rights Reserved.</p>
 </p>
@@ -132,12 +132,24 @@
                 <div id="chatbot-container" class="hidden">
                     <div id="chatbot-header">
                         <span>💬 Ask NatureSpeaks</span>
-                        <button onclick="toggleChatbot()">Close</button>
+                        <button class="app-btn" onclick="toggleChatbot()">Close</button>
                     </div>
-                    <div id="chatbot-messages"></div>
+
+                    <div id="chatbot-messages">
+                        <!-- Example of user message -->
+                        <div class="chat-message-wrapper align-right">
+                            <div class="chat-message user-message">Hello</div>
+                        </div>
+
+                        <!-- Example of bot message -->
+                        <div class="chat-message-wrapper align-left">
+                            <div class="chat-message bot-message">Hello! How can I assist you today?</div>
+                        </div>
+                    </div>
+
                     <div id="chatbot-input-container">
                         <textarea id="chatbot-input" placeholder="Ask any question (e.g Tell me about the creation story)"></textarea>
-                       &nbsp; <button id="send-btn" onclick="sendMessage()">Send</button>
+                       &nbsp; <button class="app-btn" id="send-btn" onclick="sendMessage()">Send</button>
                     </div>
                 </div>
 

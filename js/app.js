@@ -898,13 +898,20 @@ document.getElementById("chatbot-input").addEventListener("keydown", function(ev
     }
 });
 
-// Display chat messages dynamically
-function displayMessage(text, sender) {
-    let messagesDiv = document.getElementById("chatbot-messages");
-    let messageElement = document.createElement("p");
-    messageElement.innerHTML = `<strong>${sender === "user" ? "You" : "NatureSpeaks"}:</strong> ${text}`;
-    messagesDiv.appendChild(messageElement);
+function appendMessage(message, sender = 'bot') {
+    const wrapper = document.createElement("div");
+    wrapper.className = "chat-message-wrapper " + (sender === "user" ? "align-right" : "align-left");
+
+    const msgDiv = document.createElement("div");
+    msgDiv.className = "chat-message " + (sender === "user" ? "user-message" : "bot-message");
+    msgDiv.textContent = message;
+
+    wrapper.appendChild(msgDiv);
+    document.getElementById("chatbot-messages").appendChild(wrapper);
+    document.getElementById("chatbot-messages").scrollTop = document.getElementById("chatbot-messages").scrollHeight;
 }
+
+
 
 async function getAIResponse(userInput) {
     const apiKey = "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";
@@ -982,20 +989,32 @@ async function sendMessage() {
 
     if (userMessage === "") return; // Don't send empty messages
 
-     // Create user message element
+    // Create user message wrapper
+    let userWrapper = document.createElement("div");
+    userWrapper.classList.add("chat-message-wrapper", "align-right");
+
     let userMessageElement = document.createElement("div");
     userMessageElement.classList.add("chat-message", "user-message");
     userMessageElement.innerHTML = `> ${userMessage}`;
-    messagesDiv.appendChild(userMessageElement);
+
+    userWrapper.appendChild(userMessageElement);
+    messagesDiv.appendChild(userWrapper);
+
 
     // Clear input field
     inputField.value = "";
 
-    // Show loading message
-    let botResponseElement = document.createElement("div");
-    botResponseElement.classList.add("chat-message", "bot-message");
-    botResponseElement.innerHTML = `<em>>> Thinking...</em>`;
-    messagesDiv.appendChild(botResponseElement);
+  // Show bot thinking message
+let botWrapper = document.createElement("div");
+botWrapper.classList.add("chat-message-wrapper", "align-left");
+
+let botResponseElement = document.createElement("div");
+botResponseElement.classList.add("chat-message", "bot-message");
+botResponseElement.innerHTML = `<em>>> Thinking...</em>`;
+
+botWrapper.appendChild(botResponseElement);
+messagesDiv.appendChild(botWrapper);
+
 
     // Check if the question exists in ifaKnowledgeBase
     let response = checkIfaKnowledgeBase(userMessage);
