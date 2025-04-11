@@ -18,6 +18,18 @@
     font-family: Courier, monospace;
     font-weight: bold;
  }
+
+.header {
+  width: 100%;
+  text-align: right; /* Aligns child elements to the right */
+  padding: 10px;
+}
+.language-selector {
+  padding: 5px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 .moving-bg {
   position: relative;
   top: -50px;  

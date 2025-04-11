@@ -471,6 +471,8 @@ window.onload = function() {
     generateCircularButtons();
     populateDropdowns();
     speechSynthesis.cancel(); // Stop any ongoing speech
+const savedLang = localStorage.getItem("appLang") || "en";
+  setLanguage(savedLang);
 };
  // Generate calculator buttons with hidden numbers
 let canClick = true;
@@ -934,7 +936,7 @@ async function getAIResponse() {
     });
 
     const result = await response.json();
-    return result.choices[0].message.content.trim();
+    return translateToSelectedLanguage(result.choices[0].message.content.trim());
 }
 
 async function getBotResponse(userInput) {
@@ -951,7 +953,7 @@ async function getBotResponse(userInput) {
 
     // If only one match, return the response
     if (possibleResponses.length === 1) {
-        return possibleResponses[0];
+        return translateToSelectedLanguage(possibleResponses[0]);
     }
 
     // If multiple matches found, ask for clarification
@@ -962,6 +964,7 @@ async function getBotResponse(userInput) {
     // If no match found, fallback to AI-generated response
     return await getAIResponse(userInput);
 }
+
 
 async function sendMessage() {
     let inputField = document.getElementById("chatbot-input");

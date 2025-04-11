@@ -26,7 +26,16 @@
         <img style="margin-top:50vh;" src="img/loader.gif" />
     </div>
     <div class="container-fluid" id="printArea">
+             <div class="header">
+                <select id="languageSelector" class="language-selector" onchange="setLanguage(this.value)">
+                  <option value="en">English</option>
+                  <option value="yo">Yoruba</option>
+                  <option value="sw">Swahili</option>
+                  <option value="fr">French</option>
+                </select>
+              </div>
         <center><a href="/" style="color: green; text-decoration: none;"><img src="img/logo.png" style="height:75px" alt="Nature Speaks Logo"/></a></center>
+     
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8 text-center">
@@ -160,6 +169,7 @@
 <script type="text/javascript" src="js/freeOdus.js"></script>
 <script type="text/javascript" src="js/knowledgeBase.js"></script>
 <script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/translation.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 
 </body>
