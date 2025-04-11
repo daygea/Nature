@@ -4,9 +4,12 @@ const ifaKnowledgeBase = {
     "good morning": "Good morning! May your day be filled with blessings.",
     "good afternoon": "Good afternoon! How may I help you?",
     "good evening": "Good evening! I’m here to answer your questions.",
-    "how are you": "I’m just a chatbot, but I’m always here to help!",
+    "how are you": "I’m just a bot, but I’m always here to help!",
     "thank you": "You’re welcome! Let me know if you have more questions.",
     "thanks": "You're welcome! If you need more guidance, feel free to ask.",
+    "collaboration": "<p>For collaboration kindly reach us on Whatsapp <a style='color:green;' target='_blank' aria-label='Chat on WhatsApp' href='https://wa.me/2348034256265'> +2348034256265<a/>. Ire o.</p> ",
+    "collaborate": "<p>For collaboration kindly reach us on Whatsapp <a style='color:green;' target='_blank' aria-label='Chat on WhatsApp' href='https://wa.me/2348034256265'> +2348034256265<a/>. Ire o.</p> ",
+
 
     
     

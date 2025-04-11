@@ -830,7 +830,7 @@ function showControls() {
     controls.style.marginTop = "20px";
     
      controls.innerHTML = `
-        <button id="playPauseBtn" onclick="togglePlayPause()" style="padding: 10px; font-size: 16px;">🔊 Play Voice</button>
+        <button class="app-btn" id="playPauseBtn" onclick="togglePlayPause()" style="padding: 10px; font-size: 16px; float: left;">🔊 Play Voice</button>
     `;
 
     document.getElementById("divinationResult").appendChild(controls);
