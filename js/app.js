@@ -995,7 +995,7 @@ async function sendMessage() {
 
     let userMessageElement = document.createElement("div");
     userMessageElement.classList.add("chat-message", "user-message");
-    userMessageElement.innerHTML = `> ${userMessage}`;
+    userMessageElement.innerHTML = `${userMessage}`;
 
     userWrapper.appendChild(userMessageElement);
     messagesDiv.appendChild(userWrapper);
@@ -1029,7 +1029,7 @@ messagesDiv.appendChild(botWrapper);
     }
 
     // Update response in chat
-    botResponseElement.innerHTML = `>> ${response}`;
+    botResponseElement.innerHTML = `${response}`;
 
     // Auto-scroll to latest message
     messagesDiv.scrollTop = messagesDiv.scrollHeight;

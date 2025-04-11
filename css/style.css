@@ -52,13 +52,10 @@
     text-align: center;
 /*            margin-top: 20vh;*/
     font-size: 20px;
+    background-image: url('../img/sun.gif');
 
 }
-/*.ifaDetails{
-    background-image: url('../img/sun2.gif');
-    background-position: center;
-      background-repeat: no-repeat;
-}*/
+
 .numerology{
     font-family: Courier, monospace;
      font-weight: bold;
@@ -140,7 +137,7 @@ button:hover {
     height: 200px;
     margin: auto;
     /*            border: 2px solid green;*/
-    background-image: url('../img/water2.gif');
+    background-image: url('../img/water.gif');
      background-position: center;
       background-repeat: no-repeat;
     border-radius: 50%;
@@ -299,19 +296,22 @@ button:hover {
     border-radius: 15px;
 }
 
-/* Bot message */
-.bot-message {
-    background-color: #f1f1f1;
-    color: #000;
-    border-radius: 15px 15px 15px 0;
-}
-
-/* User message */
+/* User messages (aligned right, green) */
 .user-message {
     background-color: #4CAF50;
-    color: #fff;
+    color: white;
     border-radius: 15px 15px 0 15px;
+    text-align: justify; /* right text alignment */
 }
+
+/* Bot messages (aligned left, light grey) */
+.bot-message {
+    background-color: #f1f1f1;
+    color: black;
+    border-radius: 15px 15px 15px 0;
+    text-align: left; /* left text alignment */
+}
+
 
 /* Input section */
 #chatbot-input-container {
