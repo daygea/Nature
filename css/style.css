@@ -1,216 +1,188 @@
-        @media print {
-            body {
-                display: none !important;
-            }
-        }
+@media print {
+    body {
+        display: none !important;
+    }
+}
 
-         body{
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            color: green;
-            background-color: white;
-            background-image: url('../img/background.jpg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            font-family: Courier, monospace;
-            font-weight: bold;
-         }
-        .moving-bg {
-          background-size: cover;
-          animation: moveAround 10s linear infinite;
-        }
+ body{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: green;
+    background-color: white;
+    background-image: url('../img/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Courier, monospace;
+    font-weight: bold;
+ }
+.moving-bg {
+  background-size: cover;
+  animation: moveAround 10s linear infinite;
+}
 
-        @keyframes moveAround {
-          0% { transform: translate(0, 0); }
-          25% { transform: translate(10px, 10px); }
-          50% { transform: translate(-10px, -10px); }
-          75% { transform: translate(10px, -10px); }
-          100% { transform: translate(0, 0); }
-        }
+@keyframes moveAround {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(10px, 10px); }
+  50% { transform: translate(-10px, -10px); }
+  75% { transform: translate(10px, -10px); }
+  100% { transform: translate(0, 0); }
+}
 
-  /* Loader Styling */
-        #preloader {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            background: white;
-            background-image: url('../img/priest.jpeg');
-             background-position: center;
-              background-repeat: no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-        }
+/* Loader Styling */
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    background-image: url('../img/priest.jpeg');
+     background-position: center;
+      background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
 
- .odusign{
-            font-family: Courier, monospace;
-            font-weight: bold;
-            text-align: center;
+.odusign{
+    font-family: Courier, monospace;
+    font-weight: bold;
+    text-align: center;
 /*            margin-top: 20vh;*/
-            font-size: 20px;
-        }
-        .numerology{
-            font-family: Courier, monospace;
-             font-weight: bold;
-            text-align: center;
-            margin-top: 5vh;
-            font-size: 20px;
-        }
-        h1 {
-            margin-bottom: 20px;
-        }
+    font-size: 20px;
+}
+.numerology{
+    font-family: Courier, monospace;
+     font-weight: bold;
+    text-align: center;
+    margin-top: 1vh;
+    font-size: 20px;
+}
+h1 {
+    margin-bottom: 20px;
+}
 
-     #birthdate-box {
-                margin-bottom: 10px;
-            }
+#birthdate-box {
+        margin-bottom: 10px;
+    }
 
-       input[type="date"] {
-            width: 80%;
-            max-width: 250px;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }    
+input[type="date"] {
+    width: 80%;
+    max-width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}    
 
-        button {
-            font-size: 16px;
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
+button {
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
-        button:hover {
-            background-color: #45a049;
-        }
+button:hover {
 
-        #random-btn {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
+}
 
-        #random-btn:hover {
-            background-color: #45a049;
-        }
+.footer {
+    color: black;
+    text-align: center;
+}
 
-        .footer {
-                background-color: whire;
-                color: black;
-                padding: 30px 0;
-                text-align: center;
-            }
+.footer h4 {
+    color: green;
+}
 
-            .footer h4 {
-                color: green;
-            }
+.footer a {
+    color: #f8b400;
+    text-decoration: none;
+}
 
-            .footer a {
-                color: #f8b400;
-                text-decoration: none;
-            }
+.footer a:hover {
+    text-decoration: underline;
+}
 
-            .footer a:hover {
-                text-decoration: underline;
-            }
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
 
-            .footer ul {
-                padding: 0;
-                list-style: none;
-            }
+.footer .list-inline li {
+    display: inline;
+    margin: 0 10px;
+}
 
-            .footer .list-inline li {
-                display: inline;
-                margin: 0 10px;
-            }
+.footer .list-inline li a {
+    color: #fff;
+    font-size: 20px;
+}
 
-            .footer .list-inline li a {
-                color: #fff;
-                font-size: 20px;
-            }
+.footer .list-inline li a:hover {
+    color: #f8b400;
+}
 
-            .footer .list-inline li a:hover {
-                color: #f8b400;
-            }
+.calculator {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    /*            border: 2px solid green;*/
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotate 333s linear infinite;
+}
 
-        .calculator {
-            position: relative;
-            width: 200px;
-            height: 200px;
-            margin: auto;
-/*            border: 2px solid green;*/
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            animation: rotate 333s linear infinite;
-        }
+.calculator button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px dotted green;
+    background-color: white;
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    transition: background-color 0.3s ease-in-out;
+}
 
-        .calculator button {
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                background-color: green;
-                color: white;
-                font-size: 18px;
-                font-weight: bold;
-                border: none;
-                position: absolute;
-                transition: background-color 0.3s ease-in-out;
-        }
-
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
 
 
-        .calculator button:hover {
-            background-color: white;
-            border: 1px solid green;
-            color: green;
-        }
+.calculator button:hover {
+    background-color: white;
+    border: 1px solid green;
+    color: green;
+}
 
-        .calculator button:focus {
-            outline: none;
-            background-color: white;
-            border: 1px solid green;
-            color: green;
-        }
+.calculator button:focus {
+    outline: none;
+    background-color: white;
+    border: 1px solid green;
+    color: green;
+}
 
-       .calculator button.clicked {
-            font-weight: bold; /* Make number appear strong without affecting size */
-        }
+.calculator button.clicked {
+    font-weight: bold;
+}
 
-         #random-btn {
-            margin-top: 20px;
-            padding: 25px;
-            font-size: 16px;
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        #random-btn:hover {
-            background-color: #45a049;
-        }
-
+.app-btn {
+    border: 1px solid green; 
+    color: green; 
+    background-color: white; 
+    font-weight: bold;
+}
 
 /* Container for Odù images */
 .odu-container {
